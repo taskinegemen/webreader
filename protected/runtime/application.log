@@ -1,0 +1,10 @@
+2014/01/22 14:02:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "read".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('read')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('read')
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/read')
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/reader/erkan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/erkan/index.php?r=site/read
+---
