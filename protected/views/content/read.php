@@ -23,7 +23,7 @@ $this->pageTitle=Yii::app()->name;
 					<div id="sidebar-collapse" class="sidebar-collapse btn">
 						<i class="fa fa-bars" 
 							data-icon1="fa fa-bars" 
-							data-icon2="fa fa-bars" ></i>
+							data-icon2="fa fa-bars" ></i> 
 					</div>
 					<!-- /SIDEBAR COLLAPSE -->
 				</div>
