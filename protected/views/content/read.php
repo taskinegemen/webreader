@@ -370,27 +370,27 @@ $this->pageTitle=Yii::app()->name;
 				<div class="reader_book_cover_thumbnail">COVER</div>
                 <ul class="reader_book_info">
                 
-                <li class="reader_book_info_detail">Kitabın Adı: <span class="reader_book_info_detail_data">Örnek Kitap</span></li>
+                <li class="reader_book_info_detail">KitabÄ±n AdÄ±: <span class="reader_book_info_detail_data">Ã–rnek Kitap</span></li>
                 
                 <div class="vertical-divider"></div>
                 <div class="clearfix"></div>
                 
-                <li class="reader_book_info_detail">Tür/Konu: <span class="reader_book_info_detail_data">Örnek Tür</span></li>
+                <li class="reader_book_info_detail">TÃ¼r/Konu: <span class="reader_book_info_detail_data">Ã–rnek TÃ¼r</span></li>
                 
                 <div class="vertical-divider"></div>
                 <div class="clearfix"></div>
                 
-                <li class="reader_book_info_detail">Editörler: <span class="reader_book_info_detail_data">Örnek Kişi</span></li>
+                <li class="reader_book_info_detail">EditÃ¶rler: <span class="reader_book_info_detail_data">Ã–rnek KiÅŸi</span></li>
 
                 <div class="vertical-divider"></div>
                 <div class="clearfix"></div>
                 
-                <li class="reader_book_info_detail">Sayfa Sayısı: <span class="reader_book_info_detail_data">200</span></li>
+                <li class="reader_book_info_detail">Sayfa SayÄ±sÄ±: <span class="reader_book_info_detail_data">200</span></li>
 
                 <div class="vertical-divider"></div>
                 <div class="clearfix"></div>
                 
-                <li class="reader_book_info_detail">Yayınlanma Tarihi: <span class="reader_book_info_detail_data">01.05.2014</span></li>
+                <li class="reader_book_info_detail">YayÄ±nlanma Tarihi: <span class="reader_book_info_detail_data">01.05.2014</span></li>
 
                 <div class="vertical-divider"></div>
                 <div class="clearfix"></div>
@@ -419,7 +419,7 @@ $this->pageTitle=Yii::app()->name;
 							<div class="col-sm-12">
 								<div class="page-header reader_info_header">
 									
-									<div class="reader_book_name">Kitabın Adı: <span class="reder_book_name_data">Örnek Kitap</span></div>
+									<div class="reader_book_name">KitabÄ±n AdÄ±: <span class="reder_book_name_data">Ã–rnek Kitap</span></div>
                                      <div class="btn-group">
 												<button class="btn btn-default">
 													<i class="fa fa-angle-left"></i>
