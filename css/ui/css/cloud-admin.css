@@ -3784,7 +3784,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
     margin: 0;
   }
   .navbar-nav > li {
-    float: left;
+    float: right;
   }
   .navbar-nav > li > a {
     padding-top: 15px;
@@ -6376,7 +6376,7 @@ fieldset[disabled] .btn-yellow.active {
   margin-left: 0px !important;
 }
 .margin-left-50 {
-  margin-left: 50px !important;
+  margin-left: 0px !important;
 }
 .margin-top-50 {
   margin-top: 50px !important;
@@ -6427,7 +6427,6 @@ fieldset[disabled] .btn-yellow.active {
   background-color: #f5f6f6;
   margin-top: 0;
   min-height: 800px;
-  border-left: 1px solid #cdd2d2;
   padding-bottom: 30px;
   /* Page Header */
 
