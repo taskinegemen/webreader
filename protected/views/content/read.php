@@ -9,7 +9,7 @@ $this->pageTitle=Yii::app()->name;
 				<div class="navbar-brand">
 					<!-- COMPANY LOGO -->
 					<a href="index.html">
-						<img src="img/logo/linden.png" alt="Cloud Admin Logo" class="img-responsive">
+						<img src="css/ui/img/logo/linden.png" alt="Cloud Admin Logo" class="img-responsive">
 					</a>
 					<!-- /COMPANY LOGO -->
 					<!-- TEAM STATUS FOR MOBILE -->
@@ -410,7 +410,7 @@ $this->pageTitle=Yii::app()->name;
 					</div>
 				</div>
 				<!-- /SIDEBAR -->
-		<div id="main-content">
+		<div id="main-content" style="border-left:1px solid #cdd2d2 !important;">
 			<div class="container">
 				<div class="row">
 					<div id="content" class="col-lg-12">

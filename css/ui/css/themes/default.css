@@ -5,10 +5,19 @@
 }
 /* Start Navbar */
 .navbar {
-  background: none repeat scroll 0 0 #5e87b0;
   border: none;
   border-radius: 0;
   margin: 0;
+background: #3392a1; /* Old browsers */
+background: -moz-linear-gradient(top,  #3392a1 0%, #2f8893 98%, #256b75 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3392a1), color-stop(98%,#2f8893), color-stop(100%,#256b75)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #3392a1 0%,#2f8893 98%,#256b75 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #3392a1 0%,#2f8893 98%,#256b75 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #3392a1 0%,#2f8893 98%,#256b75 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #3392a1 0%,#2f8893 98%,#256b75 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3392a1', endColorstr='#256b75',GradientType=0 ); /* IE6-9 */
+
+
 }
 .navbar .navbar-brand {
   float: left;
@@ -17,14 +26,7 @@
   padding: 15px;
   width: 250px;
 }
-.navbar .navbar-brand img {
-  position: absolute;
-  max-width: 60%;
-  height: 30px;
-  width: 120px;
-  top: 8px;
-  left: 60px;
-}
+
 .navbar .dropdown-toggle {
   color: #FFFFFF;
 }
@@ -55,12 +57,23 @@
   text-shadow: 1px 1px #b4c7da, -1px -1px #375471;
 }
 .navbar #navbar-left li.dropdown {
-  background-color: #6f94b8;
-  border-right: 1px solid #507aa4;
+  border-right: 1px solid #2C7F8B;
   font-weight: 400;
+background: #3392a1; /* Old browsers */
+background: -moz-linear-gradient(top,  #3392a1 0%, #2f8893 98%, #256b75 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3392a1), color-stop(98%,#2f8893), color-stop(100%,#256b75)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #3392a1 0%,#2f8893 98%,#256b75 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #3392a1 0%,#2f8893 98%,#256b75 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #3392a1 0%,#2f8893 98%,#256b75 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #3392a1 0%,#2f8893 98%,#256b75 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3392a1', endColorstr='#256b75',GradientType=0 ); /* IE6-9 */
+
+
+
+
 }
 .navbar #navbar-left li.dropdown:first-child {
-  border-left: 1px solid #507aa4;
+  border-left: 1px solid #2C7F8B;
 }
 .navbar #navbar-left i {
   margin-right: 5px;
@@ -569,6 +582,7 @@
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
   color: #FFFFFF;
   padding: 6px 8px;
+  margin-left:190px;
 }
 .sidebar-collapse:hover,
 .switcher:hover {
@@ -819,10 +833,10 @@ body {
 
 
 .book_info_container {
-	width:200px;
+	width:225px;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:20px;
+	margin-top:13px;
 	
 }
 
