@@ -795,9 +795,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3392a1', end
 }
 
 
-body {
-	overflow:hidden;
-}
+
 
 
 .page_next_previous_buttons a:first-child {
@@ -817,8 +815,7 @@ body {
 
 .reader_page_container {
 	width:100%;
-	height:768px;
-	overflow-y:scroll;
+	
 }
 
 .reader_page {
@@ -848,7 +845,7 @@ body {
 	text-align:center;
 	color:#cdd2d2;
 	font-size:30px;
-	padding-top:50px;	
+		
 	background: #fff;
 
 
@@ -894,3 +891,21 @@ li.reader_book_info_detail {
 	height:1px;
 	background-color:#cdd2d2;
  }
+/*! Lazy Load XT v1.0.0 2014-01-16
+ * http://ressio.github.io/lazy-load-xt
+ * (C) 2014 RESS.io
+ * Licensed under MIT */
+.lazy-hidden {
+    opacity: 0;
+}
+.lazy-loaded {
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+.lazy-hidden {
+background: #eee url('loading.gif') no-repeat 50% 50%;
+}

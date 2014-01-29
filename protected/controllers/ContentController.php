@@ -27,9 +27,12 @@ class ContentController extends Controller
 		$this->render('favorites');
 	}
 
-	public function actionGetbookmeta()
+	public function actionGetbookmeta($id)
 	{
-		$this->render('getbookmeta');
+		$filename="contents/$id/package.opf";
+		$xml=simplexml_load_file($filename);
+		echo(json_encode($xml));
+		//$this->render('getbookmeta');
 	}
 
 	public function actionGetcover()
@@ -62,9 +65,68 @@ class ContentController extends Controller
 		$this->render('getthumbnail');
 	}
 
-	public function actionImport()
+	public function actionImport($id=null)
 	{
-		$this->render('import');
+	
+		if(!$id){
+			$id='iufkT2XKp6RY376yWOCxTIW4SINH525YPtWhzxOqbuVv';
+		}
+		$dir="contents/$id";
+
+
+		$hosts =array(
+			(object) (array("host"=>'cloud.lindneo.com',"port"=>'2222')),
+			//(object) (array("host"=>'lindneo2.com',"port"=>'22223'))
+			);
+		
+		// if there is more than 1 then load balance according to time;
+		if (count($hosts)>1){
+			$selected_host = $hosts[(round(microtime(true) * 100)) % (count($hosts)) ];
+		} else 
+		// if there is only 1 then select the one;
+		if (count($hosts)==1){
+			$selected_host = current($hosts);
+		} 
+		// No host found;
+		else {
+			$selected_host = null;
+		}
+		
+
+		print_r($selected_host);
+		if (!$selected_host){
+			echo "No";
+			$error=__('Bu içerik için hiç bir yer sağlayıcı bulunamadı');
+		}
+
+		
+
+		if (!file_exists($dir) and !is_dir($dir)) {
+    		mkdir($dir);         
+		}
+		
+
+		$this->redirect(array("content/read", 'id'=>$id)); 
+
+
+		
+	}
+
+
+	public function actionFile($id,$filepath=null){
+		$dir="contents/$id/$filepath";
+
+		$filename="contents/$id/$filepath";
+
+		$content_type=mime_content_type($filename);
+		header("Content-type: $content_type");
+
+		$txt = file_get_contents($filename);
+		/*if ($txt){
+			$domain = $this->createUrl("content/file",array("id"=>$id));
+			$txt = preg_replace("/(href|src)\=\"([^(http)])(\/)?/", "$1=\"$domain$2", $txt);
+		}*/
+		echo $txt;
 	}
 
 	public function actionList()
@@ -72,9 +134,19 @@ class ContentController extends Controller
 		$this->render('list');
 	}
 
-	public function actionRead()
+	public function actionRead($id=null)
 	{
-		$this->render('read');
+		$dir="contents/$id";
+
+		if (!file_exists($dir) and !is_dir($dir)) {
+    		$this->redirect(array("content/import", 'id'=>$id));
+		} 
+
+		$this->render('read',
+			array(
+				'id'=>$id
+			)
+		 );
 	}
 
 	public function actionRemove()

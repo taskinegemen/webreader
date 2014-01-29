@@ -1,5 +1,5 @@
 <?php
-
+define("YII_DEBUG",true);
 // change the following paths if necessary
 $yii=dirname(__FILE__).'/yii-1.1.14.f0fee9/framework/yii.php';
 $config=dirname(__FILE__).'/protected/config/main.php';
