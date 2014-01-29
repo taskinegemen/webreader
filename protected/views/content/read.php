@@ -575,9 +575,7 @@ $this->pageTitle=Yii::app()->name;
 			});
 
 
-			console.log(Pages);
-			console.log(Items);
-			console.log(PageIDArray);
+			
 			$(".reader_page_container").empty();
 			$.each(PageIDArray, function(index,page){
 				console.log(page);
@@ -587,15 +585,84 @@ $this->pageTitle=Yii::app()->name;
 				newPage.appendTo(newPageContainer);
 				newPageContainer.appendTo($(".reader_page_container"));
 				newPage.attr("data-src",ContentFileRequesUrl + Items[page] );
-				newPage.attr("src","http://reader.lindneo.com/ugur/css/ui/css/themes/loading.gif" );
-				
+				//newPage.attr("src","http://reader.lindneo.com/ugur/css/ui/css/themes/loading.gif" );
+				newPage.load(function(){
+						        	$(this)
+						        		.removeClass("lazy-hidden")
+						        		.addClass("lazy-loaded");
+						        	show_visibles();
+					    });
 			});
-			$('[data-src]').lazyLoadXT();
-
-			//console.log("---"+thumbnailContent +"---"+ item["@attributes"]["id"].fulltrim()+"---");
+			
+			/*
+			console.log(Pages);
+			console.log(Items);
+			console.log(PageIDArray);
 			console.log(BookMeta);
+			*/
+			var timer=0;
+			var lastTopPos = $(window).scrollTop();
+			var pageSizeThridOne= $(window).height() / 3;
+
+			resizeEvents();
+			$( window ).resize(function() {
+			  resizeEvents();
+			});
+			
+			$( window ).scroll(function() {
+				
+				timer++;
+				var scrollDif = lastTopPos - $(window).scrollTop();
+				if (timer % 10 == 0 || Math.abs(scrollDif) > pageSizeThridOne ){
+					show_visibles();
+					lastTopPos = $(window).scrollTop();
+				}
+
+				console.log(timer + " " +scrollDif );
+				
+
+
+			});
+
 			
 
+
 		}
+
+		function resizeEvents(){
+			lastTopPos = $(window).scrollTop();
+			pageSizeThridOne= $(window).height() / 3;
+			show_visibles();
+		}
+
+		function show_visibles(){
+			$('.page_iframe').each(function(index,page){
+					if (!isScrolledIntoView(page)){
+						if (!$(page).hasClass('lazy-hidden'))
+							$(page)
+								.removeAttr('src')
+								.removeClass("lazy-loaded")
+				        		.addClass("lazy-hidden");
+
+					} else {
+						if (!$(page).hasClass('lazy-loaded')){
+							$(page)
+								.attr('src',$(page).attr('data-src'));		
+								
+						}
+					}
+				});
+		}
+
+		function isScrolledIntoView(elem)
+				{
+				    var docViewTop = $(window).scrollTop();
+				    var docViewBottom = docViewTop + $(window).height();
+
+				    var elemTop = $(elem).offset().top;
+				    var elemBottom = elemTop + $(elem).height();
+
+				    return (( elemTop  <= docViewBottom) && (elemBottom >= docViewTop));
+				}
 	</script>
 	<!-- /JAVASCRIPTS -->

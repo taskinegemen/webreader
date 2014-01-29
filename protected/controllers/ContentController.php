@@ -30,7 +30,7 @@ class ContentController extends Controller
 	public function actionGetbookmeta($id)
 	{
 		$filename="contents/$id/package.opf";
-		$xml=simplexml_load_file($filename);
+		$xml=simplexml_load_string(Encryption::decryptFile($filename));
 		echo(json_encode($xml));
 		//$this->render('getbookmeta');
 	}
@@ -113,15 +113,67 @@ class ContentController extends Controller
 	}
 
 
+	public function actionGetContent($id,$host="cloud.lindneo.com",$port=2222){
+		
+		$getfile = "tmp/$id";
+		$command =  "python bin/client.py '{\"host\":\"$host\",\"port\":$port}' GetFile $id $getfile";
+		shell_exec($command);
+		
+		$this->decryptFileAndExtractToFolder($getfile);
+		unlink($getfile);
+		$this->redirect(array("content/read", 'id'=>$id)); 
+
+
+	}
+
+    public function decryptFileAndExtractToFolder($filename,$outpufolder=null){		
+    	if (!$outpufolder){
+			$outpufolder="contents/".basename($filename);
+    	}
+		functions::delTree($outpufolder);
+		$file = file_get_contents($filename);
+		$base=hash ( "sha256" , basename($filename) . "somemoresaltingherewouldbebetterthanthatoneiguess" ,true );
+		$key=substr($base,0,32);
+		$iv=substr($base,0,16);
+		$res=base64_decode(mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $key, $file, MCRYPT_MODE_CFB, $iv));
+		
+
+		$temp = tempnam(sys_get_temp_dir(), "");
+
+		$handle = fopen($temp, "w");
+		fwrite($handle, $res);
+		fclose($handle);
+
+		$epub = new ZipArchive;
+		if ($epub->open($temp) === TRUE) {
+		    $epub->extractTo($outpufolder);
+		    $epub->close();
+		    
+		} else {
+			
+		}
+
+		unlink($temp);
+
+		Encryption::encryptFolder($outpufolder);
+
+	}
+
 	public function actionFile($id,$filepath=null){
+
+
+		$expires = 60*60*24*14;
+		header("Pragma: public");
+		header("Cache-Control: maxage=".$expires);
+		header('Expires: ' . gmdate('D, d M Y H:i:s', time()+$expires) . ' GMT');
 		$dir="contents/$id/$filepath";
 
 		$filename="contents/$id/$filepath";
 
-		$content_type=mime_content_type($filename);
+		$content_type=functions::returnMIMEType($filename);
 		header("Content-type: $content_type");
 
-		$txt = file_get_contents($filename);
+		$txt = Encryption::decryptFile($filename);
 		/*if ($txt){
 			$domain = $this->createUrl("content/file",array("id"=>$id));
 			$txt = preg_replace("/(href|src)\=\"([^(http)])(\/)?/", "$1=\"$domain$2", $txt);
