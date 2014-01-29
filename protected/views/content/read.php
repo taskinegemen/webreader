@@ -459,4 +459,143 @@ $this->pageTitle=Yii::app()->name;
 			App.init(); //Initialise plugins and elements
 		});
 	</script>
+	<script>
+		var BookMeta;
+		var ContentFileRequesUrl="<?php echo $this->createUrl("content/file",array('id'=>$id) ); ?>"+"/";
+		var Pages = [],Items = [], PageIDArray=[];
+
+		String.prototype.trim=function(){return this.replace(/^\s+|\s+$/g, '');};
+
+		String.prototype.ltrim=function(){return this.replace(/^\s+/,'');};
+
+		String.prototype.rtrim=function(){return this.replace(/\s+$/,'');};
+
+		String.prototype.fulltrim=function(){return this.replace(/(?:(?:^|\n)\s+|\s+(?:$|\n))/g,'').replace(/\s+/g,' ');};
+
+		function trimString(s) {
+		  var l=0, r=s.length -1;
+		  while(l < s.length && s[l] == ' ') l++;
+		  while(r > l && s[r] == ' ') r-=1;
+		  return s.substring(l, r+1);
+		}
+
+		function compareObjects(o1, o2) {
+		  var k = '';
+		  for(k in o1) if(o1[k] != o2[k]) return false;
+		  for(k in o2) if(o1[k] != o2[k]) return false;
+		  return true;
+		}
+
+		function itemExists(haystack, needle) {
+		  for(var i=0; i<haystack.length; i++) if(compareObjects(haystack[i], needle)) return true;
+		  return false;
+		}
+
+		function searchFor(toSearch) {
+		  var results = [];
+		  toSearch = trimString(toSearch); // trim it
+		  for(var i=0; i<objects.length; i++) {
+		    for(var key in objects[i]) {
+		      if(objects[i][key].indexOf(toSearch)!=-1) {
+		        if(!itemExists(results, objects[i])) results.push(objects[i]);
+		      }
+		    }
+		  }
+		  return results;
+		}
+
+		jQuery(document).ready(function() {		
+
+
+			var metaUrl= "<?php echo $this->createUrl("content/Getbookmeta",array('id'=>$id) ); ?>"
+			$.ajax({
+			  url: metaUrl,
+			  
+			  success: function (data){
+			  	 
+			  	BookMeta=JSON.parse(data);
+			  	StartReaderApp();
+			  },
+			  
+			});
+		});
+
+
+
+		function StartReaderApp (){
+			var thumbnailContent;
+			
+			$.each(BookMeta.metadata.meta, function(index,meta){
+
+				
+				//find cover item
+				if(typeof meta['@attributes'] != "undefined")
+					if(typeof meta['@attributes']['content'] != "undefined")
+						if(meta['@attributes']['name']=="covers"){
+							thumbnailContent = meta['@attributes']['content'];
+						}
+
+			});
+
+			$.each(BookMeta.spine.itemref, function(index,spines){
+				var NewPageComponent={
+					'id': spines['@attributes']
+				};
+				Pages[spines['@attributes']['idref']]=NewPageComponent;
+				PageIDArray.push(spines['@attributes']['idref']);
+			});
+
+			$.each(BookMeta.manifest.item, function(index,item){
+				
+				Items[item["@attributes"]["id"]] = item["@attributes"]["href"];
+
+				if (thumbnailContent === item["@attributes"]["id"] ){
+					var newThumbnailImage = $("<img/>");
+					newThumbnailImage.attr('src',ContentFileRequesUrl+item["@attributes"]["href"] );
+					newThumbnailImage.css('width','100%');
+					newThumbnailImage.css('height','100%');
+
+					var pic_real_width, pic_real_height;
+						
+					$("<img/>") // Make in memory copy of image to avoid css issues
+					    .attr("src", ContentFileRequesUrl+item["@attributes"]["href"])
+					    .load(function() {
+					        pic_real_width = this.width;   // Note: $(this).width() will not
+					        pic_real_height = this.height; // work for in memory images.
+					        ratio = pic_real_width/200;
+
+							if (pic_real_width>200){
+								$('.reader_book_cover_thumbnail').css('height', (  pic_real_height / ratio )  + 'px')
+							} 
+					    });
+
+					$('.reader_book_cover_thumbnail').empty().append(newThumbnailImage);
+				}
+
+			});
+
+
+			console.log(Pages);
+			console.log(Items);
+			console.log(PageIDArray);
+			$(".reader_page_container").empty();
+			$.each(PageIDArray, function(index,page){
+				console.log(page);
+
+				var newPageContainer=$("<div class='reader_page'></div>");
+				var newPage=$("<iframe class='page_iframe' frameBorder='0' scrolling='no' style='width:100%;height:100%;overflow:hidden;' ></iframe>");
+				newPage.appendTo(newPageContainer);
+				newPageContainer.appendTo($(".reader_page_container"));
+				newPage.attr("data-src",ContentFileRequesUrl + Items[page] );
+				newPage.attr("src","http://reader.lindneo.com/ugur/css/ui/css/themes/loading.gif" );
+				
+			});
+			$('[data-src]').lazyLoadXT();
+
+			//console.log("---"+thumbnailContent +"---"+ item["@attributes"]["id"].fulltrim()+"---");
+			console.log(BookMeta);
+			
+
+		}
+	</script>
 	<!-- /JAVASCRIPTS -->
