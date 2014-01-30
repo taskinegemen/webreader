@@ -6,13 +6,10 @@ $this->pageTitle=Yii::app()->name;
 <!-- HEADER -->
 	<header class="navbar clearfix" id="header">
 		<div class="container">
-				<div class="navbar-brand">
-					<!-- COMPANY LOGO -->
-					<a href="index.html">
-						<img src="css/ui/img/logo/linden.png" alt="Cloud Admin Logo" class="img-responsive">
-					</a>
-					<!-- /COMPANY LOGO -->
-					<!-- TEAM STATUS FOR MOBILE -->
+        
+        
+        
+				<!-- TEAM STATUS FOR MOBILE -->
 					<div class="visible-xs">
 						<a href="#" class="team-status-toggle switcher btn dropdown-toggle">
 							<i class="fa fa-users"></i>
@@ -26,23 +23,8 @@ $this->pageTitle=Yii::app()->name;
 							data-icon2="fa fa-bars" ></i> 
 					</div>
 					<!-- /SIDEBAR COLLAPSE -->
-				</div>
-				<!-- NAVBAR LEFT -->
-				<ul class="nav navbar-nav pull-left hidden-xs" id="navbar-left">
-					<li class="dropdown">
-						<a href="#" class="team-status-toggle dropdown-toggle tip-bottom" data-toggle="tooltip" title="Toggle Team View">
-							<i class="fa fa-users"></i>
-							<span class="name">Kontrol Paneli</span>
-							<i class="fa fa-angle-down"></i>
-						</a>
-					</li>
-					
-				</ul>
-				<!-- /NAVBAR LEFT -->
-				<!-- BEGIN TOP NAVIGATION MENU -->					
-				<ul class="nav navbar-nav pull-right">	
-					
-					<!-- BEGIN USER LOGIN DROPDOWN -->
+				
+                <!-- BEGIN USER LOGIN DROPDOWN -->
 					<li class="dropdown user" id="header-user">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 							<img alt="" src="img/avatars/avatar3.jpg" />
@@ -57,8 +39,18 @@ $this->pageTitle=Yii::app()->name;
 						</ul>
 					</li>
 					<!-- END USER LOGIN DROPDOWN -->
-				</ul>
-				<!-- END TOP NAVIGATION MENU -->
+                    
+                    
+                    
+                <!-- COMPANY LOGO -->
+					<div class="linden_logo"></div>
+					<!-- /COMPANY LOGO -->
+                    
+                    
+                    
+                    
+                
+                
 		</div>
 		
 		<!-- TEAM STATUS -->
