@@ -582,7 +582,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3392a1', end
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
   color: #FFFFFF;
   padding: 6px 8px;
-  margin-left:190px;
 }
 .sidebar-collapse:hover,
 .switcher:hover {
@@ -891,6 +890,26 @@ li.reader_book_info_detail {
 	height:1px;
 	background-color:#cdd2d2;
  }
+
+ 
+ 
+.linden_logo {
+	width:100px;
+	height:50px;
+	background-image:url(../../img/logo/linden.png);
+	background-position:center;
+	background-size:inherit;
+	background-repeat:no-repeat;
+	margin-left:auto;
+	margin-right:auto;	
+}
+
+
+li.user {
+	height:50px;
+	float:right;
+}
+
 /*! Lazy Load XT v1.0.0 2014-01-16
  * http://ressio.github.io/lazy-load-xt
  * (C) 2014 RESS.io
@@ -909,3 +928,4 @@ li.reader_book_info_detail {
 .lazy-hidden {
 background: #eee url('loading.gif') no-repeat 50% 50%;
 }
+
