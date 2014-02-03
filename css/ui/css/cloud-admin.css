@@ -5974,9 +5974,11 @@ body {
   margin: 0;
   padding: 0;
   color: #555555;
-  /* overflow-x: hidden; */
-
-}
+  overflow: hidden;
+  
+ }
+ 
+ 
 h1,
 h2,
 h3,
@@ -6426,7 +6428,7 @@ fieldset[disabled] .btn-yellow.active {
 #content {
   background-color: #f5f6f6;
   margin-top: 0;
-  min-height: 800px;
+  min-height: 1200px;
   padding-bottom: 30px;
   /* Page Header */
 
@@ -6442,6 +6444,7 @@ fieldset[disabled] .btn-yellow.active {
 	overflow: hidden;
 	padding: 10px 20px;
 	position: relative;
+	margin-bottom:0;
 }
 #content .page-header .description {
   color: #888888;
