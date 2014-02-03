@@ -814,7 +814,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3392a1', end
 
 .reader_page_container {
 	width:100%;
-	
+	left: 0;
+	position: absolute;
+	overflow: scroll;
+	height: 1200px;
+	padding-top:30px;
 }
 
 .reader_page {
@@ -906,8 +910,10 @@ li.reader_book_info_detail {
 
 
 li.user {
-	height:50px;
-	float:right;
+	height: 50px;
+	float: right;
+	line-height: 3.5em;
+	list-style: none;
 }
 
 /*! Lazy Load XT v1.0.0 2014-01-16

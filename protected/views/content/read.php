@@ -27,8 +27,8 @@ $this->pageTitle=Yii::app()->name;
                 <!-- BEGIN USER LOGIN DROPDOWN -->
 					<li class="dropdown user" id="header-user">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<img alt="" src="img/avatars/avatar3.jpg" />
-							<span class="username">John Doe</span>
+							<img alt="" src="avatar.png" />
+							<span class="username">Erkan Öğümsöğütlü</span>
 							<i class="fa fa-angle-down"></i>
 						</a>
 						<ul class="dropdown-menu">
