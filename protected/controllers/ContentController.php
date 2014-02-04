@@ -115,10 +115,12 @@ class ContentController extends Controller
 
 	public function actionGetContent($id,$host="cloud.lindneo.com",$port=2222){
 		
-		$getfile = "tmp/$id";
-		$command =  "python bin/client.py '{\"host\":\"$host\",\"port\":$port}' GetFile $id $getfile";
-		shell_exec($command);
-		
+		$getfile = "./tmp/$id";
+		$command =  "python bin/client_tls.py '{\"host\":\"$host\",\"port\":$port}' GetFile $id $getfile";
+		//echo $command;die;
+		exec($command,$output);
+		print_r($output);
+		 
 		$this->decryptFileAndExtractToFolder($getfile);
 		unlink($getfile);
 		$this->redirect(array("content/read", 'id'=>$id)); 
