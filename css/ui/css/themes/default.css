@@ -780,8 +780,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3392a1', end
 
 
 .reader_info_header {
-  min-height: 40px !important;
-  padding:10px !important;
+	min-height: 40px !important;
+	padding: 10px !important;
+	padding-bottom: 40px !important;
 }
 
 
@@ -814,7 +815,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3392a1', end
 
 .reader_page_container {
 	width:100%;
-	
+	left: 0;
+	position: absolute;
+	overflow: scroll;
+	height: 1200px;
+	padding-top:30px;
 }
 
 .reader_page {
@@ -906,9 +911,68 @@ li.reader_book_info_detail {
 
 
 li.user {
-	height:50px;
-	float:right;
+	height: 50px;
+	float: right;
+	line-height: 3.5em;
+	list-style: none;
 }
+
+#header-user {
+	right:0;
+	position:absolute;
+}
+
+#header-user:hover {
+	background-color:#28747c;
+	text-decoration:none;
+}
+
+
+.reader_toc_button {
+	font-size: 15px;
+	padding-top: 2px;
+	padding-bottom: 3px;
+	border-top-right-radius:0;	
+	border-bottom-right-radius:0;
+	border-right:0;
+}
+
+.reader_toc_dropdown {
+	max-width: 400px !important;
+	border:0 !important;
+	border-top-right-radius:0;
+	margin-right:68px;
+}
+
+.reader_toc_dropdown li a {
+	text-overflow: ellipsis;
+	overflow:hidden;
+	background-color:#fff;
+	border-bottom:0;
+}
+
+.reader_toc_dropdown li a:hover {
+	background-color:#fcfcfc;
+}
+
+.reader_toc_dropdown li:first-child a{
+	border-top:0;
+}
+
+
+span.reader_toc_dropdown_page_numbers {
+	background-color:#3392a1;
+	display: inline-block;
+	left: 0;
+	width: 50px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	color:#fff;
+	margin-left: -10px;
+}
+
+
 
 /*! Lazy Load XT v1.0.0 2014-01-16
  * http://ressio.github.io/lazy-load-xt

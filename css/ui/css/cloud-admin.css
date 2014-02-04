@@ -176,10 +176,7 @@ table {
     background: transparent !important;
     box-shadow: none !important;
   }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+
   a[href]:after {
     content: " (" attr(href) ")";
   }
@@ -276,7 +273,6 @@ a {
 a:hover,
 a:focus {
   color: #406182;
-  text-decoration: underline;
 }
 a:focus {
   outline: thin dotted;
@@ -5974,9 +5970,11 @@ body {
   margin: 0;
   padding: 0;
   color: #555555;
-  /* overflow-x: hidden; */
-
-}
+  overflow: hidden;
+  
+ }
+ 
+ 
 h1,
 h2,
 h3,
@@ -6426,8 +6424,7 @@ fieldset[disabled] .btn-yellow.active {
 #content {
   background-color: #f5f6f6;
   margin-top: 0;
-  min-height: 800px;
-  padding-bottom: 30px;
+  min-height: 1200px;
   /* Page Header */
 
   /* Breadcrumbs */
@@ -6439,9 +6436,9 @@ fieldset[disabled] .btn-yellow.active {
 	color: #000000;
 	margin: 0 -15px 30px;
 	min-height: 50px;
-	overflow: hidden;
 	padding: 10px 20px;
 	position: relative;
+	margin-bottom:0;
 }
 #content .page-header .description {
   color: #888888;
