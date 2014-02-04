@@ -18,9 +18,7 @@ $this->pageTitle=Yii::app()->name;
 					<!-- /TEAM STATUS FOR MOBILE -->
 					<!-- SIDEBAR COLLAPSE -->
 					<div id="sidebar-collapse" class="sidebar-collapse btn">
-						<i class="fa fa-bars" 
-							data-icon1="fa fa-bars" 
-							data-icon2="fa fa-bars" ></i> 
+						<i class="fa fa-bars" data-icon1="fa fa-bars" data-icon2="fa fa-bars" ></i> 
 					</div>
 					<!-- /SIDEBAR COLLAPSE -->
 				
@@ -412,14 +410,43 @@ $this->pageTitle=Yii::app()->name;
 								<div class="page-header reader_info_header">
 									
 									<div class="reader_book_name">Kitabın Adı: <span class="reder_book_name_data">Örnek Kitap</span></div>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                      <div class="btn-group">
+                                     
+                                     
+                                     			<button class="btn btn-default reader_toc_button dropdown-toggle" data-toggle="dropdown">
+													İçindekiler &nbsp;<i class="fa fa-angle-down"></i>
+												</button>
+                                                
+                                                <ul class="dropdown-menu pull-right reader_toc_dropdown">
+							<li><a href="#"><span class="reader_toc_dropdown_page_numbers">2</span> Buralara birşeyler yazılacak</a></li>
+							<li><a href="#"><span class="reader_toc_dropdown_page_numbers">43</span> Şimdilik deneme yapılıyor kısa olmasın diye uzatıyoz da uzatıyoz işte böyle</a></li>
+							<li><a href="#"><span class="reader_toc_dropdown_page_numbers">125</span> Buralarda hep table of content maddeleri olacak</a></li>
+							<li><a href="login.html"><span class="reader_toc_dropdown_page_numbers">212</span> İşte öyle denemeler şakalar falan</a></li>
+												</ul>
+                                              
+                                                
 												<button class="btn btn-default">
-													<i class="fa fa-angle-left"></i>
+													<i class="fa fa-chevron-left"></i>
 												</button>
 												<button class="btn btn-default">
-													<i class="fa fa-angle-right"></i>
+													<i class="fa fa-chevron-right"></i>
 												</button>
 								     </div>
+                                    
+                                    
+                                    
+                                    
+                               <div id="ms2"></div>
+                                    
+                                    
+                                    
+                                    
                                    </div>
                                 
                           <div class="reader_page_container">
@@ -445,6 +472,19 @@ $this->pageTitle=Yii::app()->name;
 			</div>
 		</div>
 	</section>
+    
+    
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
     <script>
 		jQuery(document).ready(function() {		
 			App.setPage("widgets_box");  //Set current page
