@@ -1,14 +1,19 @@
 # usage: python client.py '{"host":"127.0.0.1","port":22221}' Help
-import pickle , os 
+import pickle
 import socket,ssl
 import threading
-import sys
-import json
-import signal
+import ConfigParser
+import cgi, os
+import cgitb
 import hashlib
 from Crypto.Cipher import AES
 from Crypto import Random
 import base64
+import os, errno,sys
+import signal
+import json
+
+path = os.path.dirname(os.path.realpath(__file__))
 
 
 
@@ -163,7 +168,7 @@ class ConnectionThread ( threading.Thread ):
       # Connect to the server:
       client = socket.socket ( socket.AF_INET, socket.SOCK_STREAM )
       ssl_sock = ssl.wrap_socket(client,
-                           ca_certs=os.path.dirname(os.path.realpath(__file__))+"/cloud_cert.crt",
+                           ca_certs=path+"/cloud_cert.crt",
                            cert_reqs=ssl.CERT_REQUIRED,
                            suppress_ragged_eofs=False)
       try:
