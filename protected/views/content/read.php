@@ -4,7 +4,7 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 <!-- HEADER -->
-	<header class="navbar clearfix" id="header">
+	<header class="navbar clearfix navbar-fixed-top" id="header">
 		<div class="container">
         
         
@@ -25,7 +25,7 @@ $this->pageTitle=Yii::app()->name;
                 <!-- BEGIN USER LOGIN DROPDOWN -->
 					<li class="dropdown user" id="header-user">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<img alt="" src="avatar.png" />
+							<img alt="" src="<?php echo Yii::app()->request->baseUrl; ?>/avatars/avatar.png" />
 							<span class="username">Erkan Öğümsöğütlü</span>
 							<i class="fa fa-angle-down"></i>
 						</a>
@@ -349,7 +349,7 @@ $this->pageTitle=Yii::app()->name;
 	<!-- PAGE -->
 	<section id="page">
 				<!-- SIDEBAR -->
-				<div id="sidebar" class="sidebar">
+				<div id="sidebar" class="sidebar sidebar-fixed">
 					<div class="sidebar-menu nav-collapse">
 						
 						
