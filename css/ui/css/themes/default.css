@@ -609,7 +609,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3392a1', end
 }
 /* Min Menu */
 .mini-menu#sidebar {
-	margin-left: -250px
+	margin-left: -250px;
 }
 .mini-menu#sidebar:before {
   width: 50px;
