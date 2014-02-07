@@ -73,6 +73,17 @@ class SiteController extends Controller
 	}
 
 	/**
+	 * Displays the Library page
+	 */
+	public function actionLibrary(){
+
+		//get user's contents from Koala
+		$contents = "";
+		$this->render('library',array('contents'=>$contents));
+	}
+
+
+	/**
 	 * Displays the login page
 	 */
 	public function actionLogin()
