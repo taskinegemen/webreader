@@ -2,6 +2,7 @@
 
 class BookController extends Controller
 {
+	public $layout='//layouts/column2';
 	public function actionAddtolibrary()
 	{
 		$this->render('addtolibrary');
