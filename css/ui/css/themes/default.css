@@ -587,7 +587,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3392a1', end
 }
 .sidebar-collapse:hover,
 .switcher:hover {
-  background-color: #507aa4;
+  background-color: #28747c;
 }
 .sidebar-collapse > [class*="fa-"],
 .switcher > [class*="fa-"] {
@@ -609,7 +609,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3392a1', end
 }
 /* Min Menu */
 .mini-menu#sidebar {
-	margin-left: -250px
+	margin-left: -250px;
 }
 .mini-menu#sidebar:before {
   width: 50px;
@@ -778,6 +778,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3392a1', end
 	float:left;
 	line-height:2.6em;
 	color:#666;
+	margin-left:8px;
 }
 
 
@@ -954,7 +955,7 @@ li.user {
 }
 
 .reader_toc_dropdown li a:hover {
-	background-color:#fcfcfc;
+	background-color:#f4f4f4;
 }
 
 .reader_toc_dropdown li:first-child a{
@@ -972,6 +973,11 @@ span.reader_toc_dropdown_page_numbers {
 	font-size: 15px;
 	color:#fff;
 	margin-left: -10px;
+}
+
+
+.reader_toc_dropdown li span.reader_toc_dropdown_page_numbers:hover {
+	background-color:#28747c;
 }
 
 
