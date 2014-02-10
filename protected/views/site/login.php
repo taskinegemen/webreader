@@ -1,3 +1,4 @@
+<div style="display:none;">
 <?php
 /* @var $this SiteController */
 /* @var $model LoginForm */
@@ -51,3 +52,4 @@ $this->breadcrumbs=array(
 
 <?php $this->endWidget(); ?>
 </div><!-- form -->
+</div>
