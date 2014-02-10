@@ -400,7 +400,7 @@ $this->pageTitle=Yii::app()->name;
 					</div>
 				</div>
 				<!-- /SIDEBAR -->
-		<div id="main-content" style="border-left:1px solid #cdd2d2 !important;">
+		<div id="main-content">
 			<div class="container">
 				<div class="row">
 					<div id="content" class="col-lg-12">
