@@ -17,6 +17,11 @@ class ContentController extends Controller
 		$this->render('buy');
 	}
 
+	public function actionDetails()
+	{
+		$this->render('details');
+	}
+
 	public function actionExport()
 	{
 		$this->render('export');

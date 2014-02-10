@@ -5,6 +5,7 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
+require_once(dirname(__FILE__).'/../includes/localization.php');
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Linden Reader',
@@ -31,8 +32,17 @@ return array(
 		
 	),
 
+
+
 	// application components
 	'components'=>array(
+
+		'messages' => array(
+ 			'language'=>'en_US',
+            'class' => 'CGettextMessageSource',
+            'basePath'=>'/var/www/squid-pacific/egemen/protected/locale/messages',
+            'useMoFile' => TRUE,
+    	),
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
@@ -62,10 +72,22 @@ return array(
 			'password' => '12548442',
 			'charset' => 'utf8',
 		),
+
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
 		),
+
+		'Smtpmail'=>array(
+            'class'=>'application.extension.smtpmail.PHPMailer',
+            'Host'=>"tls://smtp.gmail.com",
+            'Username'=>'edubox@linden-tech.com',
+            'Password'=>'12548442',
+            'Mailer'=>'smtp',
+            'Port'=>465,
+            'SMTPAuth'=>true, 
+            //'ssl'=>'tls'
+        ),
 		'log'=>array(
 			'class'=>'CLogRouter',
 			'routes'=>array(
@@ -86,6 +108,10 @@ return array(
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>array(
+		'availableLanguages' => array(
+     		'tr_TR' => 'Türkçe',
+     		'en_US' => 'English'
+     		),
 		// this is used in contact page
 		'adminEmail'=>'pacific@linden-tech.com',
 	),
