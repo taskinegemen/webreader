@@ -823,6 +823,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3392a1', end
 	left: 0;
 	position: absolute;
 	padding-top:70px;
+	background-color:#868686;
 }
 
 .reader_page {

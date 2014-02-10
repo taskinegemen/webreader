@@ -10,25 +10,24 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 // );
 ?>
 <!-- PAGE -->
-	<section>
-			<!-- HEADER -->
-			<header>
-				<!-- NAV-BAR -->
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4 col-md-offset-4">
-							<div id="logo">
-								<a href="index.html"><img src="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/img/logo/logo.png" height="40" alt="logo name" /></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--/NAV-BAR -->
-			</header>
-			<section id="login_bg" class="visible">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4 col-md-offset-4">
+	
+    
+<div class="login_page_container">    
+
+
+
+
+        <div class="login_page_slogan_part_container">
+        <div class="login_page_reader_logo"></div>
+        <div class="login_page_slogan"></div>
+        </div>
+
+
+
+
+
+
+    <div class="login_box_container">
 							<div class="login-box">
 								<?php $form=$this->beginWidget('CActiveForm', array(
 									'id'=>'login-form',
@@ -37,8 +36,8 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 										'validateOnSubmit'=>true,
 									),
 								)); ?>
-								<h2 class="bigintro">Sign In</h2>
-								<div class="divide-40"></div>
+								<h3 class="bigintro">Okutus Reader'a Giriş Yap</h3>
+								
 								<form role="form">								
 								  <div class="form-group">
 									<label for="exampleInputEmail1"><?php echo $form->labelEx($model,'username'); ?></label>
@@ -57,18 +56,21 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 								  <div class="form-group">
 								  	
 								  	
-								  	<label for="ytLoginForm_rememberMe"><input id="ytLoginForm_rememberMe" type="checkbox"  class="uniform"  value="0" name="LoginForm[rememberMe]"><?php _e("Beni Hatırla"); ?></label>
+								  	<div class="form-group">
+									  	
+									  	
+									  	<label for="ytLoginForm_rememberMe"><div class="checker hover" id="uniform-ytLoginForm_rememberMe"><span class=""><input id="ytLoginForm_rememberMe" type="checkbox" class="uniform" value="0" name="LoginForm[rememberMe]"></span></div></label><?php _e("Beni Hatırla"); ?></div>
 								  </div>
 
 								  <div class="form-group">
-									<button type="submit" class="btn btn-danger"><?php _e("Giriş"); ?></button>
+									<button type="submit" class="btn btn-primary login_submit"><?php _e("Giriş Yap"); ?></button>
 									
 								  </div>
 								</form>
 								<!-- SOCIAL LOGIN -->
 									<div class="divide-20"></div>
 									<div class="center">
-										<strong>Or login using your social account</strong>
+										<strong>Veya bir sosyal ağ hesabınız ile giriş yapın</strong>
 									</div>
 									<div class="divide-20"></div>
 									<div class="social-login center">
@@ -90,10 +92,22 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 									</div> -->
 								<?php $this->endWidget(); ?>
 							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+    
+    
+    
+  
+        
+    
+    
 	<!--/PAGE -->
+    
 	
-	<!-- /JAVASCRIPTS -->
+    
+    </section>
+    </div>
+    
+    
+
+
+
+</div>
