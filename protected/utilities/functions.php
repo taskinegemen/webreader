@@ -6,6 +6,17 @@
 */
 class functions
 {
+    public function add3dots($string,$repl,$limit)
+    {
+      if(strlen($string)>$limit)
+      {
+        returnsubstr($string,0,$limit).$repl;
+      }
+      else
+      {
+        return$string;
+      }
+    }
 
     public function currencyArray(){
         return array(

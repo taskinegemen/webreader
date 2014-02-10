@@ -67,7 +67,7 @@ body { background-image: url(../img/bg.jpg); }@media(min-width:980px) {body { pa
 				?>
 			        <li class="span2 animated content-item white" content-id="<?php echo $result->contentId; ?>"> 
 			        	<a href="#" class="thumbnail"> <img class='thumbnail-image'  alt=""> 
-			        	<h3 class="content-item-title"><?php echo $result->contentTitle; ?></h3>
+			        	<h3 style='color:#000' class="content-item-title black"><?php echo $result->contentTitle; ?></h3>
 			        	<h6 class="content-item-title">
 
 			        		<?php 
