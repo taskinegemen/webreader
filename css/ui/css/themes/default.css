@@ -285,13 +285,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3392a1', end
 /* End Navbar */
 /* Start Sidebar */
 #sidebar {
-  background: none repeat scroll 0 0 #f4f4f4;
+  background: none repeat scroll 0 0 #fff;
   padding: 0 !important;
   width: 250px;
   height:100%;
   position: absolute;
   border-bottom: 1px solid #e7e7e7;
   margin-top:54px;
+  -webkit-box-shadow: 2px 0 4px 0 #B8B8B8;
+box-shadow: 2px 0 4px 0 #B8B8B8;
 }
 .sidebar-fixed {
   position: fixed !important;

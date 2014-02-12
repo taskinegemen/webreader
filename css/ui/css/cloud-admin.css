@@ -2209,7 +2209,7 @@ fieldset[disabled] .btn-link:focus {
   text-decoration: none;
 }
 .btn-lg {
-  padding: 10px 16px;
+  padding: 10px 16px !important;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
@@ -9058,4 +9058,139 @@ ul.stats li small {
 .login_submit {
 	font-size:18px;
 	font-weight:bold;
+}
+
+
+/** END OF READER LOGIN PAGE **/
+
+
+
+
+/** READER MARKET PAGE **/
+
+
+
+.market_page_container {
+  width:100%;
+  height:100%;
+  min-width:1100px;
+  background-image:url(../../../css/ui/img/market_page_container_background.png);
+  background-repeat:repeat;
+}
+
+
+
+.reader_market_page_row {
+	border-bottom: 1px solid #B6B6B6;
+	border-top: 2px solid #FFFFFF;
+	margin-left:25px;
+	margin-right:25px;
+	padding:10px;
+}
+
+
+.container > .row > .reader_market_page_row:first-child {
+	border-top:none;	
+}
+
+.container > .row > .reader_market_page_row:last-child {
+	border-bottom:none;	
+}
+
+
+h2.reader_book_category {
+	margin-bottom:20px;
+	text-shadow: 0px 1px 1px #FFFFFF;
+	color: #918F8F;
+}
+
+.reader_book_card {
+	width:198px;
+	height:350px;
+	background-color:#fff;
+	-webkit-box-shadow: 0 1px 5px 0 #AAAAAA;
+	box-shadow: 0 1px 5px 0 #AAAAAA;
+	border-radius:5px;
+	float:left;
+	margin-right:20px;
+	margin-bottom:20px;
+}
+
+.reader_book_card_book_cover {
+	width:198px;
+	height:264px;
+	background-color:#3392a1;
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
+}
+
+.reader_book_card_info_container {
+	width:198px;
+	height:86px;
+	position:absolute;
+}
+
+.reader_market_book_name {
+	width:175px;
+	height:30px;
+	float:left;
+	padding-top:5px;
+	padding-left:5px;
+	font-size:16px;
+	color:#58585b;
+	font-style:normal;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+.reader_book_card_options_button {
+	width:23px;
+	height:25px;
+	float:right;
+    background-image:url(../../../css/ui/img/reader_book_card_options_button.png);
+	background-size:5px;
+	background-repeat:no-repeat;
+	background-position:center;
+	padding-top:20px;
+	padding-bottom:12px;
+	background-color:transparent;
+	border:none;
+	cursor:pointer;
+}
+
+
+.reader_book_card_options_button:hover {
+	background-color:#f5f5f5;
+}
+
+.reader_book_card_writer_name {
+	width:175px;
+	height:30px;
+	float:left;
+	padding-bottom:-5px;
+	padding-left:5px;
+	font-size:13px;
+	color:#939597;
+	font-style:normal;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	bottom: 0;
+	position: inherit;
+	line-height: 2.3em;
+}
+
+.reader_book_favorite {
+	border-left: 1px solid #e6e7e8;
+	float: right;
+	font-size: 18px;
+	color: #fcc536;
+	line-height: 2.3em;
+	bottom: 0;
+	right: 0;
+	position: inherit;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-bottom: 5px;	
 }
