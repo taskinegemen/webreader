@@ -9081,8 +9081,8 @@ ul.stats li small {
 
 
 .reader_market_page_row {
-	border-bottom: 1px solid #B6B6B6;
-	border-top: 2px solid #FFFFFF;
+	border-bottom: 1px solid #D6D6D6;
+	border-top: 1px solid #FFFFFF;
 	margin-left:25px;
 	margin-right:25px;
 	padding:10px;
@@ -9194,3 +9194,214 @@ h2.reader_book_category {
 	padding-left: 5px;
 	margin-bottom: 5px;	
 }
+
+/** END OF READER MARKET PAGE **/
+
+/** READER BOOK INFO PAGE **/
+
+.book_info_details_container {
+	border-bottom:1px solid #D6D6D6;	
+}
+
+.book_info_page_container {
+  width:100%;
+  height:100%;
+  min-width:1100px;
+  background-image:url(../../../css/ui/img/market_page_container_background.png);
+  background-repeat:repeat;
+  position:absolute;
+}
+
+.reader_book_info_container {
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;
+}
+
+.book_info_book_cover_container {
+	width:206px;
+	height:320px;
+	float:left;	
+}
+
+.book_info_book_cover {
+	width:206px;
+	height:272px;
+	margin-bottom:5px;
+	background-image:url(../../../css/ui/img/book_info_sample_book_cover.png);
+	background-size: cover;
+	background-position: center;
+	border: 4px solid #fff;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 7px 0 #A6A6A6;
+	box-shadow: 0 0 7px 0 #A6A6A6;
+}
+
+.stars_rating_of_the_book {
+	float:left;
+}
+
+.number_rating_of_the_book {
+	float: right;
+	font-size: 16px;
+	color: #C2C2C2;
+	text-shadow: 0px 1px 1px #FFFFFF;
+}
+
+
+.book_info_details_right_part {
+	width:774px;
+	float:left;
+	margin-left:20px;
+}
+
+.book_info_details_row {
+	border-top:1px solid #fff;
+	border-bottom:1px solid #D6D6D6;
+	padding-bottom:20px;	
+}
+
+
+.book_info_details_right_part > .book_info_details_row:first-child {
+	border-top:none;	
+}
+
+.book_info_details_right_part > .book_info_details_row:nth-child(2) {
+	border-bottom:none;	
+}
+
+
+h1.book_info_the_name_of_the_book {
+	color:#58585b;
+	margin:0;
+	text-shadow: 0px 1px 1px #FFFFFF;
+	float:left;
+}
+
+.book_info_date {
+	float:right;
+	color:#939597;
+	border-right:1px solid #BABCBE;
+	padding-right:10px;
+	font-size:15px;
+	text-shadow: 0px 1px 1px #FFFFFF;
+}
+
+.book_info_page {
+	float:right;
+	color:#939597;
+	padding-left:10px;
+	font-size:15px;
+	text-shadow: 0px 1px 1px #FFFFFF;
+}
+
+
+
+h3.book_info_the_name_of_the_writer {
+	color:#939597;
+	margin:0;
+	text-shadow: 0px 1px 1px #FFFFFF;
+	float:left;
+	margin-top:10px;
+}
+
+
+button.book_info_add_to_library_button {
+	margin-left:10px;	
+}
+
+
+.book_info_description {
+	width:78%;
+	float:left;
+	margin-top:20px;
+	color: #808284;
+	font-size:16px;
+	border-right:1px solid #D6D6D6;
+	text-shadow: 0px 1px 1px #FFFFFF;
+}
+
+
+span.book_info_titles {
+	color:#3392a1;
+	font-size:18px;	
+	text-shadow: 0px 1px 1px #FFFFFF;
+}
+
+.book_info_rate_the_book {
+	width: 22%;
+	height: 145px;
+	float: right;
+	margin-top: 20px;
+	border-left: 1px solid #FFF;
+}
+
+
+.book_rater_stars {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.book_info_comments_container {
+	width:1000px;
+	border-top:1px solid #fff;	
+	padding-top:20px;
+}
+
+
+.user_comment_container {
+	width:1000px;
+	border-bottom:1px solid #E4E4E4;
+	margin-top:15px;
+	padding-bottom:15px;
+	
+}
+
+
+.user_comment_avatar {
+	float:left;
+}
+
+.user_comment_avatar img{
+	width:75px;
+	height:75px;
+	border:5px solid #fff;
+	border-radius:100%;
+	-webkit-box-shadow:0 2px 6px 0 #C2C2C2;
+	box-shadow:0 2px 6px 0 #C2C2C2;
+}
+
+.user_comment_details {
+	float:left;
+	margin-left:10px;
+}
+
+.user_comment_username {
+	color:#808284;
+	text-shadow: 0px 1px 1px #FFFFFF;
+}
+
+.user_comment_user_rating {
+	float:left;
+	padding-right:10px;
+}
+
+
+.user_comment_date {
+	float:left;
+	padding-left:10px;
+	border-left:1px solid #808284;
+	text-shadow: 0px 1px 1px #FFFFFF;
+}
+
+
+.user_comment_content {
+	width:915px;
+	margin-top:15px;
+	color:#808284;
+	font-size:15px;
+	text-shadow: 0px 1px 1px #FFFFFF;
+}
+
+/** END OF READER BOOK INFO PAGE **/
