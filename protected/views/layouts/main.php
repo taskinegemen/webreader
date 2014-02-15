@@ -128,12 +128,12 @@
 					</div>
 					<!-- /TEAM STATUS FOR MOBILE -->
 					<!-- SIDEBAR COLLAPSE -->
-					<div id="sidebar-collapse" class="sidebar-collapse btn">
-						<i class="fa fa-bars" 
-							data-icon1="fa fa-bars" 
-							data-icon2="fa fa-bars" ></i>
+					<div id="sidebar-collapse" class="sidebar-collapse">
+						<i class="fa fa-bars" data-icon1="fa fa-bars" data-icon2="fa fa-bars" ></i>
 					</div>
 					<!-- /SIDEBAR COLLAPSE -->
+					<div class="navbar_search"><i class="fa fa-search"></i></div>
+                    
 				</div>
 
 			<!-- Top Right Menu -->
