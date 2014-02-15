@@ -17,40 +17,26 @@ $this->pageTitle=Yii::app()->name;
 	<div class="sidebar-menu nav-collapse">
 		<!--=== Navigation ===-->
 		<ul>
-			<li class="current">
+			<li>
 				<a href="/site/dashboard">
-					<i class="fa fa-tachometer fa-fw"></i>
-					<span class="menu-text">Kontrol	Paneli</span>
-					</a>
-			</li>
-			
-			<!--<li>
-				<a href="users.html">
-					<i class="icon-tasks"></i>
-					Hosting
+					<i class="fa fa-book fa-fw"></i>
+					<span class="menu-text">Kütüphanem</span>
 				</a>
 			</li>
-			-->
 			<li>
 				<a href="#">
-					<i class="fa fa-medkit fa-fw"></i> <span class="menu-text">
-					Destek
-				</span>
+					<i class="fa fa-briefcase fa-fw"></i> 
+                    <span class="menu-text">Mağaza</span>
 				</a>
 			</li>
-			
 			<li>
 				<a href="#">
-					<i class="fa fa-money fa-fw"></i> <span class="menu-text">
-					Hesabım
-				</span>
+					<i class="fa fa-user fa-fw"></i> 
+                    <span class="menu-text">Profilim</span>
 				</a>
 			</li>
-			
-			
 		</ul>
 		<!-- /Navigation -->
-		
 	</div>
 </div>
 		<!-- /Sidebar -->
