@@ -93,7 +93,6 @@ $this->pageTitle=Yii::app()->name;
 <div class="clearfix"></div>
 <h3 class="book_info_the_name_of_the_writer">Jess Walter</h2>
 <button class="btn btn-primary pull-right book_info_add_to_library_button">Kütüphaneme Ekle</button>
-<button class="btn btn-warning pull-right book_info_add_to_fav_button">Favorilerime Ekle</button>
 </div>
 <!-- /book_info_details_row -->
 
@@ -133,6 +132,14 @@ $this->pageTitle=Yii::app()->name;
 <!-- /book_info_details_right_part -->
 </div>
 <!-- /book_info_details_container -->
+
+
+<div class="book_info_comment_box clearfix">
+<span class="book_info_titles clearfix">Yorum Yap</span>
+<textarea rows="3" cols="5" name="textarea" class="form-control"></textarea>
+<button class="send_comment btn btn-primary">Gönder</button>
+</div>
+
 
 
 <div class="book_info_comments_container clearfix">
