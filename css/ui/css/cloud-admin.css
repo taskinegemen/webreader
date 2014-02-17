@@ -2933,7 +2933,7 @@ input[type="button"].btn-block {
   clear: both;
   font-weight: normal;
   line-height: 1.428571429;
-  color: #333333;
+  color: #555;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
@@ -3388,7 +3388,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
 }
 .nav > li.disabled > a {
   color: #999999;
@@ -3403,7 +3402,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #eeeeee;
   border-color: #5e87b0;
 }
 .nav .nav-divider {
@@ -9000,10 +8998,25 @@ ul.stats li small {
 }
 
 
+/** READER NAVBAR **/
 
+.navbar_logo {
+	width: 180px;
+	height: 100%;
+	background: url(../../../css/ui/img/okutus_navbar_logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.7;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 
+}
 
-
+/** END OF READER NAVBAR **/
 
 /** READER LOGIN PAGE **/
 
