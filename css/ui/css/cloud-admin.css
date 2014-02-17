@@ -1973,7 +1973,7 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #3392a1;
+  background-color: #2880b9;
   border-color: #2a767a;
 }
 .btn-primary:hover,
@@ -9143,7 +9143,7 @@ div.reader_book_category {
 .reader_book_card_book_cover {
 	width:198px;
 	height:264px;
-	background-color:#3392a1;
+	background-color:#2880b9;
 	border-top-right-radius:5px;
 	border-top-left-radius:5px;
 }
@@ -9177,11 +9177,11 @@ div.reader_book_category {
 
 .reader_market_page_row .nav-tabs > li > a {
 	text-shadow: 0px 1px 1px #FFFFFF;
-	color:#3392a1;
+	color:#2880b9;
 }
 
 .reader_market_page_row .nav-tabs > li.active > a {
-	background-color: #3392a1;
+	background-color: #2880b9;
 	border: none;
 	border-radius: 4px;
 	color: #fff;
@@ -9194,7 +9194,7 @@ div.reader_book_category {
 }
 
 .reader_market_page_row .nav-tabs > li.active > a:hover {
-	background-color: #3392a1;
+	background-color: #2880b9;
 	color: #fff;
 }
 
@@ -9239,7 +9239,7 @@ div.reader_book_category {
 	border-left: 1px solid #e6e7e8;
 	float: right;
 	font-size: 15px;
-	color: #3392a1;
+	color: #2880b9;
 	bottom: 0;
 	right: 0;
 	position: inherit;
@@ -9399,7 +9399,7 @@ button.book_info_add_to_library_button {
 
 
 span.book_info_titles {
-	color:#3392a1;
+	color:#2880b9;
 	font-size:18px;	
 	text-shadow: 0px 1px 1px #FFFFFF;
 }
@@ -9548,9 +9548,10 @@ span.book_info_titles {
 }
 
 .navbar_search:hover {
-	background-color:#28747c;	
+	background-color:#005F9B;	
 }
 
 
 
-/** READER BOOK MY LIBRARY PAGE **/
+/** END OF READER BOOK MY LIBRARY PAGE **/
+
