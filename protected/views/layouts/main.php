@@ -111,7 +111,7 @@
 <body class="editor_blue">
 <?php if(Yii::app()->controller->action->id!="login"): ?>
 <!-- Header -->
-	<header class="navbar clearfix" id="header">
+	<header class="navbar clearfix navbar-fixed-top" id="header">
 		<!-- Top Navigation Bar -->
 		<div class="container">
 		<div class="navbar-brand">
@@ -142,7 +142,7 @@
 				<li class="dropdown user" id="header-user">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 						<?php
-							$avatarSrc=Yii::app()->request->baseUrl."/css/ui/img/avatars/at.png";
+							$avatarSrc=Yii::app()->request->baseUrl."/avatars/avatar.png";
 						?>
 						<img alt="" src="<?php echo $avatarSrc; ?>" />
 						<span class="username"><?php echo Yii::app()->user->name; ?></span>
@@ -156,6 +156,10 @@
 				<!-- /user login dropdown -->
 			</ul>
 			<!-- /Top Right Menu -->
+            
+            
+            <div class="navbar_logo"></div>
+            
 		</div>
 		<!-- /top navigation bar -->
 	</header> <!-- /.header -->

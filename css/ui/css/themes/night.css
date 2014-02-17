@@ -68,13 +68,7 @@
 .navbar .nav.navbar-nav.pull-right {
   min-width: 300px;
 }
-.navbar .nav > li > a:hover,
-.navbar .nav > li > a:focus,
-.navbar .nav .open > a,
-.navbar .nav .open > a:hover,
-.navbar .nav .open > a :focus {
-  background-color: #486d93 !important;
-}
+
 /* Navbar Dropdown */
 .dropdown-menu {
   background: none repeat scroll 0 0 #FFFFFF;

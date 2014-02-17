@@ -13,7 +13,7 @@ $this->pageTitle=Yii::app()->name;
 
 <div class="market_page_container">
 
-<div id="sidebar" class="sidebar sidebar-fixed" style="margin-top:0px;">
+<div id="sidebar" class="sidebar sidebar-fixed">
 	<div class="sidebar-menu nav-collapse">
 		<!--=== Navigation ===-->
 		<ul>

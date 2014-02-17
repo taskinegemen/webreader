@@ -82,17 +82,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3392a1', end
 .navbar .nav.navbar-nav.pull-right {
   min-width: 300px;
 }
-.navbar .nav > li > a:hover,
-.navbar .nav > li > a:focus,
-.navbar .nav .open > a,
-.navbar .nav .open > a:hover,
-.navbar .nav .open > a :focus {
-  background-color: #80a0c1 !important;
-}
+
 /* Navbar Dropdown */
 .dropdown-menu {
   background: none repeat scroll 0 0 #FFFFFF;
-  border: 1px solid #C7CBD5;
+  border:none;
   display: none;
   float: left;
   left: 0;
@@ -147,17 +141,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3392a1', end
   background-color: #f4f4f4;
 }
 .dropdown-menu li a {
-  background-color: #f4f4f4;
+  background-color: #fff;
   border-bottom: 1px solid #FFFFFF;
   border-top: 1px solid #E7E7E7;
   display: block;
   line-height: 40px;
   padding: 0 10px;
+  
 }
 .dropdown-menu li a:hover {
-  color: #333333;
+  color: #555555;
   background-color: #ffffff;
 }
+
+
+.dropdown-menu li{
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+
+.dropdown-menu li:hover {
+	border-right:5px solid #3392a1;
+}
+
 .dropdown-menu.context {
   /* For smaller menus */
 
@@ -291,9 +300,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3392a1', end
   height:100%;
   position: absolute;
   border-bottom: 1px solid #e7e7e7;
-  margin-top:54px;
+  margin-top:50px;
   -webkit-box-shadow: 2px 0 4px 0 #E0E0E0;
-box-shadow: 2px 0 4px 0 #E0E0E0;
+  box-shadow: 2px 0 4px 0 #E0E0E0;
 }
 .sidebar-fixed {
   position: fixed !important;
@@ -973,9 +982,7 @@ li.user {
 	border-bottom:0;
 }
 
-.reader_toc_dropdown li a:hover {
-	background-color:#f4f4f4;
-}
+
 
 .reader_toc_dropdown li:first-child a{
 	border-top:0;
@@ -988,16 +995,11 @@ span.reader_toc_dropdown_page_numbers {
 	left: 0;
 	width: 50px;
 	text-align: center;
-	font-weight: bold;
-	font-size: 15px;
 	color:#fff;
 	margin-left: -10px;
 }
 
 
-.reader_toc_dropdown li span.reader_toc_dropdown_page_numbers:hover {
-	background-color:#28747c;
-}
 
 
 
