@@ -12,7 +12,7 @@ Everything Now!
 ##Initial Component of the Application:
 
 ###Reader
-Reader is the where current files are read by the users. This is a one page application supported mainly by the Javascript and Server Side Codes that serves encrptyed files to user.
+Reader is the where current files are read by the users. This is a one page application supported mainly by the Javascript and Server Side Codes that serves encrptyed files to user. This section is where the user experience is most important.
 
 ###Store
 Store is the market place for showing the available content to users to choose for adding their library/magazines and that can see the details of those available contents.
