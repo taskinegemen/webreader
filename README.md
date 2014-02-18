@@ -9,7 +9,7 @@ This is the OKUTUS Project Web Reader Application:
 ##What's new?
 Everything Now!
 
-##Initial Component of the Application:
+##Initial Components of the Application:
 
 ###Reader
 Reader is the where current files are read by the users. This is a one page application supported mainly by the Javascript and Server Side Codes that serves encrptyed files to user. This section is where the user experience is most important.
