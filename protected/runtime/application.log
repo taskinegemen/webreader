@@ -6799,3 +6799,79 @@ Stack trace:
 REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
 HTTP_REFERER=http://reader.lindneo.com/erkan/content/list
 ---
+2014/02/18 08:27:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "nobook".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('nobook')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('nobook')
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/nobook')
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/reader/erkan/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/erkan/content/nobook
+---
+2014/02/18 08:27:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "list/nobook".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('list/nobook')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/list/nobook
+---
+2014/02/18 08:27:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "nobook".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('nobook')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('nobook')
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/nobook')
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/reader/erkan/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/erkan/content/nobook
+---
+2014/02/18 08:47:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "nobook".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('nobook')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('nobook')
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/nobook')
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/reader/erkan/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/erkan/content/nobook
+---
+2014/02/18 08:47:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "nobook".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('nobook')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('nobook')
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/nobook')
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/reader/erkan/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/erkan/content/nobook
+---
+2014/02/18 08:51:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "nobook".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('nobook')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('nobook')
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/nobook')
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/reader/erkan/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/erkan/content/nobook
+---
+2014/02/18 09:19:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/content/list
+---
+2014/02/18 12:59:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/
+---
