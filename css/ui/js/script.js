@@ -599,21 +599,27 @@ var App = function () {
 	/*-----------------------------------------------------------------------------------*/
 	var handlePopovers = function () {
 		//Default (Right)
-		$('.pop').popover();
+		$('.pop').popover({
+            html:true
+        });
 		//Bottom 
 		$('.pop-bottom').popover({
+            html:true,
 			placement : 'bottom'
 		});
 		//Left 
 		$('.pop-left').popover({
+            html:true,
 			placement : 'left'
 		});
 		//Top 
 		$('.pop-top').popover({
+            html:true,
 			placement : 'top'
 		});
 		//Trigger hover 
 		$('.pop-hover').popover({
+            html:true,
 			trigger: 'hover'
 		});
 	}
