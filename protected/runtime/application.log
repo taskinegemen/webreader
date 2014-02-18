@@ -6875,3 +6875,19 @@ Stack trace:
 REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
 HTTP_REFERER=http://reader.lindneo.com/erkan/
 ---
+2014/02/18 13:07:31 [error] [php] file_get_contents(contents/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/package.opf): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:68)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/Getbookmeta/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+in /var/www/reader/erkan/protected/utilities/Encryption.php (68)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (43)
+in /var/www/reader/erkan/index.php (15)
