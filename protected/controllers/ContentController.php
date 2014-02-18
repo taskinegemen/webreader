@@ -22,6 +22,11 @@ class ContentController extends Controller
 		$this->render('details');
 	}
 
+	public function actionNobook()
+	{
+		$this->render('nobook');
+	}
+
 	public function actionExport()
 	{
 		$this->render('export');
