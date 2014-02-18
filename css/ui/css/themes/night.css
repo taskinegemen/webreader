@@ -68,13 +68,7 @@
 .navbar .nav.navbar-nav.pull-right {
   min-width: 300px;
 }
-.navbar .nav > li > a:hover,
-.navbar .nav > li > a:focus,
-.navbar .nav .open > a,
-.navbar .nav .open > a:hover,
-.navbar .nav .open > a :focus {
-  background-color: #486d93 !important;
-}
+
 /* Navbar Dropdown */
 .dropdown-menu {
   background: none repeat scroll 0 0 #FFFFFF;
@@ -287,9 +281,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 15px;
-  border-bottom: 1px solid #383e4c !important;
-  border-top: 1px solid #383e4c !important;
 }
 .sidebar-menu > ul > li {
   display: block;
@@ -305,7 +296,6 @@
   padding: 15px 15px 15px 20px;
   text-decoration: none;
   font-size: 13px;
-  font-weight: 600;
   text-transform: uppercase;
 }
 .sidebar-menu > ul > li a i {
@@ -435,14 +425,9 @@
   font-size: 13px;
 }
 .sidebar-menu > ul > li > a {
-  border-bottom: 1px solid #383e4c !important;
-  border-top: 1px solid #22262e !important;
   color: #cdd0d8 !important;
-  text-shadow: 0 1px 0 #000000;
 }
-.sidebar-menu > ul > li:last-child > a {
-  border-bottom: 1px solid transparent !important;
-}
+
 .sidebar-menu > ul > li:first-child > a {
   /* border-top-color: transparent !important; */
 
@@ -561,14 +546,13 @@
 /* Sidebar collapse */
 .sidebar-collapse,
 .switcher {
-  padding: 10px 10px 0 0;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
-  color: #FFFFFF;
-  padding: 6px 8px;
+	padding: 8px 5px 0 0;
+	position: absolute;
+	left: 10px;
+	color: #FFFFFF;
+	margin-left: -30px;
+	height: 100%;
+	top: 0;
 }
 .sidebar-collapse:hover,
 .switcher:hover {

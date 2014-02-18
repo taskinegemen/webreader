@@ -13,44 +13,30 @@ $this->pageTitle=Yii::app()->name;
     
 <div class="book_info_page_container">
 
-<div id="sidebar" class="sidebar sidebar-fixed" style="margin-top:0px;">
+<div id="sidebar" class="sidebar sidebar-fixed">
 	<div class="sidebar-menu nav-collapse">
 		<!--=== Navigation ===-->
 		<ul>
-			<li class="current">
+			<li>
 				<a href="/site/dashboard">
-					<i class="fa fa-tachometer fa-fw"></i>
-					<span class="menu-text">Kontrol	Paneli</span>
-					</a>
-			</li>
-			
-			<!--<li>
-				<a href="users.html">
-					<i class="icon-tasks"></i>
-					Hosting
+					<i class="fa fa-book fa-fw"></i>
+					<span class="menu-text">Kütüphanem</span>
 				</a>
 			</li>
-			-->
 			<li>
 				<a href="#">
-					<i class="fa fa-medkit fa-fw"></i> <span class="menu-text">
-					Destek
-				</span>
+					<i class="fa fa-briefcase fa-fw"></i> 
+                    <span class="menu-text">Mağaza</span>
 				</a>
 			</li>
-			
 			<li>
 				<a href="#">
-					<i class="fa fa-money fa-fw"></i> <span class="menu-text">
-					Hesabım
-				</span>
+					<i class="fa fa-user fa-fw"></i> 
+                    <span class="menu-text">Profilim</span>
 				</a>
 			</li>
-			
-			
 		</ul>
 		<!-- /Navigation -->
-		
 	</div>
 </div>
 		<!-- /Sidebar -->
@@ -93,7 +79,6 @@ $this->pageTitle=Yii::app()->name;
 <div class="clearfix"></div>
 <h3 class="book_info_the_name_of_the_writer">Jess Walter</h2>
 <button class="btn btn-primary pull-right book_info_add_to_library_button">Kütüphaneme Ekle</button>
-<button class="btn btn-warning pull-right book_info_add_to_fav_button">Favorilerime Ekle</button>
 </div>
 <!-- /book_info_details_row -->
 
@@ -133,6 +118,14 @@ $this->pageTitle=Yii::app()->name;
 <!-- /book_info_details_right_part -->
 </div>
 <!-- /book_info_details_container -->
+
+
+<div class="book_info_comment_box clearfix">
+<span class="book_info_titles clearfix">Yorum Yap</span>
+<textarea rows="3" cols="5" name="textarea" class="form-control"></textarea>
+<button class="send_comment btn btn-primary">Gönder</button>
+</div>
+
 
 
 <div class="book_info_comments_container clearfix">

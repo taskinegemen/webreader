@@ -260,6 +260,7 @@ body {
 }
 input,
 button,
+
 select,
 textarea {
   font-family: inherit;
@@ -1972,7 +1973,7 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #3392a1;
+  background-color: #2880b9;
   border-color: #2a767a;
 }
 .btn-primary:hover,
@@ -2932,7 +2933,7 @@ input[type="button"].btn-block {
   clear: both;
   font-weight: normal;
   line-height: 1.428571429;
-  color: #333333;
+  color: #555;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
@@ -3387,7 +3388,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
 }
 .nav > li.disabled > a {
   color: #999999;
@@ -3402,7 +3402,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #eeeeee;
   border-color: #5e87b0;
 }
 .nav .nav-divider {
@@ -3633,6 +3632,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   display: table;
 }
 .navbar-collapse:after {
+
   clear: both;
 }
 .navbar-collapse.in {
@@ -6422,7 +6422,7 @@ fieldset[disabled] .btn-yellow.active {
 #content {
   margin-top: 0;
   position:relative;
-
+  min-height:300px !important;
 
   /* Page Header */
 
@@ -8998,10 +8998,25 @@ ul.stats li small {
 }
 
 
+/** READER NAVBAR **/
 
+.navbar_logo {
+	width: 180px;
+	height: 100%;
+	background: url(../../../css/ui/img/okutus_navbar_logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.7;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 
+}
 
-
+/** END OF READER NAVBAR **/
 
 /** READER LOGIN PAGE **/
 
@@ -9076,6 +9091,7 @@ ul.stats li small {
   min-width:1100px;
   background-image:url(../../../css/ui/img/market_page_container_background.png);
   background-repeat:repeat;
+  position:absolute;
 }
 
 
@@ -9098,15 +9114,23 @@ ul.stats li small {
 }
 
 
-h2.reader_book_category {
-	margin-bottom:20px;
+li.reader_book_category {
 	text-shadow: 0px 1px 1px #FFFFFF;
 	color: #918F8F;
+	font-size: 30px;
+	margin-right:20px;
+}
+
+div.reader_book_category {
+	text-shadow: 0px 1px 1px #FFFFFF;
+	color: #918F8F;
+	font-size: 30px;
+	margin-bottom:10px;
 }
 
 .reader_book_card {
 	width:198px;
-	height:350px;
+	height:330px;
 	background-color:#fff;
 	-webkit-box-shadow: 0 1px 5px 0 #AAAAAA;
 	box-shadow: 0 1px 5px 0 #AAAAAA;
@@ -9119,14 +9143,14 @@ h2.reader_book_category {
 .reader_book_card_book_cover {
 	width:198px;
 	height:264px;
-	background-color:#3392a1;
+	background-color:#2880b9;
 	border-top-right-radius:5px;
 	border-top-left-radius:5px;
 }
 
 .reader_book_card_info_container {
 	width:198px;
-	height:86px;
+	height:68px;
 	position:absolute;
 }
 
@@ -9142,6 +9166,36 @@ h2.reader_book_category {
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow:ellipsis;
+}
+
+.reader_market_page_row .nav-tabs {
+	border-bottom:none;	
+}
+
+
+
+
+.reader_market_page_row .nav-tabs > li > a {
+	text-shadow: 0px 1px 1px #FFFFFF;
+	color:#2880b9;
+}
+
+.reader_market_page_row .nav-tabs > li.active > a {
+	background-color: #2880b9;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	text-shadow:none;
+}
+
+.reader_market_page_row .nav-tabs > li > a:hover {
+	background-color:rgba(255, 255, 255, 0.5);
+	border-radius:4px;
+}
+
+.reader_market_page_row .nav-tabs > li.active > a:hover {
+	background-color: #2880b9;
+	color: #fff;
 }
 
 .reader_book_card_options_button {
@@ -9165,7 +9219,7 @@ h2.reader_book_category {
 }
 
 .reader_book_card_writer_name {
-	width:175px;
+	width:130px;
 	height:30px;
 	float:left;
 	padding-bottom:-5px;
@@ -9181,12 +9235,11 @@ h2.reader_book_category {
 	line-height: 2.3em;
 }
 
-.reader_book_favorite {
+.reader_book_price {
 	border-left: 1px solid #e6e7e8;
 	float: right;
-	font-size: 18px;
-	color: #fcc536;
-	line-height: 2.3em;
+	font-size: 15px;
+	color: #2880b9;
 	bottom: 0;
 	right: 0;
 	position: inherit;
@@ -9194,6 +9247,25 @@ h2.reader_book_category {
 	padding-left: 5px;
 	margin-bottom: 5px;	
 }
+
+.reader_market_page_row .panel {
+	margin:0;
+	background-color:transparent;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	border: 1px solid transparent;
+	border-radius: 4px;	
+}
+
+
+.reader_market_page_row .panel-body {
+	padding:0;
+}
+
+
+
+
+
 
 /** END OF READER MARKET PAGE **/
 
@@ -9314,17 +9386,20 @@ button.book_info_add_to_library_button {
 
 .book_info_description {
 	width:78%;
+	height:145px;
 	float:left;
 	margin-top:20px;
 	color: #808284;
 	font-size:16px;
 	border-right:1px solid #D6D6D6;
 	text-shadow: 0px 1px 1px #FFFFFF;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 
 span.book_info_titles {
-	color:#3392a1;
+	color:#2880b9;
 	font-size:18px;	
 	text-shadow: 0px 1px 1px #FFFFFF;
 }
@@ -9345,7 +9420,6 @@ span.book_info_titles {
 
 .book_info_comments_container {
 	width:1000px;
-	border-top:1px solid #fff;	
 	padding-top:20px;
 }
 
@@ -9356,6 +9430,11 @@ span.book_info_titles {
 	margin-top:15px;
 	padding-bottom:15px;
 	
+}
+
+
+.user_comment_container:last-child {
+	border-bottom:none;
 }
 
 
@@ -9391,8 +9470,9 @@ span.book_info_titles {
 .user_comment_date {
 	float:left;
 	padding-left:10px;
-	border-left:1px solid #808284;
+	border-left:1px solid #A7A7A7;
 	text-shadow: 0px 1px 1px #FFFFFF;
+	color: #808284;
 }
 
 
@@ -9404,4 +9484,74 @@ span.book_info_titles {
 	text-shadow: 0px 1px 1px #FFFFFF;
 }
 
+
+.book_info_comment_box {
+	padding-top: 20px;
+	border-top: 1px solid #fff;	
+}
+
+
+.book_info_comment_box textarea{
+	max-height: 150px;
+	max-width: 1000px;
+	margin:10px 0;
+	-webkit-box-shadow: 0 1px 0 0 #FFFFFF;
+	box-shadow: 0 1px 0 0 #FFFFFF;
+
+}
+
 /** END OF READER BOOK INFO PAGE **/
+
+
+/** READER BOOK MY LIBRARY PAGE **/
+
+.reader_book_fav {
+	border-left: 1px solid #e6e7e8;
+	float: right;
+	font-size: 17px;
+	color: #FFAD00;
+	bottom: 0;
+	right: 0;
+	position: inherit;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-bottom: 5px;
+	cursor:pointer;	
+}
+
+
+.reader_book_trash {
+	border-left: 1px solid #e6e7e8;
+	float: right;
+	font-size: 18px;
+	color: #f1623d;
+	bottom: 0;
+	right: 28px;
+	position: inherit;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-bottom: 5px;
+	cursor:pointer;
+}
+
+
+.navbar_search {
+	height: 100%;
+	color: #fff;
+	float: left;
+	margin-left: 10px;
+	font-size: 20px;
+	top: 0;
+	position: absolute;
+	padding: 14px 10px 10px 10px;
+	cursor:pointer;
+}
+
+.navbar_search:hover {
+	background-color:#005F9B;	
+}
+
+
+
+/** END OF READER BOOK MY LIBRARY PAGE **/
+

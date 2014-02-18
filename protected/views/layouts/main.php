@@ -41,8 +41,9 @@
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/js/isotope/jquery.isotope.min.js"></script>
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/js/isotope/imagesloaded.pkgd.min.js"></script>
 		<!-- COLORBOX -->
-		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/js/colorbox/jquery.colorbox.min.js"></script>
-			
+		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/js/colorbox/jquery.colorbox.min.js"></script>            
+            
+            
 		<!-- DATE RANGE PICKER -->
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/js/bootstrap-daterangepicker/moment.min.js"></script>
 		
@@ -105,13 +106,21 @@
 		<!--<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/lazyloader.min.js"></script>-->
 <!-- /JS -->
 
+
+
+		<script>
+			new UISearch( document.getElementById( 'sb-search' ) );
+		</script>
+
+
+
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
 <body class="editor_blue">
 <?php if(Yii::app()->controller->action->id!="login"): ?>
 <!-- Header -->
-	<header class="navbar clearfix" id="header">
+	<header class="navbar clearfix navbar-fixed-top" id="header">
 		<!-- Top Navigation Bar -->
 		<div class="container">
 		<div class="navbar-brand">
@@ -128,12 +137,14 @@
 					</div>
 					<!-- /TEAM STATUS FOR MOBILE -->
 					<!-- SIDEBAR COLLAPSE -->
-					<div id="sidebar-collapse" class="sidebar-collapse btn">
-						<i class="fa fa-bars" 
-							data-icon1="fa fa-bars" 
-							data-icon2="fa fa-bars" ></i>
+					<div id="sidebar-collapse" class="sidebar-collapse">
+						<i class="fa fa-bars" data-icon1="fa fa-bars" data-icon2="fa fa-bars" ></i>
 					</div>
 					<!-- /SIDEBAR COLLAPSE -->
+					<div class="navbar_search"><i class="fa fa-search"></i></div>
+                    
+                    
+                    
 				</div>
 
 			<!-- Top Right Menu -->
@@ -142,7 +153,7 @@
 				<li class="dropdown user" id="header-user">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 						<?php
-							$avatarSrc=Yii::app()->request->baseUrl."/css/ui/img/avatars/at.png";
+							$avatarSrc=Yii::app()->request->baseUrl."/avatars/avatar.png";
 						?>
 						<img alt="" src="<?php echo $avatarSrc; ?>" />
 						<span class="username"><?php echo Yii::app()->user->name; ?></span>
@@ -156,6 +167,10 @@
 				<!-- /user login dropdown -->
 			</ul>
 			<!-- /Top Right Menu -->
+            
+            
+            <div class="navbar_logo"></div>
+            
 		</div>
 		<!-- /top navigation bar -->
 	</header> <!-- /.header -->
