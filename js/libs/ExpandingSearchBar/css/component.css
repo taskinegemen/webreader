@@ -10,19 +10,33 @@
 	font-style: normal;
 }
 
+
+.expanding-searchbox {
+	position: absolute;
+	top: 0;
+	width: 255px;
+	margin-left:15px;
+}
+
+
+
 .sb-search {
+	margin-bottom: 0;
+	top: 0;
 	position: relative;
-	margin-top: 10px;
 	width: 0%;
 	min-width: 60px;
-	height: 60px;
-	float: right;
+	height: 50px;
+	float: left;
 	overflow: hidden;
 	-webkit-transition: width 0.3s;
 	-moz-transition: width 0.3s;
 	transition: width 0.3s;
-	-webkit-backface-visibility: hidden;
 }
+
+
+
+
 
 .sb-search-input {
 	position: absolute;
@@ -30,50 +44,54 @@
 	right: 0;
 	border: none;
 	outline: none;
-	background: #fff;
+	background: transparent;
 	width: 100%;
-	height: 60px;
+	height: 50px;
 	margin: 0;
 	z-index: 10;
 	padding: 20px 65px 20px 20px;
 	font-family: inherit;
-	font-size: 20px;
-	color: #2c3e50;
+	font-size: 15px;
+	color: #FFFFFF;
 }
 
 .sb-search-input::-webkit-input-placeholder {
-	color: #efb480;
+	color: #fff;
+	opacity:0.7;
 }
 
 .sb-search-input:-moz-placeholder {
-	color: #efb480;
+	color: #fff;
+	opacity:0.7;
 }
 
 .sb-search-input::-moz-placeholder {
-	color: #efb480;
+	color: #fff;
+	opacity:0.7;
 }
 
 .sb-search-input:-ms-input-placeholder {
-	color: #efb480;
+	color: #fff;
+	opacity:0.7;
 }
 
 .sb-icon-search,
 .sb-search-submit  {
-	width: 60px;
-	height: 60px;
+	width: 40px;
+	height: 50px;
 	display: block;
 	position: absolute;
 	right: 0;
 	top: 0;
 	padding: 0;
 	margin: 0;
-	line-height: 60px;
+	line-height: 50px;
 	text-align: center;
 	cursor: pointer;
 }
 
 .sb-search-submit {
-	background: #fff; /* IE needs this */
+	background: transparent; /* IE needs this */
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
     filter: alpha(opacity=0); /* IE 5-7 */
     opacity: 0;
@@ -83,9 +101,10 @@
 	z-index: -1;
 }
 
+
 .sb-icon-search {
 	color: #fff;
-	background: #e67e22;
+	background: transparent;
 	z-index: 90;
 	font-size: 22px;
 	font-family: 'icomoon';
@@ -95,7 +114,16 @@
 	font-variant: normal;
 	text-transform: none;
 	-webkit-font-smoothing: antialiased;
+	margin-right:20px;
 }
+
+
+.sb-icon-search:hover {
+	background-color:#005F9B;
+}
+
+
+
 
 .sb-icon-search:before {
 	content: "\e000";
@@ -109,7 +137,7 @@
 
 .sb-search.sb-search-open .sb-icon-search,
 .no-js .sb-search .sb-icon-search {
-	background: #da6d0d;
+	background: transparent;
 	color: #fff;
 	z-index: 11;
 }
