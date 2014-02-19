@@ -151,10 +151,10 @@
 						<i class="fa fa-bars" data-icon1="fa fa-bars" data-icon2="fa fa-bars" ></i>
 					</div>
 					<!-- /SIDEBAR COLLAPSE -->
-					<div class="column">
+					<div class="expanding-searchbox">
 						<div id="sb-search" class="sb-search">
 							<form>
-								<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+								<input class="sb-search-input" placeholder="Ne aramak istiyorsunuz?" type="text" value="" name="search" id="search">
 								<input class="sb-search-submit" type="submit" value="">
 								<span class="sb-icon-search"></span>
 							</form>
