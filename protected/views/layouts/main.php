@@ -24,7 +24,9 @@
 	<!-- FONTS -->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/webfonts/open_sans/open_sans.css" />
 
-	
+	<!-- Expand Search box -->
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/ExpandingSearchBar/css/component.css" />
+
 <!-- JS -->
 
 <!-- JAVASCRIPTS -->
@@ -42,6 +44,11 @@
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/js/isotope/imagesloaded.pkgd.min.js"></script>
 		<!-- COLORBOX -->
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/js/colorbox/jquery.colorbox.min.js"></script>            
+
+		<!-- Expand Search box -->
+		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/ExpandingSearchBar/js/classie.js"></script>
+		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/ExpandingSearchBar/js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/ExpandingSearchBar/js/uisearch.js"></script>            
             
             
 		<!-- DATE RANGE PICKER -->
@@ -115,7 +122,10 @@
 		<!-- bxSlider -->
 
 		<script>
-			new UISearch( document.getElementById( 'sb-search' ) );
+			$( document ).ready(function() {
+			  new UISearch( document.getElementById( 'sb-search' ) );
+			});
+			
 		</script>
 
 
@@ -147,7 +157,15 @@
 						<i class="fa fa-bars" data-icon1="fa fa-bars" data-icon2="fa fa-bars" ></i>
 					</div>
 					<!-- /SIDEBAR COLLAPSE -->
-					<div class="navbar_search"><i class="fa fa-search"></i></div>
+					<div class="expanding-searchbox">
+						<div id="sb-search" class="sb-search">
+							<form>
+								<input class="sb-search-input" placeholder="Ne aramak istiyorsunuz?" type="text" value="" name="search" id="search">
+								<input class="sb-search-submit" type="submit" value="">
+								<span class="sb-icon-search"></span>
+							</form>
+						</div>
+					</div>
                     
                     
                     
