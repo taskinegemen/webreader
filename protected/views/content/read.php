@@ -360,27 +360,27 @@ $this->pageTitle=Yii::app()->name;
 				<div class="reader_book_cover_thumbnail">COVER</div>
                 <ul class="reader_book_info">
                 
-                <li class="reader_book_info_detail">Kitabın Adı: <span class="reader_book_info_detail_data">Örnek Kitap</span></li>
+                <li class="reader_book_info_detail" >Kitabın Adı: <span  content-meta='book-title'  class="reader_book_info_detail_data">Örnek Kitap</span></li>
                 
                 <div class="vertical-divider"></div>
                 <div class="clearfix"></div>
                 
-                <li class="reader_book_info_detail">Tür/Konu: <span class="reader_book_info_detail_data">Örnek Tür</span></li>
+                <li class="reader_book_info_detail" >Tür/Konu: <span  content-meta='book-categories' class="reader_book_info_detail_data">Örnek Tür</span></li>
                 
                 <div class="vertical-divider"></div>
                 <div class="clearfix"></div>
                 
-                <li class="reader_book_info_detail">Editörler: <span class="reader_book_info_detail_data">Örnek Kişi</span></li>
+                <li class="reader_book_info_detail">Editörler: <span content-meta='book-author' class="reader_book_info_detail_data">Örnek Kişi</span></li>
 
                 <div class="vertical-divider"></div>
                 <div class="clearfix"></div>
                 
-                <li class="reader_book_info_detail">Sayfa Sayısı: <span class="reader_book_info_detail_data">200</span></li>
+                <li class="reader_book_info_detail">Sayfa Sayısı: <span content-meta='book-page-count'  class="reader_book_info_detail_data">200</span></li>
 
                 <div class="vertical-divider"></div>
                 <div class="clearfix"></div>
                 
-                <li class="reader_book_info_detail">Yayınlanma Tarihi: <span class="reader_book_info_detail_data">01.05.2014</span></li>
+                <li class="reader_book_info_detail">Yayınlanma Tarihi: <span content-meta='book-publish-date'  class="reader_book_info_detail_data">01.05.2014</span></li>
 
                 <div class="vertical-divider"></div>
                 <div class="clearfix"></div>
@@ -409,7 +409,7 @@ $this->pageTitle=Yii::app()->name;
 							<div class="col-sm-12">
 								<div class="page-header reader_info_header">
 									
-									<div class="reader_book_name">Kitabın Adı: <span class="reder_book_name_data">Örnek Kitap</span></div>
+									<div class="reader_book_name">Kitabın Adı: <span content-meta='book-title' class="reder_book_name_data">Örnek Kitap</span></div>
                                     
                                     
                                     
@@ -424,18 +424,18 @@ $this->pageTitle=Yii::app()->name;
 												</button>
                                                 
                                                 <ul class="dropdown-menu pull-right reader_toc_dropdown">
-							<li><a href="#"><span class="reader_toc_dropdown_page_numbers">2</span> Buralara birşeyler yazılacak</a></li>
-							<li><a href="#"><span class="reader_toc_dropdown_page_numbers">43</span> Şimdilik deneme yapılıyor kısa olmasın diye uzatıyoz da uzatıyoz işte böyle</a></li>
-							<li><a href="#"><span class="reader_toc_dropdown_page_numbers">125</span> Buralarda hep table of content maddeleri olacak</a></li>
-							<li><a href="login.html"><span class="reader_toc_dropdown_page_numbers">212</span> İşte öyle denemeler şakalar falan</a></li>
+													<li><a href="#page2"><span  reader-action='page-anchor' reader-data="2" class="reader_toc_dropdown_page_numbers">2</span> Buralara birşeyler yazılacak</a></li>
+													<li><a href="#page43"><span  reader-action='page-anchor' reader-data="43" class="reader_toc_dropdown_page_numbers">43</span> Şimdilik deneme yapılıyor kısa olmasın diye uzatıyoz da uzatıyoz işte böyle</a></li>
+													<li><a href="#page125"><span  reader-action='page-anchor' reader-data="125" class="reader_toc_dropdown_page_numbers">125</span> Buralarda hep table of content maddeleri olacak</a></li>
+													<li><a href="#page212"><span  reader-action='page-anchor'  reader-data="212" class="reader_toc_dropdown_page_numbers">212</span> İşte öyle denemeler şakalar falan</a></li>
 												</ul>
                                               
                                                 
 												<button class="btn btn-default">
-													<i class="fa fa-chevron-left"></i>
+													<i class="fa fa-chevron-left" reader-action='prev-page'></i>
 												</button>
 												<button class="btn btn-default">
-													<i class="fa fa-chevron-right"></i>
+													<i class="fa fa-chevron-right" reader-action='next-page'></i>
 												</button>
 								     </div>
                                     
@@ -450,11 +450,16 @@ $this->pageTitle=Yii::app()->name;
                                    </div>
                                 
                           <div class="reader_page_container">
-                
-                <div class="reader_page"></div>
-                <div class="reader_page"></div>
-                <div class="reader_page"></div>
-                
+
+							<ul class="bxslider">
+								<li>
+									<iframe src="http://player.vimeo.com/video/17914974" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+								</li>
+								<li>
+									<img src="/images/730_200/houses.jpg" />
+								</li>
+							</ul>
+
                 </div>
 				<!-- /reader_page_container -->      
                                 
@@ -608,22 +613,26 @@ $this->pageTitle=Yii::app()->name;
 
 
 			
-			$(".reader_page_container").empty();
+			$(".reader_page_container .bxslider").empty();
 			$.each(PageIDArray, function(index,page){
 				console.log(page);
 
-				var newPageContainer=$("<div class='reader_page'></div>");
+				var newPageContainer=$("<li style='width:100%;height:100%;'></li>");
 				var newPage=$("<iframe class='page_iframe' frameBorder='0' scrolling='no' style='width:100%;height:100%;overflow:hidden;' ></iframe>");
 				newPage.appendTo(newPageContainer);
-				newPageContainer.appendTo($(".reader_page_container"));
+				newPageContainer.appendTo($(".reader_page_container .bxslider"));
 				newPage.attr("data-src",ContentFileRequesUrl + Items[page] );
 				//newPage.attr("src","http://reader.lindneo.com/ugur/css/ui/css/themes/loading.gif" );
+				
+
+				
 				newPage.load(function(){
 						        	$(this)
 						        		.removeClass("lazy-hidden")
 						        		.addClass("lazy-loaded");
-						        	show_visibles();
+						        	//show_visibles();
 					    });
+				
 			});
 			
 			/*
@@ -636,13 +645,11 @@ $this->pageTitle=Yii::app()->name;
 			var lastTopPos = $(window).scrollTop();
 			var pageSizeThridOne= $(window).height() / 3;
 
-			resizeEvents();
-			$( window ).resize(function() {
-			  resizeEvents();
-			});
+			//resizeEvents();
+
 			
 			$( window ).scroll(function() {
-				
+				return;
 				timer++;
 				var scrollDif = lastTopPos - $(window).scrollTop();
 				if (timer % 10 == 0 || Math.abs(scrollDif) > pageSizeThridOne ){
@@ -655,13 +662,75 @@ $this->pageTitle=Yii::app()->name;
 
 
 			});
+			
+			var onslide = function($slideElement, oldIndex, newIndex){ 
+
+					var kapanacaklar = [oldIndex-1,oldIndex,oldIndex+1];
+					var acilacaklar =  [newIndex-1,newIndex,newIndex+1];
+					
+					
+					kapanacaklar = kapanacaklar.filter(function(i) {return !(acilacaklar.indexOf(i) > -1);});
+
+					$.each (kapanacaklar, function(index,kapanacak) {
+						var simdiKapanacak = $( $('.bxslider iframe.page_iframe')[kapanacak] );
+
+						if ( typeof simdiKapanacak != 'undefined'){
+							simdiKapanacak.removeAttr('src');
+							console.log("kapandı: "+ kapanacak);
+						}
+					});
+
+
+
+					
+					$.each (acilacaklar, function(index,acilacak) {
+						var simdiAcilacak  = $( $('.bxslider iframe.page_iframe')[acilacak] );
+
+						if ( typeof simdiAcilacak != 'undefined'){
+							var attr = $(simdiAcilacak).attr('src');
+							if (!(typeof attr !== 'undefined' && attr !== false)) {
+							  	simdiAcilacak.attr('src', simdiAcilacak.attr('data-src' ));
+								console.log("acildi: "+ acilacak);
+							}
+							
+						}
+					});
+
+					
+					
+					console.log (kapanacaklar);
+					console.log (acilacaklar);
+					
+
+				};
 
 			
+			var reader_slider =	$('.bxslider').bxSlider({
+
+				infiniteLoop: false,
+				hideControlOnEnd: true,
+				onSlideAfter : onslide ,
+				//onSliderLoad : function (currents){ onslide (null,currents,currents );},
+
+
+			});
+
+
+			onslide (null,reader_slider.getCurrentSlide(),reader_slider.getCurrentSlide() );
+
+
+			$( window ).resize(function() {
+			  //resizeEvents();
+
+			 
+			});
 
 
 		}
 
 		function resizeEvents(){
+
+			return;
 			lastTopPos = $(window).scrollTop();
 			pageSizeThridOne= $(window).height() / 3;
 			show_visibles();

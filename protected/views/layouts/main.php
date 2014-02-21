@@ -107,6 +107,12 @@
 <!-- /JS -->
 
 
+		<!-- bxSlider -->
+			<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/bxSlider/jquery.bxslider.css" type="text/css" />
+			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/jquery.fitvids.js"></script>
+			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/bxSlider/jquery.bxslider.js"></script>
+		
+		<!-- bxSlider -->
 
 		<script>
 			new UISearch( document.getElementById( 'sb-search' ) );
