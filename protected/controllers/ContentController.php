@@ -126,13 +126,23 @@ class ContentController extends Controller
 	public function actionGetContent($id,$host="cloud.lindneo.com",$port=2222){
 		
 		$getfile = "./tmp/$id";
-		$command =  "python bin/client_tls.py '{\"host\":\"$host\",\"port\":$port}' GetFile $id $getfile";
-		//echo $command;die;
+		$command =  "python bin/client_tls.py '{\"host\":\"$host\",\"port\":$port}' GetFileChuncked $id $getfile";
+		
 		exec($command,$output);
 		print_r($output);
 		 
 		$this->decryptFileAndExtractToFolder($getfile);
-		unlink($getfile);
+		
+
+
+
+
+
+
+
+
+
+		
 		$this->redirect(array("content/read", 'id'=>$id)); 
 
 
@@ -143,21 +153,9 @@ class ContentController extends Controller
 			$outpufolder="contents/".basename($filename);
     	}
 		functions::delTree($outpufolder);
-		$file = file_get_contents($filename);
-		$base=hash ( "sha256" , basename($filename) . "somemoresaltingherewouldbebetterthanthatoneiguess" ,true );
-		$key=substr($base,0,32);
-		$iv=substr($base,0,16);
-		$res=base64_decode(mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $key, $file, MCRYPT_MODE_CFB, $iv));
-		
-
-		$temp = tempnam(sys_get_temp_dir(), "");
-
-		$handle = fopen($temp, "w");
-		fwrite($handle, $res);
-		fclose($handle);
 
 		$epub = new ZipArchive;
-		if ($epub->open($temp) === TRUE) {
+		if ($epub->open($filename) === TRUE) {
 		    $epub->extractTo($outpufolder);
 		    $epub->close();
 		    
@@ -165,9 +163,7 @@ class ContentController extends Controller
 			
 		}
 
-		unlink($temp);
-
-		Encryption::encryptFolder($outpufolder);
+		unlink($filename);
 
 	}
 

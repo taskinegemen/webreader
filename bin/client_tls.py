@@ -30,9 +30,9 @@ command = "";
 
 
 def Ping(client,params=[]):
-   client.send ( pickle.dumps([ 'Ping' ]))
-   Pong = pickle.loads ( client.recv ( 1024 ) )
-   if ( Pong[0] == "Pong" ):
+   client.send ( 'Ping' )
+   Pong = client.recv ( 1024 ) 
+   if ( Pong == "Pong" ):
       print "Connection Tested!"
       return 1 
    else:
@@ -40,18 +40,18 @@ def Ping(client,params=[]):
       return 0
 
 def Help(client,params=[]):
-   client.send ( pickle.dumps([ 'Help' ]))
-   print pickle.loads ( client.recv ( 1024 ) )
+   client.send (  'Help' )
+   print ( client.recv ( 1024 ) )
 def ListCatalog(client,params=[]):
-   client.send ( pickle.dumps([ 'ListCatalog' ]))
-   print pickle.loads ( client.recv ( 1024 ) )
+   client.send ( 'ListCatalog' )
+   print  client.recv ( 1024 ) 
 def DeleteFromCatalog(client,params=[]):
     pass
 def UpdateCatalogList(client,params=[]):
     pass
 
 def AddToCatalog(client,params=[]):
-   client.send ( pickle.dumps([ 'AddToCatalog' ]))
+   client.send (  'AddToCatalog' )
    try:
       params[0]
    except Exception, e:
@@ -71,7 +71,7 @@ def AddToCatalog(client,params=[]):
          filename=params[1]
 
    print "File sending %s" % file_path
-   response = pickle.loads(client.recv ( 1024 ))
+   response = client.recv ( 1024 )
 
    key = hashlib.sha256(filename).digest()[:32]
    print str (key)
@@ -79,12 +79,12 @@ def AddToCatalog(client,params=[]):
    print str ( vi)
    encryptOBJ = AES.new(key, AES.MODE_CFB, vi)
    
-   if ('Ready' == response[0] ):
+   if ('Ready' == response ):
       print "Client is Ready"
-      client.send(pickle.dumps([filename]))
+      client.send(filename)
 
-   response = pickle.loads(client.recv ( 1024 ))
-   if (filename == response[0] ):
+   response = client.recv ( 1024)
+   if (filename == response):
       print "HandShaked"
    else:
       print "Wrong HandShake"
@@ -101,7 +101,8 @@ def AddToCatalog(client,params=[]):
    print "File sent as %s" % filename
 
 def GetFile(client,params=[]):
-    client.send ( pickle.dumps([ 'GetFile' ]))
+
+    client.send (  'GetFile' )
     try:
       params[0]
     except Exception, e:
@@ -117,11 +118,11 @@ def GetFile(client,params=[]):
         client.close()
         return
       else:
-        print pickle.loads(client.recv (1024))[0]
+        print client.recv (1024)
         filepath=params[1]
         print "FileRequested: %s " % filename
 
-        client.send (pickle.dumps([filename]))
+        client.send (filename)
         
         response = client.recv ( 1024 ) 
         print "Response: %s " % response
@@ -142,7 +143,50 @@ def GetFile(client,params=[]):
         
 
         
+def GetFileChuncked(client,params=[]):
+    print "yakalandi"
+    client.send ('GetFileChuncked')
+    try:
+      params[0]
+    except Exception, e:
+      print "GetFile:No filename specified"
+      client.close()
+      return
+    else: 
+      filename=params[0]
+      try:
+        params[1]
+      except Exception, e:
+        print "GetFile:No file path specified"
+        client.close()
+        return
+      else:
+        print client.recv (1024)
+        filepath=params[1]
+        print "FileRequested: %s " % filename
 
+        client.send (filename)
+        
+        response = client.recv ( 1024 ) 
+        print "Response: %s " % response
+        if (response == "OK\n"):
+          client.send("Ready")
+
+          hash_var=client.recv (1024)#egemen
+          print "Length and hash:%s" %hash_var#egemen
+          client.send("0")#egemen
+
+          createFile = open(filepath, "wb")   
+          print "New file is to written: %s " % filepath
+          k=0
+          while True:
+              data = client.recv(1024)
+              k+=1
+              if ( data == "\x00" ): break 
+              createFile.write(data)
+          print str( round (k * 1.00 / 1024 , 2 ) ) + "MB transferred"
+          print "File written"
+          createFile.close()
 
 def ServeFileToReader(client,params=[]):
     pass
@@ -155,7 +199,8 @@ methods = {
         'UpdateCatalogList': UpdateCatalogList,
         'AddToCatalog': AddToCatalog,
         'ServeFileToReader': ServeFileToReader ,
-        'GetFile': GetFile
+        'GetFile': GetFile,
+        'GetFileChuncked': GetFileChuncked
     }
 
 
