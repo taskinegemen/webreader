@@ -18,19 +18,19 @@ $this->pageTitle=Yii::app()->name;
 		<!--=== Navigation ===-->
 		<ul>
 			<li class="current">
-				<a href="/site/dashboard">
+				<a href="<?php echo $this->createUrl("site/library"); ?>">
 					<i class="fa fa-book fa-fw"></i>
 					<span class="menu-text">Kütüphanem</span>
 				</a>
-			</li>
+			</li> 
 			<li>
-				<a href="#">
+				<a href="<?php echo  $this->createUrl("content/list"); ?>">
 					<i class="fa fa-briefcase fa-fw"></i> 
                     <span class="menu-text">Mağaza</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="<?php echo $this->createUrl("user/profile"); ?>">
 					<i class="fa fa-user fa-fw"></i> 
                     <span class="menu-text">Profilim</span>
 				</a>

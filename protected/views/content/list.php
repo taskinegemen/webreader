@@ -12,25 +12,24 @@ $this->pageTitle=Yii::app()->name;
 	<!-- /JAVASCRIPTS -->
     
 <div class="market_page_container">
-
 <div id="sidebar" class="sidebar sidebar-fixed">
 	<div class="sidebar-menu nav-collapse">
 		<!--=== Navigation ===-->
 		<ul>
-			<li>
-				<a href="/site/dashboard">
+			<li class="current">
+				<a href="<?php echo $this->createUrl("site/library"); ?>">
 					<i class="fa fa-book fa-fw"></i>
 					<span class="menu-text">Kütüphanem</span>
 				</a>
-			</li>
-			<li class="current">
-				<a href="#">
+			</li> 
+			<li>
+				<a href="<?php echo  $this->createUrl("content/list"); ?>">
 					<i class="fa fa-briefcase fa-fw"></i> 
                     <span class="menu-text">Mağaza</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="<?php echo $this->createUrl("user/profile"); ?>">
 					<i class="fa fa-user fa-fw"></i> 
                     <span class="menu-text">Profilim</span>
 				</a>

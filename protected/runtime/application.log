@@ -7854,3 +7854,1520 @@ REQUEST_URI=/erkan/index.php/content/Getbookmeta/LgfYSNGI9KmMEhQfHXZVQS6q66B82yx
 in /var/www/reader/erkan/protected/utilities/Encryption.php (68)
 in /var/www/reader/erkan/protected/controllers/ContentController.php (43)
 in /var/www/reader/erkan/index.php (15)
+2014/02/22 09:53:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/titlepage.xhtml
+---
+2014/02/22 09:53:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/titlepage.xhtml
+---
+2014/02/22 09:53:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/aller.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/titlepage.xhtml
+---
+2014/02/22 09:53:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/cantarell.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/titlepage.xhtml
+---
+2014/02/22 09:53:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/titlepage.xhtml
+---
+2014/02/22 09:53:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/titlepage.xhtml
+---
+2014/02/22 09:53:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/fVe6PscanpAkjnqi2fHfiK2m7wEYqk9HUFvZPlqIDALQ.html
+---
+2014/02/22 09:53:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/cantarell.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/fVe6PscanpAkjnqi2fHfiK2m7wEYqk9HUFvZPlqIDALQ.html
+---
+2014/02/22 09:53:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/aller.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/fVe6PscanpAkjnqi2fHfiK2m7wEYqk9HUFvZPlqIDALQ.html
+---
+2014/02/22 09:53:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/fVe6PscanpAkjnqi2fHfiK2m7wEYqk9HUFvZPlqIDALQ.html
+---
+2014/02/22 09:53:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/fVe6PscanpAkjnqi2fHfiK2m7wEYqk9HUFvZPlqIDALQ.html
+---
+2014/02/22 09:53:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/fVe6PscanpAkjnqi2fHfiK2m7wEYqk9HUFvZPlqIDALQ.html
+---
+2014/02/22 09:53:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/riwBVUsa3ZE2CUQWBdysJ9scUixVqnZas2gZKbVVrvNj.html
+---
+2014/02/22 09:53:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/riwBVUsa3ZE2CUQWBdysJ9scUixVqnZas2gZKbVVrvNj.html
+---
+2014/02/22 09:53:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/aller.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/riwBVUsa3ZE2CUQWBdysJ9scUixVqnZas2gZKbVVrvNj.html
+---
+2014/02/22 09:53:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/riwBVUsa3ZE2CUQWBdysJ9scUixVqnZas2gZKbVVrvNj.html
+---
+2014/02/22 09:53:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/cantarell.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/riwBVUsa3ZE2CUQWBdysJ9scUixVqnZas2gZKbVVrvNj.html
+---
+2014/02/22 09:53:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/riwBVUsa3ZE2CUQWBdysJ9scUixVqnZas2gZKbVVrvNj.html
+---
+2014/02/22 09:53:45 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/CthwrYuInw9WMAhmnNSB93VYrluXjvMa3qDWLm9iIuhy.html
+---
+2014/02/22 09:53:45 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/CthwrYuInw9WMAhmnNSB93VYrluXjvMa3qDWLm9iIuhy.html
+---
+2014/02/22 09:53:45 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/aller.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/CthwrYuInw9WMAhmnNSB93VYrluXjvMa3qDWLm9iIuhy.html
+---
+2014/02/22 09:53:45 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/CthwrYuInw9WMAhmnNSB93VYrluXjvMa3qDWLm9iIuhy.html
+---
+2014/02/22 09:53:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/CthwrYuInw9WMAhmnNSB93VYrluXjvMa3qDWLm9iIuhy.html
+---
+2014/02/22 09:53:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/09SvTwEAJ3ZnPNTGDFLBMY5rG7BqGJclflnefaAZCQXP.html
+---
+2014/02/22 09:53:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/09SvTwEAJ3ZnPNTGDFLBMY5rG7BqGJclflnefaAZCQXP.html
+---
+2014/02/22 09:53:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/09SvTwEAJ3ZnPNTGDFLBMY5rG7BqGJclflnefaAZCQXP.html
+---
+2014/02/22 09:53:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/aller.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/09SvTwEAJ3ZnPNTGDFLBMY5rG7BqGJclflnefaAZCQXP.html
+---
+2014/02/22 09:53:48 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/09SvTwEAJ3ZnPNTGDFLBMY5rG7BqGJclflnefaAZCQXP.html
+---
+2014/02/22 09:53:48 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/cantarell.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/CthwrYuInw9WMAhmnNSB93VYrluXjvMa3qDWLm9iIuhy.html
+---
+2014/02/22 09:54:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/02/22 09:54:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/fdSerw6splZDZKOrEivLbVLEd2qUW0GHZT6zXSxd3PgD.html
+---
+2014/02/22 09:54:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/fdSerw6splZDZKOrEivLbVLEd2qUW0GHZT6zXSxd3PgD.html
+---
+2014/02/22 09:54:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/aller.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/fdSerw6splZDZKOrEivLbVLEd2qUW0GHZT6zXSxd3PgD.html
+---
+2014/02/22 09:54:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/cantarell.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/fdSerw6splZDZKOrEivLbVLEd2qUW0GHZT6zXSxd3PgD.html
+---
+2014/02/22 09:54:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/fdSerw6splZDZKOrEivLbVLEd2qUW0GHZT6zXSxd3PgD.html
+---
+2014/02/22 09:54:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/fdSerw6splZDZKOrEivLbVLEd2qUW0GHZT6zXSxd3PgD.html
+---
+2014/02/22 09:54:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/3rljYNW6Tb3Y4gnxpKQUz3Iy8k6cTdAgaylP4AsRAeL0.html
+---
+2014/02/22 09:54:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/aller.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/3rljYNW6Tb3Y4gnxpKQUz3Iy8k6cTdAgaylP4AsRAeL0.html
+---
+2014/02/22 09:54:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/3rljYNW6Tb3Y4gnxpKQUz3Iy8k6cTdAgaylP4AsRAeL0.html
+---
+2014/02/22 09:54:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/3rljYNW6Tb3Y4gnxpKQUz3Iy8k6cTdAgaylP4AsRAeL0.html
+---
+2014/02/22 09:54:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/3rljYNW6Tb3Y4gnxpKQUz3Iy8k6cTdAgaylP4AsRAeL0.html
+---
+2014/02/22 09:54:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/cantarell.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/3rljYNW6Tb3Y4gnxpKQUz3Iy8k6cTdAgaylP4AsRAeL0.html
+---
+2014/02/22 09:55:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/1qivXsNksm7mgIL2pUMQRhYHqWOftg2yDUOixd9RNFSz.html
+---
+2014/02/22 09:55:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/1qivXsNksm7mgIL2pUMQRhYHqWOftg2yDUOixd9RNFSz.html
+---
+2014/02/22 09:55:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/cantarell.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/1qivXsNksm7mgIL2pUMQRhYHqWOftg2yDUOixd9RNFSz.html
+---
+2014/02/22 09:55:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/1qivXsNksm7mgIL2pUMQRhYHqWOftg2yDUOixd9RNFSz.html
+---
+2014/02/22 09:55:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/aller.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/1qivXsNksm7mgIL2pUMQRhYHqWOftg2yDUOixd9RNFSz.html
+---
+2014/02/22 09:55:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/1qivXsNksm7mgIL2pUMQRhYHqWOftg2yDUOixd9RNFSz.html
+---
+2014/02/22 09:55:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/K4IrlYblPJWSp3elVQYDzTiJoCbOvdskqgDQOXlWC8PE.html
+---
+2014/02/22 09:55:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/K4IrlYblPJWSp3elVQYDzTiJoCbOvdskqgDQOXlWC8PE.html
+---
+2014/02/22 09:55:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/cantarell.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/K4IrlYblPJWSp3elVQYDzTiJoCbOvdskqgDQOXlWC8PE.html
+---
+2014/02/22 09:55:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/aller.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/K4IrlYblPJWSp3elVQYDzTiJoCbOvdskqgDQOXlWC8PE.html
+---
+2014/02/22 09:55:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/K4IrlYblPJWSp3elVQYDzTiJoCbOvdskqgDQOXlWC8PE.html
+---
+2014/02/22 09:55:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/K4IrlYblPJWSp3elVQYDzTiJoCbOvdskqgDQOXlWC8PE.html
+---
+2014/02/22 09:55:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/cO7ttSMEYm3IjMAkkw5OsG7yn9ryX0WMGCRvKln1HNKs.html
+---
+2014/02/22 09:55:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/cO7ttSMEYm3IjMAkkw5OsG7yn9ryX0WMGCRvKln1HNKs.html
+---
+2014/02/22 09:55:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/aller.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/cO7ttSMEYm3IjMAkkw5OsG7yn9ryX0WMGCRvKln1HNKs.html
+---
+2014/02/22 09:55:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/cO7ttSMEYm3IjMAkkw5OsG7yn9ryX0WMGCRvKln1HNKs.html
+---
+2014/02/22 09:55:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/cantarell.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/cO7ttSMEYm3IjMAkkw5OsG7yn9ryX0WMGCRvKln1HNKs.html
+---
+2014/02/22 09:55:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/cO7ttSMEYm3IjMAkkw5OsG7yn9ryX0WMGCRvKln1HNKs.html
+---
+2014/02/22 09:55:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/aOTLL8bE9kjywvjoBjBQM00eC3rPl55MJNqhh0AGdRH8.html
+---
+2014/02/22 09:55:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/aller.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/aOTLL8bE9kjywvjoBjBQM00eC3rPl55MJNqhh0AGdRH8.html
+---
+2014/02/22 09:55:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/aOTLL8bE9kjywvjoBjBQM00eC3rPl55MJNqhh0AGdRH8.html
+---
+2014/02/22 09:55:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/aOTLL8bE9kjywvjoBjBQM00eC3rPl55MJNqhh0AGdRH8.html
+---
+2014/02/22 09:55:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/cantarell.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/aOTLL8bE9kjywvjoBjBQM00eC3rPl55MJNqhh0AGdRH8.html
+---
+2014/02/22 09:55:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/aOTLL8bE9kjywvjoBjBQM00eC3rPl55MJNqhh0AGdRH8.html
+---
+2014/02/22 09:55:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/jaIFcCNHkeUI5HgRMhEotMNylfYUSMLQOopClED6sv3t.html
+---
+2014/02/22 09:55:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/jaIFcCNHkeUI5HgRMhEotMNylfYUSMLQOopClED6sv3t.html
+---
+2014/02/22 09:55:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/jaIFcCNHkeUI5HgRMhEotMNylfYUSMLQOopClED6sv3t.html
+---
+2014/02/22 09:55:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/jaIFcCNHkeUI5HgRMhEotMNylfYUSMLQOopClED6sv3t.html
+---
+2014/02/22 09:55:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/aller.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/jaIFcCNHkeUI5HgRMhEotMNylfYUSMLQOopClED6sv3t.html
+---
+2014/02/22 09:55:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/cantarell.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/jaIFcCNHkeUI5HgRMhEotMNylfYUSMLQOopClED6sv3t.html
+---
+2014/02/22 09:55:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/IzP7qTYSj5N9osTR9RgHVK55rFva8y15Rjq6tFtWB9a3.html
+---
+2014/02/22 09:55:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/cantarell.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/IzP7qTYSj5N9osTR9RgHVK55rFva8y15Rjq6tFtWB9a3.html
+---
+2014/02/22 09:55:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/IzP7qTYSj5N9osTR9RgHVK55rFva8y15Rjq6tFtWB9a3.html
+---
+2014/02/22 09:55:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/aller.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/IzP7qTYSj5N9osTR9RgHVK55rFva8y15Rjq6tFtWB9a3.html
+---
+2014/02/22 09:55:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/IzP7qTYSj5N9osTR9RgHVK55rFva8y15Rjq6tFtWB9a3.html
+---
+2014/02/22 09:55:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/IzP7qTYSj5N9osTR9RgHVK55rFva8y15Rjq6tFtWB9a3.html
+---
+2014/02/22 09:55:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/19EzKG2UPijVWINMsaaDla0pCKlMzGgmVCScVUc51doj.html
+---
+2014/02/22 09:55:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/19EzKG2UPijVWINMsaaDla0pCKlMzGgmVCScVUc51doj.html
+---
+2014/02/22 09:55:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/19EzKG2UPijVWINMsaaDla0pCKlMzGgmVCScVUc51doj.html
+---
+2014/02/22 09:55:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/19EzKG2UPijVWINMsaaDla0pCKlMzGgmVCScVUc51doj.html
+---
+2014/02/22 09:55:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/cantarell.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/19EzKG2UPijVWINMsaaDla0pCKlMzGgmVCScVUc51doj.html
+---
+2014/02/22 09:55:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/qH2JDG1eyonfRs4cODOjJhdwE4eZiuFfjPc9xMpXIQWl.html
+---
+2014/02/22 09:55:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/cantarell.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/qH2JDG1eyonfRs4cODOjJhdwE4eZiuFfjPc9xMpXIQWl.html
+---
+2014/02/22 09:55:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/qH2JDG1eyonfRs4cODOjJhdwE4eZiuFfjPc9xMpXIQWl.html
+---
+2014/02/22 09:55:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/qH2JDG1eyonfRs4cODOjJhdwE4eZiuFfjPc9xMpXIQWl.html
+---
+2014/02/22 09:55:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/qH2JDG1eyonfRs4cODOjJhdwE4eZiuFfjPc9xMpXIQWl.html
+---
+2014/02/22 09:55:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/qFM4LUIXwcCgydK5ttuImenlZmyr9gpqeyOGrFy0Fdm5.html
+---
+2014/02/22 09:55:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/qFM4LUIXwcCgydK5ttuImenlZmyr9gpqeyOGrFy0Fdm5.html
+---
+2014/02/22 09:55:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/qFM4LUIXwcCgydK5ttuImenlZmyr9gpqeyOGrFy0Fdm5.html
+---
+2014/02/22 09:55:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/qFM4LUIXwcCgydK5ttuImenlZmyr9gpqeyOGrFy0Fdm5.html
+---
+2014/02/22 09:55:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/cantarell.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/qFM4LUIXwcCgydK5ttuImenlZmyr9gpqeyOGrFy0Fdm5.html
+---
+2014/02/22 09:55:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/6RB935JFme7NzPSjmXlDTrchXDRUW3DYWldlrYvPauSW.html
+---
+2014/02/22 09:55:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/6RB935JFme7NzPSjmXlDTrchXDRUW3DYWldlrYvPauSW.html
+---
+2014/02/22 09:55:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/aller.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/6RB935JFme7NzPSjmXlDTrchXDRUW3DYWldlrYvPauSW.html
+---
+2014/02/22 09:55:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/6RB935JFme7NzPSjmXlDTrchXDRUW3DYWldlrYvPauSW.html
+---
+2014/02/22 09:55:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/cantarell.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/6RB935JFme7NzPSjmXlDTrchXDRUW3DYWldlrYvPauSW.html
+---
+2014/02/22 09:55:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/6RB935JFme7NzPSjmXlDTrchXDRUW3DYWldlrYvPauSW.html
+---
+2014/02/22 09:59:25 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/kArNDSZhlK8LtdlnzZ3aCKOZOHrNT6r9KkRi5wCf9Z65.html
+---
+2014/02/22 09:59:25 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/aller.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/kArNDSZhlK8LtdlnzZ3aCKOZOHrNT6r9KkRi5wCf9Z65.html
+---
+2014/02/22 09:59:25 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/kArNDSZhlK8LtdlnzZ3aCKOZOHrNT6r9KkRi5wCf9Z65.html
+---
+2014/02/22 09:59:25 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/kArNDSZhlK8LtdlnzZ3aCKOZOHrNT6r9KkRi5wCf9Z65.html
+---
+2014/02/22 09:59:25 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/cantarell.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/kArNDSZhlK8LtdlnzZ3aCKOZOHrNT6r9KkRi5wCf9Z65.html
+---
+2014/02/22 09:59:25 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/kArNDSZhlK8LtdlnzZ3aCKOZOHrNT6r9KkRi5wCf9Z65.html
+---
+2014/02/22 09:59:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/P11dM0vNLSYOVpTLLoS6ngaYYjHKXLKK2MbgBFmfEIqO.html
+---
+2014/02/22 09:59:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/P11dM0vNLSYOVpTLLoS6ngaYYjHKXLKK2MbgBFmfEIqO.html
+---
+2014/02/22 09:59:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/aller.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/P11dM0vNLSYOVpTLLoS6ngaYYjHKXLKK2MbgBFmfEIqO.html
+---
+2014/02/22 09:59:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/P11dM0vNLSYOVpTLLoS6ngaYYjHKXLKK2MbgBFmfEIqO.html
+---
+2014/02/22 09:59:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/cantarell.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/P11dM0vNLSYOVpTLLoS6ngaYYjHKXLKK2MbgBFmfEIqO.html
+---
+2014/02/22 09:59:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/P11dM0vNLSYOVpTLLoS6ngaYYjHKXLKK2MbgBFmfEIqO.html
+---
+2014/02/22 09:59:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/alexbrush-regular.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/AGLnAUguJgoYmyicaaXeHZTWefg1CBn5XgLRV3cazUEW.html
+---
+2014/02/22 09:59:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/cantarell.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/AGLnAUguJgoYmyicaaXeHZTWefg1CBn5XgLRV3cazUEW.html
+---
+2014/02/22 09:59:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/chunkfive.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/AGLnAUguJgoYmyicaaXeHZTWefg1CBn5XgLRV3cazUEW.html
+---
+2014/02/22 09:59:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/aller.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/AGLnAUguJgoYmyicaaXeHZTWefg1CBn5XgLRV3cazUEW.html
+---
+2014/02/22 09:59:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/sourcesanspro.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/AGLnAUguJgoYmyicaaXeHZTWefg1CBn5XgLRV3cazUEW.html
+---
+2014/02/22 09:59:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('file')
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/file/Lg...')
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/reader/ugur/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/webfonts/exo.css
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/file/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/AGLnAUguJgoYmyicaaXeHZTWefg1CBn5XgLRV3cazUEW.html
+---
