@@ -452,12 +452,7 @@ $this->pageTitle=Yii::app()->name;
                           <div class="reader_page_container">
 
 							<ul class="bxslider">
-								<li>
-									<iframe src="http://player.vimeo.com/video/17914974" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-								</li>
-								<li>
-									<img src="/images/730_200/houses.jpg" />
-								</li>
+								
 							</ul>
 
                 </div>
@@ -711,6 +706,14 @@ $this->pageTitle=Yii::app()->name;
 				hideControlOnEnd: true,
 				onSlideAfter : onslide ,
 				//onSliderLoad : function (currents){ onslide (null,currents,currents );},
+				 buildPager: function(slideIndex){
+					switch(slideIndex){
+					  default:
+					  	return "<img src='/erkan/css/nopreview.png'>";
+					  break;
+						
+					}
+				  }
 
 
 			});
