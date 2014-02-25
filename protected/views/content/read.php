@@ -452,11 +452,7 @@ $this->pageTitle=Yii::app()->name;
                           <div class="reader_page_container">
 
 							<ul class="bxslider">
-<<<<<<< HEAD
-							
-=======
-								
->>>>>>> 00fa134459d5f5b2d263eb5c45cfe8d3ad909041
+
 							</ul>
 
                 </div>
