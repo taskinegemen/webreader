@@ -499,22 +499,35 @@ $this->pageTitle=Yii::app()->name;
 		        var height = $iframe.height();
 		        var parentWidth = $iframe.parent().width();
 		        var parentHeight = $iframe.parent().height();
+		        
 
-		        var aspect = width / height;
+		        var innerWidth= $(window[$(this).attr('name')].document.body).width();
+		        var innerHeight= $(window[$(this).attr('name')].document.body).height();
+
+		        var aspect = innerWidth / innerHeight;
 		        var parentAspect = parentWidth / parentHeight;
 
-		        var zoom = parentWidth / width;
 
 		        if (aspect > parentAspect) {
-		            newWidth = parentWidth;
+		        	var zoom =   width / innerWidth;
+		            newWidth = innerWidth;
 		            newHeight = newWidth / aspect;
 		        } else {
+		        	var zoom =   height / innerHeight;
 		            newHeight = parentHeight;
-		            newWidth = newHeight * aspect;
+		            newWidth = innerWidth * aspect;
 		        }
-		        $iframe.width(newWidth);
-		        $iframe.height(newHeight);
-		        $iframe.css("zoom", zoom);
+		        
+		        $iframe.width(innerWidth *zoom );
+		        $iframe.height(innerHeight*zoom );
+		        
+		        
+		        $iframe.css('left', ( (parentWidth-innerWidth)/2/zoom )+"px");
+	            $iframe.css('position','absolute');
+
+	            $iframe.css('position','absolute');
+
+		        $(window[$(this).attr('name')].document.body).css("zoom", zoom);
 
 		    });
 		};
@@ -526,17 +539,21 @@ $this->pageTitle=Yii::app()->name;
 				var offset = $('#main-content').offset();
 				var height= $(window).height() - offset.top;
 				var width= $(window).width() - offset.left;
-				$(".bxslider li,.bx-viewport ").height (height);
-				$(".bxslider li,.bx-viewport ").width (width);
+				$(".bxslider li,.bx-viewport ,.bxslider iframe.page_iframe ").height (height);
+				$(".bxslider li,.bx-viewport ,.bxslider iframe.page_iframe ").width (width);
 				$(".bxslider iframe.page_iframe").fitToParent();
 				console.log(height);
 				console.log("Resize Trigged");
 				window.reader_slider.goToSlide(current);
+				console.log($(".bxslider li")[current]);
+
+				$("ul.bxslider").css("-webkit-transform", "translate3d(-"+($ ($(".bxslider li")[current] ).position().left )+"px, 0px, 0px)" );
 			}
 	$(document).ready(function() {	
 
 		var BookMeta;
 		var reader_slider;
+		window.pages = [];
 		var ContentFileRequesUrl="<?php echo $this->createUrl("content/file",array('id'=>$id) ); ?>"+"/";
 		var Pages = [],Items = [], PageIDArray=[];
 
@@ -659,18 +676,20 @@ $this->pageTitle=Yii::app()->name;
 
 				var newPageContainer=$("<li style=''></li>");
 
-				var newPage=$("<iframe class='page_iframe' frameBorder='0' scrolling='no' style='overflow:hidden;margin:0 auto' ></iframe>");
+				var newPage=$("<iframe name='page"+index+"'class='page_iframe' frameBorder='0' scrolling='no' style='overflow:hidden;margin:0 auto;' ></iframe>");
 				newPage.appendTo(newPageContainer);
 				newPageContainer.appendTo($(".reader_page_container .bxslider"));
 				newPage.attr("data-src",ContentFileRequesUrl + Items[page] );
 				//newPage.attr("src","http://reader.lindneo.com/ugur/css/ui/css/themes/loading.gif" );
-				
+				window.pages.push(newPage);
+
 
 				
 				newPage.load(function(){
 						        	$(this)
 						        		.removeClass("lazy-hidden")
-						        		.addClass("lazy-loaded");
+						        		.addClass("lazy-loaded")
+						        		.fitToParent();
 						        	//show_visibles();
 					    });
 				
@@ -678,7 +697,7 @@ $this->pageTitle=Yii::app()->name;
 			
 			
 
-			
+			$('#sidebar-collapse').click(function(){ resizeEverything(); });
 			
 			
 			var onslide = function($slideElement, oldIndex, newIndex){ 
@@ -709,6 +728,7 @@ $this->pageTitle=Yii::app()->name;
 							if (!(typeof attr !== 'undefined' && attr !== false)) {
 							  	simdiAcilacak.attr('src', simdiAcilacak.attr('data-src' ));
 								console.log("acildi: "+ acilacak);
+								simdiAcilacak.fitToParent();
 							}
 							
 						}
@@ -718,6 +738,7 @@ $this->pageTitle=Yii::app()->name;
 					
 					console.log (kapanacaklar);
 					console.log (acilacaklar);
+					
 					
 
 				};
