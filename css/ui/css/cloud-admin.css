@@ -6417,6 +6417,10 @@ fieldset[disabled] .btn-yellow.active {
 /* Content */
 #main-content {
   margin-left: 250px;
+  -webkit-transition: margin 0.3s;
+  -moz-transition: margin 0.3s;
+  -o-transition: margin 0.3s;
+  transition: margin 0.3s;
 }
 /* Content */
 #content {
@@ -9189,7 +9193,7 @@ div.reader_book_category {
 }
 
 .reader_market_page_row .nav-tabs > li > a:hover {
-	background-color:rgba(255, 255, 255, 0.5);
+	background-color:#fff;
 	border-radius:4px;
 }
 

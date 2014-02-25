@@ -303,6 +303,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2880b9', end
   margin-top:50px;
   -webkit-box-shadow: 2px 0 4px 0 #E0E0E0;
   box-shadow: 2px 0 4px 0 #E0E0E0;
+  -webkit-transition: margin 0.3s;
+  -moz-transition: margin 0.3s;
+  -o-transition: margin 0.3s;
+  transition: margin 0.3s;
+  z-index:1;
 }
 .sidebar-fixed {
   position: fixed !important;
@@ -849,7 +854,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2880b9', end
 	width:100%;
 	left: 0;
 	position: absolute;
-	padding-top:70px;
+	padding-top:54px;
 	background-color:#000;
 }
 
