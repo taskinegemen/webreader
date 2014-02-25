@@ -170,6 +170,13 @@ class ContentController extends Controller
 	public function actionFile($id,$filepath=null){
 
 
+		for ($k=1; $k<=5; $k++){
+			if(${"filepath".$k} != null) 
+				$filepath .= "/".${"filepath".$k};
+			else
+				break;
+		}
+
 		$expires = 60*60*24*14;
 		header("Pragma: public");
 		header("Cache-Control: maxage=".$expires);

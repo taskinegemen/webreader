@@ -52,7 +52,7 @@ return array(
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
-				'content/file/<id:\w+>/<filepath>'=>'content/file',
+				'content/file/<id:\w+>/<filepath:[\d\w-\/\.]+>'=>'content/file',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\w+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
