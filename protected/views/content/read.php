@@ -452,7 +452,7 @@ $this->pageTitle=Yii::app()->name;
                           <div class="reader_page_container">
 
 							<ul class="bxslider">
-								
+
 							</ul>
 
                 </div>
@@ -491,8 +491,52 @@ $this->pageTitle=Yii::app()->name;
 			App.init(); //Initialise plugins and elements
 		});
 	</script>
+    <script>
+		jQuery.fn.fitToParent = function () {
+		    this.each(function () {
+		        var $iframe = jQuery(this);
+		        var width = $iframe.width();
+		        var height = $iframe.height();
+		        var parentWidth = $iframe.parent().width();
+		        var parentHeight = $iframe.parent().height();
+
+		        var aspect = width / height;
+		        var parentAspect = parentWidth / parentHeight;
+
+		        var zoom = parentWidth / width;
+
+		        if (aspect > parentAspect) {
+		            newWidth = parentWidth;
+		            newHeight = newWidth / aspect;
+		        } else {
+		            newHeight = parentHeight;
+		            newWidth = newHeight * aspect;
+		        }
+		        $iframe.width(newWidth);
+		        $iframe.height(newHeight);
+		        $iframe.css("zoom", zoom);
+
+		    });
+		};
+	</script>
 	<script>
+	function resizeEverything(){
+				var current= window.reader_slider.getCurrentSlide();
+				console.log(current);
+				var offset = $('#main-content').offset();
+				var height= $(window).height() - offset.top;
+				var width= $(window).width() - offset.left;
+				$(".bxslider li,.bx-viewport ").height (height);
+				$(".bxslider li,.bx-viewport ").width (width);
+				$(".bxslider iframe.page_iframe").fitToParent();
+				console.log(height);
+				console.log("Resize Trigged");
+				window.reader_slider.goToSlide(current);
+			}
+	$(document).ready(function() {	
+
 		var BookMeta;
+		var reader_slider;
 		var ContentFileRequesUrl="<?php echo $this->createUrl("content/file",array('id'=>$id) ); ?>"+"/";
 		var Pages = [],Items = [], PageIDArray=[];
 
@@ -552,7 +596,7 @@ $this->pageTitle=Yii::app()->name;
 			});
 		});
 
-
+		
 
 		function StartReaderApp (){
 			var thumbnailContent;
@@ -607,13 +651,15 @@ $this->pageTitle=Yii::app()->name;
 			});
 
 
+
 			
 			$(".reader_page_container .bxslider").empty();
 			$.each(PageIDArray, function(index,page){
 				console.log(page);
 
-				var newPageContainer=$("<li style='width:100%;height:100%;'></li>");
-				var newPage=$("<iframe class='page_iframe' frameBorder='0' scrolling='no' style='width:100%;height:100%;overflow:hidden;' ></iframe>");
+				var newPageContainer=$("<li style=''></li>");
+
+				var newPage=$("<iframe class='page_iframe' frameBorder='0' scrolling='no' style='overflow:hidden;margin:0 auto' ></iframe>");
 				newPage.appendTo(newPageContainer);
 				newPageContainer.appendTo($(".reader_page_container .bxslider"));
 				newPage.attr("data-src",ContentFileRequesUrl + Items[page] );
@@ -630,33 +676,10 @@ $this->pageTitle=Yii::app()->name;
 				
 			});
 			
-			/*
-			console.log(Pages);
-			console.log(Items);
-			console.log(PageIDArray);
-			console.log(BookMeta);
-			*/
-			var timer=0;
-			var lastTopPos = $(window).scrollTop();
-			var pageSizeThridOne= $(window).height() / 3;
-
-			//resizeEvents();
+			
 
 			
-			$( window ).scroll(function() {
-				return;
-				timer++;
-				var scrollDif = lastTopPos - $(window).scrollTop();
-				if (timer % 10 == 0 || Math.abs(scrollDif) > pageSizeThridOne ){
-					show_visibles();
-					lastTopPos = $(window).scrollTop();
-				}
-
-				console.log(timer + " " +scrollDif );
-				
-
-
-			});
+			
 			
 			var onslide = function($slideElement, oldIndex, newIndex){ 
 
@@ -700,11 +723,13 @@ $this->pageTitle=Yii::app()->name;
 				};
 
 			
-			var reader_slider =	$('.bxslider').bxSlider({
+			reader_slider =	$('.bxslider').bxSlider({
 
 				infiniteLoop: false,
 				hideControlOnEnd: true,
 				onSlideAfter : onslide ,
+				responsive:false,
+				touchEnabled: true,
 				//onSliderLoad : function (currents){ onslide (null,currents,currents );},
 				 buildPager: function(slideIndex){
 					switch(slideIndex){
@@ -717,56 +742,59 @@ $this->pageTitle=Yii::app()->name;
 
 
 			});
+			window.reader_slider = reader_slider;
 
 
-			onslide (null,reader_slider.getCurrentSlide(),reader_slider.getCurrentSlide() );
 
+			$("[reader-action]").parent().click(function(e){
+				var thischild= $(this).children("[reader-action]");
+				var action = $(thischild).attr("reader-action");
+				switch(action){
+					case "prev-page":
+						reader_slider.goToPrevSlide();
+						break;
+					case "next-page":
+						reader_slider.goToNextSlide();
+						console.log(action);
+						break;
+					case "page-anchor":
+						var pageNumber = $(thischild).attr("reader-data");
+						if (pageNumber > -1 && pageNumber < reader_slider.getSlideCount())
+							reader_slider.goToSlide(pageNumber);
+						console.log(action);
+						break;
 
-			$( window ).resize(function() {
-			  //resizeEvents();
-
-			 
+				}
+				console.log(action);
 			});
 
+			onslide (null,reader_slider.getCurrentSlide(),reader_slider.getCurrentSlide() );
+			
+			
+
+			$(document).ready(resizeEverything);
+
+			$(window).on('resize',resizeEverything);
+
+			
+
 
 		}
 
-		function resizeEvents(){
+		
 
-			return;
-			lastTopPos = $(window).scrollTop();
-			pageSizeThridOne= $(window).height() / 3;
-			show_visibles();
-		}
+		
 
-		function show_visibles(){
-			$('.page_iframe').each(function(index,page){
-					if (!isScrolledIntoView(page)){
-						if (!$(page).hasClass('lazy-hidden'))
-							$(page)
-								.removeAttr('src')
-								.removeClass("lazy-loaded")
-				        		.addClass("lazy-hidden");
 
-					} else {
-						if (!$(page).hasClass('lazy-loaded')){
-							$(page)
-								.attr('src',$(page).attr('data-src'));		
-								
-						}
-					}
-				});
-		}
 
-		function isScrolledIntoView(elem)
-				{
-				    var docViewTop = $(window).scrollTop();
-				    var docViewBottom = docViewTop + $(window).height();
+		
 
-				    var elemTop = $(elem).offset().top;
-				    var elemBottom = elemTop + $(elem).height();
 
-				    return (( elemTop  <= docViewBottom) && (elemBottom >= docViewTop));
-				}
+	
+
+
+	
+
+	});	
 	</script>
 	<!-- /JAVASCRIPTS -->
