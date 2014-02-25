@@ -9559,3 +9559,213 @@ span.book_info_titles {
 
 /** END OF READER BOOK MY LIBRARY PAGE **/
 
+
+
+
+
+/**  READ PAGE ***********************************/
+
+
+
+.reader_book_name {
+	float:left;
+	line-height:2.6em;
+	color:#666;
+	margin-left:8px;
+}
+
+
+.reader_info_header {
+	min-height: 40px !important;
+	position: fixed !important;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+
+.reader_info_header .btn-group {
+	float:right;	
+}
+
+.reder_book_name_data {
+	font-style:italic;	
+}
+
+
+
+
+
+.page_next_previous_buttons a:first-child {
+	border-right:0 !important;
+
+}
+
+.page_next_previous_buttons a:nth-child(2) {
+	border-left:0 !important;
+}
+
+.page_next_previous_buttons i {
+	font-size:22px !important;
+}
+
+
+
+.reader_page_container {
+	width:100%;
+	left: 0;
+	position: absolute;
+	padding-top:54px;
+	background-color:#000;
+}
+
+.reader_page {
+	width:1024px;
+	height:768px;
+	background-color:#FFF;
+	border:1px solid #DADADA;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+}
+
+
+.book_info_container {
+	width:225px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:13px;
+	position:relative;
+}
+
+
+.reader_book_cover_thumbnail {
+	width:200px;
+	height:150px;
+	border:1px solid #cdd2d2;	
+	text-align:center;
+	color:#cdd2d2;
+	font-size:30px;
+		
+	background: #fff;
+
+
+}
+	
+
+
+
+.reader_book_info {
+	width:200px;
+	color:#cdd0d8;
+}
+
+.reader_book_info li{
+	margin-top:10px;
+	margin-bottom:10px;
+
+}
+
+.book_info_container ul {
+	padding-left:0;
+}
+
+
+
+li.reader_book_info_detail {
+	overflow-x: hidden;
+	overflow-y: visible;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color:#999;
+	font-weight:800;
+}
+
+
+.reader_book_info_detail_data {
+	font-weight:normal;	
+}
+
+
+.vertical-divider{
+	width:200px;
+	height:1px;
+	background-color:#cdd2d2;
+ }
+
+ 
+ 
+.linden_logo {
+	width:100px;
+	height:50px;
+	background-image:url(../../img/logo/linden.png);
+	background-position:center;
+	background-size:inherit;
+	background-repeat:no-repeat;
+	margin-left:auto;
+	margin-right:auto;	
+}
+
+
+li.user {
+	height: 50px;
+	float: right;
+	line-height: 3.5em;
+	list-style: none;
+}
+
+#header-user {
+	right:0;
+	position:absolute;
+}
+
+#header-user:hover {
+	background-color:#005F9B;
+	text-decoration:none;
+}
+
+
+.reader_toc_button {
+	font-size: 15px;
+	padding-top: 2px;
+	padding-bottom: 3px;
+	border-top-right-radius:0;	
+	border-bottom-right-radius:0;
+	border-right:0;
+}
+
+.reader_toc_dropdown {
+	max-width: 400px !important;
+	border:0 !important;
+	border-top-right-radius:0;
+	margin-right:68px;
+}
+
+.reader_toc_dropdown li a {
+	text-overflow: ellipsis;
+	overflow:hidden;
+	background-color:#fff;
+	border-bottom:0;
+}
+
+
+
+.reader_toc_dropdown li:first-child a{
+	border-top:0;
+}
+
+
+span.reader_toc_dropdown_page_numbers {
+	background-color:#2880b9;
+	display: inline-block;
+	left: 0;
+	width: 50px;
+	text-align: center;
+	color:#fff;
+	margin-left: -10px;
+}
+
+
+
+
+/**  END OF READ PAGE ***********************************/

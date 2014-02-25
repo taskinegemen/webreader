@@ -451,7 +451,8 @@ $this->pageTitle=Yii::app()->name;
                                 
                           <div class="reader_page_container">
 
-							<ul class="bxslider">
+
+                            <ul class="bxslider">
 								
 							</ul>
 
@@ -612,7 +613,7 @@ $this->pageTitle=Yii::app()->name;
 			$.each(PageIDArray, function(index,page){
 				console.log(page);
 
-				var newPageContainer=$("<li style='width:100%;height:100%;'></li>");
+				var newPageContainer=$("<li style='width:100%;height:100%; margin-left:100px'></li>");
 				var newPage=$("<iframe class='page_iframe' frameBorder='0' scrolling='no' style='width:100%;height:100%;overflow:hidden;' ></iframe>");
 				newPage.appendTo(newPageContainer);
 				newPageContainer.appendTo($(".reader_page_container .bxslider"));

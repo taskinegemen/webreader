@@ -16,7 +16,6 @@
 
 .bx-wrapper {
 	position: relative;
-	margin: 0 auto 60px;
 	padding: 0;
 	*zoom: 1;
 }
@@ -32,6 +31,13 @@
 .bx-wrapper .bx-viewport {
 	left: 0;
 	background: #333;
+}
+
+
+.bx-viewport {
+	width:100%;
+	overflow:hidden;
+	position:relative;	
 }
 
 .bx-wrapper .bx-pager,
