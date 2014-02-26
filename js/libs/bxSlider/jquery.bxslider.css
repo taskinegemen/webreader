@@ -16,7 +16,6 @@
 
 .bx-wrapper {
 	position: relative;
-	margin: 0 auto 60px;
 	padding: 0;
 	*zoom: 1;
 }
@@ -32,6 +31,13 @@
 .bx-wrapper .bx-viewport {
 	left: 0;
 	background: #333;
+}
+
+
+.bx-viewport {
+	width:100%;
+	overflow:hidden;
+	position:relative;	
 }
 
 .bx-wrapper .bx-pager,
@@ -63,6 +69,7 @@
 	font-weight: bold;
 	color: #666;
 	padding-top: 20px;
+	background-color:#000;
 }
 
 .bx-wrapper .bx-pager .bx-pager-item,
@@ -118,7 +125,7 @@
 	width: 32px;
 	height: 32px;
 	text-indent: -9999px;
-	z-index: 9999;
+	z-index: 0;
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {
