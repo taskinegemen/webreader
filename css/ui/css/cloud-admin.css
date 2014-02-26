@@ -9615,7 +9615,7 @@ span.book_info_titles {
 	width:100%;
 	left: 0;
 	position: absolute;
-	padding-top:54px;
+	margin-top:50px;
 	background-color:#000;
 }
 
@@ -9766,6 +9766,17 @@ span.reader_toc_dropdown_page_numbers {
 }
 
 
+
+.no_margin {
+	margin-left:0 !important;
+	margin-top:0 !important;	
+}
+
+
+.main_slider_container {
+	height:100% !important;
+	overflow:hidden;	
+}
 
 
 /**  END OF READ PAGE ***********************************/

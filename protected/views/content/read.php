@@ -400,14 +400,14 @@ $this->pageTitle=Yii::app()->name;
 					</div>
 				</div>
 				<!-- /SIDEBAR -->
-		<div id="main-content">
+		<div id="main-content" class="no_margin">
 			<div class="container">
 				<div class="row">
 					<div id="content" class="col-lg-12">
 						<!-- PAGE HEADER-->
 						<div class="row">
 							<div class="col-sm-12">
-								<div class="page-header reader_info_header">
+							<!--	<div class="page-header reader_info_header">
 									
 									<div class="reader_book_name">Kitabın Adı: <span content-meta='book-title' class="reder_book_name_data">Örnek Kitap</span></div>
                                     
@@ -447,7 +447,7 @@ $this->pageTitle=Yii::app()->name;
                                     
                                     
                                     
-                                   </div>
+                                   </div> -->
                                 
                           <div class="reader_page_container">
 
