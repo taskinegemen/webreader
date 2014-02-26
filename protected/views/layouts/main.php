@@ -134,7 +134,77 @@
 </head>
 
 <body class="editor_blue">
-<?php if(Yii::app()->controller->action->id!="login"): ?>
+<?php 
+if (Yii::app()->controller->action->id=="read"):?>
+<!-- Header -->
+	<header class="navbar clearfix navbar-fixed-top" id="header">
+		<!-- Top Navigation Bar -->
+		<div class="container">
+		<div class="navbar-brand">
+					<!-- COMPANY LOGO -->
+					<!-- <a href="<?php echo $this->createUrl('site/index');  ?>">
+						<img src="<?php echo Yii::app()->request->baseUrl; ?>/css/logo.png" alt="Linden" class="img-responsive" >
+					</a> -->
+					<!-- /COMPANY LOGO -->
+					<!-- TEAM STATUS FOR MOBILE -->
+					<div class="visible-xs">
+						<a href="#" class="team-status-toggle switcher btn dropdown-toggle">
+							<i class="fa fa-users"></i>
+						</a>
+					</div>
+					<!-- /TEAM STATUS FOR MOBILE -->
+					<!-- SIDEBAR COLLAPSE -->
+					<div id="sidebar-collapse" class="sidebar-collapse">
+						<i class="fa fa-bars" data-icon1="fa fa-bars" data-icon2="fa fa-bars" ></i>
+					</div>
+					<!-- /SIDEBAR COLLAPSE -->
+					<div class="expanding-searchbox">
+						<div id="sb-search" class="sb-search">
+							<form>
+								<input class="sb-search-input" placeholder="Ne aramak istiyorsunuz?" type="text" value="" name="search" id="search">
+								<input class="sb-search-submit" type="submit" value="">
+								<span class="sb-icon-search"></span>
+							</form>
+						</div>
+					</div>
+                    
+                    
+                    
+				</div>
+
+			<!-- Top Right Menu -->
+			<ul class="nav navbar-nav navbar-right">
+				<!-- User Login Dropdown -->
+				<li class="dropdown user" id="header-user">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<?php
+							$avatarSrc=Yii::app()->request->baseUrl."/avatars/avatar.png";
+						?>
+						<img alt="" src="<?php echo $avatarSrc; ?>" />
+						<span class="username"><?php echo Yii::app()->user->name; ?></span>
+						<i class="fa fa-angle-down"></i>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="/user/profile"><i class="fa fa-user"></i> <?php _e('Profil') ?></a></li>
+						<li><a href="/site/logout"><i class="fa fa-power-off"></i> <?php _e('Çıkış') ?></a></li>
+					</ul>
+				</li>
+				<!-- /user login dropdown -->
+			</ul>
+			<!-- /Top Right Menu -->
+            
+            
+            <div class="navbar_logo"></div>
+            
+		</div>
+		<!-- /top navigation bar -->
+	</header> <!-- /.header -->
+
+
+
+
+
+<?php elseif(Yii::app()->controller->action->id!="login"): ?>
 <!-- Header -->
 	<header class="navbar clearfix navbar-fixed-top" id="header">
 		<!-- Top Navigation Bar -->
