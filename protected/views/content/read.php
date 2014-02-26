@@ -542,7 +542,7 @@ $this->pageTitle=Yii::app()->name;
 				var current= window.reader_slider.getCurrentSlide();
 				console.log(current);
 				var offset = $('#main-content').offset();
-				var height= $(window).height() - offset.top;
+				var height= $(window).height() - offset.top +25;
 				var width= $(window).width() - offset.left;
 				$(".bxslider li,.bx-viewport ,.bxslider iframe.page_iframe ").height (height);
 				$(".bxslider li,.bx-viewport ,.bxslider iframe.page_iframe ").width (width);
@@ -691,25 +691,22 @@ $this->pageTitle=Yii::app()->name;
 				console.log(page);
 
 				var newPageContainer=$("<li style=''></li>");
+				var newLoading = $('<div class="loadingt" style="position: absolute;background: #0c0c0c;top: 0;bottom: 0;left: 0;right: 0;z-index:1;display:block"></div>');
+				newLoading.appendTo(newPageContainer);
 
-				var newPage=$("<iframe name='page"+index+"'class='page_iframe' frameBorder='0' scrolling='no' style='overflow:hidden;margin:0 auto;' ></iframe>");
 
+				var newPage=$("<iframe name='page"+index+"'class='page_iframe' frameBorder='0' scrolling='no' style='overflow:hidden;margin:0 auto;' ></iframe>")
 				newPage.appendTo(newPageContainer);
+
 				newPageContainer.appendTo($(".reader_page_container .bxslider"));
+
 				newPage.attr("data-src",ContentFileRequesUrl + Items[page] );
-				//newPage.attr("src","http://reader.lindneo.com/ugur/css/ui/css/themes/loading.gif" );
+				
 				window.pages.push(newPage);
 
+				newLoading = null;
+				newPage = null;
 
-				
-				newPage.load(function(){
-						        	$(this)
-						        		.removeClass("lazy-hidden")
-						        		.addClass("lazy-loaded")
-						        		.fitToParent();
-						        	//show_visibles();
-					    });
-				
 			});
 			
 			
@@ -740,9 +737,14 @@ $this->pageTitle=Yii::app()->name;
 
 						if ( typeof simdiKapanacak != 'undefined'){
 							simdiKapanacak.removeAttr('src');
-							console.log("kapandı: "+ kapanacak);
+
+							
 						}
 					});
+
+
+					var loadingsToShowAgain = $(".loadingt");
+
 
 
 
@@ -751,15 +753,33 @@ $this->pageTitle=Yii::app()->name;
 						var simdiAcilacak  = $( $('.bxslider iframe.page_iframe')[acilacak] );
 
 						if ( typeof simdiAcilacak != 'undefined'){
+							
 							var attr = $(simdiAcilacak).attr('src');
 							if (!(typeof attr !== 'undefined' && attr !== false)) {
+								simdiAcilacak.parent().children('.loadingt').show();
 							  	simdiAcilacak.attr('src', simdiAcilacak.attr('data-src' ));
 								console.log("acildi: "+ acilacak);
 								simdiAcilacak.fitToParent();
+
+								console.log('loadingsToShowAgain:'+ loadingsToShowAgain.length);
+								simdiAcilacak.load(function(){
+									console.log($(this));
+
+						        	$(this)
+						        		.removeClass("lazy-hidden")
+						        		.addClass("lazy-loaded")
+						        		.fitToParent();	
+
+						        	$($(this).parent().children('.loadingt')[0]).fadeOut(2000);
+
+
+					    		});
 							}
 							
 						}
 					});
+
+					
 
 					
 					
