@@ -522,7 +522,11 @@ $this->pageTitle=Yii::app()->name;
 		        $iframe.height(innerHeight*zoom );
 		        
 		        
-		        $iframe.css('left', ( (parentWidth-innerWidth)/2/zoom )+"px");
+		        if (parentWidth-innerWidth*zoom > 0 ) 
+		        	$iframe.css('left', ( (parentWidth-innerWidth*zoom)/2 )+"px");
+		        else 
+		        	$iframe.css('left', "0px");
+
 	            $iframe.css('position','absolute');
 
 	            $iframe.css('position','absolute');
@@ -613,9 +617,20 @@ $this->pageTitle=Yii::app()->name;
 			});
 		});
 
-		
+		function handleTopLayer(){
+			if ($('#sidebar').hasClass('mini-menu')){
+					$('.page-header.reader_info_header').hide(300);
+				} else {
+					$('.page-header.reader_info_header').show(300);
+
+				}
+
+		}
 
 		function StartReaderApp (){
+
+			handleTopLayer();
+			
 			var thumbnailContent;
 			
 			$.each(BookMeta.metadata.meta, function(index,meta){
@@ -697,13 +712,23 @@ $this->pageTitle=Yii::app()->name;
 			
 			
 
-			$('#sidebar-collapse').click(function(){ resizeEverything(); });
+			$('#sidebar-collapse, .fa-bars').click(function(){ 
+				handleTopLayer();
+				console.log("resize now");
+				var nextTime = setTimeout(function() {
+
+					resizeEverything(); 
+					nextTime = null;
+					
+
+				}, 302);  
+			});
 			
 			
 			var onslide = function($slideElement, oldIndex, newIndex){ 
 
-					var kapanacaklar = [oldIndex-1,oldIndex,oldIndex+1];
-					var acilacaklar =  [newIndex-1,newIndex,newIndex+1];
+					var kapanacaklar = [oldIndex-2,oldIndex-1,oldIndex,oldIndex+1,oldIndex+2];
+					var acilacaklar =  [newIndex-2,newIndex-1,newIndex,newIndex+1,newIndex+2];
 					
 					
 					kapanacaklar = kapanacaklar.filter(function(i) {return !(acilacaklar.indexOf(i) > -1);});
