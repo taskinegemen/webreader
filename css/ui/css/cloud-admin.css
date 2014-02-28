@@ -9782,4 +9782,97 @@ span.reader_toc_dropdown_page_numbers {
 }
 
 
+
+.navbar-right {
+	position: absolute;
+	color: #FFFFFF;
+	height: 100%;
+	top: 0;
+	cursor: pointer;
+	right: 0;
+}
+
+.navbar-right > li{
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	padding: 0 10px;
+	position: relative;
+	float: right;
+	font-size: 25px;
+	height: 100%;
+	padding-top: 12px;
+}
+
+.navbar-right > li:hover{
+	background-color:#005F9B;
+}
+
+
+
+.read_page_user {
+	padding:0 !important;
+	margin:0 !important;	
+}
+
+
+
+.reader_info_dropdown li:first-child {
+	background-color:#fcfcfc;
+	color:#666;
+	padding:10px;
+	font-weight:bold;	
+}
+
+
+.reader_toc_dropdown li:first-child {
+	background-color:#fcfcfc;
+	color:#666;
+	padding:10px;
+	font-weight:bold;
+}
+
+.reader_info_dropdown li:hover {
+	border:none !important;	
+}
+
+.reader_toc_dropdown li:first-child:hover {
+	border:none;
+}
+
+span.okutus_info_linden {
+	height: 200px;
+	width: 300px;
+	position: relative;
+	display: block;
+	background-image: url(../../../css/ui/img/okutus_info_linden.png);
+	background-repeat: no-repeat;
+	background-size: 200px;
+	background-position: center;
+}
+
+
+.read_page_thumbnails {
+	width: 150px;
+	height: 40px;
+	background-color: #363636;
+	position: absolute;
+	bottom: 0;
+	z-index: 9999;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	line-height: 2.1em;
+	font-size: 20px;
+	color: #fff;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+
+
 /**  END OF READ PAGE ***********************************/

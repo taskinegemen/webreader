@@ -176,24 +176,49 @@ if (Yii::app()->controller->action->id=="read"):?>
 				</div>
 
 			<!-- Top Right Menu -->
-			<ul class="nav navbar-nav navbar-right">
-				<!-- User Login Dropdown -->
-				<li class="dropdown user" id="header-user">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			<ul class="nav navbar-nav navbar-right">  
+            
+            <!-- User Login Dropdown -->
+				<li class="dropdown user">
+					<a href="#" class="dropdown-toggle read_page_user" data-toggle="dropdown">
 						<?php
 							$avatarSrc=Yii::app()->request->baseUrl."/avatars/avatar.png";
 						?>
 						<img alt="" src="<?php echo $avatarSrc; ?>" />
-						<span class="username"><?php echo Yii::app()->user->name; ?></span>
-						<i class="fa fa-angle-down"></i>
 					</a>
 					<ul class="dropdown-menu">
+                    	<li><span class="username"><?php echo Yii::app()->user->name; ?></span></li>
 						<li><a href="/user/profile"><i class="fa fa-user"></i> <?php _e('Profil') ?></a></li>
 						<li><a href="/site/logout"><i class="fa fa-power-off"></i> <?php _e('Çıkış') ?></a></li>
 					</ul>
 				</li>
-				<!-- /user login dropdown -->
-			</ul>
+                
+                
+                
+                <li><i class="fa fa-info-circle dropdown-toggle" data-toggle="dropdown"></i>
+                	<ul class="dropdown-menu pull-right reader_info_dropdown">
+				  		<li>Bilgi</li>
+                        <li><a href="http://www.linden-tech.com" target="_blank"><span class="okutus_info_linden"></span></a></li>
+			        </ul>
+                </li>
+                
+				
+
+              <li><i class="fa fa-list-alt dropdown-toggle" data-toggle="dropdown"></i>
+                <ul class="dropdown-menu pull-right reader_toc_dropdown">
+                
+                <li>İÇİNDEKİLER</li>
+				  <li><a href="#page43"><span  reader-action='page-anchor' reader-data="43" class="reader_toc_dropdown_page_numbers">43</span> Şimdilik deneme yapılıyor kısa olmasın diye uzatıyoz da uzatıyoz işte böyle</a></li>
+				  <li><a href="#page125"><span  reader-action='page-anchor' reader-data="125" class="reader_toc_dropdown_page_numbers">125</span> Buralarda hep table of content maddeleri olacak</a></li>
+				  <li><a href="#page212"><span  reader-action='page-anchor'  reader-data="212" class="reader_toc_dropdown_page_numbers">212</span> İşte öyle denemeler şakalar falan</a></li>
+			    </ul>
+             </li>
+                
+                
+                <li><i class="fa fa-plus-circle"></i></li>
+                <li><i class="fa fa-arrows-alt"></i></li>
+
+            </ul>
 			<!-- /Top Right Menu -->
             
             
@@ -246,22 +271,25 @@ if (Yii::app()->controller->action->id=="read"):?>
 
 			<!-- Top Right Menu -->
 			<ul class="nav navbar-nav navbar-right">
-				<!-- User Login Dropdown -->
-				<li class="dropdown user" id="header-user">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				
+                
+                <!-- User Login Dropdown -->
+				<li class="dropdown user">
+					<a href="#" class="dropdown-toggle read_page_user" data-toggle="dropdown">
 						<?php
 							$avatarSrc=Yii::app()->request->baseUrl."/avatars/avatar.png";
 						?>
 						<img alt="" src="<?php echo $avatarSrc; ?>" />
-						<span class="username"><?php echo Yii::app()->user->name; ?></span>
-						<i class="fa fa-angle-down"></i>
 					</a>
 					<ul class="dropdown-menu">
+                    	<li><span class="username"><?php echo Yii::app()->user->name; ?></span></li>
 						<li><a href="/user/profile"><i class="fa fa-user"></i> <?php _e('Profil') ?></a></li>
 						<li><a href="/site/logout"><i class="fa fa-power-off"></i> <?php _e('Çıkış') ?></a></li>
 					</ul>
 				</li>
 				<!-- /user login dropdown -->
+                
+                
 			</ul>
 			<!-- /Top Right Menu -->
             

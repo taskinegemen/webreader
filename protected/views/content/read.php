@@ -10,56 +10,7 @@ $this->pageTitle=Yii::app()->name;
 	</script>
 
 	
-<!-- HEADER -->
-	<header class="navbar clearfix navbar-fixed-top" id="header">
-		<div class="container">
-        
-        
-        
-				<!-- TEAM STATUS FOR MOBILE -->
-					<div class="visible-xs">
-						<a href="#" class="team-status-toggle switcher btn dropdown-toggle">
-							<i class="fa fa-users"></i>
-						</a>
-					</div>
-					<!-- /TEAM STATUS FOR MOBILE -->
-					<!-- SIDEBAR COLLAPSE -->
-					<div id="sidebar-collapse" class="sidebar-collapse btn">
-						<i class="fa fa-bars" data-icon1="fa fa-bars" data-icon2="fa fa-bars" ></i> 
-					</div>
-					<!-- /SIDEBAR COLLAPSE -->
-				
-                <!-- BEGIN USER LOGIN DROPDOWN -->
-					<li class="dropdown user" id="header-user">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<img alt="" src="<?php echo Yii::app()->request->baseUrl; ?>/avatars/avatar.png" />
-							<span class="username">Erkan Öğümsöğütlü</span>
-							<i class="fa fa-angle-down"></i>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="#"><i class="fa fa-user"></i> My Profile</a></li>
-							<li><a href="#"><i class="fa fa-cog"></i> Account Settings</a></li>
-							<li><a href="#"><i class="fa fa-eye"></i> Privacy Settings</a></li>
-							<li><a href="login.html"><i class="fa fa-power-off"></i> Log Out</a></li>
-						</ul>
-					</li>
-					<!-- END USER LOGIN DROPDOWN -->
-                    
-                    
-                    
-                <!-- COMPANY LOGO -->
-					<div class="linden_logo"></div>
-					<!-- /COMPANY LOGO -->
-                    
-                    
-                    
-                    
-                
-                
-		</div>
-		
-	</header>
-	<!--/HEADER -->
+
 	
 	<!-- PAGE -->
 	<section id="page">
@@ -169,8 +120,10 @@ $this->pageTitle=Yii::app()->name;
 
 							<ul class="bxslider">
 
-							</ul>
 
+
+							</ul>
+		<div class="read_page_thumbnails">İÇERİK</div>
                 </div>
 				<!-- /reader_page_container -->      
                                 
@@ -194,8 +147,10 @@ $this->pageTitle=Yii::app()->name;
 		jQuery(document).ready(function() {		
 			App.setPage("widgets_box");  //Set current page
 			App.init(); //Initialise plugins and elements
+			
 		});
 	</script>
+
 
 
 	<!-- /JAVASCRIPTS -->
