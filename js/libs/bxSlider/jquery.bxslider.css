@@ -30,7 +30,7 @@
 
 .bx-wrapper .bx-viewport {
 	left: 0;
-	background: #333;
+	background: #0c0c0c;
 }
 
 
@@ -42,8 +42,7 @@
 
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
-	position: absolute;
-	bottom: -30px;
+	position: fixed;
 	width: 100%;
 }
 
@@ -69,7 +68,9 @@
 	font-weight: bold;
 	color: #666;
 	padding-top: 20px;
-	background-color:#000;
+	background-color: #000;
+	bottom: -100px;
+	height: 100px;
 }
 
 .bx-wrapper .bx-pager .bx-pager-item,

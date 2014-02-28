@@ -20,6 +20,16 @@ jQuery(document).ready(function() {
 			  },
 			  
 			});
+			
+			
+			$( ".read_page_thumbnails" ).hover(function() {
+			  $( ".read_page_thumbnails" ).css("bottom","50px");
+			  $( ".bx-custom-pager" ).css("bottom","50px");
+													      });
+											
+		
+			
+			
 });
 
 
@@ -86,7 +96,7 @@ function StartReaderApp (){
 			$.each(PageIDArray, function(index,page){
 
 
-				var newPageContainer=$("<li style=''></li>");
+				var newPageContainer=$("<li style='margin-top:5px;'></li>");
 				var newLoading = $('<div class="loadingt" style="position: absolute;background: #0c0c0c;top: 0;bottom: 0;left: 0;right: 0;z-index:1;display:block"></div>');
 				newLoading.appendTo(newPageContainer);
 

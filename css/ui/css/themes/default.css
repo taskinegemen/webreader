@@ -16,7 +16,10 @@ background: -o-linear-gradient(top,  #2880b9 0%,#0063A2 100%); /* Opera 11.10+ *
 background: -ms-linear-gradient(top,  #2880b9 0%,#0063A2 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #2880b9 0%,#0063A2 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2880b9', endColorstr='#006fb5',GradientType=0 ); /* IE6-9 */
+border-bottom: 2px solid #00558B;
 }
+
+
 
 .navbar .navbar-brand {
   float: left;
@@ -101,6 +104,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2880b9', end
   top: 100%;
   z-index: 1000;
   font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top:2px !important;
 }
 .dropdown-menu .dropdown-title {
   background: none repeat scroll 0 0 #486d93;
@@ -142,7 +146,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2880b9', end
 }
 .dropdown-menu li a {
   background-color: #fff;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: none;
   border-top: 1px solid #E7E7E7;
   display: block;
   line-height: 40px;
@@ -165,6 +169,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2880b9', end
 
 .dropdown-menu li:hover {
 	border-right:5px solid #2880b9;
+}
+
+li.dropdown.user > ul.dropdown-menu li:first-child{
+	background-color: #fcfcfc;
+	line-height: 2em;
+	color: #666;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+li.dropdown.user > ul.dropdown-menu li:first-child:hover {
+	border-right:none;
 }
 
 .dropdown-menu.context {
@@ -280,10 +296,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2880b9', end
   border-top: none;
 }
 .dropdown.user img {
-  margin-right: 5px;
+  margin-right: 0px;
   border-radius: 99px;
-  height: 29px;
-  width: 29px;
+  height: 25px;
+  width: 25px;
   /* filter: url("data:image/svg+xml;filter: gray;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); */
 
 }
