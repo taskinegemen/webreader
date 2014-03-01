@@ -101,21 +101,38 @@
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
-	left: 10px;
-	background: url(images/controls.png) no-repeat 0 -32px;
+	width:40px !important;
+	height:80px !important;
+	left: 0;
+	background: url(images/slider_controls.png);
+	opacity:0.8;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;	
 }
 
 .bx-wrapper .bx-next {
-	right: 10px;
-	background: url(images/controls.png) no-repeat -43px -32px;
+	width:40px !important;
+	height:80px !important;
+	right: 0;
+	background: url(images/slider_controls.png);
+	transform:rotate(180deg);
+	-ms-transform:rotate(180deg); /* IE 9 */
+	-webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
+	opacity:0.8;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 .bx-wrapper .bx-prev:hover {
-	background-position: 0 0;
+	opacity:1;
 }
 
 .bx-wrapper .bx-next:hover {
-	background-position: -43px 0;
+	opacity:1;
 }
 
 .bx-wrapper .bx-controls-direction a {
