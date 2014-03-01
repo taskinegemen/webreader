@@ -140,7 +140,7 @@
 <?php 
 if (Yii::app()->controller->action->id=="read"):?>
 <!-- Header -->
-	<header class="navbar clearfix navbar-fixed-top" id="header">
+	<header class="navbar clearfix navbar-fixed-top read_page_navbar" id="header">
 		<!-- Top Navigation Bar -->
 		<div class="container">
 		<div class="navbar-brand">
