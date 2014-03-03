@@ -5138,3 +5138,790 @@ Stack trace:
 REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
 HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
 ---
+2014/02/28 08:04:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/profile".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/profile')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/index.php/user/profile
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/list
+---
+2014/02/28 08:05:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/profile".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/profile')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/index.php/user/profile
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/list
+---
+2014/02/28 08:19:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "httpservice/authenticate".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('httpservice/aut...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/httpservice/authenticate
+---
+2014/02/28 08:19:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "httpservice/authenticate".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('httpservice/aut...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/httpservice/authenticate
+---
+2014/02/28 08:20:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "httpservice/authenticate".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('httpservice/aut...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/httpservice/authenticate
+---
+2014/02/28 08:20:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/02/28 08:20:20 [error] [php] include(Httpservice.php): failed to open stream: No such file or directory (/var/www/reader/ugur/yii-1.1.14.f0fee9/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/reader/ugur/protected/components/KerberizedServer.php(177): spl_autoload_call()
+#1 /var/www/reader/ugur/protected/components/KerberizedServer.php(70): KerberizedServer->getHTTPServiceSecretKey()
+#2 /var/www/reader/ugur/protected/controllers/KerberizedServiceController.php(16): KerberizedServer->authenticate()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): KerberizedServiceController->actionAuthenticate()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): KerberizedServiceController->runAction()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): KerberizedServiceController->runActionWithFilters()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): KerberizedServiceController->run()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/kerberizedservice/authenticate
+in /var/www/reader/ugur/protected/components/KerberizedServer.php (177)
+in /var/www/reader/ugur/protected/components/KerberizedServer.php (70)
+in /var/www/reader/ugur/protected/controllers/KerberizedServiceController.php (16)
+2014/02/28 08:21:00 [error] [php] include(Httpservice.php): failed to open stream: No such file or directory (/var/www/reader/ugur/yii-1.1.14.f0fee9/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/reader/ugur/protected/components/KerberizedServer.php(177): spl_autoload_call()
+#1 /var/www/reader/ugur/protected/components/KerberizedServer.php(70): KerberizedServer->getHTTPServiceSecretKey()
+#2 /var/www/reader/ugur/protected/controllers/KerberizedServiceController.php(16): KerberizedServer->authenticate()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): KerberizedServiceController->actionAuthenticate()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): KerberizedServiceController->runAction()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): KerberizedServiceController->runActionWithFilters()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): KerberizedServiceController->run()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/kerberizedservice/authenticate
+in /var/www/reader/ugur/protected/components/KerberizedServer.php (177)
+in /var/www/reader/ugur/protected/components/KerberizedServer.php (70)
+in /var/www/reader/ugur/protected/controllers/KerberizedServiceController.php (16)
+2014/02/28 08:31:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "httpservice/authenticate".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('httpservice/aut...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/httpservice/authenticate
+HTTP_REFERER=http://kerbela.lindneo.com/httpService/
+---
+2014/02/28 08:33:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/02/28 09:06:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kerberizedservice/anyservice".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('kerberizedservi...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/kerberizedservice/anyservice
+---
+2014/02/28 09:07:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kerberizedservice/anyservice".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('kerberizedservi...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/kerberizedservice/anyservice
+---
+2014/02/28 12:00:37 [error] [php] unlink(./tmp/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4): No such file or directory (/var/www/reader/ugur/protected/controllers/ContentController.php:166)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/getcontent/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4
+in /var/www/reader/ugur/protected/controllers/ContentController.php (166)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (134)
+in /var/www/reader/ugur/index.php (15)
+2014/02/28 12:00:50 [error] [php] unlink(./tmp/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4): No such file or directory (/var/www/reader/ugur/protected/controllers/ContentController.php:166)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/content/getcontent/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4
+in /var/www/reader/ugur/protected/controllers/ContentController.php (166)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (134)
+in /var/www/reader/ugur/index.php (15)
+2014/02/28 12:35:59 [error] [php] unlink(./tmp/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4): No such file or directory (/var/www/reader/ugur/protected/controllers/ContentController.php:166)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/content/getcontent/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4
+in /var/www/reader/ugur/protected/controllers/ContentController.php (166)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (134)
+in /var/www/reader/ugur/index.php (15)
+2014/02/28 12:37:01 [error] [php] unlink(./tmp/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4): No such file or directory (/var/www/reader/ugur/protected/controllers/ContentController.php:166)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/content/getcontent/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4
+in /var/www/reader/ugur/protected/controllers/ContentController.php (166)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (134)
+in /var/www/reader/ugur/index.php (15)
+2014/02/28 12:37:03 [error] [php] unlink(./tmp/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4): No such file or directory (/var/www/reader/ugur/protected/controllers/ContentController.php:166)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/content/getcontent/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4
+in /var/www/reader/ugur/protected/controllers/ContentController.php (166)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (134)
+in /var/www/reader/ugur/index.php (15)
+2014/02/28 12:37:04 [error] [php] unlink(./tmp/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4): No such file or directory (/var/www/reader/ugur/protected/controllers/ContentController.php:166)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/content/getcontent/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4
+in /var/www/reader/ugur/protected/controllers/ContentController.php (166)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (134)
+in /var/www/reader/ugur/index.php (15)
+2014/02/28 12:37:05 [error] [php] unlink(./tmp/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4): No such file or directory (/var/www/reader/ugur/protected/controllers/ContentController.php:166)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/content/getcontent/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4
+in /var/www/reader/ugur/protected/controllers/ContentController.php (166)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (134)
+in /var/www/reader/ugur/index.php (15)
+2014/02/28 12:43:06 [error] [php] unlink(./tmp/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4): No such file or directory (/var/www/reader/ugur/protected/controllers/ContentController.php:166)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/content/getcontent/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4
+in /var/www/reader/ugur/protected/controllers/ContentController.php (166)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (134)
+in /var/www/reader/ugur/index.php (15)
+2014/02/28 12:50:25 [error] [php] unlink(./tmp/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4): No such file or directory (/var/www/reader/ugur/protected/controllers/ContentController.php:166)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/content/getcontent/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4
+in /var/www/reader/ugur/protected/controllers/ContentController.php (166)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (134)
+in /var/www/reader/ugur/index.php (15)
+2014/02/28 13:16:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/pl7ci8I20qG9l40pkdYjWEcSrzpmVS9zXFLDYhZ78gbq
+---
+2014/02/28 13:24:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/pl7ci8I20qG9l40pkdYjWEcSrzpmVS9zXFLDYhZ78gbq
+---
+2014/02/28 13:25:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/pl7ci8I20qG9l40pkdYjWEcSrzpmVS9zXFLDYhZ78gbq
+---
+2014/02/28 13:26:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/pl7ci8I20qG9l40pkdYjWEcSrzpmVS9zXFLDYhZ78gbq
+---
+2014/02/28 13:27:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/pl7ci8I20qG9l40pkdYjWEcSrzpmVS9zXFLDYhZ78gbq
+---
+2014/02/28 13:33:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/pl7ci8I20qG9l40pkdYjWEcSrzpmVS9zXFLDYhZ78gbq
+---
+2014/02/28 13:34:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/pl7ci8I20qG9l40pkdYjWEcSrzpmVS9zXFLDYhZ78gbq
+---
+2014/02/28 13:37:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/pl7ci8I20qG9l40pkdYjWEcSrzpmVS9zXFLDYhZ78gbq
+---
+2014/02/28 13:38:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/pl7ci8I20qG9l40pkdYjWEcSrzpmVS9zXFLDYhZ78gbq
+---
+2014/02/28 13:39:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/pl7ci8I20qG9l40pkdYjWEcSrzpmVS9zXFLDYhZ78gbq
+---
+2014/02/28 13:51:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/pl7ci8I20qG9l40pkdYjWEcSrzpmVS9zXFLDYhZ78gbq
+---
+2014/02/28 13:51:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/pl7ci8I20qG9l40pkdYjWEcSrzpmVS9zXFLDYhZ78gbq
+---
+2014/02/28 13:53:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/pl7ci8I20qG9l40pkdYjWEcSrzpmVS9zXFLDYhZ78gbq
+---
+2014/02/28 13:55:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "contents/getcontent".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('contents/getcon...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/index.php/contents/getcontent
+---
+2014/02/28 13:55:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "contents/getcontent".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('contents/getcon...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/index.php/contents/getcontent/pl7ci8I20qG9l40pkdYjWEcSrzpmVS9zXFLDYhZ78gbq
+---
+2014/02/28 13:56:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "contents/getContent".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('contents/getCon...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/index.php/contents/getContent/pl7ci8I20qG9l40pkdYjWEcSrzpmVS9zXFLDYhZ78gbq
+---
+2014/02/28 13:56:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/pl7ci8I20qG9l40pkdYjWEcSrzpmVS9zXFLDYhZ78gbq
+---
+2014/02/28 14:04:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/pl7ci8I20qG9l40pkdYjWEcSrzpmVS9zXFLDYhZ78gbq
+---
+2014/02/28 14:04:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/pl7ci8I20qG9l40pkdYjWEcSrzpmVS9zXFLDYhZ78gbq
+---
+2014/02/28 14:05:28 [error] [php] file_get_contents(contents/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (43)
+in /var/www/reader/ugur/index.php (15)
+2014/02/28 14:05:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+---
+2014/02/28 14:05:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+---
+2014/02/28 14:05:37 [error] [php] file_get_contents(contents/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (43)
+in /var/www/reader/ugur/index.php (15)
+2014/02/28 14:06:37 [error] [php] file_get_contents(contents/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (43)
+in /var/www/reader/ugur/index.php (15)
+2014/02/28 14:06:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+---
+2014/02/28 14:06:58 [error] [php] file_get_contents(contents/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (43)
+in /var/www/reader/ugur/index.php (15)
+2014/02/28 14:06:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+---
+2014/02/28 14:16:07 [error] [php] file_get_contents(contents/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (43)
+in /var/www/reader/ugur/index.php (15)
+2014/02/28 14:16:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+---
+2014/02/28 14:29:15 [error] [php] file_get_contents(contents/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (43)
+in /var/www/reader/ugur/index.php (15)
+2014/02/28 14:29:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+---
+2014/02/28 14:42:36 [error] [php] file_get_contents(contents/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (43)
+in /var/www/reader/ugur/index.php (15)
+2014/02/28 14:42:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+---
+2014/02/28 14:55:29 [error] [php] file_get_contents(contents/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (43)
+in /var/www/reader/ugur/index.php (15)
+2014/02/28 14:55:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+---
+2014/02/28 15:55:07 [error] [php] file_get_contents(contents/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (43)
+in /var/www/reader/ugur/index.php (15)
+2014/02/28 15:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+---
+2014/02/28 16:44:34 [error] [php] file_get_contents(contents/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (43)
+in /var/www/reader/ugur/index.php (15)
+2014/02/28 16:44:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/ibAIF0BbQHaGcuYPTIehnOhSYljFRJ668QhsW2YQTJXN
+---
+2014/03/01 04:43:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/02 21:10:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/03 09:15:53 [error] [php] unlink(./tmp/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4): No such file or directory (/var/www/reader/ugur/protected/controllers/ContentController.php:166)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/content/getcontent/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4
+in /var/www/reader/ugur/protected/controllers/ContentController.php (166)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (134)
+in /var/www/reader/ugur/index.php (15)
+2014/03/03 09:25:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4
+---
+2014/03/03 09:34:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4
+---
+2014/03/03 09:39:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4
+---
+2014/03/03 09:39:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4
+---
+2014/03/03 09:51:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4
+---
+2014/03/03 09:51:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/logo/linden.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/img/logo/li...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/img/logo/linden.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4
+---
+2014/03/03 09:51:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/N32nrTqswen3c36Rw5rP59B5RrL9Xq69qWbhstresIy4
+---
+2014/03/03 10:29:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/site/login
+---
