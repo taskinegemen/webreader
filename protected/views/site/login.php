@@ -10,8 +10,22 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 // );
 ?>
 <!-- PAGE -->
-	
-    
+<!-- login -->
+  <script type="text/javascript">
+
+  	$(document).on("click","#loginButton",function(e){
+
+		var username=$('#LoginForm_username').val();
+		var password=$('#LoginForm_password').val();
+		console.log(username);
+		console.log(password);
+		var kerbela=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','<?php echo Yii::app()->request->baseUrl; ?>/kerberizedservice/authenticate',username,password,'kerbela','reader','6000');
+		var response=kerbela.execute();
+		console.log(response);
+	});
+
+  </script>
+ <!-- login -->
 <div class="login_page_container">    
 
 
@@ -63,7 +77,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 								  </div>
 
 								  <div class="form-group">
-									<button type="submit" class="btn btn-primary login_submit"><?php _e("Giriş Yap"); ?></button>
+									<a href="#" class="btn btn-primary login_submit" id="loginButton"><?php _e("Giriş Yap"); ?></a>
 									
 								  </div>
 								</form>
