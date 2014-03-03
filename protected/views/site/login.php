@@ -17,8 +17,6 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 
 		var username=$('#LoginForm_username').val();
 		var password=$('#LoginForm_password').val();
-		console.log(username);
-		console.log(password);
 		var kerbela=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','<?php echo Yii::app()->request->baseUrl; ?>/kerberizedservice/authenticate',username,password,'kerbela','reader','6000');
 		var response=kerbela.execute();
 		console.log(response);
