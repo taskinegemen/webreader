@@ -124,6 +124,12 @@
 		
 		<!-- bxSlider -->
 
+		<!-- kerbela -->
+		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/kerbela/sha256.js"></script>
+		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/kerbela/aes.js"></script>
+		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/kerbela/enc-base64-min.js"></script>
+		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/kerbela/kerbela.js"></script>
+		<!-- kerbela -->
 		<script>
 			$( document ).ready(function() {
 			  new UISearch( document.getElementById( 'sb-search' ) );
@@ -299,7 +305,9 @@ if (Yii::app()->controller->action->id=="read"):?>
 		</div>
 		<!-- /top navigation bar -->
 	</header> <!-- /.header -->
-	<?php endif; ?>
+<?php elseif(Yii::app()->controller->action->id=="login"): ?>
+
+<?php endif; ?>
 	
 	<?php echo $content; ?>
 
