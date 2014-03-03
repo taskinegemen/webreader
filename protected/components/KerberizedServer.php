@@ -4,7 +4,7 @@ class KerberizedServer{
 	public $auth;
 	public $http_service_ticket;
 	public $encryptionLib;
-	const KERBERIZED_SERVER_NAME = "koala";
+	const KERBERIZED_SERVER_NAME = "reader";
 	const TICKET_TIMEOUT = 120;//2 minutes
 
 	public function __construct($auth,$http_service_ticket,$encryptionLib){
@@ -93,7 +93,7 @@ class KerberizedServer{
 								REST::sendResponse(200,
 														$this->getEcryptionLib()->encrypt(
 																					CJSON::encode(
-																									array('requested_http_service'=>'koala',
+																									array('requested_http_service'=>KerberizedServer::KERBERIZED_SERVER_NAME,
 																						  				  'timestamp'=>time()
 																					      				 )
 																				 				)
