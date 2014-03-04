@@ -88,8 +88,16 @@
 			result =this.decoder(CryptoJS.AES.decrypt(EncryptedData, Key,{mode:CryptoJS.mode.CBC}).toString(CryptoJS.enc.Utf8));
 		}
 		catch(err){
-			result=Error;
+			console.log(Error);
+			if(Error.status==undefined){
+				result={status:false,message:'User password is incorrect!'};
+			}
+			else
+			{
+			result=Error; 
+			}
 		}
+		console.log(result);
 		return result;
 	};  
 
@@ -103,6 +111,11 @@
 		  			success: callback,
 		  			dataType: dataType
 				});
+	}
+	$.fn.getAuthTicket=function(){
+		HTTP_service_session_key=this.getTicket().HTTP_service_session_key;
+		console.log(HTTP_service_session_key);
+		return CryptoJS.AES.encrypt("{user_id:"+this.getUserId()+",timestamp:"+this.getTimestamp()+"}", HTTP_service_session_key,{mode:CryptoJS.mode.CBC}).toString(CryptoJS.enc.base64);
 	}
 	$.fn.getSource=function(destination,data){
 		console.log(this.getTicket());
@@ -158,6 +171,7 @@
 		HTTP_session_ticket=result.source.HTTP_session_ticket;
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		HTTP_session_ticket_decrypted=this.decrypt(HTTP_session_ticket,TGS_session_key,result.source);
+		console.log(HTTP_session_ticket_decrypted.status);
 		if(HTTP_session_ticket_decrypted.status==false){return HTTP_session_ticket_decrypted;}
 		console.log(HTTP_session_ticket_decrypted);
 		HTTP_service_session_key=HTTP_session_ticket_decrypted.HTTP_service_session_key;
