@@ -10,7 +10,6 @@ jQuery(document).ready(function() {
 });
 </script><!-- /JAVASCRIPTS -->
 
-<body>
 <div class="market_page_container">
 	<div id="sidebar" class="sidebar sidebar-fixed">
 		<div class="sidebar-menu nav-collapse">

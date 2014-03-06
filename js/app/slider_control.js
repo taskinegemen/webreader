@@ -6,8 +6,10 @@ window.SlideController = (function( $ ) {
 	var that = this;
 
 	var options = {
-    	selector : ".bxslider",
-    	noImagePreview : "/erkan/css/nopreview.png"
+    	selector : ".bxslider", 
+    	noImagePreview : "/css/nopreview.png",
+    	fileRequestRoute : "../file/"
+
 	};
 
 	var reader_slider;
@@ -33,7 +35,7 @@ window.SlideController = (function( $ ) {
 	var buildPager = function(slideIndex){
 					switch(slideIndex){
 					  default:
-					  	return "<img alt='Page"+slideIndex+"' src='"+options.noImagePreview+"'>";
+					  	return "<img alt='Page"+slideIndex+"' src='"+ get_file_request_url() + Items[PageIDArray[slideIndex]].replace('.html','.jpg') +"'>";
 					  break;
 					}
 				  };
