@@ -207,7 +207,7 @@ if (Yii::app()->controller->action->id=="read"):?>
               <li><i class="fa fa-list-alt dropdown-toggle" data-toggle="dropdown"></i>
                 <ul class="dropdown-menu pull-right reader_toc_dropdown">
                 
-                <li>İÇİNDEKİLER</li>
+                <li>İçindekiler</li>
 				  <li><a href="#page43"><span  reader-action='page-anchor' reader-data="43" class="reader_toc_dropdown_page_numbers">43</span> Şimdilik deneme yapılıyor kısa olmasın diye uzatıyoz da uzatıyoz işte böyle</a></li>
 				  <li><a href="#page125"><span  reader-action='page-anchor' reader-data="125" class="reader_toc_dropdown_page_numbers">125</span> Buralarda hep table of content maddeleri olacak</a></li>
 				  <li><a href="#page212"><span  reader-action='page-anchor'  reader-data="212" class="reader_toc_dropdown_page_numbers">212</span> İşte öyle denemeler şakalar falan</a></li>

@@ -64,7 +64,7 @@ $this->pageTitle=Yii::app()->name;
 <!-- /stars_rating_of_the_book -->
 
 
-<div class="number_rating_of_the_book">583</div>
+<div class="number_rating_of_the_book">(583)</div>
 
 </div>
 <!-- /book_info_book_cover_container -->

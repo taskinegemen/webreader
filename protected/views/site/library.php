@@ -396,7 +396,6 @@ $this->pageTitle=Yii::app()->name;
 
 </div>
 
-<a class="btn btn-default confirm-dialog" href="#">Confirm Alert</a>
 
 
 

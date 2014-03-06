@@ -316,7 +316,7 @@ li.dropdown.user > ul.dropdown-menu li:first-child:hover {
   height:100%;
   position: absolute;
   border-bottom: 1px solid #e7e7e7;
-  margin-top:50px;
+  /** margin-top:50px; **/
   -webkit-box-shadow: 2px 0 4px 0 #E0E0E0;
   box-shadow: 2px 0 4px 0 #E0E0E0;
   -webkit-transition: margin 0.3s;
