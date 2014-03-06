@@ -7246,3 +7246,156 @@ Stack trace:
 REQUEST_URI=/ugur/js/libs/bxSlider/images/slider_controls.png
 HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
 ---
+2014/03/06 14:18:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/06 14:18:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/06 14:28:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/06 14:28:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/06 14:38:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/06 14:43:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/06 14:51:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/06 14:51:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/06 14:58:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/06 15:12:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/06 15:17:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/06 15:18:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "library".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('library')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/library
+HTTP_REFERER=http://reader.lindneo.com/
+---
+2014/03/06 15:19:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/content/read/iufkT2XKp6RY376yWOCxTIW4SINH525YPtWhzxOqbuVv
+---
+2014/03/06 15:19:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/content/read/iufkT2XKp6RY376yWOCxTIW4SINH525YPtWhzxOqbuVv
+---
+2014/03/06 15:49:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/06 15:54:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/06 16:11:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
