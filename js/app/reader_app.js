@@ -11,6 +11,7 @@ jQuery(document).ready(function() {
 			  	StartReaderApp();
 			  	window.SlideController.init({
 					selector:".bxslider",
+					
 				});
 
 				$(document).ready(resizeEverything);
