@@ -7769,3 +7769,129 @@ Stack trace:
 REQUEST_URI=/egemen/js/libs/bxSlider/images/slider_controls.png
 HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/read/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd
 ---
+2014/03/07 09:32:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/07 09:33:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/07 09:33:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/07 09:33:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/07 09:33:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/07 09:33:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/07 09:34:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/07 09:40:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/07 09:40:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/07 09:40:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/07 09:41:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/07 09:45:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/07 09:45:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/07 11:54:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
