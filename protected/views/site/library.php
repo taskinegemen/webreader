@@ -4,27 +4,37 @@
 ?>
 
 <script type="text/javascript">
-jQuery(document).ready(function() {     
-	App.setPage("gallery");  //Set current page
-	App.init(); //Initialise plugins and elements
-});
+	jQuery(document).ready(function() {     
+		App.setPage("gallery");  //Set current page
+		App.init(); //Initialise plugins and elements
+	});
 </script><!-- /JAVASCRIPTS -->
 
 <div class="market_page_container">
 	<div id="sidebar" class="sidebar sidebar-fixed">
 		<div class="sidebar-menu nav-collapse">
 			<!--=== Navigation ===-->
-			<ul>
-				<li class="current">
-					<a href="%3C?php%20echo%20$this-%3EcreateUrl(">"&gt; <span class="menu-text">Kütüphanem</span></a>
-				</li>
-				<li>
-					<a href="%3C?php%20echo%20$this-%3EcreateUrl(">"&gt; <span class="menu-text">Mağaza</span></a>
-				</li>
-				<li>
-					<a href="%3C?php%20echo%20$this-%3EcreateUrl(">"&gt; <span class="menu-text">Profilim</span></a>
-				</li>
-			</ul><!-- /Navigation -->
+		<ul>
+			<li class="current">
+				<a href="<?php echo $this->createUrl("site/library"); ?>">
+					<i class="fa fa-book fa-fw"></i>
+					<span class="menu-text">Kütüphanem</span>
+				</a>
+			</li> 
+			<li>
+				<a href="<?php echo  $this->createUrl("content/list"); ?>">
+					<i class="fa fa-briefcase fa-fw"></i> 
+                    <span class="menu-text">Mağaza</span>
+				</a>
+			</li>
+			<li>
+				<a href="<?php echo $this->createUrl("user/profile"); ?>">
+					<i class="fa fa-user fa-fw"></i> 
+                    <span class="menu-text">Profilim</span>
+				</a>
+			</li>
+		</ul>
+		<!-- /Navigation -->
 		</div>
 	</div><!-- /Sidebar -->
 	<div id="main-content">
@@ -337,7 +347,7 @@ jQuery(document).ready(function() {
 							<div class="reader_book_fav"></div>
 						</div><!-- /reader_book_card_info_container -->
 					</div><!-- END OF READER BOOK CARD -->
-				</div><a class="btn btn-default confirm-dialog" href="#">Confirm Alert</a>
+				</div>
 			</div>
 		</div>
 	</div>

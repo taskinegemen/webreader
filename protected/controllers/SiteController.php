@@ -71,7 +71,7 @@ class SiteController extends Controller
 		// using the default layout 'protected/views/layouts/main.php'
 		//$this->render('index');
 		
-		$this->redirect('library');
+		$this->redirect('site/library');
 	}
 
 	/**
@@ -119,7 +119,7 @@ class SiteController extends Controller
 	 */
 	public function actionLibrary(){
 		if (!$this->authenticate()) {
-			return null;
+			//return null;
 		}
 		//get user's contents from Koala
 		$contents = "";
