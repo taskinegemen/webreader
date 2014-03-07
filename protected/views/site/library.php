@@ -348,7 +348,6 @@
 						</div><!-- /reader_book_card_info_container -->
 					</div><!-- END OF READER BOOK CARD -->
 				</div>
-				<a class="btn btn-default confirm-dialog" href="#">Confirm Alert</a>
 			</div>
 		</div>
 	</div>
