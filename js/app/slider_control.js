@@ -35,7 +35,7 @@ window.SlideController = (function( $ ) {
 	var buildPager = function(slideIndex){
 					switch(slideIndex){
 					  default:
-					  	return "<img alt='Page"+slideIndex+"' src='"+ get_file_request_url() + Items[PageIDArray[slideIndex]].replace('.html','.jpg') +"'>";
+					  	return "<img alt='Page"+slideIndex+"' src='"+ get_file_request_url() + Items[PageIDArray[slideIndex]].replace('.html','.jpg').replace('.xhtml','.jpg').replace('.htm','.jpg') +"'>";
 					  break;
 					}
 				  };
