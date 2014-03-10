@@ -12,10 +12,19 @@ $this->pageTitle=Yii::app()->name;
 
 		}
 	</script>
+
+	<script type="text/javascript" src='<?php echo Yii::app()->request->baseUrl; ?>/js/libs/jquery.fullscreen-min.js'></script>
 	<script type="text/javascript" src='<?php echo Yii::app()->request->baseUrl; ?>/js/libs/iscroll-lite.js'></script>
 	<style type="text/css">
 
 	</style>
+
+
+	<script type="text/javascript">
+
+
+
+	</script>
 
 	
 	<!-- PAGE -->

@@ -29,7 +29,8 @@ jQuery(document).ready(function() {
 			  $(".bx-pager").css({'bottom': '0px', 'overflow-x': 'scroll', 'overflow-y': 'hidden', 'white-space':'nowrap', 'height': '150px'});
 
 													      });
-											
+
+
 		
 			
 			
@@ -59,12 +60,13 @@ function StartReaderApp (){
 				};
 				Pages[spines['@attributes']['idref']]=NewPageComponent;
 				PageIDArray.push(spines['@attributes']['idref']);
+
 			});
 
 			$.each(BookMeta.manifest.item, function(index,item){
 				
 				Items[item["@attributes"]["id"]] = item["@attributes"]["href"];
-
+				PageSrcArray[item["@attributes"]["href"] ] = item["@attributes"]["id"];
 				if (thumbnailContent === item["@attributes"]["id"] ){
 					var newThumbnailImage = $("<img/>");
 					newThumbnailImage.attr('src',ContentFileRequesUrl+item["@attributes"]["href"] );
@@ -118,5 +120,47 @@ function StartReaderApp (){
 
 			});
 			
+
+
+
+			//Get Table Of Contents
+			$.get(ContentFileRequesUrl+Items["ncx"])
+				.done(function(e){
+					xmlDoc = $.parseXML( e ),
+  					$xml = $( xmlDoc ),
+  					$navMap = $xml.find( "navPoint" );
+
+					//console.log($navMap.children('navlabel').text());
+					console.log($navMap);
+					$('ul.reader_toc_dropdown li:not(:first)').remove(); 
+					$navMap.each(function(index,element){
+						console.log(element);
+						var source=$(element).find('content').attr("src");
+
+						var newElement = {
+							'label' : $(element).find('navLabel').find('text').text(),
+							'link' : source,
+							'pageNumber': PageIDArray.indexOf(PageSrcArray[source])
+							
+						};
+						
+						var newItem = $('<li> \
+						<a href="#page'+newElement.pageNumber+'"> \
+								<span reader-action="page-anchor" reader-data="'+newElement.pageNumber+'" class="reader_toc_dropdown_page_numbers"> \
+									'+newElement.pageNumber+' \
+								</span> \
+								'+newElement.label+' \
+							</a> \
+						</li>');
+						$('ul.reader_toc_dropdown').append(newItem);
+
+
+
+
+						console.log(newElement);
+						
+
+					});
+				});
 
 }

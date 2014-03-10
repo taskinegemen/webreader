@@ -35,7 +35,7 @@ window.SlideController = (function( $ ) {
 	var buildPager = function(slideIndex){
 					switch(slideIndex){
 					  default:
-					  	return "<img alt='Page"+slideIndex+"' src='"+ get_file_request_url() + Items[PageIDArray[slideIndex]].replace('.html','.jpg').replace('.xhtml','.jpg').replace('.htm','.jpg') +"'>";
+					  	return "<img width='150' alt='Page"+slideIndex+"' src='"+ get_file_request_url() + Items[PageIDArray[slideIndex]].replace('.html','.jpg').replace('.xhtml','.jpg').replace('.htm','.jpg') +"'>";
 					  break;
 					}
 				  };
@@ -109,14 +109,22 @@ window.SlideController = (function( $ ) {
 				buildPager: this.buildPager,
 		});
 		this.reader_slider=reader_slider;
-		
-		//if reader-action is clicked send it to controller
-		$("[reader-action]").parent().click(function(e){
-					var action = $(thischild).attr("reader-action");
-					var readerData = $(thischild).attr("reader-data");
-					var thischild= $(this).children("[reader-action]");
-					this.controller (action,readerData,thischild,reader_slider);
+		var that = this;
+		$(document).ready(function(){
+			console.log($(this));
+			$("[reader-action]")
+				.parent()
+				.on('click',
+					function(e){
+						var action = $(thischild).attr("reader-action");
+						var readerData = $(thischild).attr("reader-data");
+						var thischild= $(this).children("[reader-action]");
+						that.controller (action,readerData,thischild,reader_slider);
+				});
+
 		});
+		//if reader-action is clicked send it to controller
+		
 
 
 		this.onslide (null,reader_slider.getCurrentSlide(),reader_slider.getCurrentSlide() );
