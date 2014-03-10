@@ -70,6 +70,10 @@
 	padding-top: 20px;
 	background-color: #000;
 	height: 170px !important;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 .bx-wrapper .bx-pager .bx-pager-item,
@@ -215,4 +219,13 @@
 	display: block;
 	font-size: .85em;
 	padding: 10px;
+}
+
+/* ADDITIONAL PART */
+
+
+.thumbnail_page_number {
+	margin-top: 5px;
+	font-size: 15px;
+	color:#fff;
 }
