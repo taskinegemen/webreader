@@ -26,6 +26,8 @@ jQuery(document).ready(function() {
 			$( ".read_page_thumbnails" ).hover(function() {
 			  $( ".read_page_thumbnails" ).css("bottom","50px");
 			  $( ".bx-custom-pager" ).css("bottom","50px");
+			  $(".bx-pager").css({'bottom': '0px', 'overflow-x': 'scroll', 'overflow-y': 'hidden', 'white-space':'nowrap', 'height': '150px'});
+
 													      });
 											
 		
@@ -115,5 +117,6 @@ function StartReaderApp (){
 				newPage = null;
 
 			});
+			
 
 }
