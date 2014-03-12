@@ -30,7 +30,7 @@
 
 .bx-wrapper .bx-viewport {
 	left: 0;
-	background: #0c0c0c;
+	background: #0B0D0C;
 }
 
 
@@ -69,8 +69,11 @@
 	color: #666;
 	padding-top: 20px;
 	background-color: #000;
-	bottom: -100px;
-	height: 100px;
+	height: 170px !important;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 .bx-wrapper .bx-pager .bx-pager-item,
@@ -78,6 +81,7 @@
 	display: inline-block;
 	*zoom: 1;
 	*display: inline;
+	margin-left:3px;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
@@ -215,4 +219,13 @@
 	display: block;
 	font-size: .85em;
 	padding: 10px;
+}
+
+/* ADDITIONAL PART */
+
+
+.thumbnail_page_number {
+	margin-top: 5px;
+	font-size: 15px;
+	color:#fff;
 }
