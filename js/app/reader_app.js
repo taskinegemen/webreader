@@ -24,11 +24,18 @@ jQuery(document).ready(function() {
 			
 			
 			$( ".read_page_thumbnails" ).hover(function() {
-			  $( ".read_page_thumbnails" ).css("bottom","50px");
+			  $( ".read_page_thumbnails" ).css("bottom","170px");
 			  $( ".bx-custom-pager" ).css("bottom","50px");
 			  $(".bx-pager").css({'bottom': '0px', 'overflow-x': 'scroll', 'overflow-y': 'hidden', 'white-space':'nowrap', 'height': '150px'});
-
+			
 													      });
+														  
+														  
+			$( ".read_page_thumbnails, .bx-pager" ).mouseleave(function () {
+				$( ".read_page_thumbnails" ).css("bottom","0");
+				$( ".bx-custom-pager" ).css("bottom","0");
+				$( ".bx-pager").css({'bottom': '-170px'});
+																		 });
 											
 		
 			
