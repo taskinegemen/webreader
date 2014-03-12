@@ -5,18 +5,8 @@
 }
 /* Start Navbar */
 .navbar {
-  border: none;
   border-radius: 0;
   margin: 0;
-background: #2880b9; /* Old browsers */
-background: -moz-linear-gradient(top,  #2880b9 0%, #0063A2 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2880b9), color-stop(100%,#0063A2)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #2880b9 0%,#0063A2 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #2880b9 0%,#0063A2 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #2880b9 0%,#0063A2 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #2880b9 0%,#0063A2 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2880b9', endColorstr='#006fb5',GradientType=0 ); /* IE6-9 */
-border-bottom: 2px solid #00558B;
 }
 
 
@@ -164,11 +154,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2880b9', end
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-}
-
-
-.dropdown-menu li:hover {
-	border-right:5px solid #2880b9;
 }
 
 li.dropdown.user > ul.dropdown-menu li:first-child{
@@ -350,14 +335,6 @@ li.dropdown.user > ul.dropdown-menu li:first-child:hover {
 }
 
 
-.sidebar-menu > ul > li.current > a {
-	border-right:5px solid #2880b9;	
-}
-
-.sidebar-menu > ul > li.current:hover {
-	border-right:none;	
-}
-
 .sidebar-menu > ul > li > a {
   display: block;
   position: relative;
@@ -511,12 +488,7 @@ li.dropdown.user > ul.dropdown-menu li:first-child:hover {
 .sidebar-menu > ul > li a i {
   color: #555555;
 }
-.sidebar-menu > ul > li.has-sub.open > a,
-.sidebar-menu > ul > li > a:hover,
-.sidebar-menu > ul > li:hover > a {
-	background: #fff;
-	border-right:5px solid #2880b9;
-}
+
 .sidebar-menu > ul > li.has-sub.open > ul > li.has-sub-sub.open > a {
   background: #ffffff;
 }
@@ -632,10 +604,7 @@ li.dropdown.user > ul.dropdown-menu li:first-child:hover {
 	top: 0;
 	cursor:pointer;
 }
-.sidebar-collapse:hover,
-.switcher:hover {
-  background-color: #005F9B;
-}
+
 .sidebar-collapse > [class*="fa-"],
 .switcher > [class*="fa-"] {
   color: #FFFFFF;
@@ -657,7 +626,7 @@ li.dropdown.user > ul.dropdown-menu li:first-child:hover {
 }
 /* Min Menu */
 .mini-menu#sidebar {
-	margin-left: -250px;
+	margin-left: -255px;
 }
 .mini-menu#sidebar:before {
   width: 50px;

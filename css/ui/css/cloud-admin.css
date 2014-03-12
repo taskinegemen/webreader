@@ -1971,10 +1971,19 @@ fieldset[disabled] .btn-default.active {
   color: #ffffff;
   background-color: #fff;
 }
+
+.btn-primary-2 {
+  color: #ffffff;
+  background-color:#5e87b0;
+}
+
+.btn-primary-2:hover {
+  color: #ffffff;
+  background-color:#4b739a;
+}
+
 .btn-primary {
   color: #ffffff;
-  background-color: #2880b9;
-  border-color: #226e99;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -1985,9 +1994,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  color: #ffffff;
-  background-color: #226e99;
-  border-color: #1c597c;
+
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -9033,9 +9040,9 @@ ul.stats li small {
   width:100%;
   height:100%;
   min-width:1100px;
-  background-image:url(../../../css/ui/img/login_background.jpg);
+/**  background-image:url(../../../css/ui/img/login_background.jpg);
   background-attachment:fixed;
-  background-size:cover;
+  background-size:cover; **/
   display: -webkit-box;
   -webkit-box-pack: start;
   -webkit-box-align: center;
@@ -9152,7 +9159,6 @@ div.reader_book_category {
 .reader_book_card_book_cover {
 	width:198px;
 	height:264px;
-	background-color:#2880b9;
 	border-top-right-radius:5px;
 	border-top-left-radius:5px;
 }
@@ -9248,7 +9254,6 @@ div.reader_book_category {
 	border-left: 1px solid #e6e7e8;
 	float: right;
 	font-size: 15px;
-	color: #2880b9;
 	bottom: 0;
 	right: 0;
 	position: inherit;
@@ -9410,7 +9415,6 @@ button.book_info_add_to_library_button {
 
 
 span.book_info_titles {
-	color:#2880b9;
 	font-size:18px;	
 	text-shadow: 0px 1px 1px #FFFFFF;
 }
@@ -9811,9 +9815,7 @@ span.reader_toc_dropdown_page_numbers {
 	padding-top: 12px;
 }
 
-.navbar-right > li:hover{
-	background-color:#005F9B;
-}
+
 
 
 
@@ -9885,7 +9887,81 @@ header.read_page_navbar i.fa, span.sb-icon-search {
 }
 
 
-
-
-
 /**  END OF READ PAGE ***********************************/
+
+
+/**  BRAND COLOR ADJUSTMENT ***********************************/
+
+
+video#bgvid {
+	position: fixed; right: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto; z-index: -100;
+	background: url(../../../js/login_back.png)  no-repeat;
+	background-size: cover;
+}
+
+
+.navbar_blue {
+	background: #2880b9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #2880b9 0%, #0063A2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2880b9), color-stop(100%,#0063A2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #2880b9 0%,#0063A2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #2880b9 0%,#0063A2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #2880b9 0%,#0063A2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #2880b9 0%,#0063A2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2880b9', endColorstr='#006fb5',GradientType=0 ); /* IE6-9 */
+	border-bottom: 2px solid #00558B;
+}
+
+.solid_brand_color {
+	background-color:#2880b9;
+}
+
+.brand_text_color {
+	color:#2880b9;
+}
+
+.brand_color_for_buttons {
+	background-color: #2880b9;
+	border-color: #226e99;	
+}
+
+
+.brand_color_for_buttons:hover {
+  color: #ffffff;
+  background-color: #226e99;
+  border-color: #1c597c;
+}
+
+.sidebar-menu > ul > li.current > a {
+	border-right:5px solid #2880b9;	
+}
+
+.sidebar-menu > ul > li.current:hover {
+	border-right:none;	
+}
+
+.sidebar-menu > ul > li.has-sub.open > a,
+.sidebar-menu > ul > li > a:hover,
+.sidebar-menu > ul > li:hover > a {
+	background: #fff;
+	border-right:5px solid #2880b9;
+}
+
+.navbar-right > li:hover{
+	background-color:#005F9B;
+}
+
+
+.brand_hover_color_for_navbar_components:hover {
+	background-color:#005F9B;	
+}
+
+.dropdown-menu li:hover {
+	border-right:5px solid #2880b9;
+}
+
+
+/**  END OF BRAND COLOR ADJUSMENT ***********************************/
+

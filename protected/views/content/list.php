@@ -61,13 +61,13 @@ $this->pageTitle=Yii::app()->name;
                                                               
                                                               <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name tip" data-original-title="The Book Name is here">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom" data-content="<li>Kütüphaneme Ekle</li><li>Favorilerime Ekle</li><li>Kitap Bilgileri/li>"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name tip" data-original-title="The Name of The Writer">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -76,29 +76,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -108,13 +92,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -124,13 +108,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -140,13 +124,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -156,13 +140,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -172,28 +156,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -203,13 +172,28 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
+</div>
+<!-- /reader_book_card_info_container -->
+</div>
+<!-- END OF READER BOOK CARD -->
+
+
+<!-- READER BOOK CARD -->
+<div class="reader_book_card">
+<div class="reader_book_card_book_cover solid_brand_color"></div>
+<div class="reader_book_card_info_container">
+<div class="reader_market_book_name">The Book Name is here</div>
+<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
+<div class="clearfix"></div>
+<div class="reader_book_card_writer_name">The Name of The Writer</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -219,13 +203,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -235,13 +219,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -251,13 +235,29 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
+</div>
+<!-- /reader_book_card_info_container -->
+</div>
+<!-- END OF READER BOOK CARD -->
+
+
+
+<!-- READER BOOK CARD -->
+<div class="reader_book_card">
+<div class="reader_book_card_book_cover solid_brand_color"></div>
+<div class="reader_book_card_info_container">
+<div class="reader_market_book_name">The Book Name is here</div>
+<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
+<div class="clearfix"></div>
+<div class="reader_book_card_writer_name">The Name of The Writer</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -280,13 +280,13 @@ $this->pageTitle=Yii::app()->name;
 															  
                                                               
                                                               <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name tip" data-original-title="The Book Name is here">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom" data-content="<li>Kütüphaneme Ekle</li><li>Favorilerime Ekle</li><li>Kitap Bilgileri/li>"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name tip" data-original-title="The Name of The Writer">The Name of The Writer</div>
-<div class="reader_book_price">Ücretsiz</div>
+<div class="reader_book_price brand_text_color brand_text_color">Ücretsiz</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -295,29 +295,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">Ücretsiz</div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">Ücretsiz</div>
+<div class="reader_book_price brand_text_color">Ücretsiz</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -327,13 +311,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">Ücretsiz</div>
+<div class="reader_book_price brand_text_color">Ücretsiz</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -343,13 +327,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">Ücretsiz</div>
+<div class="reader_book_price brand_text_color">Ücretsiz</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -359,13 +343,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">Ücretsiz</div>
+<div class="reader_book_price brand_text_color">Ücretsiz</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -375,13 +359,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">Ücretsiz</div>
+<div class="reader_book_price brand_text_color">Ücretsiz</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -391,13 +375,29 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">Ücretsiz</div>
+<div class="reader_book_price brand_text_color">Ücretsiz</div>
+</div>
+<!-- /reader_book_card_info_container -->
+</div>
+<!-- END OF READER BOOK CARD -->
+
+
+
+<!-- READER BOOK CARD -->
+<div class="reader_book_card">
+<div class="reader_book_card_book_cover solid_brand_color"></div>
+<div class="reader_book_card_info_container">
+<div class="reader_market_book_name">The Book Name is here</div>
+<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
+<div class="clearfix"></div>
+<div class="reader_book_card_writer_name">The Name of The Writer</div>
+<div class="reader_book_price brand_text_color">Ücretsiz</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -416,13 +416,13 @@ $this->pageTitle=Yii::app()->name;
                                                                                    
                                                                                    
                                                                                     <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name tip" data-original-title="The Book Name is here">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom" data-content="<li>Kütüphaneme Ekle</li><li>Favorilerime Ekle</li><li>Kitap Bilgileri/li>"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name tip" data-original-title="The Name of The Writer">The Name of The Writer</div>
-<div class="reader_book_price">Ücretsiz</div>
+<div class="reader_book_price brand_text_color">Ücretsiz</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -431,29 +431,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">Ücretsiz</div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">Ücretsiz</div>
+<div class="reader_book_price brand_text_color">Ücretsiz</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -463,13 +447,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">Ücretsiz</div>
+<div class="reader_book_price brand_text_color">Ücretsiz</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -479,13 +463,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">Ücretsiz</div>
+<div class="reader_book_price brand_text_color">Ücretsiz</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -495,13 +479,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">Ücretsiz</div>
+<div class="reader_book_price brand_text_color">Ücretsiz</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -511,13 +495,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">Ücretsiz</div>
+<div class="reader_book_price brand_text_color">Ücretsiz</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -527,13 +511,29 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">Ücretsiz</div>
+<div class="reader_book_price brand_text_color">Ücretsiz</div>
+</div>
+<!-- /reader_book_card_info_container -->
+</div>
+<!-- END OF READER BOOK CARD -->
+
+
+
+<!-- READER BOOK CARD -->
+<div class="reader_book_card">
+<div class="reader_book_card_book_cover solid_brand_color"></div>
+<div class="reader_book_card_info_container">
+<div class="reader_market_book_name">The Book Name is here</div>
+<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
+<div class="clearfix"></div>
+<div class="reader_book_card_writer_name">The Name of The Writer</div>
+<div class="reader_book_price brand_text_color">Ücretsiz</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -546,13 +546,13 @@ $this->pageTitle=Yii::app()->name;
                                                                                    
                                                                                    
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name tip" data-original-title="The Book Name is here">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom" data-content="<li>Kütüphaneme Ekle</li><li>Favorilerime Ekle</li><li>Kitap Bilgileri/li>"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name tip" data-original-title="The Name of The Writer">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -561,29 +561,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -593,13 +577,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -609,13 +593,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -625,13 +609,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -641,13 +625,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -657,28 +641,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -688,13 +657,28 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
+</div>
+<!-- /reader_book_card_info_container -->
+</div>
+<!-- END OF READER BOOK CARD -->
+
+
+<!-- READER BOOK CARD -->
+<div class="reader_book_card">
+<div class="reader_book_card_book_cover solid_brand_color"></div>
+<div class="reader_book_card_info_container">
+<div class="reader_market_book_name">The Book Name is here</div>
+<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
+<div class="clearfix"></div>
+<div class="reader_book_card_writer_name">The Name of The Writer</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -704,13 +688,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -720,13 +704,13 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
@@ -736,13 +720,29 @@ $this->pageTitle=Yii::app()->name;
 
 <!-- READER BOOK CARD -->
 <div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
+<div class="reader_book_card_book_cover solid_brand_color"></div>
 <div class="reader_book_card_info_container">
 <div class="reader_market_book_name">The Book Name is here</div>
 <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
 <div class="clearfix"></div>
 <div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_price">5.00TL</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
+</div>
+<!-- /reader_book_card_info_container -->
+</div>
+<!-- END OF READER BOOK CARD -->
+
+
+
+<!-- READER BOOK CARD -->
+<div class="reader_book_card">
+<div class="reader_book_card_book_cover solid_brand_color"></div>
+<div class="reader_book_card_info_container">
+<div class="reader_market_book_name">The Book Name is here</div>
+<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
+<div class="clearfix"></div>
+<div class="reader_book_card_writer_name">The Name of The Writer</div>
+<div class="reader_book_price brand_text_color">5.00TL</div>
 </div>
 <!-- /reader_book_card_info_container -->
 </div>
