@@ -33,10 +33,22 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 
   </script>
  <!-- login -->
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
 <div class="login_page_container">    
 
 
-
+<video autoplay loop poster="../../../js/login_back.png" id="bgvid">
+<source src="../js/back.webm" type="video/webm">
+<source src="../js/back.mp4" type="video/mp4">
+</video>
 
         <div class="login_page_slogan_part_container">
         <div class="login_page_reader_logo"></div>
@@ -84,7 +96,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 								  </div>
 
 								  <div class="form-group">
-									<a href="#" class="btn btn-primary login_submit" id="loginButton"><?php _e("Giriş Yap"); ?></a>
+									<a href="#" class="btn btn-primary login_submit brand_color_for_buttons" id="loginButton"><?php _e("Giriş Yap"); ?></a>
 									
 								  </div>
 								</form>
@@ -95,7 +107,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 									</div>
 									<div class="divide-20"></div>
 									<div class="social-login center">
-										<a class="btn btn-primary btn-lg">
+										<a class="btn btn-primary-2 btn-lg">
 											<i class="fa fa-facebook"></i>
 										</a>
 										<a class="btn btn-info btn-lg">

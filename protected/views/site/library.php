@@ -45,7 +45,7 @@
 						Favorilerim
 					</div><!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name tip" data-original-title="The Book Name is here">
 								The Book Name is here
@@ -60,7 +60,7 @@
 					</div><!-- END OF READER BOOK CARD -->
 					<!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name">
 								The Book Name is here
@@ -75,7 +75,7 @@
 					</div><!-- END OF READER BOOK CARD -->
 					<!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name">
 								The Book Name is here
@@ -90,7 +90,7 @@
 					</div><!-- END OF READER BOOK CARD -->
 					<!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name">
 								The Book Name is here
@@ -105,7 +105,7 @@
 					</div><!-- END OF READER BOOK CARD -->
 					<!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name">
 								The Book Name is here
@@ -120,7 +120,7 @@
 					</div><!-- END OF READER BOOK CARD -->
 					<!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name">
 								The Book Name is here
@@ -135,7 +135,7 @@
 					</div><!-- END OF READER BOOK CARD -->
 					<!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name">
 								The Book Name is here
@@ -154,7 +154,7 @@
 						Diğerleri
 					</div><!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name tip" data-original-title="The Book Name is here">
 								The Book Name is here
@@ -169,7 +169,7 @@
 					</div><!-- END OF READER BOOK CARD -->
 					<!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name">
 								The Book Name is here
@@ -184,7 +184,7 @@
 					</div><!-- END OF READER BOOK CARD -->
 					<!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name">
 								The Book Name is here
@@ -199,7 +199,7 @@
 					</div><!-- END OF READER BOOK CARD -->
 					<!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name">
 								The Book Name is here
@@ -214,7 +214,7 @@
 					</div><!-- END OF READER BOOK CARD -->
 					<!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name">
 								The Book Name is here
@@ -229,7 +229,7 @@
 					</div><!-- END OF READER BOOK CARD -->
 					<!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name">
 								The Book Name is here
@@ -244,7 +244,7 @@
 					</div><!-- END OF READER BOOK CARD -->
 					<!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name">
 								The Book Name is here
@@ -259,7 +259,7 @@
 					</div><!-- END OF READER BOOK CARD -->
 					<!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name">
 								The Book Name is here
@@ -274,7 +274,7 @@
 					</div><!-- END OF READER BOOK CARD -->
 					<!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name">
 								The Book Name is here
@@ -289,7 +289,7 @@
 					</div><!-- END OF READER BOOK CARD -->
 					<!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name">
 								The Book Name is here
@@ -304,7 +304,7 @@
 					</div><!-- END OF READER BOOK CARD -->
 					<!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name">
 								The Book Name is here
@@ -319,7 +319,7 @@
 					</div><!-- END OF READER BOOK CARD -->
 					<!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name">
 								The Book Name is here
@@ -334,7 +334,7 @@
 					</div><!-- END OF READER BOOK CARD -->
 					<!-- READER BOOK CARD -->
 					<div class="reader_book_card">
-						<div class="reader_book_card_book_cover"></div>
+						<div class="reader_book_card_book_cover solid_brand_color"></div>
 						<div class="reader_book_card_info_container">
 							<div class="reader_market_book_name">
 								The Book Name is here
