@@ -50,17 +50,24 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 <source src="../js/back.mp4" type="video/mp4">
 </video>
 
-        <div class="login_page_slogan_part_container">
-        <div class="login_page_reader_logo"></div>
-        <div class="login_page_slogan"></div>
-        </div>
+        
+
+<div class="col-lg-12">
+<div class="row">
+<div class="col-md-1"></div>
 
 
+	<div class="col-md-7">
+
+        	<div class="login_page_reader_logo"></div>
+        	<div class="login_page_slogan"></div>
+
+	</div>
 
 
+<div class="col-md-3">
 
-
-    <div class="login_box_container">
+						
 							<div class="login-box">
 								<?php $form=$this->beginWidget('CActiveForm', array(
 									'id'=>'login-form',
@@ -102,8 +109,11 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 								</form>
 								<!-- SOCIAL LOGIN -->
 									<div class="divide-20"></div>
+                                    <div class="register_link">
+										Henüz bir hesabınız yok mu? <a href="#">Kayıt olun</a>
+									</div>
 									<div class="center">
-										<strong>Veya bir sosyal ağ hesabınız ile giriş yapın</strong>
+										Veya bir sosyal ağ hesabınız ile giriş yapın
 									</div>
 									<div class="divide-20"></div>
 									<div class="social-login center">
@@ -124,7 +134,24 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 											now!</a>
 									</div> -->
 								<?php $this->endWidget(); ?>
-							</div>
+						
+
+
+</div>
+
+
+
+
+
+<div class="col-md-1"></div>
+
+
+</div>
+</div>
+
+
+
+    
     
     
     
