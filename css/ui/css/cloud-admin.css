@@ -5994,7 +5994,7 @@ h6 {
   font-weight: 300;
 }
 label {
-  font-weight: 600;
+  font-weight: normal;
 }
 /* Dotted outline removal */
 a:active,
@@ -8193,9 +8193,9 @@ div[data-role="editor-toolbar"] {
   text-align: center;
 }
 .login-box {
-	background: rgba(255, 255, 255, 0.4);
+	background: rgba(255, 255, 255, 0.1);
 	color: #FFFFFF;
-	border-radius: 15px 0px 0px 15px;
+	border-radius: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 5px;
@@ -9049,15 +9049,16 @@ ul.stats li small {
   position:fixed;
 }
 
-
-.login_box_container {
-	width: 25%;
-	float: right;
+.register_link {
+	text-align:center;
+	margin-bottom:15px;	
 }
 
+.register_link a {
+	color:#FF0;	
+}
 
 .login_page_slogan_part_container {
-	width:75%; 
 	height:482px; 
 	float:left; 
 	opacity:0.99;	
@@ -9065,23 +9066,24 @@ ul.stats li small {
 
 
 .login_page_reader_logo {
-	margin-left:auto; 
-	margin-right:auto; 
-	width:500px; 
-	height:250px; 
-	background-image:url(../../../css/ui/img/okutus_reader_logo.png);
-	background-size:cover;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:120px;
+	width: 520px;
+	height: 250px;
+	background-image: url(../../../css/ui/img/okutus_reader_logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .login_page_slogan {
-	margin-left:auto; 
-	margin-right:auto; 
-	width:900px; 
-	height:200px;
-	background-image:url(../../../css/ui/img/slogan.png);
-	background-size:800px;
-	background-repeat:no-repeat;
-	background-position:center;
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px;
+	background-image: url(../../../css/ui/img/slogan.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 
@@ -9894,9 +9896,15 @@ header.read_page_navbar i.fa, span.sb-icon-search {
 
 
 video#bgvid {
-	position: fixed; right: 0; bottom: 0;
-	min-width: 100%; min-height: 100%;
-	width: auto; height: auto; z-index: -100;
+	position: fixed; 
+	right: 0; 
+	bottom: 0;
+	top:0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -100;
 	background: url(../../../js/login_back.png)  no-repeat;
 	background-size: cover;
 }
