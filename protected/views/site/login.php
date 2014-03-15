@@ -202,7 +202,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
                                 
                                 
                                 
-								<!-- SOCIAL LOGIN -->
+								<!-- SOCIAL LOGIN 
 									<div class="divide-20"></div>
 									<div class="center">
 										Veya bir sosyal ağ hesabınız ile kayıt olun
@@ -219,7 +219,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 											<i class="fa fa-google-plus"></i>
 										</a>
 									</div>
-									<!-- /SOCIAL LOGIN -->
+									SOCIAL LOGIN -->
 									<!-- <div class="login-helpers">
 										<a href="#" onclick="swapScreen('forgot_bg');return false;">Forgot Password?</a> <br>
 										Don't have an account with us? <a href="#" onclick="swapScreen('register_bg');return false;">Register
