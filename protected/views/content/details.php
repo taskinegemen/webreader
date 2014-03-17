@@ -64,7 +64,7 @@ $this->pageTitle=Yii::app()->name;
 <!-- /stars_rating_of_the_book -->
 
 
-<div class="number_rating_of_the_book">583</div>
+<div class="number_rating_of_the_book">(583)</div>
 
 </div>
 <!-- /book_info_book_cover_container -->
@@ -78,7 +78,7 @@ $this->pageTitle=Yii::app()->name;
 <div class="book_info_date">15 Ekim 2013</div>
 <div class="clearfix"></div>
 <h3 class="book_info_the_name_of_the_writer">Jess Walter</h2>
-<button class="btn btn-primary pull-right book_info_add_to_library_button">Kütüphaneme Ekle</button>
+<button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons">Kütüphaneme Ekle</button>
 </div>
 <!-- /book_info_details_row -->
 
@@ -86,7 +86,7 @@ $this->pageTitle=Yii::app()->name;
 
 <div class="book_info_details_row clearfix">
 <div class="book_info_description">
-<span class="book_info_titles">Açıklama:</span>
+<span class="book_info_titles brand_text_color">Açıklama:</span>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium bibendum sollicitudin. Fusce ligula sapien, blandit et nulla et, dictum facilisis mauris. Quisque vel venenatis ante, dignissim lacinia felis. Morbi nec libero et urna tristique molestie.Aenean at felis ante. Etiam eget eros in orci vestibulum porta.</p> 
 </div>
 <!-- /book_info_description -->
@@ -94,7 +94,7 @@ $this->pageTitle=Yii::app()->name;
 
 <div class="book_info_rate_the_book">
 
-<span class="book_info_titles"><center>Kitabı Oyla</center></span>
+<span class="book_info_titles brand_text_color"><center>Kitabı Oyla</center></span>
 
 
 <div id="size-demo" class="book_rater_stars">
@@ -121,15 +121,15 @@ $this->pageTitle=Yii::app()->name;
 
 
 <div class="book_info_comment_box clearfix">
-<span class="book_info_titles clearfix">Yorum Yap</span>
+<span class="book_info_titles clearfix brand_text_color">Yorum Yap</span>
 <textarea rows="3" cols="5" name="textarea" class="form-control"></textarea>
-<button class="send_comment btn btn-primary">Gönder</button>
+<button class="send_comment btn btn-primary brand_color_for_buttons">Gönder</button>
 </div>
 
 
 
 <div class="book_info_comments_container clearfix">
-<span class="book_info_titles">Yorumlar</span>
+<span class="book_info_titles brand_text_color">Yorumlar</span>
 
 <div class="user_comment_container clearfix">
 <div class="user_comment_avatar"><img src="<?php echo Yii::app()->request->baseUrl; ?>/avatars/avatar.png"></div>

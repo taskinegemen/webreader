@@ -10,6 +10,8 @@ $this->pageTitle=Yii::app()->name;
 		});
 	</script>
 	<!-- /JAVASCRIPTS -->
+ 
+ 
     
 <div class="market_page_container">
 
@@ -18,39 +20,25 @@ $this->pageTitle=Yii::app()->name;
 		<!--=== Navigation ===-->
 		<ul>
 			<li class="current">
-				<a href="/site/dashboard">
-					<i class="fa fa-tachometer fa-fw"></i>
-					<span class="menu-text">Kontrol	Paneli</span>
-					</a>
-			</li>
-			
-			<!--<li>
-				<a href="users.html">
-					<i class="icon-tasks"></i>
-					Hosting
+				<a href="<?php echo $this->createUrl("site/library"); ?>">
+					<i class="fa fa-book fa-fw"></i>
+					<span class="menu-text">Kütüphanem</span>
 				</a>
-			</li>
-			-->
+			</li> 
 			<li>
-				<a href="#">
-					<i class="fa fa-medkit fa-fw"></i> <span class="menu-text">
-					Destek
-				</span>
+				<a href="<?php echo  $this->createUrl("content/list"); ?>">
+					<i class="fa fa-briefcase fa-fw"></i> 
+                    <span class="menu-text">Mağaza</span>
 				</a>
 			</li>
-			
 			<li>
-				<a href="#">
-					<i class="fa fa-money fa-fw"></i> <span class="menu-text">
-					Hesabım
-				</span>
+				<a href="<?php echo $this->createUrl("user/profile"); ?>">
+					<i class="fa fa-user fa-fw"></i> 
+                    <span class="menu-text">Profilim</span>
 				</a>
 			</li>
-			
-			
 		</ul>
 		<!-- /Navigation -->
-		
 	</div>
 </div>
 		<!-- /Sidebar -->
@@ -58,444 +46,154 @@ $this->pageTitle=Yii::app()->name;
 	<div class="container">
 		<div class="row">
 	
-<div class="reader_market_page_row clearfix">
+<div class="reader_nobook_page_row clearfix">
 
-<h2 class="reader_book_category">En Çok Satanlar</h2>
+<!--
+<div class="nobook_smiley"></div>
+<p class="nobook_text">Kütüphanenizde hiç kitabınız bulunmamaktadır.</p>
+<p class="nobook_text">Mağaza’dan kitap edinin.</p>
 
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom" data-content="<li>Kütüphaneme Ekle</li><li>Favorilerime Ekle</li><li>Kitap Bilgileri/li>"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
+<a href="/erkan/index.php/content/list"><button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons">Mağazaya Git</button></a>
+-->
+
+
+
+
+
+<div class="myprofile_information_container">
+
+<div class="myprofile_picture_container"><img src="/erkan/avatars/avatar.png"></div>
+<div class="myprofile_information_part">
+
+<div class="myprofile_information_components">
+<p>HESABIN</p>
+<button class="btn btn-success">Değişiklikleri Kaydet</button>
 </div>
-<!-- /reader_book_card_info_container -->
+
+<div class="myprofile_information_components">
+<p>İsim<i class="fa fa-edit"></i></p>
+<div contenteditable="true">Erkan Öğümsöğütlü</div>
 </div>
-<!-- END OF READER BOOK CARD -->
 
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
+<div class="myprofile_information_components">
+<p>Kullanıcı Adı<i class="fa fa-edit"></i></p>
+<div contenteditable="true">erkanogumsogutlu</div>
 </div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
 
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
+<div class="myprofile_information_components">
+<p>E-Mail Adres<i class="fa fa-edit"></i></p>
+<div contenteditable="true">erkan@linden-tech.com</div>
 </div>
 
 
+<div class="myprofile_information_components">
 
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+        <h3 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Şifreni Değiştir</a> </h3>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+          <div class="panel-body"> 
+				<div><p>Eski Şifre:</p> <input name="LoginForm[password]" id="LoginForm_password" type="password"></div><br />
+                <div><p>Yeni Şifre:</p> <input name="LoginForm[password]" id="LoginForm_password" type="password"></div><br />
+                <div> <p>Yine Şifre Tekrarı:</p> <input name="LoginForm[password]" id="LoginForm_password" type="password"></div>
+          </div>
+        </div>
+    </div>
+</div>
 
-
+</div>
+</div>
+<!-- end of myprofile_information_part -->
 
 <div class="clearfix"></div>
 
+<div class="myprofile_books">
+
+		<p>Favori Kitaplarım</p>
+		
+
+        <!-- READER BOOK CARD -->
+        <div class="reader_book_card">
+        <div class="reader_book_card_book_cover solid_brand_color"></div>
+        <div class="reader_book_card_info_container">
+        <div class="reader_market_book_name tip" data-original-title="The Book Name is here">The Book Name is here</div>
+        <button class="reader_book_card_options_button pop-bottom" data-title="Bottom" data-content="<li>Kütüphaneme Ekle</li><li>Favorilerime Ekle</li><li>Kitap Bilgileri/li>"></button>
+        <div class="clearfix"></div>
+        <div class="reader_book_card_writer_name tip" data-original-title="The Name of The Writer">The Name of The Writer</div>
+        <div class="reader_book_price brand_text_color">5.00TL</div>
+        </div>
+        <!-- /reader_book_card_info_container -->
+        </div>
+        <!-- END OF READER BOOK CARD -->
+        
+        
+        
+        
+        
+        
+        <!-- READER BOOK CARD -->
+        <div class="reader_book_card">
+        <div class="reader_book_card_book_cover solid_brand_color"></div>
+        <div class="reader_book_card_info_container">
+        <div class="reader_market_book_name tip" data-original-title="The Book Name is here">The Book Name is here</div>
+        <button class="reader_book_card_options_button pop-bottom" data-title="Bottom" data-content="<li>Kütüphaneme Ekle</li><li>Favorilerime Ekle</li><li>Kitap Bilgileri/li>"></button>
+        <div class="clearfix"></div>
+        <div class="reader_book_card_writer_name tip" data-original-title="The Name of The Writer">The Name of The Writer</div>
+        <div class="reader_book_price brand_text_color">5.00TL</div>
+        </div>
+        <!-- /reader_book_card_info_container -->
+        </div>
+        <!-- END OF READER BOOK CARD -->
+        
+        
+        
+        
+        
+        <!-- READER BOOK CARD -->
+        <div class="reader_book_card">
+        <div class="reader_book_card_book_cover solid_brand_color"></div>
+        <div class="reader_book_card_info_container">
+        <div class="reader_market_book_name tip" data-original-title="The Book Name is here">The Book Name is here</div>
+        <button class="reader_book_card_options_button pop-bottom" data-title="Bottom" data-content="<li>Kütüphaneme Ekle</li><li>Favorilerime Ekle</li><li>Kitap Bilgileri/li>"></button>
+        <div class="clearfix"></div>
+        <div class="reader_book_card_writer_name tip" data-original-title="The Name of The Writer">The Name of The Writer</div>
+        <div class="reader_book_price brand_text_color">5.00TL</div>
+        </div>
+        <!-- /reader_book_card_info_container -->
+        </div>
+        <!-- END OF READER BOOK CARD -->
+        
+        
+        
+        
+        
+        
+        <!-- READER BOOK CARD -->
+        <div class="reader_book_card">
+        <div class="reader_book_card_book_cover solid_brand_color"></div>
+        <div class="reader_book_card_info_container">
+        <div class="reader_market_book_name tip" data-original-title="The Book Name is here">The Book Name is here</div>
+        <button class="reader_book_card_options_button pop-bottom" data-title="Bottom" data-content="<li>Kütüphaneme Ekle</li><li>Favorilerime Ekle</li><li>Kitap Bilgileri/li>"></button>
+        <div class="clearfix"></div>
+        <div class="reader_book_card_writer_name tip" data-original-title="The Name of The Writer">The Name of The Writer</div>
+        <div class="reader_book_price brand_text_color">5.00TL</div>
+        </div>
+        <!-- /reader_book_card_info_container -->
+        </div>
+        <!-- END OF READER BOOK CARD -->
 
 
-
-<div class="reader_market_page_row clearfix">
-
-
-
-<h2 class="reader_book_category">Tavsiye Edilenler</h2>
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
 </div>
-<!-- /reader_book_card_info_container -->
+<!-- end of myprofile_books -->
 </div>
-<!-- END OF READER BOOK CARD -->
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
-
-<!-- READER BOOK CARD -->
-<div class="reader_book_card">
-<div class="reader_book_card_book_cover"></div>
-<div class="reader_book_card_info_container">
-<div class="reader_market_book_name">The Book Name is here</div>
-<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-<div class="clearfix"></div>
-<div class="reader_book_card_writer_name">The Name of The Writer</div>
-<div class="reader_book_favorite"><i class="fa fa-star-o"></i></div>
-</div>
-<!-- /reader_book_card_info_container -->
-</div>
-<!-- END OF READER BOOK CARD -->
-
-
+<!-- end of myprofile_information_container -->
 
 
 
 </div>
-<!-- /reader_market_page_row -->
+<!-- /reader_nobook_page_row -->
 	
 		</div>
 	</div>
