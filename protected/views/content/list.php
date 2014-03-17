@@ -45,6 +45,7 @@ $this->pageTitle=Yii::app()->name;
 	
 <div class="reader_market_page_row clearfix">
     <div class="reader_book_category">En Çok Okunanlar</div>                                                           
+        
         <!-- READER BOOK CARD -->
         <div class="reader_book_card">
         <div class="reader_book_card_book_cover solid_brand_color"></div>
