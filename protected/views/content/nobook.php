@@ -62,7 +62,13 @@ $this->pageTitle=Yii::app()->name;
 
 <div class="myprofile_information_container">
 
-<div class="myprofile_picture_container"><img src="/erkan/avatars/avatar.png"></div>
+<div class="myprofile_picture_container">
+<div class="change_profile_picture"><a href="#"><i class="fa fa-edit"></i></a></div>
+<img src="/erkan/avatars/avatar.png">
+</div>
+
+
+
 <div class="myprofile_information_part">
 
 <div class="myprofile_information_components">
@@ -71,18 +77,18 @@ $this->pageTitle=Yii::app()->name;
 </div>
 
 <div class="myprofile_information_components">
-<p>İsim<i class="fa fa-edit"></i></p>
-<div contenteditable="true">Erkan Öğümsöğütlü</div>
+<p>İsim</p>
+<div class="myprofile_info_edit"><i class="fa fa-edit"></i> <div contenteditable="true">Erkan Öğümsöğütlü</div></div>
 </div>
 
 <div class="myprofile_information_components">
-<p>Kullanıcı Adı<i class="fa fa-edit"></i></p>
-<div contenteditable="true">erkanogumsogutlu</div>
+<p>Kullanıcı Adı</p>
+<div class="myprofile_info_edit"><i class="fa fa-edit"></i> <div contenteditable="true">erkanogumsogutlu</div></div>
 </div>
 
 <div class="myprofile_information_components">
-<p>E-Mail Adres<i class="fa fa-edit"></i></p>
-<div contenteditable="true">erkan@linden-tech.com</div>
+<p>E-Mail Adres</p>
+<div class="myprofile_info_edit"><i class="fa fa-edit"></i> <div contenteditable="true">erkan@linden-tech.com</div></div>
 </div>
 
 

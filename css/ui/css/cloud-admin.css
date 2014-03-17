@@ -9277,7 +9277,7 @@ div.reader_book_category {
 
 
 .reader_book_card_options_button:hover {
-	background-color:#f5f5f5;
+	background-color:#f9f9f9;
 }
 
 .reader_book_card_writer_name {
@@ -9567,6 +9567,23 @@ span.book_info_titles {
 
 /** READER BOOK MY LIBRARY PAGE **/
 
+.library_page_container {
+  width:100%;
+  height:100%;
+  min-width:1100px;
+  position:absolute;
+  margin-top:50px;
+}
+
+.reader_library_page_row {
+	border-bottom: 1px solid #D6D6D6;
+	border-top: 1px solid #FFFFFF;
+	margin-left:25px;
+	margin-right:25px;
+	padding:10px;
+}
+
+
 .reader_book_fav {
 	border-left: 1px solid #e6e7e8;
 	float: right;
@@ -9581,19 +9598,8 @@ span.book_info_titles {
 	cursor:pointer;	
 }
 
-
-.reader_book_trash {
-	border-left: 1px solid #e6e7e8;
-	float: right;
-	font-size: 18px;
-	color: #f1623d;
-	bottom: 0;
-	right: 28px;
-	position: inherit;
-	padding-right: 5px;
-	padding-left: 5px;
-	margin-bottom: 5px;
-	cursor:pointer;
+.reader_library_page_row .reader_book_card_writer_name {
+	width:170px !important;	
 }
 
 
@@ -9993,6 +9999,33 @@ header.read_page_navbar i.fa, span.sb-icon-search {
 	float:left;
 }
 
+.change_profile_picture{
+	width: 250px;
+	height: 250px;
+	border-radius: 100%;
+	background: rgba(0, 0, 0, 0);
+	position: absolute;
+	z-index: 9999;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	padding-top: 100px;
+	opacity:0;
+	border: 5px solid #fff;
+}
+
+.change_profile_picture a{
+	color:#fff;
+}
+
+.change_profile_picture:hover {
+	background: rgba(0, 0, 0, 0.5);
+	opacity:1;
+}
 
 .myprofile_picture_container img {
 	width: 250px;
@@ -10046,6 +10079,25 @@ header.read_page_navbar i.fa, span.sb-icon-search {
 .myprofile_information_components > div[contenteditable]:hover {
 	display:block;
 }
+
+
+.myprofile_info_edit i {
+	float:left;
+	margin-right:5px;
+	margin-top:5px;
+	opacity:0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.myprofile_info_edit:hover i {
+	opacity:1;
+}
+
+
+
 
 .myprofile_information_components p > i {
 	float: right;
