@@ -7399,3 +7399,566 @@ Stack trace:
 REQUEST_URI=/ugur/js/libs/bxSlider/images/slider_controls.png
 HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
 ---
+2014/03/07 07:41:44 [error] [php] unlink(./tmp/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd): No such file or directory (/var/www/reader/bekir/protected/controllers/ContentController.php:166)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/content/getContent/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd
+in /var/www/reader/bekir/protected/controllers/ContentController.php (166)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (134)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:28 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/jDHKXQuuqJAlg5P84ctShNKoJ0sabxAS240MsG5lRcvP.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/jDHKXQuuqJAlg5P84ctShNKoJ0sabxAS240MsG5lRcvP.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:28 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/uOfBUfIAC5m5hIjOcFsQPez696Vi3PgGrJy3EyfWlT55.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/uOfBUfIAC5m5hIjOcFsQPez696Vi3PgGrJy3EyfWlT55.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:28 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/kI6GOaM7Tt6Zkrt4HyMxWTqbmlziWzYevQkLVBPPPwEC.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/kI6GOaM7Tt6Zkrt4HyMxWTqbmlziWzYevQkLVBPPPwEC.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/content/read/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd
+---
+2014/03/07 07:42:28 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/zrbpvWXNNAK5a0L3T3swUfcjOozO8WXZrMJTXBs237nS.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/zrbpvWXNNAK5a0L3T3swUfcjOozO8WXZrMJTXBs237nS.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:28 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/PTk3lkEuUzpApsGgZUy96Rg2QZgjWIJR2vWKV0yd5MDL.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/PTk3lkEuUzpApsGgZUy96Rg2QZgjWIJR2vWKV0yd5MDL.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:28 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/oFs6OitP7M0UHWrT0shvLakmTPsYcBDuV4OtTgAePl2B.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/oFs6OitP7M0UHWrT0shvLakmTPsYcBDuV4OtTgAePl2B.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:28 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/d7BEkmdGgOFwTfFG5nyrPBwkfspLV5gmH5yHueLK9Jcz.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/d7BEkmdGgOFwTfFG5nyrPBwkfspLV5gmH5yHueLK9Jcz.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:30 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/pIxxAKVoqxUyfSol00n4bf4tF3iLrrW5lYPkA7w1MPPc.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/pIxxAKVoqxUyfSol00n4bf4tF3iLrrW5lYPkA7w1MPPc.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:30 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/1lEFr8XVnDHrrS2hlLFjcfS2REDH17hBiDWatrmBDfKZ.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/1lEFr8XVnDHrrS2hlLFjcfS2REDH17hBiDWatrmBDfKZ.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:30 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/IUnPkAhmEEqRSoYWc08AXlKT87NglgFvtqqfaoxTCZh1.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/IUnPkAhmEEqRSoYWc08AXlKT87NglgFvtqqfaoxTCZh1.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:30 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/9GLCRRSGOagtwQRbHutASHddg6owIoHM1prFJObz4GTT.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/9GLCRRSGOagtwQRbHutASHddg6owIoHM1prFJObz4GTT.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:30 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/Z6x6QjHgDmVwi5zzhCqPIvf5On6DnEMMIiipXRxvljxh.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/Z6x6QjHgDmVwi5zzhCqPIvf5On6DnEMMIiipXRxvljxh.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:30 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/jVylo4sVtc9pcqrntfSNr4jOXxMjbbdtW8D0wr8C95Bk.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/jVylo4sVtc9pcqrntfSNr4jOXxMjbbdtW8D0wr8C95Bk.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:30 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/0hk1siDJqTLo5YNUEaEFmA7ZKB2SqOyMda8tQ7ZD9WSJ.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/0hk1siDJqTLo5YNUEaEFmA7ZKB2SqOyMda8tQ7ZD9WSJ.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:31 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/5KKIFoEXLBgoUYVL6YDeX1ign7J68pernaIESSLxETqH.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/5KKIFoEXLBgoUYVL6YDeX1ign7J68pernaIESSLxETqH.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:31 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/C7ZUW9mftjpDNMzRLU15fYjOCxFBKcuT6Sm1jNh4vrGj.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/C7ZUW9mftjpDNMzRLU15fYjOCxFBKcuT6Sm1jNh4vrGj.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:31 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/d16BqHuka9IPet85eZVEUU0ZTopJrYGIM16RQ4if4GZX.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/d16BqHuka9IPet85eZVEUU0ZTopJrYGIM16RQ4if4GZX.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:31 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/kUD8e8f4aQ1z7nI7CT8dNYnnukE9TNlKLXluEtNO8vC8.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/kUD8e8f4aQ1z7nI7CT8dNYnnukE9TNlKLXluEtNO8vC8.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:31 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/r2Z5N4WjZA6r7CKkvUhIZK0M0lrlJ3znzsRz3arvZEmj.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/r2Z5N4WjZA6r7CKkvUhIZK0M0lrlJ3znzsRz3arvZEmj.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:31 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/wdHGz6Lhv1wF5djWo0YiFu7uv39uh8AJczBmwk0TEVjc.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/wdHGz6Lhv1wF5djWo0YiFu7uv39uh8AJczBmwk0TEVjc.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:31 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/Lk9FsltYaGlgXeSWbMLQQZH1cI20s1VxGAu1xHrFKy6Z.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/Lk9FsltYaGlgXeSWbMLQQZH1cI20s1VxGAu1xHrFKy6Z.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:42:31 [error] [php] file_get_contents(contents/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/Bq9Qb3IfGH8FfJUNyws2gIYgFhROQfaDp9N5Kkv0nPFx.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd/Bq9Qb3IfGH8FfJUNyws2gIYgFhROQfaDp9N5Kkv0nPFx.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/07 07:43:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/content/read/z007gxNpeaCBs7Pzu1SvnIBihRSyKdagM7ZeYo5NXjhd
+---
+2014/03/10 07:22:35 [error] [php] file_get_contents(contents/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU/WlSU9RjwnDTpf8dn8d5Uf4l2pLgjI4lRDtA8X76AeKDD.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU/WlSU9RjwnDTpf8dn8d5Uf4l2pLgjI4lRDtA8X76AeKDD.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/10 07:22:35 [error] [php] file_get_contents(contents/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU/zKyRvDcXMZqVjRCaK3i5oLb6BTmc0OyyMektfxArraQQ.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU/zKyRvDcXMZqVjRCaK3i5oLb6BTmc0OyyMektfxArraQQ.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/10 07:22:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/content/read/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU
+---
+2014/03/10 07:22:37 [error] [php] file_get_contents(contents/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU/jwqjih8FLzmmvaokun3OnoN5smGcqqHs8N36dwqPK4gl.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU/jwqjih8FLzmmvaokun3OnoN5smGcqqHs8N36dwqPK4gl.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/10 07:22:38 [error] [php] file_get_contents(contents/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU/uTRA9GNfiXQsCWx3z7BzqCIbfyCqwkgWnLsb2vTUfHMJ.jpg): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU/uTRA9GNfiXQsCWx3z7BzqCIbfyCqwkgWnLsb2vTUfHMJ.jpg
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/10 07:23:04 [error] [php] file_get_contents(contents/img/img1.png): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/file/img/img1.png
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (191)
+in /var/www/reader/bekir/index.php (15)
+2014/03/10 07:23:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/content/read/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU
+---
+2014/03/10 07:29:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/content/read/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU
+---
+2014/03/10 07:29:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/content/read/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU
+---
+2014/03/10 07:33:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/content/read/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU
+---
+2014/03/10 07:33:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/content/read/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU
+---
+2014/03/10 07:47:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/content/read/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU
+---
+2014/03/10 07:47:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/content/read/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU
+---
+2014/03/17 08:35:59 [error] [php] file_get_contents(contents/oWbindXpKwvhEjTLOHDOSzHDEL5EFAbKyYoT6CTdLSqb/package.opf): failed to open stream: No such file or directory (/var/www/reader/bekir/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/bekir/index.php(15): CWebApplication->run()
+REQUEST_URI=/bekir/index.php/content/Getbookmeta/oWbindXpKwvhEjTLOHDOSzHDEL5EFAbKyYoT6CTdLSqb
+in /var/www/reader/bekir/protected/utilities/Encryption.php (53)
+in /var/www/reader/bekir/protected/controllers/ContentController.php (43)
+in /var/www/reader/bekir/index.php (15)
+2014/03/17 08:36:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/content/read/oWbindXpKwvhEjTLOHDOSzHDEL5EFAbKyYoT6CTdLSqb
+---
