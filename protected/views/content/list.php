@@ -1,4 +1,4 @@
-r<?php
+<?php
 /* @var $this SiteController */
 
 $this->pageTitle=Yii::app()->name;
@@ -6,7 +6,7 @@ $this->pageTitle=Yii::app()->name;
 
 
 		<script type="text/javascript">
-jQuery(document).ready(function() {     
+		jQuery(document).ready(function() {     
 			App.setPage("gallery");  //Set current page
 			App.init(); //Initialise plugins and elements
 		});
