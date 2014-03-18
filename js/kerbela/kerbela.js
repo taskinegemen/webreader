@@ -63,8 +63,14 @@
  	$.fn.setRequestedLifetime=function(RL){this.RequestedLifetime=RL;};
  	$.fn.getRequestedLifetime=function(){return this.RequestedLifetime;};
 
- 	$.fn.setTicket=function(HTTP_service_session_key,HTTP_service_ticket){window.sessionStorage.ticket=JSON.stringify({HTTP_service_session_key:HTTP_service_session_key,HTTP_service_ticket:HTTP_service_ticket});}
- 	$.fn.getTicket=function(){return JSON.parse(window.sessionStorage.ticket);};
+ 	$.fn.setTicket=function(HTTP_service_session_key,HTTP_service_ticket){
+ 		window.sessionStorage.setItem("ticket_"+this.getRequestedHttpService(), JSON.stringify({HTTP_service_session_key:HTTP_service_session_key,HTTP_service_ticket:HTTP_service_ticket}));
+ 		//window.sessionStorage.ticket=JSON.stringify({HTTP_service_session_key:HTTP_service_session_key,HTTP_service_ticket:HTTP_service_ticket});
+ 	};
+ 	$.fn.getTicket=function(){
+ 		return JSON.parse(window.sessionStorage.getItem("ticket_"+this.getRequestedHttpService()));
+ 		//return JSON.parse(window.sessionStorage.ticket);
+ 	};
 
  	$.fn.decoder=function (string){
 		var json=new Object();

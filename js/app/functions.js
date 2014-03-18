@@ -1,6 +1,6 @@
 var BookMeta;
 var reader_slider;
-var Pages = [],Items = [], PageIDArray=[];
+var Pages = [],Items = [], PageIDArray=[],PageSrcArray={};
 	
 window.pages = [];
 
@@ -104,5 +104,33 @@ window.pages = [];
 		  }
 		  return results;
 		}
+
+
+		function fullscreenHandle(){
+			$("#toggle_full_screen, .toggle_full_screen").toggle($(document).fullScreen() != null);
+
+		   
+		    
+		    $(document).bind("fullscreenchange", function(e) {
+		       console.log("Full screen changed.");
+		       //$("#status").text($(document).fullScreen() ? "Full screen enabled" : "Full screen disabled");
+		    });
+		    
+		    $(document).bind("fullscreenerror", function(e) {
+		       console.log("Full screen error.");
+		     	//$("#status").text("Browser won't enter full screen mode for some reason.");
+		    });
+		    $('#toggle_full_screen, .toggle_full_screen').click(function(){
+		    	$(document).toggleFullScreen();
+		    });
+
+		}
+
+		$(document).ready(function(){
+			fullscreenHandle();
+
+		});
+
+
 
 		
