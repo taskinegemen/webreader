@@ -106,7 +106,7 @@
 					<div class="reader_book_category">
 						Favorilerim
 					</div>
-                    
+                    <div class="clearfix"></div>
                     
                     
         <!-- READER BOOK CARD -->
@@ -143,7 +143,7 @@
 					<div class="reader_book_category">
 						Diğerleri
 					</div>
-                    
+                    <div class="clearfix"></div>
         <!-- READER BOOK CARD -->
         <div class="reader_book_card">
         <div class="reader_book_card_book_cover solid_brand_color"></div>

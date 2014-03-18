@@ -44,39 +44,202 @@ $this->pageTitle=Yii::app()->name;
 				<div class="container">
 					<div class="row">
 						<div class="reader_market_page_row clearfix">
-							<div class="panel panel-default">
-								<div class="panel-body">
-									<div class="tabbable">
-										<ul class="nav nav-tabs">
-											<li class="reader_book_category">En Çok Okunanlar
-											</li>
-											<li class="active">
-												<a href="#tab_1_1" data-toggle="tab">Ücretli</a>
-											</li>
-											<li class="">
-												<a href="#tab_1_2" data-toggle="tab">Ücretsiz</a>
-											</li>
-											<li class="">
-												<a href="#tab_1_3" data-toggle="tab">Hepsi</a>
-											</li>
-										</ul>
-										<div class="tab-content">
-											<div class="tab-pane active in" id="tab_1_1">
-												<div class="divide-10"></div>
-											
+                        
+
+                        <div class="box-body clearfix">
+									   <div id="filter-controls" class="btn-group">
+										  <div class="hidden-xs">
+                                          	  <div class="reader_book_category">En Çok Okunanlar</div>
+											  <a href="#" class="btn btn-default" data-filter="*">Hepsi</a>
+											  <a href="#" class="btn btn-default" data-filter=".category_1">Ücretli</a>
+											  <a href="#" class="btn btn-default" data-filter=".category_2">Ücretsiz</a>
+										  </div>
+										  <div class="visible-xs">
+											   <select id="e1" class="form-control">
+													<option value="*">Hepsi</option>
+													<option value=".category_1">Ücretli</option>
+													<option value=".category_2">Ücretsiz</option>
+												</select>
+										  </div>
+									   </div>
+										<div id="filter-items" class="row">
+                                        
+                                        
+                                        
+											<div class="category_1 item">
+												<div class="reader_book_card">
+                        							<div class="reader_book_card_book_cover"></div>					
+                            						<div class="reader_book_card_info_container">						
+                                    					<div class="reader_market_book_name tip" data-original-title="The Book Name is Here">
+                                    					The Book Name is Here 
+                                   	 					</div>						
+                                    					<button class="reader_book_card_options_button pop-bottom" data-title="Bottom" data-original-title="" title=""></button>						
+                                    					<div class="clearfix"></div>						
+                                    					<div class="reader_book_card_writer_name tip" data-original-title="The Write Name is Here">The Write Name is Here</div>						
+                                   						<div class="reader_book_price">0 TL</div>					
+                          							</div>				
+                        						</div>
 											</div>
-											<div class="tab-pane" id="tab_1_2">
-												<div class="divide-10"></div>
-												
+                                                                                        
+                                            
+                                            
+											<div class="category_2 item">
+												<div class="reader_book_card">
+                        							<div class="reader_book_card_book_cover"></div>					
+                            						<div class="reader_book_card_info_container">						
+                                    					<div class="reader_market_book_name tip" data-original-title="The Book Name is Here">
+                                    					The Book Name is Here 
+                                   	 					</div>						
+                                    					<button class="reader_book_card_options_button pop-bottom" data-title="Bottom" data-original-title="" title=""></button>						
+                                    					<div class="clearfix"></div>						
+                                    					<div class="reader_book_card_writer_name tip" data-original-title="The Write Name is Here">The Write Name is Here</div>						
+                                   						<div class="reader_book_price">0 TL</div>					
+                          							</div>				
+                        						</div>
 											</div>
-											<div class="tab-pane fade" id="tab_1_3">
-												<div class="divide-10"></div>
-												
+                                            
+                                            
+											<div class="category_2 item">
+												<div class="reader_book_card">
+                        							<div class="reader_book_card_book_cover"></div>					
+                            						<div class="reader_book_card_info_container">						
+                                    					<div class="reader_market_book_name tip" data-original-title="The Book Name is Here">
+                                    					The Book Name is Here 
+                                   	 					</div>						
+                                    					<button class="reader_book_card_options_button pop-bottom" data-title="Bottom" data-original-title="" title=""></button>						
+                                    					<div class="clearfix"></div>						
+                                    					<div class="reader_book_card_writer_name tip" data-original-title="The Write Name is Here">The Write Name is Here</div>						
+                                   						<div class="reader_book_price">0 TL</div>					
+                          							</div>				
+                        						</div>
 											</div>
+                                            
+                                            
+                                            
+											<div class="category_1 item">
+												<div class="reader_book_card">
+                        							<div class="reader_book_card_book_cover"></div>					
+                            						<div class="reader_book_card_info_container">						
+                                    					<div class="reader_market_book_name tip" data-original-title="The Book Name is Here">
+                                    					The Book Name is Here 
+                                   	 					</div>						
+                                    					<button class="reader_book_card_options_button pop-bottom" data-title="Bottom" data-original-title="" title=""></button>						
+                                    					<div class="clearfix"></div>						
+                                    					<div class="reader_book_card_writer_name tip" data-original-title="The Write Name is Here">The Write Name is Here</div>						
+                                   						<div class="reader_book_price">0 TL</div>					
+                          							</div>				
+                        						</div>
+											</div>
+                                            
+                                            
+                                            
+											<div class="category_1 item">
+												<div class="reader_book_card">
+                        							<div class="reader_book_card_book_cover"></div>					
+                            						<div class="reader_book_card_info_container">						
+                                    					<div class="reader_market_book_name tip" data-original-title="The Book Name is Here">
+                                    					The Book Name is Here 
+                                   	 					</div>						
+                                    					<button class="reader_book_card_options_button pop-bottom" data-title="Bottom" data-original-title="" title=""></button>						
+                                    					<div class="clearfix"></div>						
+                                    					<div class="reader_book_card_writer_name tip" data-original-title="The Write Name is Here">The Write Name is Here</div>						
+                                   						<div class="reader_book_price">0 TL</div>					
+                          							</div>				
+                        						</div>
+											</div>
+                                            
+                                            
+                                            
+											<div class="category_2 item">
+												<div class="reader_book_card">
+                        							<div class="reader_book_card_book_cover"></div>					
+                            						<div class="reader_book_card_info_container">						
+                                    					<div class="reader_market_book_name tip" data-original-title="The Book Name is Here">
+                                    					The Book Name is Here 
+                                   	 					</div>						
+                                    					<button class="reader_book_card_options_button pop-bottom" data-title="Bottom" data-original-title="" title=""></button>						
+                                    					<div class="clearfix"></div>						
+                                    					<div class="reader_book_card_writer_name tip" data-original-title="The Write Name is Here">The Write Name is Here</div>						
+                                   						<div class="reader_book_price">0 TL</div>					
+                          							</div>				
+                        						</div>
+											</div>
+                                            
+                                            
+                                            
+											<div class="category_2 item">
+												<div class="reader_book_card">
+                        							<div class="reader_book_card_book_cover"></div>					
+                            						<div class="reader_book_card_info_container">						
+                                    					<div class="reader_market_book_name tip" data-original-title="The Book Name is Here">
+                                    					The Book Name is Here 
+                                   	 					</div>						
+                                    					<button class="reader_book_card_options_button pop-bottom" data-title="Bottom" data-original-title="" title=""></button>						
+                                    					<div class="clearfix"></div>						
+                                    					<div class="reader_book_card_writer_name tip" data-original-title="The Write Name is Here">The Write Name is Here</div>						
+                                   						<div class="reader_book_price">0 TL</div>					
+                          							</div>				
+                        						</div>
+											</div>
+                                            
+                                            
+                                            
+											<div class="category_2 item">
+												<div class="reader_book_card">
+                        							<div class="reader_book_card_book_cover"></div>					
+                            						<div class="reader_book_card_info_container">						
+                                    					<div class="reader_market_book_name tip" data-original-title="The Book Name is Here">
+                                    					The Book Name is Here 
+                                   	 					</div>						
+                                    					<button class="reader_book_card_options_button pop-bottom" data-title="Bottom" data-original-title="" title=""></button>						
+                                    					<div class="clearfix"></div>						
+                                    					<div class="reader_book_card_writer_name tip" data-original-title="The Write Name is Here">The Write Name is Here</div>						
+                                   						<div class="reader_book_price">0 TL</div>					
+                          							</div>				
+                        						</div>                                                
+											</div>
+                                            
+                                            
 										</div>
 									</div>
-								</div>
-							</div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+							
 						</div>
 					</div>
 				</div>
@@ -159,3 +322,11 @@ $this->pageTitle=Yii::app()->name;
           });
       }
 </script>
+
+
+	<script>
+		jQuery(document).ready(function() {		
+			App.setPage("gallery");  //Set current page
+			App.init(); //Initialise plugins and elements
+		});
+	</script>
