@@ -118,12 +118,7 @@ class SiteController extends Controller
 	 * Displays the Library page
 	 */
 	public function actionLibrary(){
-		/*
-		if (!$this->authenticate()) {
-			$this->redirect('login');
-
-		}*/
-		//get user's contents from Koala
+		
 		$contents = "";
 		$this->render('library',array('contents'=>$contents));
 	}
