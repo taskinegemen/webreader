@@ -324,9 +324,4 @@ $this->pageTitle=Yii::app()->name;
 </script>
 
 
-	<script>
-		jQuery(document).ready(function() {		
-			App.setPage("gallery");  //Set current page
-			App.init(); //Initialise plugins and elements
-		});
-	</script>
+	
