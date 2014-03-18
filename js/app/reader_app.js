@@ -1,55 +1,33 @@
 jQuery(document).ready(function() {		
 
-
-			
-			$.ajax({
-			  url: metaUrl,
-			  
-			  success: function (data){
-			  	 
-			  	BookMeta=JSON.parse(data);
-			  	StartReaderApp();
-			  	window.SlideController.init({
-					selector:".bxslider",
-					
-				});
-
-				$(document).ready(resizeEverything);
-
-				$(window).on('resize',resizeEverything);
-
-			  },
-			  
-			});
-			
-			var acik=false;
-
-			$( ".read_page_thumbnails" ).click(function() {
-			  if (!acik){
-			  $( ".read_page_thumbnails" ).css("bottom","170px");
-			  $( ".bx-custom-pager" ).css("bottom","50px");
-			  $(".bx-pager").css({'bottom': '0px', 'overflow-x': 'scroll', 'overflow-y': 'hidden', 'white-space':'nowrap', 'height': '150px'});
-			  acik=true;
-
-			} else {
-				acik=false;
-				$( ".read_page_thumbnails" ).css("bottom","0");
-				$( ".bx-custom-pager" ).css("bottom","0");
-				$( ".bx-pager").css({'bottom': '-170px'});
-			
-
-
-			}
+	$.ajax({
+	  url: metaUrl,
+	  success: function (data){
+	  	BookMeta=JSON.parse(data);
+	  	StartReaderApp();
+	  	window.SlideController.init({
+			selector:".bxslider",	
 		});
+		$(document).ready(resizeEverything);
+		$(window).on('resize',resizeEverything);
+	  },
+	});
 
-			
-														  
-														  
-			
-											
+	var acik=false;
 
-		
-			
+	$( ".read_page_thumbnails" ).click(function() {
+	  if (!acik){
+		  $( ".read_page_thumbnails" ).css("bottom","170px");
+		  $( ".bx-custom-pager" ).css("bottom","50px");
+		  $(".bx-pager").css({'bottom': '0px', 'overflow-x': 'scroll', 'overflow-y': 'hidden', 'white-space':'nowrap', 'height': '150px'});
+		  acik=true;
+		} else {
+			acik=false;
+			$( ".read_page_thumbnails" ).css("bottom","0");
+			$( ".bx-custom-pager" ).css("bottom","0");
+			$( ".bx-pager").css({'bottom': '-170px'});
+		}
+	});
 			
 });
 
@@ -106,9 +84,16 @@ function StartReaderApp (){
 
 					$('.reader_book_cover_thumbnail').empty().append(newThumbnailImage);
 				}
-
+ 
 			});
 
+			
+			//Set Names & etc
+			$('[content-meta="book-title"]').text( BookMeta.metadatadc.title) ;
+			$('[content-meta="book-author"]').text( BookMeta.metadatadc.creator) ;
+			$('[content-meta="book-publish-date"]').text( BookMeta.metadatadc.date) ;
+			$('[content-meta="book-page-count"]').text(BookMeta.spine.itemref.length) ;
+			$('[content-meta="book-categories"]').text( BookMeta.metadatadc.subject[0]) ;
 
 
 			
