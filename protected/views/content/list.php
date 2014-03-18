@@ -44,39 +44,32 @@ $this->pageTitle=Yii::app()->name;
 				<div class="container">
 					<div class="row">
 						<div class="reader_market_page_row clearfix">
-							<div class="panel panel-default">
-								<div class="panel-body">
-									<div class="tabbable">
-										<ul class="nav nav-tabs">
-											<li class="reader_book_category">En Çok Okunanlar
-											</li>
-											<li class="active">
-												<a href="#tab_1_1" data-toggle="tab">Ücretli</a>
-											</li>
-											<li class="">
-												<a href="#tab_1_2" data-toggle="tab">Ücretsiz</a>
-											</li>
-											<li class="">
-												<a href="#tab_1_3" data-toggle="tab">Hepsi</a>
-											</li>
-										</ul>
-										<div class="tab-content">
-											<div class="tab-pane active in" id="tab_1_1">
-												<div class="divide-10"></div>
-											
-											</div>
-											<div class="tab-pane" id="tab_1_2">
-												<div class="divide-10"></div>
-												
-											</div>
-											<div class="tab-pane fade" id="tab_1_3">
-												<div class="divide-10"></div>
-												
-											</div>
+                        
+
+                        <div class="box-body clearfix">
+									   <div id="filter-controls" class="btn-group">
+										  <div class="hidden-xs">
+                                          	  <div class="reader_book_category">En Çok Okunanlar</div>
+											  <a href="#" class="btn btn-default" data-filter="*">Hepsi</a>
+											  <a href="#" class="btn btn-default" data-filter=".category_1">Ücretli</a>
+											  <a href="#" class="btn btn-default" data-filter=".category_2">Ücretsiz</a>
+										  </div>
+										  <div class="visible-xs">
+											   <select id="e1" class="form-control">
+													<option value="*">Hepsi</option>
+													<option value=".category_1">Ücretli</option>
+													<option value=".category_2">Ücretsiz</option>
+												</select>
+										  </div>
+									   </div>
+										<div id="filter-items" class="row">    
 										</div>
 									</div>
-								</div>
-							</div>
+                        
+                        
+                        
+                        
+
 						</div>
 					</div>
 				</div>
@@ -131,7 +124,14 @@ $this->pageTitle=Yii::app()->name;
 		        	}
 		        });
 
-				var card='<div class="reader_book_card">\
+				var card='<div class="';
+        if (book.contentIsForSale=='Free') {
+          card+='category_2';
+        }else{
+          card+='category_1';
+        };
+        card+=' item">\
+        <div class="reader_book_card">\
 					<div class="reader_book_card_book_cover">\
 					<a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+book.contentId+'">\
 					<img src="http://catalog.lindneo.com/api/getThumbnail?id='+book.contentId+'" style="width:198px; height:264px" /></div></a>\
@@ -148,14 +148,13 @@ $this->pageTitle=Yii::app()->name;
 				};
 				card+='</div>\
 					</div>\
-				</div>';
-				if (book.contentIsForSale=='Free') {
-					$('#tab_1_2').append(card);
-				}else{
-					$('#tab_1_1').append(card);
-				};
-				$('#tab_1_3').append(card);
+				</div></div>';
+				
+				$('#filter-items').append(card);
             });
           });
       }
 </script>
+
+
+	
