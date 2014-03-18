@@ -119,11 +119,6 @@ class SiteController extends Controller
 	 */
 	public function actionLibrary(){
 		
-		if (!$this->authenticate()) {
-			$this->redirect('login');
-
-		}
-		//get user's contents from Koala
 		$contents = "";
 		$this->render('library',array('contents'=>$contents));
 	}
@@ -158,6 +153,7 @@ class SiteController extends Controller
 	/**
 	 * Logs out the current user and redirect to homepage.
 	 */
+
 	public function actionLogout()
 	{
 		Yii::app()->user->logout();
