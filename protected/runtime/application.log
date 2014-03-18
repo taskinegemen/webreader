@@ -2426,3 +2426,11 @@ Stack trace:
 REQUEST_URI=/erkan/css/ui/css/themes/night.css
 HTTP_REFERER=http://reader.lindneo.com/erkan/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
 ---
+2014/03/18 08:00:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ekaratas/list".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('ekaratas/list')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/ekaratas/list
+---
