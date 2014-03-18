@@ -119,8 +119,15 @@ class SiteController extends Controller
 	 */
 	public function actionLibrary(){
 		
+		error_log($this->authenticate());
+		if($this->authenticate() && $this->authenticate()!="undefined"){
 		$contents = "";
 		$this->render('library',array('contents'=>$contents));
+		}
+		else
+		{
+			$this->render('site/login');
+		}
 	}
 
 

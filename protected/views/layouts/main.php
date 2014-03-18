@@ -4,7 +4,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 	<meta name="language" content="tr" />
-
+	<style>
+	#splashscreen {
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+	}
+	</style>
 		<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/cloud-admin.css" >
 	<!--<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/themes/night.css" >-->

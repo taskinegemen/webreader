@@ -14,8 +14,13 @@ $this->pageTitle=Yii::app()->name . ' - Login';
   <script type="text/javascript">
 
   	$(document).on("click","#loginButton",function(e){
-
-		var username=$('#LoginForm_username').val();
+  		$.blockUI({ message: '<h1>Please wait just a little...</h1>' });
+  		setTimeout($.unblockUI, 10000); 
+  		window.setTimeout(function(){login();},100);
+		
+	});
+  	function login(){
+  		var username=$('#LoginForm_username').val();
 		var password=$('#LoginForm_password').val();
 		console.log(password);																																		
 		var kerbela=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','<?php echo Yii::app()->request->baseUrl; ?>/kerberizedservice/authenticate',username,password,'kerbela','reader','6000');
@@ -29,19 +34,22 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 
 		var kerbela_panda=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','http://panda.lindneo.com/kerberizedservice/authenticate',username,password,'kerbela','panda','6000');
 		var response_panda=kerbela_panda.execute();
+		if (response.status && response_catalog.status && response_panda.status && response_panda.status) {
 
-		console.log("sdfsdfsdffd"+response_panda.status);
-		if (response.status && response_catalog.status && response_koala.status && response_panda.status) {
+
 			var ticket=kerbela.getTicket();
 			var auth=kerbela.getAuthTicket();
 			var HTTP_service_ticket=ticket.HTTP_service_ticket;
 			var form='<form method="post" action="<?php echo Yii::app()->request->baseUrl; ?>/site/library" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
 			$('body').append(form);
 			$(form).submit();
-		};
+		}
+		else
+		{
+			$.unblockUI();
+		}
 		console.log(response);
-	});
-
+  	}
   </script>
  <!-- login -->
  
@@ -52,7 +60,9 @@ $this->pageTitle=Yii::app()->name . ' - Login';
  
  
  
- 
+<div id="splashscreen">
+merhaba
+</div> 
 <div class="login_page_container">    
 
 
