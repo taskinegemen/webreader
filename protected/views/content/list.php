@@ -76,11 +76,7 @@ $this->pageTitle=Yii::app()->name;
 			</div>
 		</div><!-- /market_page_container -->
 <script type="text/javascript">
-	var username='egemen@linden-tech.com';
-    var password='12548442';
-    var kerbela=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','http://catalog.lindneo.com/kerberizedservice/authenticate',username,password,'kerbela','catalog','6000');
-    var response=kerbela.execute();
-    
+	 
     function getCurrency(code){
     	var type;
     	switch (code){
@@ -97,6 +93,7 @@ $this->pageTitle=Yii::app()->name;
     	return type;
     }
     if (response.status) {
+        var kerbela=$(window).kerbelainit();
         var ticket=kerbela.getTicket();
         var auth=kerbela.getAuthTicket();
         var HTTP_service_ticket=ticket.HTTP_service_ticket;
