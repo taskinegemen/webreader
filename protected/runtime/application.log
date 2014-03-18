@@ -1,1 +1,294 @@
 
+2014/03/18 12:27:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/content/details/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/18 12:27:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/site/library
+---
+2014/03/18 12:27:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/content/details/YNbqpqMXxIlmETlyJMalXatyP7eNOlMpmfaEwhgEdtOW
+---
+2014/03/18 12:37:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/content/details/YNbqpqMXxIlmETlyJMalXatyP7eNOlMpmfaEwhgEdtOW
+---
+2014/03/18 12:38:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/content/details/YNbqpqMXxIlmETlyJMalXatyP7eNOlMpmfaEwhgEdtOW
+---
+2014/03/18 12:40:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/content/details/YNbqpqMXxIlmETlyJMalXatyP7eNOlMpmfaEwhgEdtOW
+---
+2014/03/18 12:40:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/content/details/YNbqpqMXxIlmETlyJMalXatyP7eNOlMpmfaEwhgEdtOW
+---
+2014/03/18 12:42:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/content/details/YNbqpqMXxIlmETlyJMalXatyP7eNOlMpmfaEwhgEdtOW
+---
+2014/03/18 12:42:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/content/details/YNbqpqMXxIlmETlyJMalXatyP7eNOlMpmfaEwhgEdtOW
+---
+2014/03/18 12:45:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/content/details/YNbqpqMXxIlmETlyJMalXatyP7eNOlMpmfaEwhgEdtOW
+---
+2014/03/18 12:52:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/content/details/YNbqpqMXxIlmETlyJMalXatyP7eNOlMpmfaEwhgEdtOW
+---
+2014/03/18 12:53:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/content/details/YNbqpqMXxIlmETlyJMalXatyP7eNOlMpmfaEwhgEdtOW
+---
+2014/03/18 12:58:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/content/details/YNbqpqMXxIlmETlyJMalXatyP7eNOlMpmfaEwhgEdtOW
+---
+2014/03/18 13:00:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/content/details/YNbqpqMXxIlmETlyJMalXatyP7eNOlMpmfaEwhgEdtOW
+---
+2014/03/18 13:01:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/content/details/YNbqpqMXxIlmETlyJMalXatyP7eNOlMpmfaEwhgEdtOW
+---
+2014/03/18 13:02:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/content/details/YNbqpqMXxIlmETlyJMalXatyP7eNOlMpmfaEwhgEdtOW
+---
+2014/03/18 13:03:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/content/details/YNbqpqMXxIlmETlyJMalXatyP7eNOlMpmfaEwhgEdtOW
+---
+2014/03/18 13:04:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/back.webm".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/back.webm')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/index.php/js/back.webm
+HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/site/login
+---
+2014/03/18 13:04:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/back.mp4".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/back.mp4')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/index.php/js/back.mp4
+HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/site/login
+---
+2014/03/18 13:42:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/site/library
+---
+2014/03/18 13:44:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/site/login
+---
+2014/03/18 13:44:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/site/library
+---
+2014/03/18 13:47:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/site/library
+---
+2014/03/18 13:48:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/site/library
+---
+2014/03/18 13:50:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/site/library
+---
+2014/03/18 13:51:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "myprofile".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('myprofile')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('myprofile')
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/myprofile')
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/reader/bekir/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/bekir/site/myprofile
+---
+2014/03/18 13:52:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/site/library
+---
+2014/03/18 13:53:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/site/library
+---
+2014/03/18 13:55:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/site/library
+---
+2014/03/18 13:59:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/js/back.we...')
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/reader/bekir/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/bekir/site/js/back.webm
+HTTP_REFERER=http://reader.lindneo.com/bekir/site/myprofile/
+---
+2014/03/18 13:59:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/js/back.mp...')
+#3 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/reader/bekir/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/bekir/site/js/back.mp4
+HTTP_REFERER=http://reader.lindneo.com/bekir/site/myprofile/
+---
+2014/03/18 14:01:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/bekir/site/library
+---
