@@ -222,7 +222,7 @@ if (Yii::app()->controller->action->id=="read"):?>
                 
                 
                 <li><i class="fa fa-plus-circle"></i></li>
-                <li><i class="fa fa-arrows-alt"></i></li>
+                <li><i class="fa fa-arrows-alt" id="toggle_full_screen"></i></li>
 
             </ul>
 			<!-- /Top Right Menu -->
