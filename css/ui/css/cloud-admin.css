@@ -9955,18 +9955,18 @@ header.read_page_navbar i.fa, span.sb-icon-search {
 /**  NOBOOK PAGE ***********************************/
 
 .reader_nobook_page_row {
-	/**margin-left:25px;
+	*margin-left:25px;
 	margin-right:25px;
 	padding:10px;
-	 text-align:center; */
+	text-align:center;
 }
 
 
 .reader_nobook_page_row button {
-	/**margin-left: auto;
+	margin-left: auto;
 	margin-right: auto;
 	float: none !important;
-	font-size:25px;*/
+	font-size:25px;
 }
 
 .nobook_smiley {
