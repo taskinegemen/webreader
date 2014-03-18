@@ -17,10 +17,21 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 
 		var username=$('#LoginForm_username').val();
 		var password=$('#LoginForm_password').val();
-		console.log(password);
+		console.log(password);																																		
 		var kerbela=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','<?php echo Yii::app()->request->baseUrl; ?>/kerberizedservice/authenticate',username,password,'kerbela','reader','6000');
 		var response=kerbela.execute();
-		if (response.status) {
+
+		var kerbela_catalog=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','http://catalog.lindneo.com/kerberizedservice/authenticate',username,password,'kerbela','catalog','6000');
+		var response_catalog=kerbela_catalog.execute();
+		
+		var kerbela_koala=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','http://koala.lindneo.com/kerberizedservice/authenticate',username,password,'kerbela','koala','6000');
+		var response_koala=kerbela_koala.execute();
+
+		var kerbela_panda=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','http://panda.lindneo.com/kerberizedservice/authenticate',username,password,'kerbela','panda','6000');
+		var response_panda=kerbela_panda.execute();
+
+		console.log("sdfsdfsdffd"+response_panda.status);
+		if (response.status && response_catalog.status && response_koala.status && response_panda.status) {
 			var ticket=kerbela.getTicket();
 			var auth=kerbela.getAuthTicket();
 			var HTTP_service_ticket=ticket.HTTP_service_ticket;

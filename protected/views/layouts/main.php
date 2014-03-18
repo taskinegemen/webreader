@@ -7,7 +7,7 @@
 
 		<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/cloud-admin.css" >
-	<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/themes/night.css" >
+	<!--<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/themes/night.css" >-->
 	<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/responsive.css" >
 	<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/themes/default.css" id="skin-switcher">
 	<link href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -120,7 +120,7 @@
 			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/bxSlider/jquery.bxslider.js"></script>
 			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/app/functions.js"></script>
 			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/app/slider_control.js"></script>
-			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/app/reader_app.js"></script>
+			<!--<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/app/reader_app.js"></script>-->
 		
 		<!-- bxSlider -->
 
@@ -221,7 +221,7 @@ if (Yii::app()->controller->action->id=="read"):?>
              </li>
                 
                 
-                <li><i class="fa fa-plus-circle"></i></li>
+                <li><i class="fa fa-plus-circle" id="toggle_zoom" ></i></li>
                 <li><i class="fa fa-arrows-alt" id="toggle_full_screen"></i></li>
 
             </ul>
