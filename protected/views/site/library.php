@@ -47,17 +47,9 @@
                                 console.log(book_data.result);
                             });
 
-                            $.ajax({
-                                type: "POST",
-                                url: "http://catalog.lindneo.com/api/getThumbnail",
-                                data: { id: value.book_id, auth: auth_catalog, http_service_ticket: HTTP_service_ticket_catalog, type:"web"}
-                            })
-                              .done(function( result ) {
-                                //book_thumbnail = JSON.parse(result);
-                                console.log(result);
-                            });
                             var book = $('<div class="reader_book_card">\
-                                            <div class="reader_book_card_book_cover solid_brand_color"></div>\
+                                            <div class="reader_book_card_book_cover solid_brand_color">\
+                                            <img src="http://catalog.lindneo.com/api/getThumbnail/id/'+value.book_id+'" style="width:198px; height:264px;"></div>\
                                             <div class="reader_book_card_info_container">\
                                             <div class="reader_market_book_name">'+book_data.result.contentTitle+'</div>\
                                             <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\
@@ -73,8 +65,8 @@
               });
           }
 
-		//App.setPage("gallery");  //Set current page
-		//App.init(); //Initialise plugins and elements
+		App.setPage("gallery");  //Set current page
+		App.init(); //Initialise plugins and elements
 
 
 	});
