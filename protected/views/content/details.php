@@ -4,25 +4,53 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 <script>
-		jQuery(document).ready(function() {
-/*
-			var username=$('#LoginForm_username').val();
-		var password=$('#LoginForm_password').val();
-		console.log(password);																																		
-		var kerbela=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','<?php echo Yii::app()->request->baseUrl; ?>/kerberizedservice/authenticate',username,password,'kerbela','reader','6000');
-		var response=kerbela.execute();
-		
-		if (response.status) {
-			var ticket=kerbela.getTicket();
-			var auth=kerbela.getAuthTicket();
-			var HTTP_service_ticket=ticket.HTTP_service_ticket;
-			var form='<form method="post" action="<?php echo Yii::app()->request->baseUrl; ?>/site/library" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
-			$('body').append(form);
-			$(form).submit();
-		};		
-			App.setPage("gallery");  //Set current page
-			App.init(); //Initialise plugins and elements
-		});*/
+		$( document ).ready(function() { 
+            var kerbela = $(window).kerbelainit();
+            kerbela.setRequestedHttpService('catalog');
+            console.log(kerbela.getRequestedHttpService());
+            var auth = kerbela.getAuthTicket();
+            var HTTP_service_ticket = kerbela.getTicket().HTTP_service_ticket;
+            
+            var book_data = "";
+            var book_thumbnail = "";
+            $.ajax({
+                type: "POST",
+                url: "http://catalog.lindneo.com/api/getMainInfo",
+                data: { id: '<?php echo $id; ?>', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
+            })
+              .done(function( result ) {
+               		book_data = JSON.parse(result);
+                    console.log(book_data.result);
+            });
+            $('.book_info_the_name_of_the_book').html(book_data.result.contentTitle);
+            $('.book_info_page').html(book_data.result.contentTotalPage);
+            $('.book_info_date').html(book_data.result.contentDate);
+            $('.book_info_the_name_of_the_writer').html(book_data.result.contentAuthor);
+            $('.contentExplanation').html(book_data.result.contentExplanation);
+
+            $('.book_info_book_cover').css('background-image', 'url(http://catalog.lindneo.com/api/getThumbnail/id/<?php echo $id; ?>)');
+
+            /*var book = $('<div class="reader_book_card">\
+                            <div class="reader_book_card_book_cover solid_brand_color">\
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'"><img src="http://catalog.lindneo.com/api/getThumbnail/id/'+value.book_id+'" style="width:198px; height:264px;"></a></div>\
+                            <div class="reader_book_card_info_container">\
+                            <div class="reader_market_book_name"><a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'">'+book_data.result.contentTitle+'</a></div>\
+                            <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\
+                            <div class="clearfix"></div>\
+                            <div class="reader_book_card_writer_name">'+book_data.result.contentAuthor+'</div>\
+                            <div class="reader_book_fav"><i class="fa fa-star-o"></i></div>\
+                            </div>\
+                            </div>');
+            console.log(book);
+            book.appendTo('#books');
+            */
+
+
+		App.setPage("gallery");  //Set current page
+		App.init(); //Initialise plugins and elements
+
+
+	});
 	</script>
 	<!-- /JAVASCRIPTS -->
     
@@ -102,7 +130,7 @@ $this->pageTitle=Yii::app()->name;
 <div class="book_info_details_row clearfix">
 <div class="book_info_description">
 <span class="book_info_titles brand_text_color">Açıklama:</span>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium bibendum sollicitudin. Fusce ligula sapien, blandit et nulla et, dictum facilisis mauris. Quisque vel venenatis ante, dignissim lacinia felis. Morbi nec libero et urna tristique molestie.Aenean at felis ante. Etiam eget eros in orci vestibulum porta.</p> 
+<p class="contentExplanation">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium bibendum sollicitudin. Fusce ligula sapien, blandit et nulla et, dictum facilisis mauris. Quisque vel venenatis ante, dignissim lacinia felis. Morbi nec libero et urna tristique molestie.Aenean at felis ante. Etiam eget eros in orci vestibulum porta.</p> 
 </div>
 <!-- /book_info_description -->
 
