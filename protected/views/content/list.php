@@ -92,8 +92,9 @@ $this->pageTitle=Yii::app()->name;
     	}
     	return type;
     }
-    if (response.status) {
+
         var kerbela=$(window).kerbelainit();
+        kerbela.setRequestedHttpService('catalog');
         var ticket=kerbela.getTicket();
         var auth=kerbela.getAuthTicket();
         var HTTP_service_ticket=ticket.HTTP_service_ticket;
@@ -150,7 +151,7 @@ $this->pageTitle=Yii::app()->name;
 				$('#filter-items').append(card);
             });
           });
-      }
+      
 </script>
 
 
