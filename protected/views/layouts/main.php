@@ -146,7 +146,7 @@
 <?php 
 if (Yii::app()->controller->action->id=="read"):?>
 <!-- Header -->
-	<header class="navbar clearfix navbar-fixed-top read_page_navbar" id="header">
+	<header class="navbar clearfix navbar-fixed-top read_page_navbar navbar_blue" id="header">
 		<!-- Top Navigation Bar -->
 		<div class="container">
 		<div class="navbar-brand">
@@ -163,7 +163,7 @@ if (Yii::app()->controller->action->id=="read"):?>
 					</div>
 					<!-- /TEAM STATUS FOR MOBILE -->
 					<!-- SIDEBAR COLLAPSE -->
-					<div id="sidebar-collapse" class="sidebar-collapse">
+					<div id="sidebar-collapse" class="sidebar-collapse brand_hover_color_for_navbar_components">
 						<i class="fa fa-bars" data-icon1="fa fa-bars" data-icon2="fa fa-bars" ></i>
 					</div>
 					<!-- /SIDEBAR COLLAPSE -->
@@ -172,7 +172,7 @@ if (Yii::app()->controller->action->id=="read"):?>
 							<form>
 								<input class="sb-search-input" placeholder="Ne aramak istiyorsunuz?" type="text" value="" name="search" id="search">
 								<input class="sb-search-submit" type="submit" value="">
-								<span class="sb-icon-search"></span>
+								<span class="sb-icon-search brand_hover_color_for_navbar_components"></span>
 							</form>
 						</div>
 					</div>
@@ -238,9 +238,26 @@ if (Yii::app()->controller->action->id=="read"):?>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <?php elseif(Yii::app()->controller->action->id!="login"): ?>
 <!-- Header -->
-	<header class="navbar clearfix navbar-fixed-top" id="header">
+	<header class="navbar clearfix navbar-fixed-top navbar_blue" id="header">
 		<!-- Top Navigation Bar -->
 		<div class="container">
 		<div class="navbar-brand">
@@ -257,7 +274,7 @@ if (Yii::app()->controller->action->id=="read"):?>
 					</div>
 					<!-- /TEAM STATUS FOR MOBILE -->
 					<!-- SIDEBAR COLLAPSE -->
-					<div id="sidebar-collapse" class="sidebar-collapse">
+					<div id="sidebar-collapse" class="sidebar-collapse brand_hover_color_for_navbar_components">
 						<i class="fa fa-bars" data-icon1="fa fa-bars" data-icon2="fa fa-bars" ></i>
 					</div>
 					<!-- /SIDEBAR COLLAPSE -->
@@ -266,7 +283,7 @@ if (Yii::app()->controller->action->id=="read"):?>
 							<form>
 								<input class="sb-search-input" placeholder="Ne aramak istiyorsunuz?" type="text" value="" name="search" id="search">
 								<input class="sb-search-submit" type="submit" value="">
-								<span class="sb-icon-search"></span>
+								<span class="sb-icon-search brand_hover_color_for_navbar_components"></span>
 							</form>
 						</div>
 					</div>

@@ -22,26 +22,32 @@ jQuery(document).ready(function() {
 			  
 			});
 			
-			
-			$( ".read_page_thumbnails" ).hover(function() {
+			var acik=false;
+
+			$( ".read_page_thumbnails" ).click(function() {
+			  if (!acik){
 			  $( ".read_page_thumbnails" ).css("bottom","170px");
 			  $( ".bx-custom-pager" ).css("bottom","50px");
 			  $(".bx-pager").css({'bottom': '0px', 'overflow-x': 'scroll', 'overflow-y': 'hidden', 'white-space':'nowrap', 'height': '150px'});
-			
-													      });
-<<<<<<< HEAD
+			  acik=true;
 
-
-=======
-														  
-														  
-			$( ".read_page_thumbnails, .bx-pager" ).mouseleave(function () {
+			} else {
+				acik=false;
 				$( ".read_page_thumbnails" ).css("bottom","0");
 				$( ".bx-custom-pager" ).css("bottom","0");
 				$( ".bx-pager").css({'bottom': '-170px'});
-																		 });
+			
+
+
+			}
+		});
+
+			
+														  
+														  
+			
 											
->>>>>>> ce04a6d7829a7a2fe892d309fa9f0a5bcf5c56f5
+
 		
 			
 			
