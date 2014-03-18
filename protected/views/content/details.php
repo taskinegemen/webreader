@@ -4,10 +4,25 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 <script>
-		jQuery(document).ready(function() {		
+		jQuery(document).ready(function() {
+/*
+			var username=$('#LoginForm_username').val();
+		var password=$('#LoginForm_password').val();
+		console.log(password);																																		
+		var kerbela=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','<?php echo Yii::app()->request->baseUrl; ?>/kerberizedservice/authenticate',username,password,'kerbela','reader','6000');
+		var response=kerbela.execute();
+		
+		if (response.status) {
+			var ticket=kerbela.getTicket();
+			var auth=kerbela.getAuthTicket();
+			var HTTP_service_ticket=ticket.HTTP_service_ticket;
+			var form='<form method="post" action="<?php echo Yii::app()->request->baseUrl; ?>/site/library" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
+			$('body').append(form);
+			$(form).submit();
+		};		
 			App.setPage("gallery");  //Set current page
 			App.init(); //Initialise plugins and elements
-		});
+		});*/
 	</script>
 	<!-- /JAVASCRIPTS -->
     
