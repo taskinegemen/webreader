@@ -20,6 +20,7 @@
                 console.log(result);
                 deneme = JSON.parse(result);
                 console.log(deneme.result);
+                deneme.result=null;
                 if(deneme.result){
                     $.each( deneme.result, function( key, value ) {
                       console.log(value.book_id);
@@ -57,6 +58,14 @@
                         book.appendTo('#books');
                             
                     });
+                }
+                else{
+                    $('.row').html('<div class="reader_nobook_page_row clearfix">\
+                                            <div class="nobook_smiley"></div>\
+                                            <p class="nobook_text">Kütüphanenizde hiç kitabınız bulunmamaktadır.</p>\
+                                            <p class="nobook_text">Mağaza’dan kitap edinin.</p>\
+                                            <a href="/erkan/index.php/content/list"><button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons">Mağazaya Git</button></a>\
+                                            </div>');
                 }
               });
         
