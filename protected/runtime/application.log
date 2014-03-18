@@ -1353,3 +1353,57 @@ Stack trace:
 REQUEST_URI=/bekir/js/libs/bxSlider/images/slider_controls.png
 HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/content/read/oWbindXpKwvhEjTLOHDOSzHDEL5EFAbKyYoT6CTdLSqb
 ---
+2014/03/17 15:15:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/css/themes/night.css".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/css/them...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/css/themes/night.css
+HTTP_REFERER=http://reader.lindneo.com/bekir/site/library
+---
+2014/03/17 15:15:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/css/themes/night.css".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/css/them...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/css/themes/night.css
+HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/content/list
+---
+2014/03/17 15:15:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/css/themes/night.css".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/css/them...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/css/themes/night.css
+HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/site/library
+---
+2014/03/17 15:15:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/profile".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/profile')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/index.php/user/profile
+HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/site/library
+---
+2014/03/17 15:15:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/css/themes/night.css".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/css/them...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/css/themes/night.css
+HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/user/profile
+---
+2014/03/18 06:44:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/css/themes/night.css".' in /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/css/them...')
+#1 /var/www/reader/bekir/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/bekir/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/bekir/css/ui/css/themes/night.css
+HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/site/library
+---
