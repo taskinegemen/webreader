@@ -146,7 +146,7 @@
 <?php 
 if (Yii::app()->controller->action->id=="read"):?>
 <!-- Header -->
-	<header class="navbar clearfix navbar-fixed-top read_page_navbar" id="header">
+	<header class="navbar clearfix navbar-fixed-top read_page_navbar navbar_blue" id="header">
 		<!-- Top Navigation Bar -->
 		<div class="container">
 		<div class="navbar-brand">
@@ -163,7 +163,7 @@ if (Yii::app()->controller->action->id=="read"):?>
 					</div>
 					<!-- /TEAM STATUS FOR MOBILE -->
 					<!-- SIDEBAR COLLAPSE -->
-					<div id="sidebar-collapse" class="sidebar-collapse">
+					<div id="sidebar-collapse" class="sidebar-collapse brand_hover_color_for_navbar_components">
 						<i class="fa fa-bars" data-icon1="fa fa-bars" data-icon2="fa fa-bars" ></i>
 					</div>
 					<!-- /SIDEBAR COLLAPSE -->
@@ -172,7 +172,7 @@ if (Yii::app()->controller->action->id=="read"):?>
 							<form>
 								<input class="sb-search-input" placeholder="Ne aramak istiyorsunuz?" type="text" value="" name="search" id="search">
 								<input class="sb-search-submit" type="submit" value="">
-								<span class="sb-icon-search"></span>
+								<span class="sb-icon-search brand_hover_color_for_navbar_components"></span>
 							</form>
 						</div>
 					</div>
@@ -213,7 +213,7 @@ if (Yii::app()->controller->action->id=="read"):?>
               <li><i class="fa fa-list-alt dropdown-toggle" data-toggle="dropdown"></i>
                 <ul class="dropdown-menu pull-right reader_toc_dropdown">
                 
-                <li>İÇİNDEKİLER</li>
+                <li>İçindekiler</li>
 				  <li><a href="#page43"><span  reader-action='page-anchor' reader-data="43" class="reader_toc_dropdown_page_numbers">43</span> Şimdilik deneme yapılıyor kısa olmasın diye uzatıyoz da uzatıyoz işte böyle</a></li>
 				  <li><a href="#page125"><span  reader-action='page-anchor' reader-data="125" class="reader_toc_dropdown_page_numbers">125</span> Buralarda hep table of content maddeleri olacak</a></li>
 				  <li><a href="#page212"><span  reader-action='page-anchor'  reader-data="212" class="reader_toc_dropdown_page_numbers">212</span> İşte öyle denemeler şakalar falan</a></li>
@@ -238,9 +238,26 @@ if (Yii::app()->controller->action->id=="read"):?>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <?php elseif(Yii::app()->controller->action->id!="login"): ?>
 <!-- Header -->
-	<header class="navbar clearfix navbar-fixed-top" id="header">
+	<header class="navbar clearfix navbar-fixed-top navbar_blue" id="header">
 		<!-- Top Navigation Bar -->
 		<div class="container">
 		<div class="navbar-brand">
@@ -257,7 +274,7 @@ if (Yii::app()->controller->action->id=="read"):?>
 					</div>
 					<!-- /TEAM STATUS FOR MOBILE -->
 					<!-- SIDEBAR COLLAPSE -->
-					<div id="sidebar-collapse" class="sidebar-collapse">
+					<div id="sidebar-collapse" class="sidebar-collapse brand_hover_color_for_navbar_components">
 						<i class="fa fa-bars" data-icon1="fa fa-bars" data-icon2="fa fa-bars" ></i>
 					</div>
 					<!-- /SIDEBAR COLLAPSE -->
@@ -266,7 +283,7 @@ if (Yii::app()->controller->action->id=="read"):?>
 							<form>
 								<input class="sb-search-input" placeholder="Ne aramak istiyorsunuz?" type="text" value="" name="search" id="search">
 								<input class="sb-search-submit" type="submit" value="">
-								<span class="sb-icon-search"></span>
+								<span class="sb-icon-search brand_hover_color_for_navbar_components"></span>
 							</form>
 						</div>
 					</div>
