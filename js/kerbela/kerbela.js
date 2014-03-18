@@ -51,6 +51,7 @@
  	$.fn.getPassword=function(){return this.Password;};
 
  	$.fn.setIp=function(){
+ 		if(this.getCS()==undefined) {return null;}
  		var that=this;
  		var result=new Object();
 		this.makeRequest(this.getCS()+'/api/getip',
