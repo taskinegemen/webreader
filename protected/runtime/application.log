@@ -1789,3 +1789,178 @@ Stack trace:
 REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
 HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/library
 ---
+2014/03/04 07:48:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/profile".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/profile')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/index.php/user/profile
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/library
+---
+2014/03/04 07:48:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/user/profile
+---
+2014/03/04 07:49:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "library".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('library')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/library
+---
+2014/03/04 07:49:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/library
+---
+2014/03/04 07:49:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/03/04 07:49:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/library
+---
+2014/03/04 07:49:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/03/04 07:50:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/library
+---
+2014/03/04 08:02:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee2014/03/10 08:18:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "getContent/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('getContent/90u7...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/getContent/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU
+---
+2014/03/10 08:18:21 [error] [php] unlink(./tmp/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU): No such file or directory (/var/www/reader/ekaratas/protected/controllers/ContentController.php:166)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ekaratas/index.php(15): CWebApplication->run()
+REQUEST_URI=/ekaratas/content/getContent/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU
+in /var/www/reader/ekaratas/protected/controllers/ContentController.php (166)
+in /var/www/reader/ekaratas/protected/controllers/ContentController.php (134)
+in /var/www/reader/ekaratas/index.php (15)
+2014/03/10 08:18:31 [error] [php] file_get_contents(contents/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU/package.opf): failed to open stream: No such file or directory (/var/www/reader/ekaratas/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ekaratas/index.php(15): CWebApplication->run()
+REQUEST_URI=/ekaratas/index.php/content/Getbookmeta/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU
+in /var/www/reader/ekaratas/protected/utilities/Encryption.php (53)
+in /var/www/reader/ekaratas/protected/controllers/ContentController.php (43)
+in /var/www/reader/ekaratas/index.php (15)
+2014/03/10 08:19:17 [error] [php] unlink(./tmp/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU): No such file or directory (/var/www/reader/ekaratas/protected/controllers/ContentController.php:166)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ekaratas/index.php(15): CWebApplication->run()
+REQUEST_URI=/ekaratas/index.php/content/getContent/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU
+in /var/www/reader/ekaratas/protected/controllers/ContentController.php (166)
+in /var/www/reader/ekaratas/protected/controllers/ContentController.php (134)
+in /var/www/reader/ekaratas/index.php (15)
+2014/03/10 08:57:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/content/read/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU
+---
+2014/03/10 08:58:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/bxSlider/images/slider_controls.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/bxSlide...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/bxSlider/images/slider_controls.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/content/read/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU
+---
+2014/03/10 08:58:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/content/read/90u7LG6qQujyJSIu9KjBdZbSNkzd7CpPwyIWbWbWIQgU
+---
+2014/03/12 15:32:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/03/12 15:32:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/library
+---
