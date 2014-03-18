@@ -63,62 +63,15 @@ $this->pageTitle=Yii::app()->name;
 										<div class="tab-content">
 											<div class="tab-pane active in" id="tab_1_1">
 												<div class="divide-10"></div>
-
-												<!-- READER BOOK CARD -->
-												<div class="reader_book_card">
-													<div class="reader_book_card_book_cover"></div>
-													<div class="reader_book_card_info_container">
-														<div class="reader_market_book_name tip" data-original-title="The Book Name is here">
-															The Book Name is here
-														</div>
-														<div class="clearfix"></div>
-														<div class="reader_book_card_writer_name tip" data-original-title="The Name of The Writer">
-															The Name of The Writer
-														</div>
-														<div class="reader_book_price">
-															5.00TL
-														</div>
-													</div><!-- /reader_book_card_info_container -->
-												</div>
-												<!-- END OF READER BOOK CARD -->
 											
 											</div>
 											<div class="tab-pane" id="tab_1_2">
 												<div class="divide-10"></div>
-												<div class="reader_book_card">
-													<div class="reader_book_card_book_cover"></div>
-													<div class="reader_book_card_info_container">
-														<div class="reader_market_book_name tip" data-original-title="The Book Name is here">
-															The Book Name is here
-														</div>
-														<div class="clearfix"></div>
-														<div class="reader_book_card_writer_name tip" data-original-title="The Name of The Writer">
-															The Name of The Writer
-														</div>
-														<div class="reader_book_price">
-															Ücretsiz
-														</div>
-													</div><!-- /reader_book_card_info_container -->
-												</div><!-- END OF READER BOOK CARD -->
+												
 											</div>
 											<div class="tab-pane fade" id="tab_1_3">
 												<div class="divide-10"></div>
-												<!-- READER BOOK CARD -->
-												<div class="reader_book_card">
-													<div class="reader_book_card_book_cover"></div>
-													<div class="reader_book_card_info_container">
-														<div class="reader_market_book_name tip" data-original-title="The Book Name is here">
-															The Book Name is here
-														</div>
-														<div class="clearfix"></div>
-														<div class="reader_book_card_writer_name tip" data-original-title="The Name of The Writer">
-															The Name of The Writer
-														</div>
-														<div class="reader_book_price">
-															Ücretsiz
-														</div>
-													</div><!-- /reader_book_card_info_container -->
-												</div><!-- END OF READER BOOK CARD -->
+												
 											</div>
 										</div>
 									</div>
@@ -179,9 +132,12 @@ $this->pageTitle=Yii::app()->name;
 		        });
 
 				var card='<div class="reader_book_card">\
-					<div class="reader_book_card_book_cover"></div>\
+					<div class="reader_book_card_book_cover">\
+					<a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+book.contentId+'">\
+					<img src="http://catalog.lindneo.com/api/getThumbnail?id='+book.contentId+'" style="width:198px; height:264px" /></div></a>\
 					<div class="reader_book_card_info_container">\
 						<div class="reader_market_book_name tip" data-original-title="'+book.contentTitle+'">'+book.contentTitle+'</div>\
+						<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\
 						<div class="clearfix"></div>\
 						<div class="reader_book_card_writer_name tip" data-original-title="'+author+'">'+author+'</div>\
 						<div class="reader_book_price">';
@@ -194,70 +150,12 @@ $this->pageTitle=Yii::app()->name;
 					</div>\
 				</div>';
 				if (book.contentIsForSale=='Free') {
-					$('#tab_1_1').append(card);
+					$('#tab_1_2').append(card);
 				}else{
-					$('#tab_1_0').append(card);
+					$('#tab_1_1').append(card);
 				};
 				$('#tab_1_3').append(card);
             });
           });
       }
 </script>
-		<!--
-<div class="popover fade bottom in">
-<div class="arrow"></div>
-<h3 class="popover-title">Kütüphaneme Ekle</h3>
-<h3 class="popover-title">Favorilerime Ekle</h3>
-<h3 class="popover-title">Kitap Bilgileri</h3>
-
-</div>-->
-<!-- 
-<script type="text/javascript">
-var hoverAnimation='getbigger';
-$(function(){$('.estante li').on('mouseenter',function(){$(this).addClass(hoverAnimation)}).on('mouseleave',function(){$(this).removeClass(hoverAnimation)});setTimeout(function(){$('.estante li').removeClass('fadeInLeft')},1001)});
-
-loseCode = function(str){
-    var hash = 0;
-    for (i = 0; i < str.length; i++) {
-        char = str.charCodeAt(i);
-        hash += char;
-    }
-    return hash;
-}
-
-
-var currentContentItem;
-
-
-var api_url= "http://catalog.lindneo.com/api/getCatalogMeta?id=";
-$(function(){
-	$(".content-item").each(function(index,contentItem){
-		var contentId = $(contentItem).attr('content-id');
-		$.ajax({
-		  url: api_url+ contentId,
-		  success: function (data){
-				var objectmeta=JSON.parse(data).result;
-			  	var thumbnail_image = $(contentItem).find(".thumbnail-image");
-				if (objectmeta) {
-			  		if (typeof objectmeta != "undefined"){
-			  			var newMeta =[];
-			  			$.each(objectmeta,function(index,meta){
-			  				newMeta[meta.metaKey]=meta.metaValue;
-			  			});
-			  			thumbnail_image_src = newMeta['tumbnail'];
-			  		}
-		  		} else {
-		  			thumbnail_image_src = '/ugur/css/nonamebooks/book'+ ( loseCode(contentId) % 5 )  + '.jpg';
-		  		}
-	  			thumbnail_image.attr('src', thumbnail_image_src);
-
-			}
-
-		  
-		  
-		});
-	});
-});
-
-</script>
- -->
