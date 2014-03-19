@@ -9336,6 +9336,16 @@ div.reader_book_category {
 	margin-left:5px;	
 }
 
+
+
+.market_page_book_filter {
+	overflow:inherit !important;	
+}
+
+
+
+
+
 /** END OF READER MARKET PAGE **/
 
 /** READER BOOK INFO PAGE **/

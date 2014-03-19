@@ -46,23 +46,15 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 		}
 		else
 		{
-			$.unblockUI();
+			$.blockUI({ message: '<h1>Please check your user name and password!</h1>' });
+			setTimeout($.unblockUI, 4000); 
 		}
 		console.log(response);
   	}
   </script>
  <!-- login -->
  
- 
- 
 
- 
- 
- 
- 
-<div id="splashscreen">
-merhaba
-</div> 
 <div class="login_page_container">    
 
 

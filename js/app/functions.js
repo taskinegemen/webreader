@@ -1,8 +1,10 @@
 var BookMeta;
 var reader_slider;
 var Pages = [],Items = [], PageIDArray=[],PageSrcArray={};
-	
+var PageZoomed=false,outzooming;
+var clicking = false;
 window.pages = [];
+
 
 	jQuery.fn.fitToParent = function () {
 		    this.each(function () {
@@ -65,7 +67,7 @@ window.pages = [];
 
 		
 		$("ul.bxslider").css("-webkit-transform", "translate3d(-"+($ ($(".bxslider li")[current] ).position().left )+"px, 0px, 0px)" );
-		
+
 	}
 
 
