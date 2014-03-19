@@ -46,7 +46,7 @@ $this->pageTitle=Yii::app()->name;
 	<div class="container">
 		<div class="row">
 	
-<div class="reader_nobook_page_row clearfix">
+<div class="reader_mybook_page_row clearfix">
 
 <!--
 <div class="nobook_smiley"></div>
@@ -199,7 +199,7 @@ $this->pageTitle=Yii::app()->name;
 
 
 </div>
-<!-- /reader_nobook_page_row -->
+<!-- /reader_mybook_page_row -->
 	
 		</div>
 	</div>

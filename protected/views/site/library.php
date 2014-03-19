@@ -148,8 +148,11 @@
 					<div class="reader_book_category">
 						Diğerleri
 					</div>
-                    
-        
+
+                    <div class="clearfix"></div>
+
+
+
         
         
         

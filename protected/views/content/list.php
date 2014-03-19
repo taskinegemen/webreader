@@ -62,7 +62,8 @@ $this->pageTitle=Yii::app()->name;
 												</select>
 										  </div>
 									   </div>
-										<div id="filter-items" class="row">
+<<<<<<< HEAD
+										<div id="filter-items market_page_book_filter" class="row">
                                         
                                         
                                         
@@ -200,57 +201,23 @@ $this->pageTitle=Yii::app()->name;
 											</div>
                                             
                                             
+=======
+										<div id="filter-items" class="row">    
+>>>>>>> 560c1e1cb9c995403b50ea6f6a6d2d0ab6ac8faa
 										</div>
 									</div>
                         
                         
                         
                         
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-							
+
 						</div>
 					</div>
 				</div>
 			</div>
 		</div><!-- /market_page_container -->
 <script type="text/javascript">
-	var username='egemen@linden-tech.com';
-    var password='12548442';
-    var kerbela=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','http://catalog.lindneo.com/kerberizedservice/authenticate',username,password,'kerbela','catalog','6000');
-    var response=kerbela.execute();
-    
+	 
     function getCurrency(code){
     	var type;
     	switch (code){
@@ -266,7 +233,9 @@ $this->pageTitle=Yii::app()->name;
     	}
     	return type;
     }
-    if (response.status) {
+
+        var kerbela=$(window).kerbelainit();
+        kerbela.setRequestedHttpService('catalog');
         var ticket=kerbela.getTicket();
         var auth=kerbela.getAuthTicket();
         var HTTP_service_ticket=ticket.HTTP_service_ticket;
@@ -294,7 +263,14 @@ $this->pageTitle=Yii::app()->name;
 		        	}
 		        });
 
-				var card='<div class="reader_book_card">\
+				var card='<div class="';
+        if (book.contentIsForSale=='Free') {
+          card+='category_2';
+        }else{
+          card+='category_1';
+        };
+        card+=' item">\
+        <div class="reader_book_card">\
 					<div class="reader_book_card_book_cover">\
 					<a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+book.contentId+'">\
 					<img src="http://catalog.lindneo.com/api/getThumbnail?id='+book.contentId+'" style="width:198px; height:264px" /></div></a>\
@@ -311,22 +287,13 @@ $this->pageTitle=Yii::app()->name;
 				};
 				card+='</div>\
 					</div>\
-				</div>';
-				if (book.contentIsForSale=='Free') {
-					$('#tab_1_2').append(card);
-				}else{
-					$('#tab_1_1').append(card);
-				};
-				$('#tab_1_3').append(card);
+				</div></div>';
+				
+				$('#filter-items').append(card);
             });
           });
-      }
+      
 </script>
 
 
-	<script>
-		jQuery(document).ready(function() {		
-			App.setPage("gallery");  //Set current page
-			App.init(); //Initialise plugins and elements
-		});
-	</script>
+	

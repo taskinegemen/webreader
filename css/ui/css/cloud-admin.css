@@ -9336,6 +9336,16 @@ div.reader_book_category {
 	margin-left:5px;	
 }
 
+
+
+.market_page_book_filter {
+	overflow:inherit !important;	
+}
+
+
+
+
+
 /** END OF READER MARKET PAGE **/
 
 /** READER BOOK INFO PAGE **/
@@ -9371,6 +9381,7 @@ div.reader_book_category {
 	width:206px;
 	height:272px;
 	margin-bottom:5px;
+	background-image:url(../../../css/ui/img/book_info_sample_book_cover.png);
 	background-size: cover;
 	background-position: center;
 	border: 4px solid #fff;
@@ -9955,18 +9966,18 @@ header.read_page_navbar i.fa, span.sb-icon-search {
 /**  NOBOOK PAGE ***********************************/
 
 .reader_nobook_page_row {
-	/**margin-left:25px;
+	margin-left:25px;
 	margin-right:25px;
 	padding:10px;
-	 text-align:center; */
+	text-align:center;
 }
 
 
 .reader_nobook_page_row button {
-	/**margin-left: auto;
+	margin-left: auto;
 	margin-right: auto;
 	float: none !important;
-	font-size:25px;*/
+	font-size:25px;
 }
 
 .nobook_smiley {
@@ -9996,6 +10007,13 @@ header.read_page_navbar i.fa, span.sb-icon-search {
 
 
 /**  MY PROFILE PAGE ***********************************/
+
+
+.reader_myprofile_page_row {
+	margin-left:25px;
+	margin-right:25px;
+	padding:10px;
+}
 
 .myprofile_information_container {
 	width: 875px;
