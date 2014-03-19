@@ -214,11 +214,34 @@ class ContentController extends Controller
 
 	public function actionRead($id=null)
 	{
+
+
+
+
 		$dir="contents/$id";
 
 		if (!file_exists($dir) and !is_dir($dir)) {
     		$this->redirect(array("content/import", 'id'=>$id));
 		} 
+
+		functions::event('header',  NULL, function($header) {
+		 ?>
+
+		 <!-- bxSlider -->
+			<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/bxSlider/jquery.bxslider.css" type="text/css" />
+			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/jquery-ui-1.10.4.custom.min.js"></script>
+			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/dragiframe.js"></script>
+			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/jquery.fitvids.js"></script>
+			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/bxSlider/jquery.bxslider.js"></script>
+			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/app/functions.js"></script>
+			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/app/slider_control.js"></script>
+			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/app/reader_app.js"></script>
+		
+		<!-- bxSlider -->
+		<?php
+
+		});
+
 
 		$this->render('read',
 			array(

@@ -117,18 +117,11 @@
 
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/xml2json.js"></script>
 		<!--<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/lazyloader.min.js"></script>-->
-<!-- /JS -->
+		<!-- /JS -->
 
-
-		<!-- bxSlider -->
-			<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/bxSlider/jquery.bxslider.css" type="text/css" />
-			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/jquery.fitvids.js"></script>
-			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/bxSlider/jquery.bxslider.js"></script>
-			<!--<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/app/functions.js"></script>-->
-			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/app/slider_control.js"></script>
-			<!--<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/app/reader_app.js"></script>-->
 		
-		<!-- bxSlider -->
+
+		<?php echo functions::event('header', ""); ?>
 
 		<!-- kerbela -->
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/kerbela/sha256.js"></script>
