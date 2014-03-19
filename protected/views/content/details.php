@@ -58,13 +58,80 @@ $this->pageTitle=Yii::app()->name;
             */
 
 
-		App.setPage("gallery");  //Set current page
-		App.init(); //Initialise plugins and elements
-        $('#card_preview').css({'background-image': 'url(<?php echo Yii::app()->request->baseUrl; ?>/css/ui/img/card.jpg)', 'background-repeat': 'no-repeat'});
+    		App.setPage("gallery");  //Set current page
+    		App.init(); //Initialise plugins and elements
+            $('#card_preview').css({'background-image': 'url(<?php echo Yii::app()->request->baseUrl; ?>/css/ui/img/card.jpg)', 'background-repeat': 'no-repeat'});
+            $('#CreditCardBack').hide();
+            $('.UserName').css('background-color','');
+            $('.CardNumber').css('background-color','');
+            $('.LastDate').css('background-color','');
+            $('.CVCTxt').css('background-color','');
+            $('#name').focus(function() {
+              $('#CreditCardFront').show();
+              $('#CreditCardBack').hide();
+              $('#card_preview').css({'background-image': 'url(<?php echo Yii::app()->request->baseUrl; ?>/css/ui/img/card.jpg)', 'background-repeat': 'no-repeat'});
+              $('.UserName').css('background-color','#fefbd9');
+              $('.CardNumber').css('background-color','');
+              $('.LastDate').css('background-color','');
+              $('.CVCTxt').css('background-color','');
+            });
+            $('#cardnumber').focus(function() {
+              $('#CreditCardFront').show();
+              $('#CreditCardBack').hide();
+              $('#card_preview').css({'background-image': 'url(<?php echo Yii::app()->request->baseUrl; ?>/css/ui/img/card.jpg)', 'background-repeat': 'no-repeat'});
+              $('.UserName').css('background-color','');
+              $('.CardNumber').css('background-color','#fefbd9');
+              $('.LastDate').css('background-color','');
+              $('.CVCTxt').css('background-color','');
+            });
+            $('#card_month').focus(function() {
+                $('#CreditCardFront').show();
+              $('#CreditCardBack').hide();
+              $('#card_preview').css({'background-image': 'url(<?php echo Yii::app()->request->baseUrl; ?>/css/ui/img/card.jpg)', 'background-repeat': 'no-repeat'});
+              $('.UserName').css('background-color','');
+              $('.CardNumber').css('background-color','');
+              $('.LastDate').css('background-color','#fefbd9');
+              $('.CVCTxt').css('background-color','');
+            });
+            $('#card_year').focus(function() {
+                $('#CreditCardFront').show();
+              $('#CreditCardBack').hide();
+              $('#card_preview').css({'background-image': 'url(<?php echo Yii::app()->request->baseUrl; ?>/css/ui/img/card.jpg)', 'background-repeat': 'no-repeat'});
+              $('.UserName').css('background-color','');
+              $('.CardNumber').css('background-color','');
+              $('.LastDate').css('background-color','#fefbd9');
+              $('.CVCTxt').css('background-color','');
+            });
 
-        $('#name').click(function() {
-          alert( "Handler for .click() called." );
-        });
+            $('#cvc').focus(function() {
+              $('#CreditCardFront').hide();
+              $('#CreditCardBack').show();
+              $('.UserName').css('background-color','');
+              $('.CardNumber').css('background-color','');
+              $('.LastDate').css('background-color','');
+              $('.CVCTxt').css('background-color','#fefbd9');
+              $('#card_preview').css({'background-image': 'url(<?php echo Yii::app()->request->baseUrl; ?>/css/ui/img/cardback.jpg)', 'background-repeat': 'no-repeat'});
+            });
+
+            var month = "";
+            var year = "";
+
+            $('#card_month').change(function(){
+                month = $(this).val();
+            });
+
+            $('#card_year').change(function(){
+                year = $(this).val();
+            });
+
+            $('#buybook').click(function() {
+                console.log($('#name').val());
+                console.log($('#cardnumber').val());
+                console.log($('#cvc').val());
+                console.log(month);
+                console.log(year);
+            });
+
 
 	});
 	</script>
@@ -295,7 +362,8 @@ Nulla pretium bibendum sollicitudin. Fusce ligula sapien, blandit et nulla et, d
              
                     <input type="text" class="form-control" id="name" placeholder="Kart Üzerindeki Ad Soyad"><br>
                     <input type="text" class="form-control" id="cardnumber" placeholder="Kart Numarası"><br>
-                    <select class="form-control" style="float:left; width:100px;">
+                <div id="cardmonth">
+                    <select class="form-control" id="card_month" style="float:left; width:100px;">
                         <option value="0">Ay</option>
                         <option value="01">01</option>
                         <option value="02">02</option>
@@ -310,8 +378,9 @@ Nulla pretium bibendum sollicitudin. Fusce ligula sapien, blandit et nulla et, d
                         <option value="11">11</option>
                         <option value="12">12</option>
                     </select>
-
-                    <select class="form-control" style="float:left; width:100px; margin-left:10px;">
+                </div>
+                <div id="cardyear">
+                    <select class="form-control" id="card_year" style="float:left; width:100px; margin-left:10px;">
                         <option value="0">Yıl</option>
                         <option value="14">2014</option>
                         <option value="15">2015</option>
@@ -331,11 +400,12 @@ Nulla pretium bibendum sollicitudin. Fusce ligula sapien, blandit et nulla et, d
                         <option value="29">2029</option>
                         <option value="30">2030</option>
                     </select>
+                </div>
                     <input type="text" class="form-control" id="cvc" placeholder="CVC" style="float:right; width:200px;"><br>
             
               <!-- /Kart Bilgileri -->
             </div>
-            <div id="card_preview" style="width:320px; height:200px; margin-left:10px; float:left;">
+            <div id="card_preview" style="width:320px; height:200px; margin-left:10px; float:left; position: relative;">
                 <div class="Perspective">
                     <div id="CreditCardFront">
                         <span class="CardLogo"></span>
@@ -346,7 +416,7 @@ Nulla pretium bibendum sollicitudin. Fusce ligula sapien, blandit et nulla et, d
                         <span class="CVCTxt" style="display: none;">CVC</span>
                     </div>
                     <div id="CreditCardBack" class="past">
-                        <span class="CVCTxt">CVC</span>
+                        <span class="CVCTxt" style="position: absolute;margin: 55px 150px;">CVC</span>
                         <div id="CVCInfo" style="display: none;">
                             <div class="InfoBubble ArrowT">
                                 <div class="Arrow"></div>Kartınızın arkasındaki son 3 rakam
@@ -358,7 +428,7 @@ Nulla pretium bibendum sollicitudin. Fusce ligula sapien, blandit et nulla et, d
       </div>
       <div class="modal-footer" style="width:500px;">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Kapat</button>
-        <button type="button" class="btn btn-default">Satın Al</button>
+        <button type="button" class="btn btn-default" id="buybook">Satın Al</button>
       </div>
     </div>
   </div>
