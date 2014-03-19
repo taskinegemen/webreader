@@ -28,6 +28,29 @@ $this->pageTitle=Yii::app()->name;
                		book_data = JSON.parse(result);
                     console.log(book_data.result);
             });
+
+
+            kerbela.setRequestedHttpService('koala');
+            console.log(kerbela.getRequestedHttpService());
+            var auth_koala = kerbela.getAuthTicket();
+            var HTTP_service_ticket_koala = kerbela.getTicket().HTTP_service_ticket;
+            $('#bbook').show();
+            $('#rbook').hide();
+            $.ajax({
+                    type: "POST",
+                    url: "http://koala.lindneo.com/api/checkUserBook",
+                    data: { book_id: '<?php echo $id; ?>', auth: auth_koala, http_service_ticket: HTTP_service_ticket_koala, type:"web"}
+                })
+                  .done(function( result ) {
+                    console.log(result);
+                    checkdata=JSON.parse(result);
+                    if(checkdata.result){
+                        console.log(checkdata.result);
+                        $('#bbook').hide();
+                        $('#rbook').show();
+                    }
+                });
+
             $('.book_info_the_name_of_the_book').html(book_data.result.contentTitle);
             $('.book_info_page').html(book_data.result.contentTotalPage);
             $('.book_info_date').html(book_data.result.contentDate);
@@ -35,17 +58,36 @@ $this->pageTitle=Yii::app()->name;
             $('.contentExplanation').html(book_data.result.contentExplanation);
 
             $('.book_info_book_cover').css('background-image', 'url(http://catalog.lindneo.com/api/getThumbnail/id/<?php echo $id; ?>)');
-            if(book_data.result.contentPrice == 0);{
-                $('#ödeme_bilgileri').hide();
+            console.log(book_data.result.contentPrice);
+            if(book_data.result.contentIsForSale == 'Free'){
+                $('#odeme_bilgileri').hide();
             }
-            else{
+            
                 $('#bookname').html(book_data.result.contentTitle);
                 $('#bookauthor').html(book_data.result.contentAuthor);
                 var price_type = "";
                 if(book_data.result.contentPriceCurrencyCode == "949") price_type = "TL";
                 $('#bookprice').html(book_data.result.contentPrice+" "+price_type);
+            
+            /*var book = $('<div class="reader_book_card">\
+                            <div class="reader_book_card_book_cover solid_brand_color">\
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'"><img src="http://catalog.lindneo.com/api/getThumbnail/id/'+value.book_id+'" style="width:198px; height:264px;"></a></div>\
+                            <div class="reader_book_card_info_container">\
+                            <div class="reader_market_book_name"><a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'">'+book_data.result.contentTitle+'</a></div>\
+                            <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\
+                            <div class="clearfix"></div>\
+                            <div class="reader_book_card_writer_name">'+book_data.result.contentAuthor+'</div>\
+                            <div class="reader_book_fav"><i class="fa fa-star-o"></i></div>\
+                            </div>\
+                            </div>');
+            console.log(book);
+            book.appendTo('#books');
+            */
 
-                $('#card_preview').css({'background-image': 'url(<?php echo Yii::app()->request->baseUrl; ?>/css/ui/img/card.jpg)', 'background-repeat': 'no-repeat'});
+
+    		App.setPage("gallery");  //Set current page
+    		App.init(); //Initialise plugins and elements
+            $('#card_preview').css({'background-image': 'url(<?php echo Yii::app()->request->baseUrl; ?>/css/ui/img/card.jpg)', 'background-repeat': 'no-repeat'});
             $('#CreditCardBack').hide();
             $('.UserName').css('background-color','');
             $('.CardNumber').css('background-color','');
@@ -127,29 +169,11 @@ $this->pageTitle=Yii::app()->name;
                 })
                   .done(function( result ) {
                     console.log(result);
+                    if(result){
+                        $('#buybook').modal('hide');
+                    }
                 });
             });
-            }
-
-            /*var book = $('<div class="reader_book_card">\
-                            <div class="reader_book_card_book_cover solid_brand_color">\
-                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'"><img src="http://catalog.lindneo.com/api/getThumbnail/id/'+value.book_id+'" style="width:198px; height:264px;"></a></div>\
-                            <div class="reader_book_card_info_container">\
-                            <div class="reader_market_book_name"><a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'">'+book_data.result.contentTitle+'</a></div>\
-                            <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\
-                            <div class="clearfix"></div>\
-                            <div class="reader_book_card_writer_name">'+book_data.result.contentAuthor+'</div>\
-                            <div class="reader_book_fav"><i class="fa fa-star-o"></i></div>\
-                            </div>\
-                            </div>');
-            console.log(book);
-            book.appendTo('#books');
-            */
-
-
-    		App.setPage("gallery");  //Set current page
-    		App.init(); //Initialise plugins and elements
-            
 
 
 	});
@@ -223,7 +247,10 @@ $this->pageTitle=Yii::app()->name;
 <div class="book_info_date">15 Ekim 2013</div>
 <div class="clearfix"></div>
 <h3 class="book_info_the_name_of_the_writer">Jess Walter</h2>
-<button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons" data-toggle="modal" data-target="#buybook">Kütüphaneme Ekle</button>
+
+<button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons"  id="bbook" data-toggle="modal" data-target="#buybook">Kütüphaneme Ekle</button>
+<button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons" id="rbook">Oku</button>
+
 </div>
 <!-- /book_info_details_row -->
 
@@ -374,7 +401,7 @@ Nulla pretium bibendum sollicitudin. Fusce ligula sapien, blandit et nulla et, d
       
       <!-- /Kitap Bilgileri -->
         </div>
-        <div id="ödeme_bilgileri">
+        <div id="odeme_bilgileri">
           <div style="width:420px; float:left;">
                 
               <!-- Kart Bilgileri -->
