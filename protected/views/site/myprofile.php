@@ -78,17 +78,17 @@ $this->pageTitle=Yii::app()->name;
 
 <div class="myprofile_information_components">
 <p>İsim</p>
-<div class="myprofile_info_edit"><i class="fa fa-edit"></i> <div contenteditable="true">Erkan Öğümsöğütlü</div></div>
+<div class="myprofile_info_edit"><i class="fa fa-edit"></i> <form id="myprofile_info_edit"><input placeholder="Erkan Öğümsöğütlü" /></form></div>
 </div>
 
 <div class="myprofile_information_components">
 <p>Kullanıcı Adı</p>
-<div class="myprofile_info_edit"><i class="fa fa-edit"></i> <div contenteditable="true">erkanogumsogutlu</div></div>
+<div class="myprofile_info_edit"><i class="fa fa-edit"></i> <form id="myprofile_info_edit"><input placeholder="erkanogumsogutlu" /></form></div>
 </div>
 
 <div class="myprofile_information_components">
 <p>E-Mail Adres</p>
-<div class="myprofile_info_edit"><i class="fa fa-edit"></i> <div contenteditable="true">erkan@linden-tech.com</div></div>
+<div class="myprofile_info_edit"><i class="fa fa-edit"></i> <form id="myprofile_info_edit"><input placeholder="erkan@linden-tech.com" /></form></div>
 </div>
 
 

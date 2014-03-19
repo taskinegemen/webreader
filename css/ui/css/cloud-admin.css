@@ -9196,8 +9196,8 @@ div.reader_book_category {
 	width:198px;
 	height:330px;
 	background-color:#fff;
-	-webkit-box-shadow: 0 1px 5px 0 #AAAAAA;
-	box-shadow: 0 1px 5px 0 #AAAAAA;
+	-webkit-box-shadow: 0 1px 2px 0 #AAAAAA;
+	box-shadow: 0 1px 2px 0 #AAAAAA;
 	border-radius:5px;
 	float:left;
 	margin-right:20px;
@@ -9209,6 +9209,11 @@ div.reader_book_category {
 	height:264px;
 	border-top-right-radius:5px;
 	border-top-left-radius:5px;
+}
+
+.reader_book_card_book_cover img{
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
 }
 
 .reader_book_card_info_container {
@@ -9341,9 +9346,6 @@ div.reader_book_category {
 .market_page_book_filter {
 	overflow:inherit !important;	
 }
-
-
-
 
 
 /** END OF READER MARKET PAGE **/
@@ -10165,6 +10167,19 @@ header.read_page_navbar i.fa, span.sb-icon-search {
 .myprofile_information_components input {
 	border:1px solid #D6D6D6 !important;	
 }
+
+
+form#myprofile_info_edit > input {
+	border:0;
+	background-color:transparent;
+	width:380px;
+	padding-left:10px;
+	border:none !important;
+	border-radius:3px;
+	color:#333;	
+}
+
+
 
 /**  END OF MY PROFILE PAGE ***********************************/
 
