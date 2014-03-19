@@ -14,35 +14,47 @@ $this->pageTitle=Yii::app()->name . ' - Login';
   <script type="text/javascript">
 
   	$(document).on("click","#loginButton",function(e){
-
-		var username=$('#LoginForm_username').val();
+  		$.blockUI({ message: '<h1>Please wait just a little...</h1>' });
+  		setTimeout($.unblockUI, 10000); 
+  		window.setTimeout(function(){login();},100);
+		
+	});
+  	function login(){
+  		var username=$('#LoginForm_username').val();
 		var password=$('#LoginForm_password').val();
 		console.log(password);																																		
 		var kerbela=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','<?php echo Yii::app()->request->baseUrl; ?>/kerberizedservice/authenticate',username,password,'kerbela','reader','6000');
 		var response=kerbela.execute();
+
+		var kerbela_catalog=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','http://catalog.lindneo.com/kerberizedservice/authenticate',username,password,'kerbela','catalog','6000');
+		var response_catalog=kerbela_catalog.execute();
 		
-		if (response.status) {
+		var kerbela_koala=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','http://koala.lindneo.com/kerberizedservice/authenticate',username,password,'kerbela','koala','6000');
+		var response_koala=kerbela_koala.execute();
+
+		var kerbela_panda=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','http://panda.lindneo.com/kerberizedservice/authenticate',username,password,'kerbela','panda','6000');
+		var response_panda=kerbela_panda.execute();
+		if (response.status && response_catalog.status && response_panda.status && response_panda.status) {
+
+
 			var ticket=kerbela.getTicket();
 			var auth=kerbela.getAuthTicket();
 			var HTTP_service_ticket=ticket.HTTP_service_ticket;
 			var form='<form method="post" action="<?php echo Yii::app()->request->baseUrl; ?>/site/library" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
 			$('body').append(form);
 			$(form).submit();
-		};
+		}
+		else
+		{
+			$.blockUI({ message: '<h1>Please check your user name and password!</h1>' });
+			setTimeout($.unblockUI, 4000); 
+		}
 		console.log(response);
-	});
-
+  	}
   </script>
  <!-- login -->
  
- 
- 
 
- 
- 
- 
- 
- 
 <div class="login_page_container">    
 
 

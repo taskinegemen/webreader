@@ -19,7 +19,8 @@ class ContentController extends Controller
 
 	public function actionDetails()
 	{
-		$this->render('details');
+		$id=Yii::app()->request->getQuery('id',0);
+		$this->render('details',array('id'=>$id));
 	}
 
 	public function actionNobook()

@@ -4,7 +4,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 	<meta name="language" content="tr" />
-
+	<style>
+	#splashscreen {
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+	}
+	</style>
 		<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/cloud-admin.css" >
 	<!--<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/themes/night.css" >-->
@@ -120,7 +126,7 @@
 			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/dragiframe.js"></script>
 			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/jquery.fitvids.js"></script>
 			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/bxSlider/jquery.bxslider.js"></script>
-			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/app/functions.js"></script>
+			<!--<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/app/functions.js"></script>-->
 			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/app/slider_control.js"></script>
 			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/app/reader_app.js"></script>
 		
