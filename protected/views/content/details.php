@@ -121,7 +121,7 @@ $this->pageTitle=Yii::app()->name;
 <div class="book_info_date">15 Ekim 2013</div>
 <div class="clearfix"></div>
 <h3 class="book_info_the_name_of_the_writer">Jess Walter</h2>
-<button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons">Kütüphaneme Ekle</button>
+<button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons" data-toggle="modal" data-target="#buybook">Kütüphaneme Ekle</button>
 </div>
 <!-- /book_info_details_row -->
 
@@ -255,3 +255,22 @@ Nulla pretium bibendum sollicitudin. Fusce ligula sapien, blandit et nulla et, d
 <!-- /book_info_page_container -->
 
 
+<!-- KİTAP SATIN ALMA MODAL -->
+<div class="modal fade" id="buybook" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /KİTAP SATIN ALMA MODAL -->

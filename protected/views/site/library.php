@@ -14,13 +14,13 @@
             $.ajax({
               type: "POST",
               url: "http://koala.lindneo.com/api/getUserBooks",
-              data: { auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
+              data: { auth: encodeURI(auth), http_service_ticket: encodeURI(HTTP_service_ticket), type:"web"}
             })
               .done(function( result ) {
                 console.log(result);
                 deneme = JSON.parse(result);
                 console.log(deneme.result);
-                deneme.result=null;
+                
                 if(deneme.result){
                     $.each( deneme.result, function( key, value ) {
                       console.log(value.book_id);
@@ -111,7 +111,7 @@
 					<div class="reader_book_category">
 						Favorilerim
 					</div>
-                    <div class="clearfix"></div>
+                    
                     
                     
         <!-- READER BOOK CARD -->
@@ -148,24 +148,7 @@
 					<div class="reader_book_category">
 						Diğerleri
 					</div>
-<<<<<<< HEAD
-                    <div class="clearfix"></div>
-        <!-- READER BOOK CARD -->
-        <div class="reader_book_card">
-        <div class="reader_book_card_book_cover solid_brand_color"></div>
-        <div class="reader_book_card_info_container">
-        <div class="reader_market_book_name">The Book Name is here</div>
-        <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-        <div class="clearfix"></div>
-        <div class="reader_book_card_writer_name">The Name of The Writer</div>
-        <div class="reader_book_fav"><i class="fa fa-star-o"></i></div>
-        </div>
-        <!-- /reader_book_card_info_container -->
-        </div>
-        <!-- END OF READER BOOK CARD --> 
-=======
                     
->>>>>>> f75473da365139a6cae5fb8038164c8f3ea0e53e
         
         
         
