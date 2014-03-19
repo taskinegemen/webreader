@@ -35,32 +35,17 @@ $this->pageTitle=Yii::app()->name;
             $('.contentExplanation').html(book_data.result.contentExplanation);
 
             $('.book_info_book_cover').css('background-image', 'url(http://catalog.lindneo.com/api/getThumbnail/id/<?php echo $id; ?>)');
+            if(book_data.result.contentPrice == 0);{
+                $('#ödeme_bilgileri').hide();
+            }
+            else{
+                $('#bookname').html(book_data.result.contentTitle);
+                $('#bookauthor').html(book_data.result.contentAuthor);
+                var price_type = "";
+                if(book_data.result.contentPriceCurrencyCode == "949") price_type = "TL";
+                $('#bookprice').html(book_data.result.contentPrice+" "+price_type);
 
-            $('#bookname').html(book_data.result.contentTitle);
-            $('#bookauthor').html(book_data.result.contentAuthor);
-            var price_type = "";
-            if(book_data.result.contentPriceCurrencyCode == "949") price_type = "TL";
-            $('#bookprice').html(book_data.result.contentPrice+" "+price_type);
-
-            /*var book = $('<div class="reader_book_card">\
-                            <div class="reader_book_card_book_cover solid_brand_color">\
-                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'"><img src="http://catalog.lindneo.com/api/getThumbnail/id/'+value.book_id+'" style="width:198px; height:264px;"></a></div>\
-                            <div class="reader_book_card_info_container">\
-                            <div class="reader_market_book_name"><a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'">'+book_data.result.contentTitle+'</a></div>\
-                            <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\
-                            <div class="clearfix"></div>\
-                            <div class="reader_book_card_writer_name">'+book_data.result.contentAuthor+'</div>\
-                            <div class="reader_book_fav"><i class="fa fa-star-o"></i></div>\
-                            </div>\
-                            </div>');
-            console.log(book);
-            book.appendTo('#books');
-            */
-
-
-    		App.setPage("gallery");  //Set current page
-    		App.init(); //Initialise plugins and elements
-            $('#card_preview').css({'background-image': 'url(<?php echo Yii::app()->request->baseUrl; ?>/css/ui/img/card.jpg)', 'background-repeat': 'no-repeat'});
+                $('#card_preview').css({'background-image': 'url(<?php echo Yii::app()->request->baseUrl; ?>/css/ui/img/card.jpg)', 'background-repeat': 'no-repeat'});
             $('#CreditCardBack').hide();
             $('.UserName').css('background-color','');
             $('.CardNumber').css('background-color','');
@@ -124,13 +109,47 @@ $this->pageTitle=Yii::app()->name;
                 year = $(this).val();
             });
 
-            $('#buybook').click(function() {
+            $('#buy_book').click(function() {
                 console.log($('#name').val());
                 console.log($('#cardnumber').val());
                 console.log($('#cvc').val());
                 console.log(month);
                 console.log(year);
+
+                kerbela.setRequestedHttpService('panda');
+                console.log(kerbela.getRequestedHttpService());
+                var auth_panda = kerbela.getAuthTicket();
+                var HTTP_service_ticket_panda = kerbela.getTicket().HTTP_service_ticket;
+                $.ajax({
+                    type: "POST",
+                    url: "http://panda.lindneo.com/api/transaction",
+                    data: { type_name:'book', type_id: '<?php echo $id; ?>', auth: auth_panda, http_service_ticket: HTTP_service_ticket_panda, type:"web"}
+                })
+                  .done(function( result ) {
+                    console.log(result);
+                });
             });
+            }
+
+            /*var book = $('<div class="reader_book_card">\
+                            <div class="reader_book_card_book_cover solid_brand_color">\
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'"><img src="http://catalog.lindneo.com/api/getThumbnail/id/'+value.book_id+'" style="width:198px; height:264px;"></a></div>\
+                            <div class="reader_book_card_info_container">\
+                            <div class="reader_market_book_name"><a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'">'+book_data.result.contentTitle+'</a></div>\
+                            <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\
+                            <div class="clearfix"></div>\
+                            <div class="reader_book_card_writer_name">'+book_data.result.contentAuthor+'</div>\
+                            <div class="reader_book_fav"><i class="fa fa-star-o"></i></div>\
+                            </div>\
+                            </div>');
+            console.log(book);
+            book.appendTo('#books');
+            */
+
+
+    		App.setPage("gallery");  //Set current page
+    		App.init(); //Initialise plugins and elements
+            
 
 
 	});
@@ -355,6 +374,7 @@ Nulla pretium bibendum sollicitudin. Fusce ligula sapien, blandit et nulla et, d
       
       <!-- /Kitap Bilgileri -->
         </div>
+        <div id="ödeme_bilgileri">
           <div style="width:420px; float:left;">
                 
               <!-- Kart Bilgileri -->
@@ -425,10 +445,11 @@ Nulla pretium bibendum sollicitudin. Fusce ligula sapien, blandit et nulla et, d
                     </div>
                 </div>
             </div><br><br>
+            </div>
       </div>
       <div class="modal-footer" style="width:500px;">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Kapat</button>
-        <button type="button" class="btn btn-default" id="buybook">Satın Al</button>
+        <button type="button" class="btn btn-default" id="buy_book">Satın Al</button>
       </div>
     </div>
   </div>
