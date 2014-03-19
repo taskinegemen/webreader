@@ -51,6 +51,7 @@
  	$.fn.getPassword=function(){return this.Password;};
 
  	$.fn.setIp=function(){
+ 		if(this.getCS()==undefined) {return null;}
  		var that=this;
  		var result=new Object();
 		this.makeRequest(this.getCS()+'/api/getip',
@@ -63,8 +64,14 @@
  	$.fn.setRequestedLifetime=function(RL){this.RequestedLifetime=RL;};
  	$.fn.getRequestedLifetime=function(){return this.RequestedLifetime;};
 
- 	$.fn.setTicket=function(HTTP_service_session_key,HTTP_service_ticket){window.sessionStorage.ticket=JSON.stringify({HTTP_service_session_key:HTTP_service_session_key,HTTP_service_ticket:HTTP_service_ticket});}
- 	$.fn.getTicket=function(){return JSON.parse(window.sessionStorage.ticket);};
+ 	$.fn.setTicket=function(HTTP_service_session_key,HTTP_service_ticket){
+ 		window.sessionStorage.setItem("ticket_"+this.getRequestedHttpService(), JSON.stringify({HTTP_service_session_key:HTTP_service_session_key,HTTP_service_ticket:HTTP_service_ticket,UserId:this.getUserId()}));
+ 		//window.sessionStorage.ticket=JSON.stringify({HTTP_service_session_key:HTTP_service_session_key,HTTP_service_ticket:HTTP_service_ticket});
+ 	};
+ 	$.fn.getTicket=function(){
+ 		return JSON.parse(window.sessionStorage.getItem("ticket_"+this.getRequestedHttpService()));
+ 		//return JSON.parse(window.sessionStorage.ticket);
+ 	};
 
  	$.fn.decoder=function (string){
 		var json=new Object();
@@ -88,8 +95,16 @@
 			result =this.decoder(CryptoJS.AES.decrypt(EncryptedData, Key,{mode:CryptoJS.mode.CBC}).toString(CryptoJS.enc.Utf8));
 		}
 		catch(err){
-			result=Error;
+			console.log(Error);
+			if(Error.status==undefined){
+				result={status:false,message:'User password is incorrect!'};
+			}
+			else
+			{
+			result=Error; 
+			}
 		}
+		console.log(result);
 		return result;
 	};  
 
@@ -104,6 +119,19 @@
 		  			dataType: dataType
 				});
 	}
+	$.fn.getAuthTicket=function(){
+		var UserId;
+		if(typeof this.getUserId()=="undefined"){
+			UserId=this.getTicket().UserId;
+		}
+		else
+		{
+			UserId=this.getUserId();
+		}
+		HTTP_service_session_key=this.getTicket().HTTP_service_session_key;
+		console.log(HTTP_service_session_key);
+		return CryptoJS.AES.encrypt("{user_id:"+UserId+",timestamp:"+this.getTimestamp()+"}", HTTP_service_session_key,{mode:CryptoJS.mode.CBC}).toString(CryptoJS.enc.base64);
+	}
 	$.fn.getSource=function(destination,data){
 		console.log(this.getTicket());
 		var ticket=this.getTicket();
@@ -111,6 +139,7 @@
 		var HTTP_service_ticket=ticket.HTTP_service_ticket;
 		
 		var AUTH=CryptoJS.AES.encrypt("{user_id:"+this.getUserId()+",timestamp:"+this.getTimestamp()+"}", HTTP_service_session_key,{mode:CryptoJS.mode.CBC}).toString(CryptoJS.enc.base64);
+
 		var result=new Object();
 		var postData={
 					'auth':encodeURI(AUTH),
@@ -158,6 +187,7 @@
 		HTTP_session_ticket=result.source.HTTP_session_ticket;
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		HTTP_session_ticket_decrypted=this.decrypt(HTTP_session_ticket,TGS_session_key,result.source);
+		console.log(HTTP_session_ticket_decrypted.status);
 		if(HTTP_session_ticket_decrypted.status==false){return HTTP_session_ticket_decrypted;}
 		console.log(HTTP_session_ticket_decrypted);
 		HTTP_service_session_key=HTTP_session_ticket_decrypted.HTTP_service_session_key;

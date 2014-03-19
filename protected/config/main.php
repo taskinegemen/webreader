@@ -52,6 +52,7 @@ return array(
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
+				array('KerberizedService/authenticate','pattern'=>'kerberizedservice/authenticate/','verb'=>'POST'),
 				'content/file/<id:\w+>/<filepath:[\d\w-\/\.]+>'=>'content/file',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\w+>'=>'<controller>/<action>',
@@ -66,10 +67,10 @@ return array(
 		*/
 		// uncomment the following to use a MySQL database
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=reader',
+			'connectionString' => 'mysql:host=lindneo.com;dbname=reader',
 			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '12548442',
+			'username' => 'db_reader',
+			'password' => 'GGHABzec9wPWASL2',
 			'charset' => 'utf8',
 		),
 

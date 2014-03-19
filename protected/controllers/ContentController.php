@@ -19,7 +19,8 @@ class ContentController extends Controller
 
 	public function actionDetails()
 	{
-		$this->render('details');
+		$id=Yii::app()->request->getQuery('id',0);
+		$this->render('details',array('id'=>$id));
 	}
 
 	public function actionNobook()
@@ -41,6 +42,16 @@ class ContentController extends Controller
 	{
 		$filename="contents/$id/package.opf";
 		$xml=simplexml_load_string(Encryption::decryptFile($filename));
+		$xml->metadatadc->identifier= $xml->metadata->children('dc',true)->identifier;
+		$xml->metadatadc->title= $xml->metadata->children('dc',true)->title;
+		$xml->metadatadc->creator= $xml->metadata->children('dc',true)->creator;
+		$xml->metadatadc->contributor= $xml->metadata->children('dc',true)->contributor;
+		$xml->metadatadc->date= $xml->metadata->children('dc',true)->date;
+		$xml->metadatadc->description= $xml->metadata->children('dc',true)->description;
+		$xml->metadatadc->publisher= $xml->metadata->children('dc',true)->publisher;
+		$xml->metadatadc->language= $xml->metadata->children('dc',true)->language;
+		$xml->metadatadc->subject= $xml->metadata->children('dc',true)->subject;
+	
 		echo(json_encode($xml));
 		//$this->render('getbookmeta');
 	}

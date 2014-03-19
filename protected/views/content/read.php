@@ -5,11 +5,26 @@ $this->pageTitle=Yii::app()->name;
 ?>
 
     <script>
-		var ContentFileRequesUrl="<?php echo $this->createUrl("content/file",array('id'=>$id) ); ?>"+"/";
-		var metaUrl= "<?php echo $this->createUrl("content/Getbookmeta",array('id'=>$id) ); ?>"	
+		var ContentFileRequesUrl="<?php echo $this->createUrl('content/file',array('id'=>$id) ); ?>"+"/";
+		var metaUrl= "<?php echo $this->createUrl('content/Getbookmeta',array('id'=>$id) ); ?>"	
+		function get_file_request_url(){
+			return "<?php echo $this->createUrl('content/file',array('id'=>$id) ); ?>"+"/";;
+
+		}
 	</script>
 
-	
+	<script type="text/javascript" src='<?php echo Yii::app()->request->baseUrl; ?>/js/libs/jquery.fullscreen-min.js'></script>
+	<script type="text/javascript" src='<?php echo Yii::app()->request->baseUrl; ?>/js/libs/iscroll-lite.js'></script>
+	<style type="text/css">
+
+	</style>
+
+
+	<script type="text/javascript">
+
+
+
+	</script>
 
 	
 	<!-- PAGE -->

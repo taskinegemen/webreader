@@ -1,8 +1,10 @@
 var BookMeta;
 var reader_slider;
-var Pages = [],Items = [], PageIDArray=[];
-	
+var Pages = [],Items = [], PageIDArray=[],PageSrcArray={};
+var PageZoomed=false,outzooming;
+var clicking = false;
 window.pages = [];
+
 
 	jQuery.fn.fitToParent = function () {
 		    this.each(function () {
@@ -50,17 +52,23 @@ window.pages = [];
 
 
 	function resizeEverything(){
-				var current= window.SlideController.reader_slider.getCurrentSlide();
-				var offset = $('#main-content').offset();
-				var height= $(window).height() - offset.top +25;
-				var width= $(window).width() - offset.left;
-				$(".bxslider li,.bx-viewport ,.bxslider iframe.page_iframe ").height (height);
-				$(".bxslider li,.bx-viewport ,.bxslider iframe.page_iframe ").width (width);
-				$(".bxslider iframe.page_iframe").fitToParent();
-				window.SlideController.reader_slider.goToSlide(current);
+		var current= window.SlideController.reader_slider.getCurrentSlide();
+		
+		var offset = $('#main-content').offset();
 
-				$("ul.bxslider").css("-webkit-transform", "translate3d(-"+($ ($(".bxslider li")[current] ).position().left )+"px, 0px, 0px)" );
-			}
+		var height= $(window).height() - offset.top +25;
+		var width= $(window).width() - offset.left;
+
+
+		$(".bxslider li,.bx-viewport ,.bxslider iframe.page_iframe ").height (height);
+		$(".bxslider li,.bx-viewport ,.bxslider iframe.page_iframe ").width (width);
+		$(".bxslider iframe.page_iframe").fitToParent();
+		window.SlideController.reader_slider.goToSlide(current);
+
+		
+		$("ul.bxslider").css("-webkit-transform", "translate3d(-"+($ ($(".bxslider li")[current] ).position().left )+"px, 0px, 0px)" );
+
+	}
 
 
 
@@ -104,5 +112,33 @@ window.pages = [];
 		  }
 		  return results;
 		}
+
+
+		function fullscreenHandle(){
+			$("#toggle_full_screen, .toggle_full_screen").toggle($(document).fullScreen() != null);
+
+		   
+		    
+		    $(document).bind("fullscreenchange", function(e) {
+		       console.log("Full screen changed.");
+		       //$("#status").text($(document).fullScreen() ? "Full screen enabled" : "Full screen disabled");
+		    });
+		    
+		    $(document).bind("fullscreenerror", function(e) {
+		       console.log("Full screen error.");
+		     	//$("#status").text("Browser won't enter full screen mode for some reason.");
+		    });
+		    $('#toggle_full_screen, .toggle_full_screen').click(function(){
+		    	$(document).toggleFullScreen();
+		    });
+
+		}
+
+		$(document).ready(function(){
+			fullscreenHandle();
+
+		});
+
+
 
 		
