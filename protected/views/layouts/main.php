@@ -117,9 +117,7 @@
 
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/xml2json.js"></script>
 		<!--<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/lazyloader.min.js"></script>-->
-<!-- /JS -->
-
-
+		<!-- /JS -->
 
 		
 
