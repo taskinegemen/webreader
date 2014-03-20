@@ -249,7 +249,7 @@ $this->pageTitle=Yii::app()->name;
 <h3 class="book_info_the_name_of_the_writer">Jess Walter</h2>
 
 <button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons"  id="bbook" data-toggle="modal" data-target="#buybook">Kütüphaneme Ekle</button>
-<button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons" id="rbook">Oku</button>
+<a class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons" href="<?php echo Yii::app()->request->baseUrl.'/content/read/'.$id; ?>" target="_blank" id="rbook">Oku</a>
 
 </div>
 <!-- /book_info_details_row -->
