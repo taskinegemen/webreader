@@ -1,12 +1,46 @@
 <?php
-
+functions::left_menu();
 
 /**
 * 
 */
 class functions
 {
+    function left_menu(){
 
+        functions::event('left_menu',  NULL, function($var) {
+        ?>
+        <div id="sidebar" class="sidebar sidebar-fixed">
+                <div class="sidebar-menu nav-collapse">
+                    <!--=== Navigation ===-->
+                    <ul>
+                        <li class="current">
+                            <a href="<?php echo $var->createUrl("site/library"); ?>">
+                                <i class="fa fa-book fa-fw"></i>
+                                <span class="menu-text">Kütüphanem</span>
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="<?php echo  $var->createUrl("content/list"); ?>">
+                                <i class="fa fa-briefcase fa-fw"></i> 
+                                <span class="menu-text">Mağaza</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo $var->createUrl("user/profile"); ?>">
+                                <i class="fa fa-user fa-fw"></i> 
+                                <span class="menu-text">Profilim</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /Navigation -->
+
+                </div>
+            </div><!-- /Sidebar -->
+            <?php
+    });
+
+    }
      /**
      * Attach (or remove) multiple callbacks to an event and trigger those callbacks when that event is called.
      *
