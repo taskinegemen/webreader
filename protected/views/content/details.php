@@ -184,33 +184,8 @@ $this->pageTitle=Yii::app()->name;
     
 <div class="book_info_page_container">
 
-<div id="sidebar" class="sidebar sidebar-fixed">
-	<div class="sidebar-menu nav-collapse">
-		<!--=== Navigation ===-->
-		<ul>
-			<li>
-				<a href="/site/dashboard">
-					<i class="fa fa-book fa-fw"></i>
-					<span class="menu-text">Kütüphanem</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="fa fa-briefcase fa-fw"></i> 
-                    <span class="menu-text">Mağaza</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="fa fa-user fa-fw"></i> 
-                    <span class="menu-text">Profilim</span>
-				</a>
-			</li>
-		</ul>
-		<!-- /Navigation -->
-	</div>
-</div>
-		<!-- /Sidebar -->
+<?php echo functions::event('left_menu', $this); ?>
+
 <div id="main-content">
 	<div class="container">
 		<div class="row">
