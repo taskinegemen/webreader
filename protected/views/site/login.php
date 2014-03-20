@@ -93,7 +93,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 									)
 									*/
 								)); ?>
-								<h3 class="bigintro">Okutus Reader'a Giriş Yap</h3>
+								<h3 class="bigintro">Seviye Dijital'e Giriş Yap</h3>
 								
 								<form role="form">								
 								  <div class="form-group">
@@ -300,7 +300,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 
 
 <div class="login_contact">
-<p>OKUTUS Reader Linden Dijital Yayıncılık A.Ş. Tarafından Hazırlanmıştır.</p>
+<p>Seviye Dijital Linden Dijital Yayıncılık A.Ş. Tarafından Hazırlanmıştır.</p>
 <p>Bizi daha yakından tanıyın. <a target="_blank" href="http://www.linden-tech.com/">www.linden-tech.com</a></p>
 </div>
 
