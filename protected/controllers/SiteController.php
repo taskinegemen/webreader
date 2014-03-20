@@ -40,10 +40,10 @@ class SiteController extends Controller
 		$kerberized=new KerberizedServer($auth,$http_service_ticket,KerbelaEncryptionFactory::create($type));
 		$myarray=$kerberized->ticketValidation();
 		if ($kerberized->getUserId()) {
-			return $kerberized->getUserId();
+			return $kerberized->getUserId() != "undefined" ? $kerberized->getUserId() : false ;
 		}
 		else
-			return 0;
+			return false;
 	} 
 
 	public function actionAuthenticate()
@@ -120,13 +120,12 @@ class SiteController extends Controller
 	public function actionLibrary(){
 		
 		error_log($this->authenticate());
-		if($this->authenticate() && $this->authenticate()!="undefined"){
-		$contents = "";
-		$this->render('library',array('contents'=>$contents));
+		if($this->authenticate()){
+			$this->render('library');
 		}
 		else
 		{
-			$this->render('site/login');
+			$this->redirect('login');
 		}
 	}
 
