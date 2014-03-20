@@ -105,6 +105,7 @@ window.SlideController = (function( $ ) {
 				hideControlOnEnd: true,
 				responsive:false,
 				touchEnabled: true,
+				onSlideBefore: this.onSlideBefore,
 				onSlideAfter : this.onslide ,
 				buildPager: this.buildPager,
 		});
@@ -157,9 +158,14 @@ window.SlideController = (function( $ ) {
 		});
 	};
 
+	var onSlideBefore = function () {
+		if(typeof window.oversize != 'undefined')
+			window.oversize.remove();
+	};
 	return {
 		init:init,
 		buildPager:buildPager,
+		onSlideBefore:onSlideBefore,
 		onslide:onslide,
 		controller:controller,
 		bindKeys:bindKeys,
