@@ -62,9 +62,11 @@ $this->pageTitle=Yii::app()->name;
 												</select>
 										  </div>
 									   </div>
-										<div id="filter-items" class="row">    
 
-										</div>
+                                            
+                                            
+										<div id="filter-items" class="market_page_book_filter row">    
+
 									</div>
                         
                         
