@@ -12,17 +12,22 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 <!-- PAGE -->
 <!-- login -->
   <script type="text/javascript">
-
+	$(document).ready(function(){
+		$('#login-form').submit(function(e) {
+	  			login();
+	  			e.preventDefault();
+	  			return false;
+	  		});
+	});
   	$(document).on("click","#loginButton",function(e){
   		$.blockUI({ message: '<h1>Please wait just a little...</h1>' });
   		setTimeout($.unblockUI, 10000); 
   		window.setTimeout(function(){login();},100);
-		
 	});
   	function login(){
   		var username=$('#LoginForm_username').val();
 		var password=$('#LoginForm_password').val();
-		console.log(password);																																		
+		//console.log(password);																																		
 		var kerbela=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','<?php echo Yii::app()->request->baseUrl; ?>/kerberizedservice/authenticate',username,password,'kerbela','reader','6000');
 		var response=kerbela.execute();
 
@@ -82,10 +87,11 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 							<div class="login-box">
 								<?php $form=$this->beginWidget('CActiveForm', array(
 									'id'=>'login-form',
-									'enableClientValidation'=>true,
+									/*'enableClientValidation'=>true,
 									'clientOptions'=>array(
 										'validateOnSubmit'=>true,
-									),
+									)
+									*/
 								)); ?>
 								<h3 class="bigintro">Okutus Reader'a Giriş Yap</h3>
 								
@@ -157,7 +163,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
                             
                             <div class="login-box">
 								<?php $form=$this->beginWidget('CActiveForm', array(
-									'id'=>'login-form',
+									'id'=>'register-form',
 									'enableClientValidation'=>true,
 									'clientOptions'=>array(
 										'validateOnSubmit'=>true,
