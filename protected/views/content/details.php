@@ -171,6 +171,8 @@ $this->pageTitle=Yii::app()->name;
                     console.log(result);
                     if(result){
                         $('#buybook').modal('hide');
+                        $('#bbook').hide();
+                        $('#rbook').show();
                     }
                 });
             });
