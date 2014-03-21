@@ -10,24 +10,49 @@ class functions
 
         functions::event('left_menu',  NULL, function($var) {
         ?>
+        <script type="text/javascript">
+            $( document ).ready(function() {
+                var kerbela = $(window).kerbelainit();
+                kerbela.setRequestedHttpService('reader');
+                var ticket=kerbela.getTicket();
+                var auth=kerbela.getAuthTicket();
+                var HTTP_service_ticket=ticket.HTTP_service_ticket;
+                $('#library').click(function(){
+                    var form='<form method="post" action="<?php echo $var->createUrl("site/library"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
+                    $('body').append(form);
+                    $(form).submit();
+                });
+                $('#list').click(function(){
+                    var form='<form method="post" action="<?php echo $var->createUrl("content/list"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
+                    $('body').append(form);
+                    $(form).submit();
+                });
+                $('#profile').click(function(){
+                    var form='<form method="post" action="<?php echo $var->createUrl("site/myprofile"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
+                    $('body').append(form);
+                    $(form).submit();
+                });
+                
+            });
+        </script>
         <div id="sidebar" class="sidebar sidebar-fixed">
                 <div class="sidebar-menu nav-collapse">
                     <!--=== Navigation ===-->
                     <ul>
                         <li class="current">
-                            <a href="<?php echo $var->createUrl("site/library"); ?>">
+                            <a id="library" href="#">
                                 <i class="fa fa-book fa-fw"></i>
                                 <span class="menu-text">Kütüphanem</span>
                             </a>
                         </li> 
                         <li>
-                            <a href="<?php echo  $var->createUrl("content/list"); ?>">
+                            <a id="list" href="#">
                                 <i class="fa fa-briefcase fa-fw"></i> 
                                 <span class="menu-text">Mağaza</span>
                             </a>
                         </li>
                         <li>
-                            <a href="<?php echo $var->createUrl("user/profile"); ?>">
+                            <a id="profile"href="#">
                                 <i class="fa fa-user fa-fw"></i> 
                                 <span class="menu-text">Profilim</span>
                             </a>

@@ -89,7 +89,7 @@
 						Favorilerim
 					</div>
                     
-                    
+                <div class="clearfix"></div>    
                     
         <!-- READER BOOK CARD -->
         <div class="reader_book_card">
