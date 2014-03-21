@@ -6,7 +6,7 @@
 <script type="text/javascript">
 	$( document ).ready(function() { 
 if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
-if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
+if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass('margin-left-50');
         function d2h(d) {
             return d.toString(16);
         }
@@ -97,7 +97,7 @@ if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
                                             <div class="nobook_smiley"></div>\
                                             <p class="nobook_text">Kütüphanenizde hiç kitabınız bulunmamaktadır.</p>\
                                             <p class="nobook_text">Mağaza’dan kitap edinin.</p>\
-                                            <a href="/erkan/index.php/content/list"><button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons">Mağazaya Git</button></a>\
+                                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/list"><button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons">Mağazaya Git</button></a>\
                                             </div>');
                 }
               });
@@ -117,8 +117,12 @@ if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
 	<div id="main-content">
 		<div class="container">
 			<div class="row">
+
+				<!-- <div class="reader_library_page_row clearfix" id="favorite_books">
+
             <div style="display:none;">
 				<div class="reader_library_page_row clearfix" id="favorite_books">
+
 					<div class="reader_book_category">
 						Favorilerim
 					</div>
@@ -137,15 +141,15 @@ if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
                             
                     
         
-				</div>
+				</div> -->
         <!-- END OF reader_library_page_row -->
                 
-                </div>
+                <!-- </div>
                 
-                
+                 -->
 				<div class="reader_library_page_row clearfix" id="books">
 					<div class="reader_book_category">
-						Diğerleri
+						Kitaplarım
 					</div>
 
                     <div class="clearfix"></div>
