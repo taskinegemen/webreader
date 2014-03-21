@@ -30,7 +30,7 @@ $this->pageTitle=Yii::app()->name;
 	<!-- PAGE -->
 	<section id="page">
 				<!-- SIDEBAR -->
-				<div id="sidebar" class="sidebar sidebar-fixed">
+				<div id="sidebar" class="sidebar sidebar-fixed" style="margin-top:51px;">
 					<div class="sidebar-menu nav-collapse">
 						
 						
@@ -118,7 +118,7 @@ $this->pageTitle=Yii::app()->name;
 						if( current<1 ){
 							$(this).val(1);
 						}
-						if( current > max ){
+						if( parseInt(current) > parseInt(max) ){
 							$(this).val(max);
 						}
 
