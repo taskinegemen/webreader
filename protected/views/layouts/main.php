@@ -208,21 +208,113 @@ if (Yii::app()->controller->action->id=="read"):?>
 			        </ul>
                 </li>
                 
-				
+			
 
               <li><i class="fa fa-list-alt dropdown-toggle" data-toggle="dropdown"></i>
                 <ul class="dropdown-menu pull-right reader_toc_dropdown">
                 
                 <li>İçindekiler</li>
-				  <li><a href="#page43"><span  reader-action='page-anchor' reader-data="43" class="reader_toc_dropdown_page_numbers">43</span> Şimdilik deneme yapılıyor kısa olmasın diye uzatıyoz da uzatıyoz işte böyle</a></li>
-				  <li><a href="#page125"><span  reader-action='page-anchor' reader-data="125" class="reader_toc_dropdown_page_numbers">125</span> Buralarda hep table of content maddeleri olacak</a></li>
-				  <li><a href="#page212"><span  reader-action='page-anchor'  reader-data="212" class="reader_toc_dropdown_page_numbers">212</span> İşte öyle denemeler şakalar falan</a></li>
+				  <li><a href="#page43"><span  reader-action='page-anchor' reader-data="43" class="reader_toc_dropdown_page_numbers">43</span> İçindekiler kısmı 1</a></li>
+				  <li><a href="#page125"><span  reader-action='page-anchor' reader-data="125" class="reader_toc_dropdown_page_numbers">125</span> İçindekiler kısmı 2</a></li>
+				  <li><a href="#page212"><span  reader-action='page-anchor'  reader-data="212" class="reader_toc_dropdown_page_numbers">212</span> İçindekiler kısmı 3</a></li>
 			    </ul>
              </li>
                 
                 
                 <li><i class="fa fa-plus-circle" id="toggle_zoom" ></i></li>
                 <li><i class="fa fa-arrows-alt" id="toggle_full_screen"></i></li>
+      			
+                <li><i reader-action='next-page'  class="fa fa-chevron-right" id="toggle_prev"></i></li>
+                <li class="navbar_page_numbers"><input type='text' min="1" max="5" style='background: transparent;color: #fff;width:30px;text-align:right;border: transparent;' id="current_page_num_spinner" size=4 >/<span content-meta='book-page-count' >0</span></li>
+               
+                <li><i reader-action='prev-page'  class="fa fa-chevron-left" id="toggle_next"></i></li>
+                
+                
+                <script type="text/javascript">
+            	$(document).ready(function() {
+					$("#current_page_num_spinner")
+					.keydown(function(event) {
+						
+						var current= $(this).val();
+						var max = $("[content-meta='book-page-count']").text();
+						
+						if( current < 1 ){
+							$(this).val(1);
+							event.preventDefault();	
+						}
+
+						if( parseInt(current) > parseInt(max) ){
+
+							$(this).val(max);
+							event.preventDefault();	
+						}
+
+						// Allow only backspace and delete
+
+						if ( event.keyCode == 46 || event.keyCode == 8 ) {
+							
+							// let it happen, don't do anything
+						}
+						else if(event.keyCode == 13 ){
+							window.SlideController.controller('page-anchor',$(this).val()-1);
+						}
+						else {
+							// Ensure that it is a number and stop the keypress
+							if (event.keyCode < 48 || event.keyCode > 57 ) {
+								event.preventDefault();	
+							}	
+						}
+					}).keypress(function(e){
+						var current= $(this).val();
+						var max = $("[content-meta='book-page-count']").text();
+						
+						if( current<1 ){
+							$(this).val(1);
+							event.preventDefault();	
+						}
+						
+						if( parseInt(current) > parseInt(max) ){
+							$(this).val(max);
+							event.preventDefault();	
+						}
+
+					}).focus(function() {
+					   $(this).select();
+					   $(this).attr('max', $("[content-meta='book-page-count']").text());
+					}).on('input',function(){
+						var current= $(this).val();
+						var max = $("[content-meta='book-page-count']").text();
+						
+						if( current < 1 ){
+							$(this).val(1);
+							window.SlideController.controller('page-anchor',$(this).val()-1);
+						}
+
+						if( parseInt(current) > parseInt(max) ){
+
+							$(this).val(max);
+							window.SlideController.controller('page-anchor',$(this).val()-1);
+						}
+
+
+
+					}).change(function() {
+						var current= $(this).val();
+						var max = $("[content-meta='book-page-count']").text();
+						console.log(max);
+						if( current<1 ){
+							$(this).val(1);
+						}
+						if( current > max ){
+							$(this).val(max);
+						}
+
+					    window.SlideController.controller('page-anchor',$(this).val()-1);
+					});
+				});
+            	</script>
+                
+                
 
             </ul>
 			<!-- /Top Right Menu -->

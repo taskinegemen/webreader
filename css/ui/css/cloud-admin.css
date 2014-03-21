@@ -9664,7 +9664,7 @@ span.book_info_titles {
 	top:0;
 	position:fixed;
 	margin-top:50px;
-	background-color:#000;
+	background-color:#0B0D0C;
 }
 
 .reader_page {
@@ -9914,10 +9914,15 @@ span.okutus_info_linden {
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+	display:none;
 }
 
 header.read_page_navbar i.fa, span.sb-icon-search {
 	opacity:0.8;	
+}
+
+.navbar_page_numbers {
+	font-size:16px !important;	
 }
 
 
