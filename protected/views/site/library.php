@@ -117,6 +117,7 @@ if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
 	<div id="main-content">
 		<div class="container">
 			<div class="row">
+            <div style="display:none;">
 				<div class="reader_library_page_row clearfix" id="favorite_books">
 					<div class="reader_book_category">
 						Favorilerim
@@ -139,7 +140,7 @@ if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
 				</div>
         <!-- END OF reader_library_page_row -->
                 
-                
+                </div>
                 
                 
 				<div class="reader_library_page_row clearfix" id="books">
