@@ -514,3 +514,486 @@ REQUEST_URI=/ugur/index.php/content/getcontent/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzAB
 in /var/www/reader/ugur/protected/controllers/ContentController.php (177)
 in /var/www/reader/ugur/protected/controllers/ContentController.php (145)
 in /var/www/reader/ugur/index.php (15)
+2014/03/20 14:46:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/site/login
+---
+2014/03/20 14:46:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/site/library
+---
+2014/03/20 14:47:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/list
+---
+2014/03/20 14:47:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/content/details/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/20 14:47:25 [error] [php] file_get_contents(contents/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (44)
+in /var/www/reader/ugur/index.php (15)
+2014/03/20 14:47:33 [error] [php] unlink(./tmp/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw): No such file or directory (/var/www/reader/ugur/protected/controllers/ContentController.php:177)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/content/getcontent/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+in /var/www/reader/ugur/protected/controllers/ContentController.php (177)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (145)
+in /var/www/reader/ugur/index.php (15)
+2014/03/20 14:49:03 [error] [php] file_get_contents(contents/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQWX/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQWX
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (44)
+in /var/www/reader/ugur/index.php (15)
+2014/03/20 14:49:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQWX
+---
+2014/03/20 14:49:16 [error] [php] file_get_contents(contents/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQWX/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQWX
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (44)
+in /var/www/reader/ugur/index.php (15)
+2014/03/21 05:30:33 [error] [php] simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '<' not found (/var/www/reader/ugur/protected/controllers/ContentController.php:44)
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/BdWPRGYUXuTgXqlaVpHEMIsBvwoGTeMwKAAj09dT23Pt
+in /var/www/reader/ugur/protected/controllers/ContentController.php (44)
+in /var/www/reader/ugur/index.php (15)
+2014/03/21 05:30:40 [error] [php] unlink(./tmp/BdWPRGYUXuTgXqlaVpHEMIsBvwoGTeMwKAAj09dT23Pt): No such file or directory (/var/www/reader/ugur/protected/controllers/ContentController.php:177)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/content/getcontent/BdWPRGYUXuTgXqlaVpHEMIsBvwoGTeMwKAAj09dT23Pt
+in /var/www/reader/ugur/protected/controllers/ContentController.php (177)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (145)
+in /var/www/reader/ugur/index.php (15)
+2014/03/21 05:30:43 [error] [php] file_get_contents(contents/BdWPRGYUXuTgXqlaVpHEMIsBvwoGTeMwKAAj09dT23Pt/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/BdWPRGYUXuTgXqlaVpHEMIsBvwoGTeMwKAAj09dT23Pt
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (44)
+in /var/www/reader/ugur/index.php (15)
+2014/03/21 05:31:52 [error] [php] file_get_contents(contents/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (44)
+in /var/www/reader/ugur/index.php (15)
+2014/03/21 05:32:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/03/21 05:32:15 [error] [php] file_get_contents(contents/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (44)
+in /var/www/reader/ugur/index.php (15)
+2014/03/21 05:34:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/95wTOpDje6NkbTSMULX4pOIQBovWsb89DCRcaY1TDgUR
+---
+2014/03/21 05:34:17 [error] [php] file_get_contents(contents/95wTOpDje6NkbTSMULX4pOIQBovWsb89DCRcaY1TDgUR/jROHqIds4Jx8OwTGokSfkcyOTnJBWEwBBZT2aQaEYSWU.jpg): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/file/95wTOpDje6NkbTSMULX4pOIQBovWsb89DCRcaY1TDgUR/jROHqIds4Jx8OwTGokSfkcyOTnJBWEwBBZT2aQaEYSWU.jpg
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (202)
+in /var/www/reader/ugur/index.php (15)
+2014/03/21 05:34:18 [error] [php] file_get_contents(contents/95wTOpDje6NkbTSMULX4pOIQBovWsb89DCRcaY1TDgUR/qGQKQgWVKA3mn9CN2nZu2lOMAwvSoBuPiHIclNZwtZXv.jpg): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/file/95wTOpDje6NkbTSMULX4pOIQBovWsb89DCRcaY1TDgUR/qGQKQgWVKA3mn9CN2nZu2lOMAwvSoBuPiHIclNZwtZXv.jpg
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (202)
+in /var/www/reader/ugur/index.php (15)
+2014/03/21 05:43:02 [error] [php] unlink(./tmp/95wTOpDje6NkbTSMULX4pOIQBovWsb89DCRcaY1TDgUR): No such file or directory (/var/www/reader/ugur/protected/controllers/ContentController.php:177)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/getcontent/95wTOpDje6NkbTSMULX4pOIQBovWsb89DCRcaY1TDgUR
+in /var/www/reader/ugur/protected/controllers/ContentController.php (177)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (145)
+in /var/www/reader/ugur/index.php (15)
+2014/03/21 05:44:59 [error] [php] file_get_contents(contents/95wTOpDje6NkbTSMULX4pOIQBovWsb89DCRcaY1TDgUR/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/95wTOpDje6NkbTSMULX4pOIQBovWsb89DCRcaY1TDgUR
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (44)
+in /var/www/reader/ugur/index.php (15)
+2014/03/21 05:45:06 [error] [php] unlink(./tmp/95wTOpDje6NkbTSMULX4pOIQBovWsb89DCRcaY1TDgUR): No such file or directory (/var/www/reader/ugur/protected/controllers/ContentController.php:177)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/getcontent/95wTOpDje6NkbTSMULX4pOIQBovWsb89DCRcaY1TDgUR
+in /var/www/reader/ugur/protected/controllers/ContentController.php (177)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (145)
+in /var/www/reader/ugur/index.php (15)
+2014/03/21 05:56:30 [error] [php] file_get_contents(contents/95wTOpDje6NkbTSMULX4pOIQBovWsb89DCRcaY1TDgUR/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/95wTOpDje6NkbTSMULX4pOIQBovWsb89DCRcaY1TDgUR
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (44)
+in /var/www/reader/ugur/index.php (15)
+2014/03/21 05:59:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQWX
+---
+2014/03/21 05:59:41 [error] [php] file_get_contents(contents/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQWX/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQWX
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (44)
+in /var/www/reader/ugur/index.php (15)
+2014/03/21 06:00:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQWX
+---
+2014/03/21 06:00:10 [error] [php] file_get_contents(contents/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQWX/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQWX
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (44)
+in /var/www/reader/ugur/index.php (15)
+2014/03/21 06:00:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQWX
+---
+2014/03/21 06:00:52 [error] [php] file_get_contents(contents/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQW/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQW
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (44)
+in /var/www/reader/ugur/index.php (15)
+2014/03/21 06:00:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQW
+---
+2014/03/21 06:02:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQW
+---
+2014/03/21 06:02:55 [error] [php] file_get_contents(contents/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQW/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQW
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (44)
+in /var/www/reader/ugur/index.php (15)
+2014/03/21 06:03:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ugur/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ugur/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ugur/index.php/content/read/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQWX
+---
+2014/03/21 06:08:34 [error] [php] file_get_contents(contents/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQWX/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQWX
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (44)
+in /var/www/reader/ugur/index.php (15)
+2014/03/21 06:08:41 [error] [php] file_get_contents(contents/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQWX/package.opf): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionGetbookmeta()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/Getbookmeta/NgqSoRau3zawZmngiowk07ombSFDaPOxxLic7qwjFQWX
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (44)
+in /var/www/reader/ugur/index.php (15)
+2014/03/21 06:17:03 [error] [php] file_get_contents(contents/AbpyrViD5H3ZMRIHK4aOSm9ju91VZZ1ooat4moAR5kH3/SzNG1sCLVrI9AnIDsVxdfzRXIKmoW4hqjL376ixu2Hsm.jpg): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/file/AbpyrViD5H3ZMRIHK4aOSm9ju91VZZ1ooat4moAR5kH3/SzNG1sCLVrI9AnIDsVxdfzRXIKmoW4hqjL376ixu2Hsm.jpg
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (216)
+in /var/www/reader/ugur/index.php (15)
+2014/03/21 06:17:03 [error] [php] file_get_contents(contents/AbpyrViD5H3ZMRIHK4aOSm9ju91VZZ1ooat4moAR5kH3/VH9bpupGZLkwHU7rXJ0dXBbYWcMYl7NUb9Pwdeovkmva.jpg): failed to open stream: No such file or directory (/var/www/reader/ugur/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/ugur/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ugur/index.php(15): CWebApplication->run()
+REQUEST_URI=/ugur/index.php/content/file/AbpyrViD5H3ZMRIHK4aOSm9ju91VZZ1ooat4moAR5kH3/VH9bpupGZLkwHU7rXJ0dXBbYWcMYl7NUb9Pwdeovkmva.jpg
+in /var/www/reader/ugur/protected/utilities/Encryption.php (53)
+in /var/www/reader/ugur/protected/controllers/ContentController.php (216)
+in /var/www/reader/ugur/index.php (15)
