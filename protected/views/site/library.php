@@ -5,7 +5,8 @@
 
 <script type="text/javascript">
 	$( document ).ready(function() { 
-
+if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
+if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
         function d2h(d) {
             return d.toString(16);
         }
@@ -123,19 +124,7 @@
                     
                 <div class="clearfix"></div>    
                     
-        <!-- READER BOOK CARD -->
-        <div class="reader_book_card">
-        <div class="reader_book_card_book_cover solid_brand_color"></div>
-        <div class="reader_book_card_info_container">
-        <div class="reader_market_book_name">The Book Name is here</div>
-        <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-        <div class="clearfix"></div>
-        <div class="reader_book_card_writer_name">The Name of The Writer</div>
-        <div class="reader_book_fav"><i class="fa fa-star"></i></div>
-        </div>
-        <!-- /reader_book_card_info_container -->
-        </div>
-        <!-- END OF READER BOOK CARD -->
+       
         
         
         
