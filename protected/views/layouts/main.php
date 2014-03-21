@@ -194,8 +194,9 @@ if (Yii::app()->controller->action->id=="read"):?>
 					</a>
 					<ul class="dropdown-menu">
                     	<li><span class="username"><?php echo Yii::app()->user->name; ?></span></li>
-						<li><a href="/user/profile"><i class="fa fa-user"></i> <?php _e('Profil') ?></a></li>
-						<li><a href="/site/logout"><i class="fa fa-power-off"></i> <?php _e('Çıkış') ?></a></li>
+						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/user/profile"><i class="fa fa-user"></i> <?php _e('Profil') ?></a></li>
+						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/library"><i class="fa fa-mail-reply"></i> <?php _e('Kütüphaneme Dön') ?></a></li>
+						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/logout"><i class="fa fa-power-off"></i> <?php _e('Çıkış') ?></a></li>
 					</ul>
 				</li>
                 
@@ -306,8 +307,9 @@ if (Yii::app()->controller->action->id=="read"):?>
 					</a>
 					<ul class="dropdown-menu">
                     	<li><span class="username"><?php echo Yii::app()->user->name; ?></span></li>
-						<li><a href="/user/profile"><i class="fa fa-user"></i> <?php _e('Profil') ?></a></li>
-						<li><a href="/site/logout"><i class="fa fa-power-off"></i> <?php _e('Çıkış') ?></a></li>
+						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/user/profile"><i class="fa fa-user"></i> <?php _e('Profil') ?></a></li>
+						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/library"><i class="fa fa-mail-reply"></i> <?php _e('Kütüphaneme Dön') ?></a></li>
+						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/logout"><i class="fa fa-power-off"></i> <?php _e('Çıkış') ?></a></li>
 					</ul>
 				</li>
 				<!-- /user login dropdown -->

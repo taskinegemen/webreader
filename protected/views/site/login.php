@@ -120,7 +120,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 								  </div>
 								</form>
 								<!-- SOCIAL LOGIN -->
-									<div class="divide-20"></div>
+									<!-- <div class="divide-20"></div>
                                     <div class="register_link">
 										Henüz bir hesabınız yok mu? <a href="#" onclick="swapScreen('register_bg');return false;">Kayıt olun!</a>
 									</div>
@@ -138,7 +138,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 										<a class="btn btn-danger btn-lg">
 											<i class="fa fa-google-plus"></i>
 										</a>
-									</div>
+									</div> -->
 									<!-- /SOCIAL LOGIN -->
 									<!-- <div class="login-helpers">
 										<a href="#" onclick="swapScreen('forgot_bg');return false;">Forgot Password?</a> <br>

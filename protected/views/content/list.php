@@ -98,7 +98,7 @@ $this->pageTitle=Yii::app()->name;
         $.ajax({
           type: "POST",
           url: "http://catalog.lindneo.com/api/list",
-          data: { attributes: '{}', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
+          data: { attributes: '{"organisationId":["seviye"]}', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
         })
           .done(function( result ) {
           	var data = JSON.parse(result);

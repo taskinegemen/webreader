@@ -97,7 +97,7 @@ if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
                                             <div class="nobook_smiley"></div>\
                                             <p class="nobook_text">Kütüphanenizde hiç kitabınız bulunmamaktadır.</p>\
                                             <p class="nobook_text">Mağaza’dan kitap edinin.</p>\
-                                            <a href="/erkan/index.php/content/list"><button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons">Mağazaya Git</button></a>\
+                                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/list"><button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons">Mağazaya Git</button></a>\
                                             </div>');
                 }
               });
@@ -117,7 +117,7 @@ if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
 	<div id="main-content">
 		<div class="container">
 			<div class="row">
-				<div class="reader_library_page_row clearfix" id="favorite_books">
+				<!-- <div class="reader_library_page_row clearfix" id="favorite_books">
 					<div class="reader_book_category">
 						Favorilerim
 					</div>
@@ -136,7 +136,7 @@ if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
                             
                     
         
-				</div>
+				</div> -->
         <!-- END OF reader_library_page_row -->
                 
                 
@@ -144,7 +144,7 @@ if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
                 
 				<div class="reader_library_page_row clearfix" id="books">
 					<div class="reader_book_category">
-						Diğerleri
+						Kitaplarım
 					</div>
 
                     <div class="clearfix"></div>
