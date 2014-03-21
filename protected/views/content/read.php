@@ -118,7 +118,7 @@ $this->pageTitle=Yii::app()->name;
 						if( current<1 ){
 							$(this).val(1);
 						}
-						if( current > max ){
+						if( parseInt(current) > parseInt(max) ){
 							$(this).val(max);
 						}
 

@@ -123,7 +123,7 @@ window.SlideController = (function( $ ) {
 						var action = $(thischild).attr("reader-action");
 						var readerData = $(thischild).attr("reader-data");
 						var thischild= $(this).children("[reader-action]");
-						that.controller (action,readerData,thischild,reader_slider);
+						that.controller (action,readerData,thischild);
 				});
 
 		});
@@ -145,17 +145,19 @@ window.SlideController = (function( $ ) {
 	};
 
 	var bindKeys = function () {
+		var that=this;
+		
 		$(document).keydown(function(e){
 				
 				//left key
 			    if (e.keyCode == 37) { 
-			       this.controller ("prev-page");
+			       that.controller ("prev-page");
 			       return false;
 			    }
 
 			    //right key
 			    if (e.keyCode == 39) { 
-			       this.controller ("next-page");
+			       that.controller ("next-page");
 			       return false;
 			    }
 		});
