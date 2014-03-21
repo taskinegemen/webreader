@@ -205,21 +205,46 @@ class ContentController extends Controller
 		}
 
 		$expires = 60*60*24*14;
-		header("Pragma: public");
-		header("Cache-Control: maxage=".$expires);
-		header('Expires: ' . gmdate('D, d M Y H:i:s', time()+$expires) . ' GMT');
+		
 		$dir="contents/$id/$filepath";
 
 		$filename="contents/$id/$filepath";
 
 		$content_type=functions::returnMIMEType($filename);
-		header("Content-type: $content_type");
+		
 
 		$txt = Encryption::decryptFile($filename);
-		/*if ($txt){
-			$domain = $this->createUrl("content/file",array("id"=>$id));
-			$txt = preg_replace("/(href|src)\=\"([^(http)])(\/)?/", "$1=\"$domain$2", $txt);
-		}*/
+
+		
+		if(isset($_SERVER['HTTP_RANGE'])) {
+			$file = tempnam("/tmp", "download");
+
+
+	    	$fp = @fopen($file, 'wrb');
+	    
+	    	fwrite($fp, $txt);
+	    	fclose($fp);
+
+	    	//echo $file;die;
+
+	    	Yii::app()->request->xSendFile($file,array('terminate'=>false,'mimeType'=>$content_type));
+			
+			return;
+		}
+
+		
+		header('HTTP/1.0 200 OK');
+
+		header("Content-type: $content_type");
+
+		
+
+		
+		header("Pragma: public");
+		header("Cache-Control: maxage=".$expires);
+		header('Expires: ' . gmdate('D, d M Y H:i:s', time()+$expires) . ' GMT');
+		header('Connection: close');
+
 		echo $txt;
 	}
 
