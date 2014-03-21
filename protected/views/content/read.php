@@ -30,7 +30,7 @@ $this->pageTitle=Yii::app()->name;
 	<!-- PAGE -->
 	<section id="page">
 				<!-- SIDEBAR -->
-				<div id="sidebar" class="sidebar sidebar-fixed">
+				<div id="sidebar" class="sidebar sidebar-fixed" style="margin-top:51px;">
 					<div class="sidebar-menu nav-collapse">
 						
 						
