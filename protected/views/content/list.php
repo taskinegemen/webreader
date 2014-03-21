@@ -72,6 +72,23 @@ $this->pageTitle=Yii::app()->name;
     	return type;
     }
 
+    function d2h(d) {
+        return d.toString(16);
+    }
+
+    function stringToHex (tmp) {
+        var str = '',
+            i = 0,
+            tmp_len = tmp.length,
+            c;
+     
+        for (; i < tmp_len; i += 1) {
+            c = tmp.charCodeAt(i);
+            str = d2h(c) + ' ';
+        }
+        return str%8;
+    }
+
         var kerbela=$(window).kerbelainit();
         kerbela.setRequestedHttpService('catalog');
         var ticket=kerbela.getTicket();
@@ -101,6 +118,22 @@ $this->pageTitle=Yii::app()->name;
 		        	}
 		        });
 
+		        var bookthumbnail = "";
+                var image_data = "";
+                $.ajax({
+                      url: "http://catalog.lindneo.com/api/getThumbnail/id/"+book.contentId
+                    }).done(function(result1) {
+                      console.log(result1);
+                      bookthumbnail = result1;
+                    });
+                if(bookthumbnail){
+                    image_data = "http://catalog.lindneo.com/api/getThumbnail/id/"+book.contentId;
+                }
+                else{
+                    var imageid = stringToHex(book.contentId);
+                    image_data = "<?php echo Yii::app()->request->baseUrl; ?>/css/covers/cover"+imageid+".jpg";
+                }
+
 				var card='<div class="';
         if (book.contentIsForSale=='Free') {
           card+='category_2';
@@ -111,7 +144,7 @@ $this->pageTitle=Yii::app()->name;
         <div class="reader_book_card">\
 					<div class="reader_book_card_book_cover">\
 					<a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+book.contentId+'">\
-					<img src="http://catalog.lindneo.com/api/getThumbnail?id='+book.contentId+'" style="width:198px; height:264px" /></div></a>\
+					<img src="'+image_data+'" style="width:198px; height:264px" /></div></a>\
 					<div class="reader_book_card_info_container">\
 						<div class="reader_market_book_name tip" data-original-title="'+book.contentTitle+'">'+book.contentTitle+'</div>\
 						<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\
