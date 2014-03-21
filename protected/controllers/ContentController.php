@@ -136,7 +136,7 @@ class ContentController extends Controller
 
 
 	public function actionGetContent($id,$force=false,$host="cloud.lindneo.com",$port=2222){
-		
+		 
 		$getfile = "./tmp/$id";
 		$command =  "python bin/client_tls.py '{\"host\":\"$host\",\"port\":$port}' GetFileChuncked $id $getfile";
 		$outpufolder="contents/".basename($id);
@@ -154,15 +154,17 @@ class ContentController extends Controller
 
 
 		if (!file_exists($getfile)) {
-			echo "Dosya Protokolu Hatalı 5sn Sonra tekrar deneyiniz!";
+			header( "refresh:5;url=".Yii::app()->request->requestUri ); 
+			echo "Dosya Protokolu Hatali 5sn Sonra otomatik olarak tekrar deneyeceksiniz!";
+			die;
 		}
 
 		$this->decryptFileAndExtractToFolder($getfile,$outpufolder);
 		
 
 		if (!file_exists($METAFOLDER) and !is_dir($METAFOLDER)) {
-    	
-			echo "Dosya Protokolu Hatalı 5sn Sonra tekrar deneyiniz!";
+    		header( "refresh:5;url=".Yii::app()->request->requestUri ); 
+			echo "Dosya Protokolu Hatali 5sn Sonra otomatik olarak tekrar deneyeceksiniz!";
 			functions::delTree($outpufolder);
 
 			die;

@@ -14,18 +14,18 @@ window.SlideController = (function( $ ) {
 
 	var reader_slider;
 
-	var controller = function(action , readerData, params,reader_slider ){
+	var controller = function(action , readerData, params ){
         switch(action){
     					case "prev-page":
-    						reader_slider.goToPrevSlide();
+    						this.reader_slider.goToPrevSlide();
     						break;
     					case "next-page":
-    						reader_slider.goToNextSlide();
+    						this.reader_slider.goToNextSlide();
     						break;
     					case "page-anchor":
     						var pageNumber = readerData;
-    						if (pageNumber > -1 && pageNumber < reader_slider.getSlideCount())
-    							reader_slider.goToSlide(pageNumber);
+    						if (pageNumber > -1 && pageNumber < this.reader_slider.getSlideCount())
+    							this.reader_slider.goToSlide(pageNumber);
     						break;
     
     				}
@@ -41,6 +41,9 @@ window.SlideController = (function( $ ) {
 				  };
 
 	var onslide = function($slideElement, oldIndex, newIndex){ 
+
+					$("#current_page_num_spinner").val(newIndex+1);
+
 
 					var kapanacaklar = [oldIndex-2,oldIndex-1,oldIndex,oldIndex+1,oldIndex+2];
 					var acilacaklar =  [newIndex-2,newIndex-1,newIndex,newIndex+1,newIndex+2];

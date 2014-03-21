@@ -37,9 +37,97 @@ $this->pageTitle=Yii::app()->name;
                         
                         
                         
-                        <div class="book_info_container">
+                <div class="book_info_container">
 				<div class="reader_book_cover_thumbnail">COVER</div>
                 <ul class="reader_book_info">
+                
+                
+                <li class="reader_book_info_detail" > Sayfa:<input type='number' min="1" max="5" style='width:50px;text-align:right;color:#cdd0d8;border: transparent;font-weight:bold;' id="current_page_num_spinner" size=4 >/<span content-meta='book-page-count'  class="reader_book_info_detail_data">0</span>  </li>
+                <script type="text/javascript">
+            	$(document).ready(function() {
+					$("#current_page_num_spinner")
+					.keydown(function(event) {
+						
+						var current= $(this).val();
+						var max = $("[content-meta='book-page-count']").text();
+						
+						if( current < 1 ){
+							$(this).val(1);
+							event.preventDefault();	
+						}
+
+						if( parseInt(current) > parseInt(max) ){
+
+							$(this).val(max);
+							event.preventDefault();	
+						}
+
+						// Allow only backspace and delete
+
+						if ( event.keyCode == 46 || event.keyCode == 8 ) {
+							
+							// let it happen, don't do anything
+						}
+						else if(event.keyCode == 13 ){
+							window.SlideController.controller('page-anchor',$(this).val()-1);
+						}
+						else {
+							// Ensure that it is a number and stop the keypress
+							if (event.keyCode < 48 || event.keyCode > 57 ) {
+								event.preventDefault();	
+							}	
+						}
+					}).keypress(function(e){
+						var current= $(this).val();
+						var max = $("[content-meta='book-page-count']").text();
+						
+						if( current<1 ){
+							$(this).val(1);
+							event.preventDefault();	
+						}
+						
+						if( parseInt(current) > parseInt(max) ){
+							$(this).val(max);
+							event.preventDefault();	
+						}
+
+					}).focus(function() {
+					   $(this).select();
+					   $(this).attr('max', $("[content-meta='book-page-count']").text());
+					}).on('input',function(){
+						var current= $(this).val();
+						var max = $("[content-meta='book-page-count']").text();
+						
+						if( current < 1 ){
+							$(this).val(1);
+							window.SlideController.controller('page-anchor',$(this).val()-1);
+						}
+
+						if( parseInt(current) > parseInt(max) ){
+
+							$(this).val(max);
+							window.SlideController.controller('page-anchor',$(this).val()-1);
+						}
+
+
+
+					}).change(function() {
+						var current= $(this).val();
+						var max = $("[content-meta='book-page-count']").text();
+						console.log(max);
+						if( current<1 ){
+							$(this).val(1);
+						}
+						if( current > max ){
+							$(this).val(max);
+						}
+
+					    window.SlideController.controller('page-anchor',$(this).val()-1);
+					});
+				});
+            	</script>
+                <div class="vertical-divider"></div>
+                <div class="clearfix"></div>
                 
                 <li class="reader_book_info_detail" >Kitabın Adı: <span  content-meta='book-title'  class="reader_book_info_detail_data">Örnek Kitap</span></li>
                 
@@ -56,10 +144,7 @@ $this->pageTitle=Yii::app()->name;
                 <div class="vertical-divider"></div>
                 <div class="clearfix"></div>
                 
-                <li class="reader_book_info_detail">Sayfa Sayısı: <span content-meta='book-page-count'  class="reader_book_info_detail_data">200</span></li>
-
-                <div class="vertical-divider"></div>
-                <div class="clearfix"></div>
+      
                 
                 <li class="reader_book_info_detail">Yayınlanma Tarihi: <span content-meta='book-publish-date'  class="reader_book_info_detail_data">01.05.2014</span></li>
 
