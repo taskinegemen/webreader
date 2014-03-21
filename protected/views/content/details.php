@@ -11,6 +11,24 @@ $this->pageTitle=Yii::app()->name;
 
 <script>
 		$( document ).ready(function() { 
+
+        function d2h(d) {
+            return d.toString(16);
+        }
+
+        function stringToHex (tmp) {
+            var str = '',
+                i = 0,
+                tmp_len = tmp.length,
+                c;
+         
+            for (; i < tmp_len; i += 1) {
+                c = tmp.charCodeAt(i);
+                str = d2h(c) + ' ';
+            }
+            return str%8;
+        }
+
             var kerbela = $(window).kerbelainit();
             kerbela.setRequestedHttpService('catalog');
             console.log(kerbela.getRequestedHttpService());
@@ -57,7 +75,24 @@ $this->pageTitle=Yii::app()->name;
             $('.book_info_the_name_of_the_writer').html(book_data.result.contentAuthor);
             $('.contentExplanation').html(book_data.result.contentExplanation);
 
-            $('.book_info_book_cover').css('background-image', 'url(http://catalog.lindneo.com/api/getThumbnail/id/<?php echo $id; ?>)');
+            var bookthumbnail = "";
+            var image_data = "";
+            $.ajax({
+                  url: "http://catalog.lindneo.com/api/getThumbnail/id/<?php echo $id; ?>"
+                }).done(function(result1) {
+                  console.log(result1);
+                  bookthumbnail = result1;
+                });
+            if(bookthumbnail){
+                image_data = "http://catalog.lindneo.com/api/getThumbnail/id/<?php echo $id; ?>";
+            }
+            else{
+                var imageid = stringToHex("<?php echo $id; ?>");
+                image_data = "<?php echo Yii::app()->request->baseUrl; ?>/css/covers/cover"+imageid+".jpg";
+            }
+            console.log(image_data);
+
+            $('.book_info_book_cover').css('background-image', 'url('+image_data+')');
             console.log(book_data.result.contentPrice);
             if(book_data.result.contentIsForSale == 'Free'){
                 $('#odeme_bilgileri').hide();
