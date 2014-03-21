@@ -5,7 +5,8 @@
 
 <script type="text/javascript">
 	$( document ).ready(function() { 
-
+if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
+if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass('margin-left-50');
         function d2h(d) {
             return d.toString(16);
         }
@@ -96,7 +97,7 @@
                                             <div class="nobook_smiley"></div>\
                                             <p class="nobook_text">Kütüphanenizde hiç kitabınız bulunmamaktadır.</p>\
                                             <p class="nobook_text">Mağaza’dan kitap edinin.</p>\
-                                            <a href="/erkan/index.php/content/list"><button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons">Mağazaya Git</button></a>\
+                                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/list"><button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons">Mağazaya Git</button></a>\
                                             </div>');
                 }
               });
@@ -116,26 +117,19 @@
 	<div id="main-content">
 		<div class="container">
 			<div class="row">
+
+				<!-- <div class="reader_library_page_row clearfix" id="favorite_books">
+
+            <div style="display:none;">
 				<div class="reader_library_page_row clearfix" id="favorite_books">
+
 					<div class="reader_book_category">
 						Favorilerim
 					</div>
                     
                 <div class="clearfix"></div>    
                     
-        <!-- READER BOOK CARD -->
-        <div class="reader_book_card">
-        <div class="reader_book_card_book_cover solid_brand_color"></div>
-        <div class="reader_book_card_info_container">
-        <div class="reader_market_book_name">The Book Name is here</div>
-        <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>
-        <div class="clearfix"></div>
-        <div class="reader_book_card_writer_name">The Name of The Writer</div>
-        <div class="reader_book_fav"><i class="fa fa-star"></i></div>
-        </div>
-        <!-- /reader_book_card_info_container -->
-        </div>
-        <!-- END OF READER BOOK CARD -->
+       
         
         
         
@@ -147,15 +141,15 @@
                             
                     
         
-				</div>
+				</div> -->
         <!-- END OF reader_library_page_row -->
                 
+                <!-- </div>
                 
-                
-                
+                 -->
 				<div class="reader_library_page_row clearfix" id="books">
 					<div class="reader_book_category">
-						Diğerleri
+						Kitaplarım
 					</div>
 
                     <div class="clearfix"></div>

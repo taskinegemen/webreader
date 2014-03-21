@@ -115,15 +115,24 @@ window.SlideController = (function( $ ) {
 		this.reader_slider=reader_slider;
 		var that = this;
 		$(document).ready(function(){
-			console.log($(this));
+			
 			$("[reader-action]")
 				.parent()
 				.on('click',
 					function(e){
+						
+						var thischild= $(this).children("[reader-action]");
 						var action = $(thischild).attr("reader-action");
 						var readerData = $(thischild).attr("reader-data");
-						var thischild= $(this).children("[reader-action]");
-						that.controller (action,readerData,thischild);
+						window.SlideController.controller (action,readerData);
+				});
+			$("[reader-action]")
+				.on('click',
+					function(e){
+						var action = $(this).attr("reader-action");
+						var readerData = $(this).attr("reader-data");
+						
+						window.SlideController.controller (action,readerData);
 				});
 
 		});
@@ -145,19 +154,17 @@ window.SlideController = (function( $ ) {
 	};
 
 	var bindKeys = function () {
-		var that=this;
-		
 		$(document).keydown(function(e){
 				
 				//left key
 			    if (e.keyCode == 37) { 
-			       that.controller ("prev-page");
+			       this.controller ("prev-page");
 			       return false;
 			    }
 
 			    //right key
 			    if (e.keyCode == 39) { 
-			       that.controller ("next-page");
+			       this.controller ("next-page");
 			       return false;
 			    }
 		});

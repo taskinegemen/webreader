@@ -98,7 +98,7 @@ $this->pageTitle=Yii::app()->name;
         $.ajax({
           type: "POST",
           url: "http://catalog.lindneo.com/api/list",
-          data: { attributes: '{}', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
+          data: { attributes: '{"organisationId":["seviye"]}', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
         })
           .done(function( result ) {
           	var data = JSON.parse(result);
@@ -163,7 +163,8 @@ $this->pageTitle=Yii::app()->name;
 				$('#filter-items').append(card);
             });
           });
-      
+      if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
+if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass('margin-left-50');
 </script>
 
 
