@@ -115,6 +115,7 @@ class ContentController extends Controller
 		
 
 		print_r($selected_host);
+
 		if (!$selected_host){
 			echo "No";
 			$error=__('Bu içerik için hiç bir yer sağlayıcı bulunamadı');
@@ -134,32 +135,45 @@ class ContentController extends Controller
 	}
 
 
-	public function actionGetContent($id,$host="cloud.lindneo.com",$port=2222){
+	public function actionGetContent($id,$force=false,$host="cloud.lindneo.com",$port=2222){
 		
 		$getfile = "./tmp/$id";
 		$command =  "python bin/client_tls.py '{\"host\":\"$host\",\"port\":$port}' GetFileChuncked $id $getfile";
+		$outpufolder="contents/".basename($id);
+		$METAFOLDER= $outpufolder."/META-INF";
+
+		if(!$force)
+			if (file_exists($METAFOLDER) and is_dir($METAFOLDER) ) {
+				$this->redirect(array("content/read", 'id'=>$id)); 
+				die;
+			}
 		
 		exec($command,$output);
-		print_r($output);
-		 
-		$this->decryptFileAndExtractToFolder($getfile);
-		
-
-
-
-
-
-
-
-
 
 		
+
+
+		if (!file_exists($getfile)) {
+			echo "Dosya Protokolu Hatalı 5sn Sonra tekrar deneyiniz!";
+		}
+
+		$this->decryptFileAndExtractToFolder($getfile,$outpufolder);
+		
+
+		if (!file_exists($METAFOLDER) and !is_dir($METAFOLDER)) {
+    	
+			echo "Dosya Protokolu Hatalı 5sn Sonra tekrar deneyiniz!";
+			functions::delTree($outpufolder);
+
+			die;
+		}
+
 		$this->redirect(array("content/read", 'id'=>$id)); 
-
 
 	}
 
     public function decryptFileAndExtractToFolder($filename,$outpufolder=null){		
+    	
     	if (!$outpufolder){
 			$outpufolder="contents/".basename($filename);
     	}
@@ -173,9 +187,9 @@ class ContentController extends Controller
 		} else {
 			
 		}
-
-		unlink($filename);
-
+		if (file_exists($filename)) {
+			unlink($filename);
+		}
 	}
 
 	public function actionFile($id,$filepath=null){
@@ -219,9 +233,9 @@ class ContentController extends Controller
 
 
 		$dir="contents/$id";
-
-		if (!file_exists($dir) and !is_dir($dir)) {
-    		$this->redirect(array("content/import", 'id'=>$id));
+		$METAFOLDER= $dir."/META-INF";
+		if (!file_exists($METAFOLDER) and !is_dir($METAFOLDER)) {
+    		$this->redirect(array("content/getcontent", 'id'=>$id));
 		} 
 
 		functions::event('header',  NULL, function($header) {
