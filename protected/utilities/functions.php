@@ -300,6 +300,9 @@ class functions
             case "mpe" :
                 return "video/mpeg";
 
+            case "mp4" :
+                return "video/mp4";
+
             case "mp3" :
                 return "audio/mpeg3";
 
@@ -332,4 +335,5 @@ class functions
             return "application/" . trim($fileSuffix[0], ".");
         }
     }
+
 }

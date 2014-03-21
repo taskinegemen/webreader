@@ -212,7 +212,7 @@ $this->pageTitle=Yii::app()->name;
                 });
             });
 
-
+if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
 	});
 	</script>
 	<!-- /JAVASCRIPTS -->
