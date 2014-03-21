@@ -32,6 +32,19 @@ class functions
                     $('body').append(form);
                     $(form).submit();
                 });
+
+                $('.profilLink').click(function(){
+                    var form='<form method="post" action="<?php echo $var->createUrl("site/myprofile"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
+                    $('body').append(form);
+                    $(form).submit();
+                });
+
+                $('.libraryLink').click(function(){
+                    var form='<form method="post" action="<?php echo $var->createUrl("site/library"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
+                    $('body').append(form);
+                    $(form).submit();
+                });
+
                 
             });
         </script>
