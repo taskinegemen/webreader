@@ -56,7 +56,7 @@ window.pages = [];
 		
 		var offset = $('#main-content').offset();
 
-		var height= $(window).height() - offset.top +25;
+		var height= $(window).height() - offset.top +25-125;
 		var width= $(window).width() - offset.left;
 
 
