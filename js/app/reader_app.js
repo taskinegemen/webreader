@@ -42,8 +42,8 @@ jQuery(document).ready(function() {
 			PageZoomed=false;
 		} else {
 
-			window.oversize = $("<div style='position:fixed;top:0;bottom:0;left:0;right:0;background:#000;'></div>");
-			window.oversize.appendTo(document.body);
+			window.oversize = $("<div style='position:fixed;top:0;bottom:0;left:0;right:0;background:#000;z-index:99;'></div>");
+			window.oversize.appendTo('.bx-viewport');
 			var frameWrap = $("<div style='width: 10000px;height: 10000px'></div>");
 			frameWrap.appendTo(window.oversize);
 
