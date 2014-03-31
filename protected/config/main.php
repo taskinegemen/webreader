@@ -22,7 +22,9 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		
+		'user' => array(
+			'allowAutoLogin'=>true,
+		),
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'wb14@LnDnwbr',
