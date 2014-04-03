@@ -1,1 +1,1135 @@
 
+2014/03/22 15:02:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/covers/coverNaN.jpg".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/covers/cove...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/covers/coverNaN.jpg
+HTTP_REFERER=http://reader.lindneo.com/erkan/index.php/content/list
+---
+2014/03/22 15:02:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/covers/coverNaN.jpg".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/covers/cove...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/covers/coverNaN.jpg
+HTTP_REFERER=http://reader.lindneo.com/erkan/index.php/content/list
+---
+2014/03/22 15:02:59 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/BdvR3pG02RTmWWMydeqUqD9XfI5ROuPSTywzdvGhM58Y.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/BdvR3pG02RTmWWMydeqUqD9XfI5ROuPSTywzdvGhM58Y.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:02:59 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/titlepage.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/titlepage.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:02:59 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/9PEa2D8migHMxy05imSAUkyruUWQLqzAsxT1WY6rpFZm.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/9PEa2D8migHMxy05imSAUkyruUWQLqzAsxT1WY6rpFZm.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:02:59 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/LY4P49UfB00xt4GKlRJyq0bVrRyWkstNGhsua4xf7S4M.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/LY4P49UfB00xt4GKlRJyq0bVrRyWkstNGhsua4xf7S4M.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:02:59 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/2YMVhTFs0efpq44YvWNyHw9GkKJ6TuSRmAmWCRJX06RJ.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/2YMVhTFs0efpq44YvWNyHw9GkKJ6TuSRmAmWCRJX06RJ.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:02:59 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/XKXZt4cwYTltR73RyCzsVhvQ3OOqlx8gP6BRiv3A1s5O.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/XKXZt4cwYTltR73RyCzsVhvQ3OOqlx8gP6BRiv3A1s5O.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:02:59 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/SUdMaCkjitTeejU0IOou7TBvZjjwQBAX51SyrUDuZ112.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/SUdMaCkjitTeejU0IOou7TBvZjjwQBAX51SyrUDuZ112.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:02:59 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/y9bE4gh6eUB3J5FFqXVCymbTFwofxMEJqQQrqIZic6Ks.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/y9bE4gh6eUB3J5FFqXVCymbTFwofxMEJqQQrqIZic6Ks.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:02:59 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/yQ99c1QapggFGsDHTVOokNkWIbiQJQt1frdsKidjaxAt.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/yQ99c1QapggFGsDHTVOokNkWIbiQJQt1frdsKidjaxAt.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:02:59 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/XFn3UEtZNkVs2OqPzTui2HPanTwowzhJOFnxKMWG3xbu.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/XFn3UEtZNkVs2OqPzTui2HPanTwowzhJOFnxKMWG3xbu.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:01 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/YAHVN2JxH8XX69wDNV1XtPlTOL233441Cf7G6BeaecuN.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/YAHVN2JxH8XX69wDNV1XtPlTOL233441Cf7G6BeaecuN.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:01 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/R5FaSv4chxtgJoI6OqbaWmJsbGibwwwNXYXUwd8OKSX8.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/R5FaSv4chxtgJoI6OqbaWmJsbGibwwwNXYXUwd8OKSX8.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:01 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/NwW5kqGKp0ZC2Ss7QSqDGMMC3Bg1Kr7gd7aFZPbW13qd.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/NwW5kqGKp0ZC2Ss7QSqDGMMC3Bg1Kr7gd7aFZPbW13qd.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:01 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/UXCuV4odZxh1LbmE67dlgeE4apkiWh4PCMQu2vuxH9PJ.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/UXCuV4odZxh1LbmE67dlgeE4apkiWh4PCMQu2vuxH9PJ.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:01 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/VNuiiKfkOYvGOIY1ojSWt3mtwL268w3bzcBTRY6P4ArG.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/VNuiiKfkOYvGOIY1ojSWt3mtwL268w3bzcBTRY6P4ArG.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:01 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/EkbQ0Omj6Xg5TuqrmtJD8bKBItdS6E1BjKRD4PtQ0sXZ.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/EkbQ0Omj6Xg5TuqrmtJD8bKBItdS6E1BjKRD4PtQ0sXZ.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:01 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/E0IFsxWkt0DqPwtekZBexTUR9vIABVFuHkcsNKe86Tqf.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/E0IFsxWkt0DqPwtekZBexTUR9vIABVFuHkcsNKe86Tqf.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:01 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/LKN6NfXO3g15Gk9PNLBcUb2PquJsBNMQPSzuruAE4bmt.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/LKN6NfXO3g15Gk9PNLBcUb2PquJsBNMQPSzuruAE4bmt.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:01 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/CUnirdnFPHta6IijcQMQgjMK5pnW2xdJTeigU000j7mV.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/CUnirdnFPHta6IijcQMQgjMK5pnW2xdJTeigU000j7mV.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:01 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/VQghI46Ox81jx9Cq9fWZRDcoVqdZhe99n8lHC51fYgNk.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/VQghI46Ox81jx9Cq9fWZRDcoVqdZhe99n8lHC51fYgNk.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:01 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/uxmVCj3F7kklW9UAG3zNCfIr5ZmIiyJjx7enP4jGwsfS.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/uxmVCj3F7kklW9UAG3zNCfIr5ZmIiyJjx7enP4jGwsfS.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:01 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/J7AChPPciwlJlzqOecCSYKTjxYuKPKF6kHkZgktX7ODZ.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/J7AChPPciwlJlzqOecCSYKTjxYuKPKF6kHkZgktX7ODZ.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:01 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/wBjld3bSsB6zSzMMp1GDJm8pvPGABaTfB5014f3DQuF2.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/wBjld3bSsB6zSzMMp1GDJm8pvPGABaTfB5014f3DQuF2.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:01 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/q7COD4U5iUaU37ZeItD6xu2fL8wiNqIlclBYLnG3AQMc.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/q7COD4U5iUaU37ZeItD6xu2fL8wiNqIlclBYLnG3AQMc.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:01 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/q0ufAAyuatYRwJZYKlqoFco2JOiHcuBS398eadWRyk1z.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/q0ufAAyuatYRwJZYKlqoFco2JOiHcuBS398eadWRyk1z.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:01 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/f7kh7Vgwktj4LbjrceoBfwEQ56a8wZpfNxuYqiCWuDzi.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/f7kh7Vgwktj4LbjrceoBfwEQ56a8wZpfNxuYqiCWuDzi.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/1fGdYAwpIghFrmBcXupojNvfkHdYZWILuPpSI8nhiOZM.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/1fGdYAwpIghFrmBcXupojNvfkHdYZWILuPpSI8nhiOZM.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/ADMzCFZNaw3FXMZCW5YHn0pU2y77FDWAtM3bJW1MAaIO.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/ADMzCFZNaw3FXMZCW5YHn0pU2y77FDWAtM3bJW1MAaIO.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/yRX1DkovClReuAMNgiqLy90LBXqdh8ABoC6unVTtPGCg.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/yRX1DkovClReuAMNgiqLy90LBXqdh8ABoC6unVTtPGCg.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/sPFoXEyHUf6cU5xbvv2z8ftCiXBSCQcvZYXmiUlxuSkC.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/sPFoXEyHUf6cU5xbvv2z8ftCiXBSCQcvZYXmiUlxuSkC.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/M1Hh0SuGMiyTCU02wKHoD1t2zfTAMabqD1H8ZYtr3It8.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/M1Hh0SuGMiyTCU02wKHoD1t2zfTAMabqD1H8ZYtr3It8.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/f0e5CYYZ5u5EphfUWnfeFfKmt3YQjPTq61y5TlarRZdy.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/f0e5CYYZ5u5EphfUWnfeFfKmt3YQjPTq61y5TlarRZdy.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/PUvXkXuN93477PAm8rIRk13KEJqShkccuY7aBCc8uO6X.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/PUvXkXuN93477PAm8rIRk13KEJqShkccuY7aBCc8uO6X.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/0uHyOIvPZQS2EhP5Pn9INXpRnVFYKs21Ow1KEv602pWs.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/0uHyOIvPZQS2EhP5Pn9INXpRnVFYKs21Ow1KEv602pWs.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/znoA1uRDjBQfEc4ZzWdLVdkdigaZdQBot8Kln8TtwDGY.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/znoA1uRDjBQfEc4ZzWdLVdkdigaZdQBot8Kln8TtwDGY.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/R40ScrVIztTteSbl6YvZl6myETT6U4kXHBXevTihPZix.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/R40ScrVIztTteSbl6YvZl6myETT6U4kXHBXevTihPZix.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/uB7oHwvvMxaRz0ZlriYJcDHdVkMgiTZpwmddVhGF1ZqO.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/uB7oHwvvMxaRz0ZlriYJcDHdVkMgiTZpwmddVhGF1ZqO.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/BfZqoan9itfOWe9hNMGUGZ7acUshNx5tr0kh9gzBrDqj.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/BfZqoan9itfOWe9hNMGUGZ7acUshNx5tr0kh9gzBrDqj.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/rQrz7CXeSUU5Jvk3jdlp5hRh25exXmMoMINeFuFrjgUm.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/rQrz7CXeSUU5Jvk3jdlp5hRh25exXmMoMINeFuFrjgUm.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/XLm1SOjuMg5JQCMHJ4mLDABc2VNq9vM0Vp4PVxHnHRwm.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/XLm1SOjuMg5JQCMHJ4mLDABc2VNq9vM0Vp4PVxHnHRwm.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/titlepage.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/titlepage.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/RVG8QqkQrt9hJAgcKXohb0oSErdnmRWMpQbAOqU1yyqe.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/RVG8QqkQrt9hJAgcKXohb0oSErdnmRWMpQbAOqU1yyqe.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/9PEa2D8migHMxy05imSAUkyruUWQLqzAsxT1WY6rpFZm.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/9PEa2D8migHMxy05imSAUkyruUWQLqzAsxT1WY6rpFZm.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/2YMVhTFs0efpq44YvWNyHw9GkKJ6TuSRmAmWCRJX06RJ.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/2YMVhTFs0efpq44YvWNyHw9GkKJ6TuSRmAmWCRJX06RJ.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/LY4P49UfB00xt4GKlRJyq0bVrRyWkstNGhsua4xf7S4M.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/LY4P49UfB00xt4GKlRJyq0bVrRyWkstNGhsua4xf7S4M.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:02 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/BdvR3pG02RTmWWMydeqUqD9XfI5ROuPSTywzdvGhM58Y.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/BdvR3pG02RTmWWMydeqUqD9XfI5ROuPSTywzdvGhM58Y.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:03 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/y9bE4gh6eUB3J5FFqXVCymbTFwofxMEJqQQrqIZic6Ks.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/y9bE4gh6eUB3J5FFqXVCymbTFwofxMEJqQQrqIZic6Ks.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:03 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/XKXZt4cwYTltR73RyCzsVhvQ3OOqlx8gP6BRiv3A1s5O.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/XKXZt4cwYTltR73RyCzsVhvQ3OOqlx8gP6BRiv3A1s5O.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:03 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/XFn3UEtZNkVs2OqPzTui2HPanTwowzhJOFnxKMWG3xbu.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/XFn3UEtZNkVs2OqPzTui2HPanTwowzhJOFnxKMWG3xbu.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:03 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/yQ99c1QapggFGsDHTVOokNkWIbiQJQt1frdsKidjaxAt.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/yQ99c1QapggFGsDHTVOokNkWIbiQJQt1frdsKidjaxAt.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/22 15:03:03 [error] [php] file_get_contents(contents/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/SUdMaCkjitTeejU0IOou7TBvZjjwQBAX51SyrUDuZ112.jpg): failed to open stream: No such file or directory (/var/www/reader/erkan/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/erkan/index.php(15): CWebApplication->run()
+REQUEST_URI=/erkan/index.php/content/file/p2o2u8QovMgd5rpMfjad3ygKJxQPIlHQpkXOVy88G0no/SUdMaCkjitTeejU0IOou7TBvZjjwQBAX51SyrUDuZ112.jpg
+in /var/www/reader/erkan/protected/utilities/Encryption.php (53)
+in /var/www/reader/erkan/protected/controllers/ContentController.php (216)
+in /var/www/reader/erkan/index.php (15)
+2014/03/25 12:35:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/03/25 13:29:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/content/list
+---
+2014/03/25 13:45:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/content/list
+---
+2014/03/25 13:53:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/content/list
+---
+2014/03/25 14:11:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/content/list
+---
+2014/03/25 14:13:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/content/list
+---
+2014/03/25 14:15:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/content/list
+---
+2014/03/26 15:47:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/content/list
+---
+2014/03/27 12:22:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/content/details
+---
+2014/03/27 13:08:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/content/list
+---
+2014/03/27 13:09:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/03/27 13:14:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/content/list
+---
+2014/03/27 13:14:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/03/27 13:14:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/content/details
+---
+2014/03/27 13:14:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/myprofile
+---
+2014/03/27 13:14:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/content/list
+---
+2014/03/27 13:14:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/03/27 13:15:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/library
+---
+2014/03/27 13:15:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/index.php/content/list
+---
+2014/03/27 13:15:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/covers/coverNaN.jpg".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/covers/cove...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/covers/coverNaN.jpg
+HTTP_REFERER=http://reader.lindneo.com/erkan/index.php/content/list
+---
+2014/03/27 13:22:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/covers/coverNaN.jpg".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/covers/cove...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/covers/coverNaN.jpg
+HTTP_REFERER=http://reader.lindneo.com/erkan/index.php/content/list
+---
+2014/03/27 15:11:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/myprofile
+---
+2014/03/28 13:15:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/covers/coverNaN.jpg".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/covers/cove...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/covers/coverNaN.jpg
+HTTP_REFERER=http://reader.lindneo.com/erkan/index.php/content/list
+---
+2014/03/28 13:15:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/covers/coverNaN.jpg".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/covers/cove...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/covers/coverNaN.jpg
+HTTP_REFERER=http://reader.lindneo.com/erkan/index.php/content/list
+---
+2014/03/28 13:16:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/index.php/content/list
+---
+2014/03/28 13:29:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/covers/coverNaN.jpg".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/covers/cove...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/covers/coverNaN.jpg
+HTTP_REFERER=http://reader.lindneo.com/erkan/index.php/content/list
+---
+2014/03/28 13:29:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/index.php/content/list
+---
+2014/03/28 13:34:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/covers/coverNaN.jpg".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/covers/cove...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/covers/coverNaN.jpg
+HTTP_REFERER=http://reader.lindneo.com/erkan/index.php/content/list
+---
+2014/03/28 13:36:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/covers/coverNaN.jpg".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/covers/cove...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/covers/coverNaN.jpg
+HTTP_REFERER=http://reader.lindneo.com/erkan/index.php/content/list
+---
+2014/03/28 13:36:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/covers/coverNaN.jpg".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/covers/cove...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/covers/coverNaN.jpg
+HTTP_REFERER=http://reader.lindneo.com/erkan/index.php/content/list
+---
+2014/03/28 13:45:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/covers/coverNaN.jpg".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/covers/cove...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/covers/coverNaN.jpg
+HTTP_REFERER=http://reader.lindneo.com/erkan/index.php/content/list
+---
+2014/03/28 14:55:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/covers/coverNaN.jpg".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/covers/cove...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebAp2014/03/29 13:28:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/covers/coverNaN.jpg".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/covers/cove...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/covers/coverNaN.jpg
+HTTP_REFERER=http://reader.lindneo.com/erkan/index.php/content/list
+---
+2014/04/03 11:01:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
