@@ -301,7 +301,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 
 
 </div>
-
+<!-- END OF LOGIN_PAGE_CONTAINER -->
 
 
 		
