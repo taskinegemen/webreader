@@ -14,17 +14,23 @@ $this->pageTitle=Yii::app()->name . ' - Login';
   <script type="text/javascript">
 	$(document).ready(function(){
 		$('#login-form').submit(function(e) {
-	  			login();
+	  			$.blockUI({ message: '<h1>Please wait just a little...</h1>' });
+		  		setTimeout($.unblockUI, 10000); 
+		  		window.setTimeout(function(){login();},100);
 	  			e.preventDefault();
 	  			return false;
 	  		});
+		
+		$(document).on("click","#loginButton",function(e){
+	  		$.blockUI({ message: '<h1>Please wait just a little...</h1>' });
+	  		setTimeout($.unblockUI, 10000); 
+	  		window.setTimeout(function(){login();},100);
+		});
 	});
-  	$(document).on("click","#loginButton",function(e){
-  		$.blockUI({ message: '<h1>Please wait just a little...</h1>' });
-  		setTimeout($.unblockUI, 10000); 
-  		window.setTimeout(function(){login();},100);
-	});
+  	
   	function login(){
+  		
+
   		var username=$('#LoginForm_username').val();
 		var password=$('#LoginForm_password').val();
 		//console.log(password);																																		
@@ -116,11 +122,12 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 								    </div>
 
 								  <div class="form-group">
-									<a href="#" class="btn btn-primary login_submit brand_color_for_buttons" id="loginButton"><?php _e("Giriş Yap"); ?></a>									
+									 <input type='submit' class="btn  login_submit brand_color_for_buttons" id="loginButton" value='<?php _e("Giriş Yap"); ?>' />									
 								  </div>
+
 								</form>
 								<!-- SOCIAL LOGIN -->
-									<!-- <div class="divide-20"></div>
+									<div class="divide-20"></div>
                                     <div class="register_link">
 										Henüz bir hesabınız yok mu? <a href="#" onclick="swapScreen('register_bg');return false;">Kayıt olun!</a>
 									</div>
@@ -138,7 +145,8 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 										<a class="btn btn-danger btn-lg">
 											<i class="fa fa-google-plus"></i>
 										</a>
-									</div> -->
+
+									</div>
 									<!-- /SOCIAL LOGIN -->
 									<!-- <div class="login-helpers">
 										<a href="#" onclick="swapScreen('forgot_bg');return false;">Forgot Password?</a> <br>

@@ -134,9 +134,18 @@ class ContentController extends Controller
 		
 	}
 
-
 	public function actionGetContent($id,$force=false,$host="cloud.lindneo.com",$port=2222){
-		 
+		$ch = curl_init( 'catalog.lindneo.com/api/getHosts/'.$id );
+		curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
+		curl_setopt( $ch, CURLOPT_HEADER, 0);
+		curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+		$response = curl_exec( $ch );
+		$hostsOb=json_decode($response,true);
+		$hosts=$hostsOb['result'];
+		shuffle($hosts);
+		$host=$hosts[0]['address'];
+		$port=$hosts[0]['port'];
+
 		$getfile = "./tmp/$id";
 		$command =  "python bin/client_tls.py '{\"host\":\"$host\",\"port\":$port}' GetFileChuncked $id $getfile";
 		$outpufolder="contents/".basename($id);
