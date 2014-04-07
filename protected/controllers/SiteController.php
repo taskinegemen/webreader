@@ -136,6 +136,7 @@ class SiteController extends Controller
 	public function actionLogin()
 	{
 		$model=new LoginForm;
+		$SignUp=new SignUpForm;
 
 		// if it is ajax validation request
 		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
@@ -153,7 +154,24 @@ class SiteController extends Controller
 				$this->redirect(Yii::app()->user->returnUrl);
 		}
 		// display the login form
-		$this->render('login',array('model'=>$model));
+		// 
+		if(isset($_POST['SignUpForm']))
+		{
+			$SignUp->attributes=$_POST['SignUpForm'];
+			if ($SignUp->validate()) {
+				$url=Yii::app()->params['kerbela_host'].'/site/signUp';
+				$ch = curl_init( $url );
+				curl_setopt( $ch, CURLOPT_POST, 1);
+				curl_setopt( $ch, CURLOPT_POSTFIELDS, $_POST['SignUpForm']);
+				curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
+				curl_setopt( $ch, CURLOPT_HEADER, 0);
+				curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+				$response = curl_exec( $ch );
+				print_r($response);
+			}
+		}
+
+		$this->render('login',array('model'=>$model,'SignUp'=>$SignUp));
 	}
 
 	/**
