@@ -9018,25 +9018,6 @@ ul.stats li small {
 }
 
 
-/** READER NAVBAR **/
-
-.navbar_logo {
-	width: 180px;
-	height: 100%;
-	background: url(../../../css/ui/img/okutus_navbar_logo.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	opacity: 0.7;
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-
-}
-
-/** END OF READER NAVBAR **/
 
 /** READER LOGIN PAGE **/
 
@@ -9059,14 +9040,14 @@ ul.stats li small {
 }
 
 .login_overlay {
-	background-color:rgba(0, 0, 0, 0.4); 
+	background-color:rgba(0, 0, 0, 1); 
 	position:fixed; 
 	z-index:-10; 
 	width:100%; 
 	height:100%;
 	background-image:url(../../../css/ui/img/login_overlay2.png);	
-	opacity:0.3;
-  	filter:alpha(opacity=30);
+	opacity:0.5;
+  	filter:alpha(opacity=50);
 }
 
 .register_link {
@@ -9084,27 +9065,6 @@ ul.stats li small {
 	opacity:0.99;	
 }
 
-
-.login_page_reader_logo {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top:50px;
-	width: 520px;
-	height: 250px;
-	background-image: url(../../../css/ui/img/okutus_reader_logo.png);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.login_page_slogan {
-	margin-left: auto;
-	margin-right: auto;
-	height: 200px;
-	background-image: url(../../../css/ui/img/slogan.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-}
 
 
 .login_submit {
@@ -9196,8 +9156,8 @@ div.reader_book_category {
 	width:198px;
 	height:330px;
 	background-color:#fff;
-	-webkit-box-shadow: 0 1px 5px 0 #AAAAAA;
-	box-shadow: 0 1px 5px 0 #AAAAAA;
+	-webkit-box-shadow: 0 1px 2px 0 #AAAAAA;
+	box-shadow: 0 1px 2px 0 #AAAAAA;
 	border-radius:5px;
 	float:left;
 	margin-right:20px;
@@ -9209,6 +9169,11 @@ div.reader_book_category {
 	height:264px;
 	border-top-right-radius:5px;
 	border-top-left-radius:5px;
+}
+
+.reader_book_card_book_cover img{
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
 }
 
 .reader_book_card_info_container {
@@ -9274,6 +9239,7 @@ div.reader_book_category {
 	background-color:transparent;
 	border:none;
 	cursor:pointer;
+	display:none;
 }
 
 
@@ -9335,6 +9301,13 @@ div.reader_book_category {
 .reader_market_page_row div#filter-items {
 	margin-left:5px;	
 }
+
+
+
+.market_page_book_filter {
+	overflow:inherit !important;	
+}
+
 
 /** END OF READER MARKET PAGE **/
 
@@ -9691,7 +9664,7 @@ span.book_info_titles {
 	top:0;
 	position:fixed;
 	margin-top:50px;
-	background-color:#000;
+	background-color:#0B0D0C;
 }
 
 .reader_page {
@@ -9941,10 +9914,15 @@ span.okutus_info_linden {
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+	display:none;
 }
 
 header.read_page_navbar i.fa, span.sb-icon-search {
 	opacity:0.8;	
+}
+
+.navbar_page_numbers {
+	font-size:16px !important;	
 }
 
 
@@ -10156,21 +10134,20 @@ header.read_page_navbar i.fa, span.sb-icon-search {
 	border:1px solid #D6D6D6 !important;	
 }
 
+
+form#myprofile_info_edit > input {
+	border:0;
+	background-color:transparent;
+	width:380px;
+	padding-left:10px;
+	border:none !important;
+	border-radius:3px;
+	color:#333;	
+}
+
+
+
 /**  END OF MY PROFILE PAGE ***********************************/
-
-
-
-
-
-
-
-
-
-
-
-
-/**  BRAND COLOR ADJUSTMENT ***********************************/
-
 
 video#bgvid {
 	position: fixed; 
@@ -10185,68 +10162,4 @@ video#bgvid {
 	background: url(../../../js/login_back.png)  no-repeat;
 	background-size: cover;
 }
-
-
-.navbar_blue {
-	background: #2880b9; /* Old browsers */
-	background: -moz-linear-gradient(top,  #2880b9 0%, #0063A2 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2880b9), color-stop(100%,#0063A2)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #2880b9 0%,#0063A2 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #2880b9 0%,#0063A2 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #2880b9 0%,#0063A2 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #2880b9 0%,#0063A2 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2880b9', endColorstr='#006fb5',GradientType=0 ); /* IE6-9 */
-	border-bottom: 2px solid #00558B;
-}
-
-.solid_brand_color {
-	background-color:#2880b9;
-}
-
-.brand_text_color {
-	color:#2880b9;
-}
-
-.brand_color_for_buttons {
-	background-color: #2880b9;
-	border-color: #226e99;	
-}
-
-
-.brand_color_for_buttons:hover {
-  color: #ffffff;
-  background-color: #226e99;
-  border-color: #1c597c;
-}
-
-.sidebar-menu > ul > li.current > a {
-	border-right:5px solid #2880b9;	
-}
-
-.sidebar-menu > ul > li.current:hover {
-	border-right:none;	
-}
-
-.sidebar-menu > ul > li.has-sub.open > a,
-.sidebar-menu > ul > li > a:hover,
-.sidebar-menu > ul > li:hover > a {
-	background: #fff;
-	border-right:5px solid #2880b9;
-}
-
-.navbar-right > li:hover{
-	background-color:#005F9B;
-}
-
-
-.brand_hover_color_for_navbar_components:hover {
-	background-color:#005F9B;	
-}
-
-.dropdown-menu li:hover {
-	border-right:5px solid #2880b9;
-}
-
-
-/**  END OF BRAND COLOR ADJUSMENT ***********************************/
 

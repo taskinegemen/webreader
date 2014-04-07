@@ -14,18 +14,18 @@ window.SlideController = (function( $ ) {
 
 	var reader_slider;
 
-	var controller = function(action , readerData, params,reader_slider ){
+	var controller = function(action , readerData, params ){
         switch(action){
     					case "prev-page":
-    						reader_slider.goToPrevSlide();
+    						this.reader_slider.goToPrevSlide();
     						break;
     					case "next-page":
-    						reader_slider.goToNextSlide();
+    						this.reader_slider.goToNextSlide();
     						break;
     					case "page-anchor":
     						var pageNumber = readerData;
-    						if (pageNumber > -1 && pageNumber < reader_slider.getSlideCount())
-    							reader_slider.goToSlide(pageNumber);
+    						if (pageNumber > -1 && pageNumber < this.reader_slider.getSlideCount())
+    							this.reader_slider.goToSlide(pageNumber);
     						break;
     
     				}
@@ -41,6 +41,9 @@ window.SlideController = (function( $ ) {
 				  };
 
 	var onslide = function($slideElement, oldIndex, newIndex){ 
+
+					$("#current_page_num_spinner").val(newIndex+1);
+
 
 					var kapanacaklar = [oldIndex-2,oldIndex-1,oldIndex,oldIndex+1,oldIndex+2];
 					var acilacaklar =  [newIndex-2,newIndex-1,newIndex,newIndex+1,newIndex+2];
@@ -105,21 +108,31 @@ window.SlideController = (function( $ ) {
 				hideControlOnEnd: true,
 				responsive:false,
 				touchEnabled: true,
+				onSlideBefore: this.onSlideBefore,
 				onSlideAfter : this.onslide ,
 				buildPager: this.buildPager,
 		});
 		this.reader_slider=reader_slider;
 		var that = this;
 		$(document).ready(function(){
-			console.log($(this));
+			
 			$("[reader-action]")
 				.parent()
 				.on('click',
 					function(e){
+						
+						var thischild= $(this).children("[reader-action]");
 						var action = $(thischild).attr("reader-action");
 						var readerData = $(thischild).attr("reader-data");
-						var thischild= $(this).children("[reader-action]");
-						that.controller (action,readerData,thischild,reader_slider);
+						window.SlideController.controller (action,readerData);
+				});
+			$("[reader-action]")
+				.on('click',
+					function(e){
+						var action = $(this).attr("reader-action");
+						var readerData = $(this).attr("reader-data");
+						
+						window.SlideController.controller (action,readerData);
 				});
 
 		});
@@ -157,9 +170,14 @@ window.SlideController = (function( $ ) {
 		});
 	};
 
+	var onSlideBefore = function () {
+		if(typeof window.oversize != 'undefined')
+			window.oversize.remove();
+	};
 	return {
 		init:init,
 		buildPager:buildPager,
+		onSlideBefore:onSlideBefore,
 		onslide:onslide,
 		controller:controller,
 		bindKeys:bindKeys,

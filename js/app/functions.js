@@ -1,8 +1,10 @@
 var BookMeta;
 var reader_slider;
 var Pages = [],Items = [], PageIDArray=[],PageSrcArray={};
-	
+var PageZoomed=false,outzooming;
+var clicking = false;
 window.pages = [];
+
 
 	jQuery.fn.fitToParent = function () {
 		    this.each(function () {
@@ -54,7 +56,7 @@ window.pages = [];
 		
 		var offset = $('#main-content').offset();
 
-		var height= $(window).height() - offset.top +25;
+		var height= $(window).height() - offset.top +25-125;
 		var width= $(window).width() - offset.left;
 
 
@@ -65,7 +67,7 @@ window.pages = [];
 
 		
 		$("ul.bxslider").css("-webkit-transform", "translate3d(-"+($ ($(".bxslider li")[current] ).position().left )+"px, 0px, 0px)" );
-		
+
 	}
 
 

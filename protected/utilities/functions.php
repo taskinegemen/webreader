@@ -1,11 +1,118 @@
 <?php
-
+functions::left_menu();
 
 /**
 * 
 */
 class functions
 {
+    function left_menu(){
+
+        functions::event('left_menu',  NULL, function($var) {
+        ?>
+        <script type="text/javascript">
+            $( document ).ready(function() {
+                var kerbela = $(window).kerbelainit();
+                kerbela.setRequestedHttpService('reader');
+                var ticket=kerbela.getTicket();
+                var auth=kerbela.getAuthTicket();
+                var HTTP_service_ticket=ticket.HTTP_service_ticket;
+                $('#library').click(function(){
+                    var form='<form method="post" action="<?php echo $var->createUrl("site/library"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
+                    $('body').append(form);
+                    $(form).submit();
+                });
+                $('#list').click(function(){
+                    var form='<form method="post" action="<?php echo $var->createUrl("content/list"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
+                    $('body').append(form);
+                    $(form).submit();
+                });
+                $('#profile').click(function(){
+                    var form='<form method="post" action="<?php echo $var->createUrl("site/myprofile"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
+                    $('body').append(form);
+                    $(form).submit();
+                });
+
+                $('.profilLink').click(function(){
+                    var form='<form method="post" action="<?php echo $var->createUrl("site/myprofile"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
+                    $('body').append(form);
+                    $(form).submit();
+                });
+
+                $('.libraryLink').click(function(){
+                    var form='<form method="post" action="<?php echo $var->createUrl("site/library"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
+                    $('body').append(form);
+                    $(form).submit();
+                });
+
+                
+            });
+        </script>
+        <div id="sidebar" class="sidebar sidebar-fixed">
+                <div class="sidebar-menu nav-collapse">
+                    <!--=== Navigation ===-->
+                    <ul>
+                        <li class="current">
+                            <a id="library" href="#">
+                                <i class="fa fa-book fa-fw"></i>
+                                <span class="menu-text">Kütüphanem</span>
+                            </a>
+                        </li> 
+                        <li>
+                            <a id="list" href="#">
+                                <i class="fa fa-briefcase fa-fw"></i> 
+                                <span class="menu-text">Mağaza</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="profile"href="#">
+                                <i class="fa fa-user fa-fw"></i> 
+                                <span class="menu-text">Profilim</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /Navigation -->
+
+                </div>
+            </div><!-- /Sidebar -->
+            <?php
+    });
+
+    }
+     /**
+     * Attach (or remove) multiple callbacks to an event and trigger those callbacks when that event is called.
+     *
+     * @param string $event name
+     * @param mixed $value the optional value to pass to each callback
+     * @param mixed $callback the method or function to call - FALSE to remove all callbacks for event
+     */
+    function event($event, $value = NULL, $callback = NULL)
+    {
+        static $events;
+
+        // Adding or removing a callback?
+        if($callback !== NULL)
+        {
+            if($callback)
+            {
+                $events[$event][] = $callback;
+            }
+            else
+            {
+                unset($events[$event]);
+            }
+        }
+        elseif(isset($events[$event])) // Fire a callback
+        {
+            foreach($events[$event] as $function)
+            {
+                $value = call_user_func($function, $value);
+            }
+            return $value;
+        }
+    }
+
+
     public function add3dots($string,$repl,$limit)
     {
       if(strlen($string)>$limit)
@@ -206,6 +313,9 @@ class functions
             case "mpe" :
                 return "video/mpeg";
 
+            case "mp4" :
+                return "video/mp4";
+
             case "mp3" :
                 return "audio/mpeg3";
 
@@ -238,4 +348,5 @@ class functions
             return "application/" . trim($fileSuffix[0], ".");
         }
     }
+
 }

@@ -13,33 +13,9 @@ $this->pageTitle=Yii::app()->name;
 		</script><!-- /JAVASCRIPTS -->
 
 		<div class="market_page_container">
-			<div id="sidebar" class="sidebar sidebar-fixed">
-				<div class="sidebar-menu nav-collapse">
-					<!--=== Navigation ===-->
-					<ul>
-						<li class="current">
-							<a href="<?php echo $this->createUrl("site/library"); ?>">
-								<i class="fa fa-book fa-fw"></i>
-								<span class="menu-text">Kütüphanem</span>
-							</a>
-						</li> 
-						<li>
-							<a href="<?php echo  $this->createUrl("content/list"); ?>">
-								<i class="fa fa-briefcase fa-fw"></i> 
-			                    <span class="menu-text">Mağaza</span>
-							</a>
-						</li>
-						<li>
-							<a href="<?php echo $this->createUrl("user/profile"); ?>">
-								<i class="fa fa-user fa-fw"></i> 
-			                    <span class="menu-text">Profilim</span>
-							</a>
-						</li>
-					</ul>
-					<!-- /Navigation -->
 
-				</div>
-			</div><!-- /Sidebar -->
+			<?php echo functions::event('left_menu', $this); ?>
+
 			<div id="main-content">
 				<div class="container">
 					<div class="row">
@@ -62,8 +38,11 @@ $this->pageTitle=Yii::app()->name;
 												</select>
 										  </div>
 									   </div>
-										<div id="filter-items" class="row">    
-										</div>
+
+                                            
+                                            
+										<div id="filter-items" class="market_page_book_filter row">    
+
 									</div>
                         
                         
@@ -93,6 +72,23 @@ $this->pageTitle=Yii::app()->name;
     	return type;
     }
 
+    function d2h(d) {
+        return d.toString(16);
+    }
+
+    function stringToHex (tmp) {
+        var str = '',
+            i = 0,
+            tmp_len = tmp.length,
+            c;
+     
+        for (; i < tmp_len; i += 1) {
+            c = tmp.charCodeAt(i);
+            str = d2h(c) + ' ';
+        }
+        return str%8;
+    }
+
         var kerbela=$(window).kerbelainit();
         kerbela.setRequestedHttpService('catalog');
         var ticket=kerbela.getTicket();
@@ -102,7 +98,7 @@ $this->pageTitle=Yii::app()->name;
         $.ajax({
           type: "POST",
           url: "<?php echo Yii::app()->params['catalog_host'];?>/api/list",
-          data: { attributes: '{}', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
+          data: { attributes: '{"organisationId":["seviye"]}', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
         })
           .done(function( result ) {
           	var data = JSON.parse(result);
@@ -121,6 +117,22 @@ $this->pageTitle=Yii::app()->name;
 		        		author = '-';
 		        	}
 		        });
+
+		        var bookthumbnail = "";
+                var image_data = "";
+                $.ajax({
+                      url: "<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail/id/"+book.contentId
+                    }).done(function(result1) {
+                      console.log(result1);
+                      bookthumbnail = result1;
+                    });
+                if(bookthumbnail){
+                    image_data = "<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail/id/"+book.contentId;
+                }
+                else{
+                    var imageid = stringToHex(book.contentId);
+                    image_data = "<?php echo Yii::app()->request->baseUrl; ?>/css/covers/cover"+imageid+".jpg";
+                }
 
 				var card='<div class="';
         if (book.contentIsForSale=='Free') {
@@ -151,7 +163,8 @@ $this->pageTitle=Yii::app()->name;
 				$('#filter-items').append(card);
             });
           });
-      
+      if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
+if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass('margin-left-50');
 </script>
 
 

@@ -115,6 +115,7 @@ class ContentController extends Controller
 		
 
 		print_r($selected_host);
+
 		if (!$selected_host){
 			echo "No";
 			$error=__('Bu içerik için hiç bir yer sağlayıcı bulunamadı');
@@ -133,33 +134,57 @@ class ContentController extends Controller
 		
 	}
 
+	public function actionGetContent($id,$force=false,$host="cloud.lindneo.com",$port=2222){
+		$ch = curl_init(Yii::app()->params['catalog_host'].'/api/getHosts/'.$id );
+		curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
+		curl_setopt( $ch, CURLOPT_HEADER, 0);
+		curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+		$response = curl_exec( $ch );
+		$hostsOb=json_decode($response,true);
+		$hosts=$hostsOb['result'];
+		shuffle($hosts);
+		$host=$hosts[0]['address'];
+		$port=$hosts[0]['port'];
 
-	public function actionGetContent($id,$host="cloud.lindneo.com",$port=2222){
-		
 		$getfile = "./tmp/$id";
 		$command =  "python bin/client_tls.py '{\"host\":\"$host\",\"port\":$port}' GetFileChuncked $id $getfile";
+		$outpufolder="contents/".basename($id);
+		$METAFOLDER= $outpufolder."/META-INF";
+
+		if(!$force)
+			if (file_exists($METAFOLDER) and is_dir($METAFOLDER) ) {
+				$this->redirect(array("content/read", 'id'=>$id)); 
+				die;
+			}
 		
 		exec($command,$output);
-		print_r($output);
-		 
-		$this->decryptFileAndExtractToFolder($getfile);
-		
-
-
-
-
-
-
-
-
 
 		
+
+
+		if (!file_exists($getfile)) {
+			header( "refresh:5;url=".Yii::app()->request->requestUri ); 
+			echo "Dosya Protokolu Hatali 5sn Sonra otomatik olarak tekrar deneyeceksiniz!";
+			die;
+		}
+
+		$this->decryptFileAndExtractToFolder($getfile,$outpufolder);
+		
+
+		if (!file_exists($METAFOLDER) and !is_dir($METAFOLDER)) {
+    		header( "refresh:5;url=".Yii::app()->request->requestUri ); 
+			echo "Dosya Protokolu Hatali 5sn Sonra otomatik olarak tekrar deneyeceksiniz!";
+			functions::delTree($outpufolder);
+
+			die;
+		}
+
 		$this->redirect(array("content/read", 'id'=>$id)); 
-
 
 	}
 
     public function decryptFileAndExtractToFolder($filename,$outpufolder=null){		
+    	
     	if (!$outpufolder){
 			$outpufolder="contents/".basename($filename);
     	}
@@ -173,9 +198,9 @@ class ContentController extends Controller
 		} else {
 			
 		}
-
-		unlink($filename);
-
+		if (file_exists($filename)) {
+			unlink($filename);
+		}
 	}
 
 	public function actionFile($id,$filepath=null){
@@ -189,21 +214,46 @@ class ContentController extends Controller
 		}
 
 		$expires = 60*60*24*14;
-		header("Pragma: public");
-		header("Cache-Control: maxage=".$expires);
-		header('Expires: ' . gmdate('D, d M Y H:i:s', time()+$expires) . ' GMT');
+		
 		$dir="contents/$id/$filepath";
 
 		$filename="contents/$id/$filepath";
 
 		$content_type=functions::returnMIMEType($filename);
-		header("Content-type: $content_type");
+		
 
 		$txt = Encryption::decryptFile($filename);
-		/*if ($txt){
-			$domain = $this->createUrl("content/file",array("id"=>$id));
-			$txt = preg_replace("/(href|src)\=\"([^(http)])(\/)?/", "$1=\"$domain$2", $txt);
-		}*/
+
+		
+		if(isset($_SERVER['HTTP_RANGE'])) {
+			$file = tempnam("/tmp", "download");
+
+
+	    	$fp = @fopen($file, 'wrb');
+	    
+	    	fwrite($fp, $txt);
+	    	fclose($fp);
+
+	    	//echo $file;die;
+
+	    	Yii::app()->request->xSendFile($file,array('terminate'=>false,'mimeType'=>$content_type));
+			
+			return;
+		}
+
+		
+		header('HTTP/1.0 200 OK');
+
+		header("Content-type: $content_type");
+
+		
+
+		
+		header("Pragma: public");
+		header("Cache-Control: maxage=".$expires);
+		header('Expires: ' . gmdate('D, d M Y H:i:s', time()+$expires) . ' GMT');
+		header('Connection: close');
+
 		echo $txt;
 	}
 
@@ -214,11 +264,34 @@ class ContentController extends Controller
 
 	public function actionRead($id=null)
 	{
-		$dir="contents/$id";
 
-		if (!file_exists($dir) and !is_dir($dir)) {
-    		$this->redirect(array("content/import", 'id'=>$id));
+
+
+
+		$dir="contents/$id";
+		$METAFOLDER= $dir."/META-INF";
+		if (!file_exists($METAFOLDER) and !is_dir($METAFOLDER)) {
+    		$this->redirect(array("content/getcontent", 'id'=>$id));
 		} 
+
+		functions::event('header',  NULL, function($header) {
+		 ?>
+
+		 <!-- bxSlider -->
+			<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/bxSlider/jquery.bxslider.css" type="text/css" />
+			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/jquery-ui-1.10.4.custom.min.js"></script>
+			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/dragiframe.js"></script>
+			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/jquery.fitvids.js"></script>
+			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/bxSlider/jquery.bxslider.js"></script>
+			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/app/functions.js"></script>
+			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/app/slider_control.js"></script>
+			<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/app/reader_app.js"></script>
+		
+		<!-- bxSlider -->
+		<?php
+
+		});
+
 
 		$this->render('read',
 			array(

@@ -12,17 +12,28 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 <!-- PAGE -->
 <!-- login -->
   <script type="text/javascript">
-
-  	$(document).on("click","#loginButton",function(e){
-  		$.blockUI({ message: '<h1>Please wait just a little...</h1>' });
-  		setTimeout($.unblockUI, 10000); 
-  		window.setTimeout(function(){login();},100);
+	$(document).ready(function(){
+		$('#login-form').submit(function(e) {
+	  			$.blockUI({ message: '<h1>Please wait just a little...</h1>' });
+		  		setTimeout($.unblockUI, 10000); 
+		  		window.setTimeout(function(){login();},100);
+	  			e.preventDefault();
+	  			return false;
+	  		});
 		
+		$(document).on("click","#loginButton",function(e){
+	  		$.blockUI({ message: '<h1>Please wait just a little...</h1>' });
+	  		setTimeout($.unblockUI, 10000); 
+	  		window.setTimeout(function(){login();},100);
+		});
 	});
+  	
   	function login(){
+  		
+
   		var username=$('#LoginForm_username').val();
 		var password=$('#LoginForm_password').val();
-		console.log(password);																																		
+		//console.log(password);																																		
 		var kerbela=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','<?php echo Yii::app()->request->baseUrl; ?>/kerberizedservice/authenticate',username,password,'kerbela','reader','6000');
 		var response=kerbela.execute();
 
@@ -82,12 +93,13 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 							<div class="login-box">
 								<?php $form=$this->beginWidget('CActiveForm', array(
 									'id'=>'login-form',
-									'enableClientValidation'=>true,
+									/*'enableClientValidation'=>true,
 									'clientOptions'=>array(
 										'validateOnSubmit'=>true,
-									),
+									)
+									*/
 								)); ?>
-								<h3 class="bigintro">Okutus Reader'a Giriş Yap</h3>
+								<h3 class="bigintro">Seviye Dijital'e Giriş Yap</h3>
 								
 								<form role="form">								
 								  <div class="form-group">
@@ -110,8 +122,9 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 								    </div>
 
 								  <div class="form-group">
-									<a href="#" class="btn btn-primary login_submit brand_color_for_buttons" id="loginButton"><?php _e("Giriş Yap"); ?></a>									
+									 <input type='submit' class="btn  login_submit brand_color_for_buttons" id="loginButton" value='<?php _e("Giriş Yap"); ?>' />									
 								  </div>
+
 								</form>
 								<!-- SOCIAL LOGIN -->
 									<div class="divide-20"></div>
@@ -132,6 +145,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 										<a class="btn btn-danger btn-lg">
 											<i class="fa fa-google-plus"></i>
 										</a>
+
 									</div>
 									<!-- /SOCIAL LOGIN -->
 									<!-- <div class="login-helpers">
@@ -157,7 +171,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
                             
                             <div class="login-box">
 								<?php $form=$this->beginWidget('CActiveForm', array(
-									'id'=>'login-form',
+									'id'=>'register-form',
 									'enableClientValidation'=>true,
 									'clientOptions'=>array(
 										'validateOnSubmit'=>true,
@@ -287,14 +301,14 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 
 
 </div>
-
+<!-- END OF LOGIN_PAGE_CONTAINER -->
 
 
 		
 
 
 <div class="login_contact">
-<p>OKUTUS Reader Linden Dijital Yayıncılık A.Ş. Tarafından Hazırlanmıştır.</p>
+<p>Seviye Dijital Linden Dijital Yayıncılık A.Ş. Tarafından Hazırlanmıştır.</p>
 <p>Bizi daha yakından tanıyın. <a target="_blank" href="http://www.linden-tech.com/">www.linden-tech.com</a></p>
 </div>
 

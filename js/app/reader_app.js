@@ -17,6 +17,7 @@ jQuery(document).ready(function() {
 
 	$( ".read_page_thumbnails" ).click(function() {
 	  if (!acik){
+
 		  $( ".read_page_thumbnails" ).css("bottom","170px");
 		  $( ".bx-custom-pager" ).css("bottom","50px");
 		  $(".bx-pager").css({'bottom': '0px', 'overflow-x': 'scroll', 'overflow-y': 'hidden', 'white-space':'nowrap', 'height': '150px'});
@@ -28,6 +29,75 @@ jQuery(document).ready(function() {
 			$( ".bx-pager").css({'bottom': '-170px'});
 		}
 	});
+
+
+	
+	$('#toggle_zoom').click(function(){
+		var current= window.SlideController.reader_slider.getCurrentSlide();
+		if(PageZoomed){
+ 			console.log('out zooming');
+			//$(window['page'+current].document.body).css("zoom",outzooming);
+			window.oversize.remove();
+
+			PageZoomed=false;
+		} else {
+
+			window.oversize = $("<div style='position:fixed;top:0;bottom:0;left:0;right:0;background:#000;z-index:99;'></div>");
+			window.oversize.appendTo('.bx-viewport');
+			var frameWrap = $("<div style='width: 10000px;height: 10000px'></div>");
+			frameWrap.appendTo(window.oversize);
+
+ 			console.log('zooming');
+			PageZoomed=true;
+			var newFrame = $($(".bxslider li")[current])
+				.find('iframe')
+				.clone();
+			var eventss={};
+			newFrame
+				.attr('name','oversizeframe')
+				.attr('id','oversizeframe')
+				.load(function(){
+					$(window.oversizeframe.document.body).css("zoom", "2");
+					newFrame.css({
+						'height': (parseInt ($(window.oversizeframe.document.body).css('height')) * 2) +'px',
+						'width': (parseInt ($(window.oversizeframe.document.body).css('width')) * 2) +'px'
+					});	
+
+					var insidebody= window.oversizeframe.document.body;
+					
+					var clicking=false;
+
+					$(insidebody).mousedown(function(e){
+						clicking = true;
+						eventss.starts = e;
+					});
+					$(insidebody).mouseup(function(){
+		    			clicking = false;
+		    			console.log(eventss);
+		    		});
+		    		$(insidebody).mousemove(function(e){
+		    			if(clicking == false){ e.preventDefault(); return;}
+		    			console.log(e);
+		    			var currentOffset = newFrame.offset();
+		    			eventss.stops=e;
+		    			newFrame.offset( {
+		    				top:currentOffset.top+(eventss.stops.offsetY-eventss.starts.offsetY),
+		    				left:currentOffset.left+(eventss.stops.offsetX-eventss.starts.offsetX),
+		    			});
+		    			console.log("dragging");
+		    			
+		    			
+		    		});
+
+				})
+				.appendTo(frameWrap);
+			
+
+
+
+		}
+	});
+
 			
 });
 
