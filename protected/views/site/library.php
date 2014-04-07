@@ -34,7 +34,7 @@
                         var book_thumbnail = "";
                         $.ajax({
                             type: "POST",
-                            url: "http://catalog.lindneo.com/api/getMainInfo",
+                            url: "<?php echo Yii::app()->params['catalog_host'];?>/api/getMainInfo",
                             data: { id: value.book_id, auth: auth_catalog, http_service_ticket: HTTP_service_ticket_catalog, type:"web"}
                         })
                           .done(function( result ) {
@@ -45,7 +45,7 @@
 
                         var book = $('<div class="reader_book_card">\
                                         <div class="reader_book_card_book_cover solid_brand_color">\
-                                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'"><img src="http://catalog.lindneo.com/api/getThumbnail/id/'+value.book_id+'" style="width:198px; height:264px;"></a></div>\
+                                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'"><img src="<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail/id/'+value.book_id+'" style="width:198px; height:264px;"></a></div>\
                                         <div class="reader_book_card_info_container">\
                                         <div class="reader_market_book_name"><a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'">'+book_data.result.contentTitle+'</a></div>\
                                         <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\

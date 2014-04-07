@@ -730,3 +730,410 @@ REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
 HTTP_REFERER=http://reader.lindneo.com/ekaratas/content/details/AbpyrViD5H3ZMRIHK4aOSm9ju91VZZ1ooat4moAR5kH3
 >>>>>>> 9dd8819789924debe2af5e7cc1bfe06c3caca7ff
 ---
+2014/03/19 10:21:17 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "site/login".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(782): CController->renderPartial('site/login', NULL, true)
+#1 /var/www/reader/egemen/protected/controllers/SiteController.php(129): CController->render('site/login')
+#2 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): SiteController->actionLibrary()
+#3 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('library')
+#7 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/library')
+#8 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/egemen/index.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/egemen/site/library
+---
+2014/03/19 10:22:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/site/library
+---
+2014/03/19 10:22:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/site/library
+---
+2014/03/20 08:06:40 [error] [php] unlink(./tmp/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0): No such file or directory (/var/www/reader/egemen/protected/controllers/ContentController.php:177)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/egemen/index.php(15): CWebApplication->run()
+REQUEST_URI=/egemen/content/getContent/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0
+in /var/www/reader/egemen/protected/controllers/ContentController.php (177)
+in /var/www/reader/egemen/protected/controllers/ContentController.php (145)
+in /var/www/reader/egemen/index.php (15)
+2014/03/20 08:45:22 [error] [php] unlink(./tmp/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0): No such file or directory (/var/www/reader/egemen/protected/controllers/ContentController.php:177)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/egemen/index.php(15): CWebApplication->run()
+REQUEST_URI=/egemen/content/getContent/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0
+in /var/www/reader/egemen/protected/controllers/ContentController.php (177)
+in /var/www/reader/egemen/protected/controllers/ContentController.php (145)
+in /var/www/reader/egemen/index.php (15)
+2014/03/20 09:26:59 [error] [php] unlink(./tmp/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0): No such file or directory (/var/www/reader/egemen/protected/controllers/ContentController.php:177)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/egemen/index.php(15): CWebApplication->run()
+REQUEST_URI=/egemen/content/getContent/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0
+in /var/www/reader/egemen/protected/controllers/ContentController.php (177)
+in /var/www/reader/egemen/protected/controllers/ContentController.php (145)
+in /var/www/reader/egemen/index.php (15)
+2014/03/20 16:33:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/site/library
+---
+2014/03/20 16:33:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/site/library
+---
+2014/03/20 16:33:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/list
+---
+2014/03/20 21:44:29 [error] [php] unlink(./tmp/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0): No such file or directory (/var/www/reader/egemen/protected/controllers/ContentController.php:177)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/egemen/index.php(15): CWebApplication->run()
+REQUEST_URI=/egemen/content/getContent/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0
+in /var/www/reader/egemen/protected/controllers/ContentController.php (177)
+in /var/www/reader/egemen/protected/controllers/ContentController.php (145)
+in /var/www/reader/egemen/index.php (15)
+2014/03/20 21:44:32 [error] [php] unlink(./tmp/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0): No such file or directory (/var/www/reader/egemen/protected/controllers/ContentController.php:177)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/egemen/index.php(15): CWebApplication->run()
+REQUEST_URI=/egemen/content/getContent/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0
+in /var/www/reader/egemen/protected/controllers/ContentController.php (177)
+in /var/www/reader/egemen/protected/controllers/ContentController.php (145)
+in /var/www/reader/egemen/index.php (15)
+2014/03/20 21:44:33 [error] [php] unlink(./tmp/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0): No such file or directory (/var/www/reader/egemen/protected/controllers/ContentController.php:177)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/egemen/index.php(15): CWebApplication->run()
+REQUEST_URI=/egemen/content/getContent/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0
+in /var/www/reader/egemen/protected/controllers/ContentController.php (177)
+in /var/www/reader/egemen/protected/controllers/ContentController.php (145)
+in /var/www/reader/egemen/index.php (15)
+2014/03/20 21:44:34 [error] [php] unlink(./tmp/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0): No such file or directory (/var/www/reader/egemen/protected/controllers/ContentController.php:177)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/egemen/index.php(15): CWebApplication->run()
+REQUEST_URI=/egemen/content/getContent/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0
+in /var/www/reader/egemen/protected/controllers/ContentController.php (177)
+in /var/www/reader/egemen/protected/controllers/ContentController.php (145)
+in /var/www/reader/egemen/index.php (15)
+2014/03/20 21:44:34 [error] [php] unlink(./tmp/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0): No such file or directory (/var/www/reader/egemen/protected/controllers/ContentController.php:177)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/egemen/index.php(15): CWebApplication->run()
+REQUEST_URI=/egemen/content/getContent/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0
+in /var/www/reader/egemen/protected/controllers/ContentController.php (177)
+in /var/www/reader/egemen/protected/controllers/ContentController.php (145)
+in /var/www/reader/egemen/index.php (15)
+2014/03/20 21:44:35 [error] [php] unlink(./tmp/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0): No such file or directory (/var/www/reader/egemen/protected/controllers/ContentController.php:177)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/egemen/index.php(15): CWebApplication->run()
+REQUEST_URI=/egemen/content/getContent/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0
+in /var/www/reader/egemen/protected/controllers/ContentController.php (177)
+in /var/www/reader/egemen/protected/controllers/ContentController.php (145)
+in /var/www/reader/egemen/index.php (15)
+2014/03/21 05:49:11 [error] [php] unlink(./tmp/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0): No such file or directory (/var/www/reader/egemen/protected/controllers/ContentController.php:177)
+Stack trace:
+#0 unknown(0): ContentController->actionGetContent()
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/egemen/index.php(15): CWebApplication->run()
+REQUEST_URI=/egemen/content/getContent/MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0
+in /var/www/reader/egemen/protected/controllers/ContentController.php (177)
+in /var/www/reader/egemen/protected/controllers/ContentController.php (145)
+in /var/www/reader/egemen/index.php (15)
+2014/03/21 06:21:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.fullscreen-min.js".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/js/libs/jquery.fullscreen-min.js
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/read/9egtCVniscPs4mFtflECr7yjiMEdJAjH5Whkke6kSzEg
+---
+2014/03/21 06:30:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.fullscreen-min.js".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/js/libs/jquery.fullscreen-min.js
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/read/9egtCVniscPs4mFtflECr7yjiMEdJAjH5Whkke6kSzEg
+---
+2014/04/02 12:46:58 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "site/login".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(782): CController->renderPartial('site/login', NULL, true)
+#1 /var/www/reader/egemen/protected/controllers/SiteController.php(129): CController->render('site/login')
+#2 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): SiteController->actionLibrary()
+#3 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('library')
+#7 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/library')
+#8 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/egemen/index.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/egemen/site/library
+---
+2014/04/02 12:47:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/site/login
+---
+2014/04/02 12:49:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/site/login
+---
+2014/04/02 12:49:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/site/library
+---
+2014/04/02 12:50:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/list
+---
+2014/04/02 12:59:27 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "site/login".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(782): CController->renderPartial('site/login', NULL, true)
+#1 /var/www/reader/egemen/protected/controllers/SiteController.php(129): CController->render('site/login')
+#2 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): SiteController->actionLibrary()
+#3 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('library')
+#7 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/library')
+#8 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/egemen/index.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/egemen/site/library
+---
+2014/04/02 12:59:33 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "site/login".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(782): CController->renderPartial('site/login', NULL, true)
+#1 /var/www/reader/egemen/protected/controllers/SiteController.php(129): CController->render('site/login')
+#2 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): SiteController->actionLibrary()
+#3 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('library')
+#7 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/library')
+#8 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/egemen/index.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/egemen/site/library
+HTTP_REFERER=http://reader.lindneo.com/
+---
+2014/04/02 13:00:36 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "site/login".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(782): CController->renderPartial('site/login', NULL, true)
+#1 /var/www/reader/egemen/protected/controllers/SiteController.php(129): CController->render('site/login')
+#2 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): SiteController->actionLibrary()
+#3 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('library')
+#7 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/library')
+#8 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/egemen/index.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/egemen/site/library
+---
+2014/04/02 13:00:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/site/login
+---
+2014/04/02 13:00:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/site/library
+---
+2014/04/02 13:01:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/list
+---
+2014/04/02 13:45:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/list
+---
+2014/04/02 13:45:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/list
+---
+2014/04/07 06:22:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/site/login
+---
+2014/04/07 06:22:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/site/library
+---
+2014/04/07 06:22:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/egemen/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/egemen/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/egemen/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/egemen/index.php/content/list
+---

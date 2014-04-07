@@ -101,7 +101,7 @@ $this->pageTitle=Yii::app()->name;
 
         $.ajax({
           type: "POST",
-          url: "http://catalog.lindneo.com/api/list",
+          url: "<?php echo Yii::app()->params['catalog_host'];?>/api/list",
           data: { attributes: '{}', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
         })
           .done(function( result ) {
@@ -111,7 +111,7 @@ $this->pageTitle=Yii::app()->name;
             $.each( data.result, function( key, book ) {
 				$.ajax({
 		          type: "POST",
-		          url: "http://catalog.lindneo.com/api/getMetaValue",
+		          url: "<?php echo Yii::app()->params['catalog_host'];?>/api/getMetaValue",
 		          data: { id: book.contentId, metaKey:'author', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
 		        }).done(function( res ) {
 		        	var authorRes=JSON.parse(res).result;
@@ -132,7 +132,7 @@ $this->pageTitle=Yii::app()->name;
         <div class="reader_book_card">\
 					<div class="reader_book_card_book_cover">\
 					<a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+book.contentId+'">\
-					<img src="http://catalog.lindneo.com/api/getThumbnail?id='+book.contentId+'" style="width:198px; height:264px" /></div></a>\
+					<img src="<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail?id='+book.contentId+'" style="width:198px; height:264px" /></div></a>\
 					<div class="reader_book_card_info_container">\
 						<div class="reader_market_book_name tip" data-original-title="'+book.contentTitle+'">'+book.contentTitle+'</div>\
 						<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\
