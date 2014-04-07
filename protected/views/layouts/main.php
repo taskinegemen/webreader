@@ -12,9 +12,20 @@
     z-index: 99;
 	}
 	</style>
+	<?php
+        $organisationId=Yii::app()->getBaseUrl(true);
+        $myArray=array();
+        preg_match ("/.(\w+)\.(com|net|edu|mil|gov)/", $organisationId,$myArray); 
+        $organisationId=$myArray[1];
+        $server_organisationId=Yii::app()->params['organisation_id'];
+        if($server_organisationId!=''){
+            $organisationId=$server_organisationId;
+        }
+    ?>
+
 		<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/cloud-admin.css" >
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/branding/linden/linden.css" >
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/branding/<?php echo $organisationId.'/'.$organisationId.'.css';?>" >
 	<!--<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/themes/night.css" >-->
 	<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/responsive.css" >
 	<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/themes/default.css" id="skin-switcher">
