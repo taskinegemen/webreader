@@ -141,8 +141,37 @@ class SiteController extends Controller
 			curl_setopt( $ch, CURLOPT_HEADER, 0);
 			curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
 			$response = curl_exec( $ch );
-			echo $response;
- 			$this->render('password_reset');
+			$ErrorMessage="";
+			$SuccessMessage="";
+			if ($response) {
+				if (isset($_POST['Reset'])) {
+					$attributes=$_POST['Reset'];
+					$attributes['code']=$id;
+					if ($attributes['password']==$attributes['password2']) {
+						$url2=Yii::app()->params['kerbela_host'].'/site/updatePassword';
+						$ch = curl_init( $url2 );
+						curl_setopt( $ch, CURLOPT_POST, 1);
+						curl_setopt( $ch, CURLOPT_POSTFIELDS, $attributes);
+						curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
+						curl_setopt( $ch, CURLOPT_HEADER, 0);
+						curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+						$response = curl_exec( $ch );
+						if ($response) {
+							$SuccessMessage="Şifreniz değiştirme başarılı. Sisteme yeni şifreniz ile girebilirsiniz.";
+						}
+						else
+						{
+							$ErrorMessage="Şifreniz değiştirme başarılı değil. Lütfen tekrar deneyin.";
+						}
+					}
+
+				}
+			}
+			else
+			{
+				$ErrorMessage="İstek bulunamadı.";
+			}
+ 			$this->render('password_reset',array('ErrorMessage'=>$ErrorMessage,'SuccessMessage'=>$SuccessMessage));
 		}
 	}
 
