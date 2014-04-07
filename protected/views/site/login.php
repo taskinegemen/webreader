@@ -172,44 +172,81 @@ $this->pageTitle=Yii::app()->name . ' - Login';
                             <div class="login-box">
 								<?php $form=$this->beginWidget('CActiveForm', array(
 									'id'=>'register-form',
-									'enableClientValidation'=>true,
-									'clientOptions'=>array(
-										'validateOnSubmit'=>true,
-									),
+									// 'enableClientValidation'=>true,
+									// 'clientOptions'=>array(
+									// 	'validateOnSubmit'=>true,
+									// ),
 								)); ?>
 								<h3 class="bigintro">Kayıt Ol</h3>
-								
 								<form role="form">								
 								  <div class="form-group">
-									<label for="exampleInputEmail1"><?php echo $form->labelEx($model,'username'); ?></label>
+									<label for=""><?php _e("İsim"); ?> *</label>
 									<i class="fa fa-font"></i>
-									<?php echo $form->textField($model,'username'); ?>
+									<?php echo $form->textField($SignUp,'name'); ?>
 								  </div>
                                   
                                   <div class="form-group">
-									<label for="exampleInputEmail1"><?php echo $form->labelEx($model,'username'); ?></label>
+									<label for=""><?php _e("Soyisim"); ?> *</label>
 									<i class="fa fa-user"></i>
-									<?php echo $form->textField($model,'username'); ?>
+									<?php echo $form->textField($SignUp,'surname'); ?>
 								  </div>
                                   
                                   <div class="form-group">
-									<label for="exampleInputEmail1"><?php echo $form->labelEx($model,'username'); ?></label>
+									<label for=""><?php _e("Email"); ?> *</label>
 									<i class="fa fa-envelope"></i>
-									<?php echo $form->textField($model,'username'); ?>
+									<?php echo $form->textField($SignUp,'email'); ?>
+								  </div>
+
+								  <div class="form-group">
+									<label for=""><?php _e("Doğum Tarihi"); ?></label>
+									<i class="fa fa-calendar"></i>
+									<?php echo $form->textField($SignUp,'birthdate',array("data-mask"=>"99.99.9999")); ?>
+								  </div>
+
+								  <div class="form-group">
+									<label for=""><?php _e("Telefon"); ?></label>
+									<i class="fa fa-phone"></i>
+									<?php echo $form->textField($SignUp,'tel',array("data-mask"=>"(999) 999-9999")); ?>
+								  </div>
+
+								  <div class="form-group">
+									<label for=""><?php _e("Şehir"); ?></label>
+									<i class="fa fa-font"></i>
+									<?php echo $form->textField($SignUp,'city'); ?>
+								  </div>
+
+								  <div class="form-group">
+									 <label class="col-md-4 control-label"><?php _e("Cinsiyet"); ?> </label> 
+									 <div class="col-md-8"> 
+										<?php echo $form->radioButtonList($SignUp,'gender',array('male'=>'Male','female'=>'Female')); ?>
+									 </div>
 								  </div>
                                   
                                   <div class="form-group">
-									<label for="exampleInputEmail1"><?php echo $form->labelEx($model,'username'); ?></label>
+									<label for=""><?php _e("Şifre"); ?> *</label>
 									<i class="fa fa-lock"></i>
-									<?php echo $form->textField($model,'username'); ?>
+									<?php echo $form->passwordField($SignUp,'password'); ?>
 								  </div>
 								  
 								  <div class="form-group"> 
-									<label for="exampleInputPassword2"><?php _e("Şifreyi Tekrarla"); ?></label>
+									<label for=""><?php _e("Şifreyi Tekrarla"); ?> *</label>
 									<i class="fa fa-check-square-o"></i>
-									<input size="60" maxlength="255" name="User[passwordR]" id="User_password_r" type="password">
+									<?php echo $form->passwordField($SignUp,'passwordR'); ?>
 								  </div>
-								  
+								  <?php if(CCaptcha::checkRequirements()): ?>
+									<div class="form-group">
+										<label for=""><?php _e("Verify"); ?> *</label><br>
+										<?php $this->widget('CCaptcha',array(
+            'showRefreshButton'=>true,'buttonOptions'=>array('id'=>'refreshCaptcha')
+)); ?><br><br>
+										<i class="fa fa-lock"></i>
+										<?php echo $form->textField($SignUp,'verify'); ?>
+										<div>Please enter the letters as they are shown in the image above.
+										<br/>Letters are not case-sensitive.</div>
+										
+									</div>
+									<?php endif; ?>
+								  	<?php echo CHtml::submitButton('Submit'); ?>
 								</form>
                                 
                                 
@@ -218,13 +255,11 @@ $this->pageTitle=Yii::app()->name . ' - Login';
                                 
                                 
                                   <div>
-								  	<br>
-									<!-- <label class="checkbox"> <input type="checkbox" class="uniform" value=""> I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label> -->
-									<button type="submit" class="btn btn-success"><?php _e("Kaydet");?></button>
 								  </div>
                                 
                                 
-                                
+
+                              
                                 
                                 
                                 
