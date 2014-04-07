@@ -39,7 +39,7 @@ $this->pageTitle=Yii::app()->name;
             var book_thumbnail = "";
             $.ajax({
                 type: "POST",
-                url: "http://catalog.lindneo.com/api/getMainInfo",
+                url: "<?php echo Yii::app()->params['catalog_host'];?>/api/getMainInfo",
                 data: { id: '<?php echo $id; ?>', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
             })
               .done(function( result ) {
@@ -75,16 +75,18 @@ $this->pageTitle=Yii::app()->name;
             $('.book_info_the_name_of_the_writer').html(book_data.result.contentAuthor);
             $('.contentExplanation').html(book_data.result.contentExplanation);
 
+
+            $('.book_info_book_cover').css('background-image', 'url(<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail/id/<?php echo $id; ?>)');
             var bookthumbnail = "";
             var image_data = "";
             $.ajax({
-                  url: "http://catalog.lindneo.com/api/getThumbnail/id/<?php echo $id; ?>"
+                  url: "<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail/id/<?php echo $id; ?>"
                 }).done(function(result1) {
                   console.log(result1);
                   bookthumbnail = result1;
                 });
             if(bookthumbnail){
-                image_data = "http://catalog.lindneo.com/api/getThumbnail/id/<?php echo $id; ?>";
+                image_data = "<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail/id/<?php echo $id; ?>";
             }
             else{
                 var imageid = stringToHex("<?php echo $id; ?>");
@@ -104,9 +106,10 @@ $this->pageTitle=Yii::app()->name;
                 if(book_data.result.contentPriceCurrencyCode == "949") price_type = "TL";
                 $('#bookprice').html(book_data.result.contentPrice+" "+price_type);
             
+
             /*var book = $('<div class="reader_book_card">\
                             <div class="reader_book_card_book_cover solid_brand_color">\
-                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'"><img src="http://catalog.lindneo.com/api/getThumbnail/id/'+value.book_id+'" style="width:198px; height:264px;"></a></div>\
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'"><img src="<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail/id/'+value.book_id+'" style="width:198px; height:264px;"></a></div>\
                             <div class="reader_book_card_info_container">\
                             <div class="reader_market_book_name"><a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'">'+book_data.result.contentTitle+'</a></div>\
                             <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\

@@ -94,11 +94,20 @@ $this->pageTitle=Yii::app()->name;
         var ticket=kerbela.getTicket();
         var auth=kerbela.getAuthTicket();
         var HTTP_service_ticket=ticket.HTTP_service_ticket;
-
+        var organisationId='<?php echo Yii::app()->getBaseUrl(true);?>';
+        console.log(organisationId);
+        var myRe = /.(\w+)\.(com|net|edu|mil|gov)/g;
+        var myArray = myRe.exec(organisationId);
+        organisationId=myArray[1];
+        var server_organisationId="<?php echo Yii::app()->params['organisation_id']; ?>";
+        if(server_organisationId!=''){
+            organisationId=server_organisationId;
+        }
+        console.log(organisationId);
         $.ajax({
           type: "POST",
-          url: "http://catalog.lindneo.com/api/list",
-          data: { attributes: '{"organisationId":["seviye"]}', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
+          url: "<?php echo Yii::app()->params['catalog_host'];?>/api/list",
+          data: { attributes: '{"organisationId":["'+organisationId+'"]}', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
         })
           .done(function( result ) {
           	var data = JSON.parse(result);
@@ -107,7 +116,7 @@ $this->pageTitle=Yii::app()->name;
             $.each( data.result, function( key, book ) {
 				$.ajax({
 		          type: "POST",
-		          url: "http://catalog.lindneo.com/api/getMetaValue",
+		          url: "<?php echo Yii::app()->params['catalog_host'];?>/api/getMetaValue",
 		          data: { id: book.contentId, metaKey:'author', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
 		        }).done(function( res ) {
 		        	var authorRes=JSON.parse(res).result;
@@ -121,13 +130,13 @@ $this->pageTitle=Yii::app()->name;
 		        var bookthumbnail = "";
                 var image_data = "";
                 $.ajax({
-                      url: "http://catalog.lindneo.com/api/getThumbnail/id/"+book.contentId
+                      url: "<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail/id/"+book.contentId
                     }).done(function(result1) {
                       console.log(result1);
                       bookthumbnail = result1;
                     });
                 if(bookthumbnail){
-                    image_data = "http://catalog.lindneo.com/api/getThumbnail/id/"+book.contentId;
+                    image_data = "<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail/id/"+book.contentId;
                 }
                 else{
                     var imageid = stringToHex(book.contentId);
@@ -144,7 +153,7 @@ $this->pageTitle=Yii::app()->name;
         <div class="reader_book_card">\
 					<div class="reader_book_card_book_cover">\
 					<a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+book.contentId+'">\
-					<img src="'+image_data+'" style="width:198px; height:264px" /></div></a>\
+					<img src="<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail?id='+book.contentId+'" style="width:198px; height:264px" /></div></a>\
 					<div class="reader_book_card_info_container">\
 						<div class="reader_market_book_name tip" data-original-title="'+book.contentTitle+'">'+book.contentTitle+'</div>\
 						<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\
@@ -165,7 +174,7 @@ $this->pageTitle=Yii::app()->name;
           });
       if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
 if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass('margin-left-50');
-</script>
+</script> 
 
 
 	
