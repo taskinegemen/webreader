@@ -4,6 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 	<meta name="language" content="tr" />
+	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 	<style>
 	#splashscreen {
     height: 100%;
@@ -44,8 +45,6 @@
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 		<!-- BOOTSTRAP -->
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/bootstrap-dist/js/bootstrap.min.js"></script>
-		<!-- BLOCK UI -->
-		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
 		<!-- ISOTOPE -->
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/js/isotope/jquery.isotope.min.js"></script>
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/js/isotope/imagesloaded.pkgd.min.js"></script>
@@ -120,6 +119,8 @@
 		<!--<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/lazyloader.min.js"></script>-->
 		<!-- /JS -->
 
+		<!-- BLOCK UI -->
+		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
 		
 
 		<?php echo functions::event('header', ""); ?>
@@ -139,7 +140,7 @@
 
 
 
-	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+	
 </head>
 
 <body class="editor_blue">
@@ -348,7 +349,7 @@ if (Yii::app()->controller->action->id=="read"):?>
 
 
 
-<?php elseif(Yii::app()->controller->action->id!="login"): ?>
+<?php elseif(Yii::app()->controller->action->id!="login" && Yii::app()->controller->action->id!="forgetPassword" ): ?>
 <!-- Header -->
 	<header class="navbar clearfix navbar-fixed-top navbar_blue" id="header">
 		<!-- Top Navigation Bar -->

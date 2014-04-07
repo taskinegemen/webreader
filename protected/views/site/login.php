@@ -14,18 +14,14 @@ $this->pageTitle=Yii::app()->name . ' - Login';
   <script type="text/javascript">
 	$(document).ready(function(){
 		$('#login-form').submit(function(e) {
+				e.preventDefault();
+		  		window.setTimeout(function(){login();},100);
 	  			$.blockUI({ message: '<h1>Please wait just a little...</h1>' });
 		  		setTimeout($.unblockUI, 10000); 
-		  		window.setTimeout(function(){login();},100);
-	  			e.preventDefault();
 	  			return false;
 	  		});
 		
-		$(document).on("click","#loginButton",function(e){
-	  		$.blockUI({ message: '<h1>Please wait just a little...</h1>' });
-	  		setTimeout($.unblockUI, 10000); 
-	  		window.setTimeout(function(){login();},100);
-		});
+		
 	});
   	
   	function login(){
@@ -101,7 +97,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 								)); ?>
 								<h3 class="bigintro">Seviye Dijital'e Giriş Yap</h3>
 								
-								<form role="form">								
+								<form >								
 								  <div class="form-group">
 									<label for="exampleInputEmail1"><?php echo $form->labelEx($model,'username'); ?></label>
 									<i class="fa fa-envelope"></i>
@@ -128,9 +124,9 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 								</form>
 								<!-- SOCIAL LOGIN -->
 									<div class="divide-20"></div>
-                                    <div class="register_link">
+                                    <!-- <div class="register_link">
 										Henüz bir hesabınız yok mu? <a href="#" onclick="swapScreen('register_bg');return false;">Kayıt olun!</a>
-									</div>
+									</div> -->
 									<div class="center">
 										Veya bir sosyal ağ hesabınız ile giriş yapın
 									</div>
@@ -148,164 +144,154 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 
 									</div>
 									<!-- /SOCIAL LOGIN -->
-									<!-- <div class="login-helpers">
+									 <div class="login-helpers">
 										<a href="#" onclick="swapScreen('forgot_bg');return false;">Forgot Password?</a> <br>
 										Don't have an account with us? <a href="#" onclick="swapScreen('register_bg');return false;">Register
 											now!</a>
-									</div> -->
+									</div>
 								<?php $this->endWidget(); ?>
+							</div>
 						</section>
                         
                         
                         
                         
-                        <section id="register_bg">
+                       
+                         
+                        
+                        
+                        
+                        <!-- FORGOT PASSWORD -->
+						<section id="forgot_bg">
+							<div class="container">
+								<div class="row">
+									<div class="">
+										<div class="login-box">
+											<form  id="forgetForm">
+											  <div class="form-group">
+												<label for="exampleInputEmail1">Enter your Email address</label>
+												<i class="fa fa-envelope"></i>
+												<input name="Reset[email]" id="Reset_email" type="text">
+											  </div>
+											  <div>
+												<button type="submit" class="btn btn-info">Send Me Reset Instructions</button>
+											  </div>
+											</form>
+											<div class="login-helpers">
+												<a href="#" onclick="swapScreen('login_bg');return false;">Back to Login</a> <br>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- FORGOT PASSWORD -->
+                        
+
+
+
+
+
+
+						<section id="register_bg">
 							<div class="container">
                             <div class="row">
-							
-                            
-                            
-                            
-                            
-                            
-                            
                             <div class="login-box">
-								<?php $form=$this->beginWidget('CActiveForm', array(
+								<?php $RegisterForm=$this->beginWidget('CActiveForm', array(
 									'id'=>'register-form',
 									// 'enableClientValidation'=>true,
-									// 'clientOptions'=>array(
-									// 	'validateOnSubmit'=>true,
-									// ),
+									 // 'clientOptions'=>array(
+									 // 	'validateOnSubmit'=>true,
+									 // ),
 								)); ?>
 								<h3 class="bigintro">Kayıt Ol</h3>
-								<form role="form">								
-								  <div class="form-group">
-									<label for=""><?php _e("İsim"); ?> *</label>
-									<i class="fa fa-font"></i>
-									<?php echo $form->textField($SignUp,'name'); ?>
-								  </div>
-                                  
-                                  <div class="form-group">
-									<label for=""><?php _e("Soyisim"); ?> *</label>
-									<i class="fa fa-user"></i>
-									<?php echo $form->textField($SignUp,'surname'); ?>
-								  </div>
-                                  
-                                  <div class="form-group">
-									<label for=""><?php _e("Email"); ?> *</label>
-									<i class="fa fa-envelope"></i>
-									<?php echo $form->textField($SignUp,'email'); ?>
-								  </div>
+									<form  id="register" name="register">								
+									  <div class="form-group">
+										<label for=""><?php _e("İsim"); ?> *</label>
+										<i class="fa fa-font"></i>
+										<?php echo $RegisterForm->textField($SignUp,'name'); ?>
+									  </div>
+	                                  
+	                                  <div class="form-group">
+										<label for=""><?php _e("Soyisim"); ?> *</label>
+										<i class="fa fa-user"></i>
+										<?php echo $RegisterForm->textField($SignUp,'surname'); ?>
+									  </div>
+	                                  
+	                                  <div class="form-group">
+										<label for=""><?php _e("Email"); ?> *</label>
+										<i class="fa fa-envelope"></i>
+										<?php echo $RegisterForm->textField($SignUp,'email'); ?>
+									  </div>
 
-								  <div class="form-group">
-									<label for=""><?php _e("Doğum Tarihi"); ?></label>
-									<i class="fa fa-calendar"></i>
-									<?php echo $form->textField($SignUp,'birthdate',array("data-mask"=>"99.99.9999")); ?>
-								  </div>
+									  <div class="form-group">
+										<label for=""><?php _e("Doğum Tarihi"); ?></label>
+										<i class="fa fa-calendar"></i>
+										<?php echo $RegisterForm->textField($SignUp,'birthdate',array("data-mask"=>"99.99.9999")); ?>
+									  </div>
 
-								  <div class="form-group">
-									<label for=""><?php _e("Telefon"); ?></label>
-									<i class="fa fa-phone"></i>
-									<?php echo $form->textField($SignUp,'tel',array("data-mask"=>"(999) 999-9999")); ?>
-								  </div>
+									  <div class="form-group">
+										<label for=""><?php _e("Telefon"); ?></label>
+										<i class="fa fa-phone"></i>
+										<?php echo $RegisterForm->textField($SignUp,'tel',array("data-mask"=>"(999) 999-9999")); ?>
+									  </div>
 
-								  <div class="form-group">
-									<label for=""><?php _e("Şehir"); ?></label>
-									<i class="fa fa-font"></i>
-									<?php echo $form->textField($SignUp,'city'); ?>
-								  </div>
+									  <div class="form-group">
+										<label for=""><?php _e("Şehir"); ?></label>
+										<i class="fa fa-font"></i>
+										<?php echo $RegisterForm->textField($SignUp,'city'); ?>
+									  </div>
 
-								  <div class="form-group">
-									 <label class="col-md-4 control-label"><?php _e("Cinsiyet"); ?> </label> 
-									 <div class="col-md-8"> 
-										<?php echo $form->radioButtonList($SignUp,'gender',array('male'=>'Male','female'=>'Female')); ?>
-									 </div>
-								  </div>
-                                  
-                                  <div class="form-group">
-									<label for=""><?php _e("Şifre"); ?> *</label>
-									<i class="fa fa-lock"></i>
-									<?php echo $form->passwordField($SignUp,'password'); ?>
-								  </div>
-								  
-								  <div class="form-group"> 
-									<label for=""><?php _e("Şifreyi Tekrarla"); ?> *</label>
-									<i class="fa fa-check-square-o"></i>
-									<?php echo $form->passwordField($SignUp,'passwordR'); ?>
-								  </div>
-								  <?php if(CCaptcha::checkRequirements()): ?>
-									<div class="form-group">
-										<label for=""><?php _e("Verify"); ?> *</label><br>
-										<?php $this->widget('CCaptcha',array(
-            'showRefreshButton'=>true,'buttonOptions'=>array('id'=>'refreshCaptcha')
-)); ?><br><br>
+									  <div class="form-group">
+										 <label class="col-md-4 control-label"><?php _e("Cinsiyet"); ?> </label> 
+										 <div class="col-md-8"> 
+											<?php echo $RegisterForm->radioButtonList($SignUp,'gender',array('male'=>'Male','female'=>'Female')); ?>
+										 </div>
+									  </div>
+	                                  
+	                                  <div class="form-group">
+										<label for=""><?php _e("Şifre"); ?> *</label>
 										<i class="fa fa-lock"></i>
-										<?php echo $form->textField($SignUp,'verify'); ?>
-										<div>Please enter the letters as they are shown in the image above.
-										<br/>Letters are not case-sensitive.</div>
-										
-									</div>
-									<?php endif; ?>
-								  	<?php echo CHtml::submitButton('Submit'); ?>
-								</form>
-                                
-                                
-                                
-                                
-                                
-                                
-                                  <div>
-								  </div>
-                                
-                                
-
-                              
-                                
-                                
-                                
-                                
-								<!-- SOCIAL LOGIN 
-									<div class="divide-20"></div>
-									<div class="center">
-										Veya bir sosyal ağ hesabınız ile kayıt olun
-									</div>
-									<div class="divide-20"></div>
-									<div class="social-login center">
-										<a class="btn btn-primary-2 btn-lg">
-											<i class="fa fa-facebook"></i>
-										</a>
-										<a class="btn btn-info btn-lg">
-											<i class="fa fa-twitter"></i>
-										</a>
-										<a class="btn btn-danger btn-lg">
-											<i class="fa fa-google-plus"></i>
-										</a>
-									</div>
-									SOCIAL LOGIN -->
-									<!-- <div class="login-helpers">
+										<?php echo $RegisterForm->passwordField($SignUp,'password'); ?>
+									  </div>
+									  
+									  <div class="form-group"> 
+										<label for=""><?php _e("Şifreyi Tekrarla"); ?> *</label>
+										<i class="fa fa-check-square-o"></i>
+										<?php echo $RegisterForm->passwordField($SignUp,'passwordR'); ?>
+									  </div>
+									  <?php if(CCaptcha::checkRequirements()): ?>
+										<div class="form-group">
+											<label for=""><?php _e("Verify"); ?> *</label><br>
+											<?php $this->widget('CCaptcha',array(
+										            'showRefreshButton'=>true,'buttonOptions'=>array('id'=>'refreshCaptcha')
+										)); ?><br><br>
+											<i class="fa fa-lock"></i>
+											<?php echo $RegisterForm->textField($SignUp,'verify'); ?>
+											<div>Please enter the letters as they are shown in the image above.
+											<br/>Letters are not case-sensitive.</div>
+										</div>
+										<?php endif; ?>
+									  	<?php echo CHtml::submitButton('Submit'); ?>
+									</form>
+									<?php $this->endWidget(); ?>
+									 <div class="login-helpers">
 										<a href="#" onclick="swapScreen('forgot_bg');return false;">Forgot Password?</a> <br>
 										Don't have an account with us? <a href="#" onclick="swapScreen('register_bg');return false;">Register
 											now!</a>
-									</div> -->
-								<?php $this->endWidget(); ?>
-                            
-                            
-                            <div class="login-helpers">
-									<a href="#" onclick="swapScreen('login_bg');return false;">&lsaquo; Giriş Sayfasına Dön</a> <br>
-								</div>
-                            
-                            
-                            
-                            
+									</div></div>
+	                            <div class="login-helpers">
+										<a href="#" onclick="swapScreen('login_bg');return false;">&lsaquo; Giriş Sayfasına Dön</a> <br>
+									</div>
                             </div>
                             </div>
 						</section>
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
 
 							</div>
 				
