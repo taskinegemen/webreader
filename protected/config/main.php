@@ -42,7 +42,7 @@ return array(
 		'messages' => array(
  			'language'=>'en_US',
             'class' => 'CGettextMessageSource',
-            'basePath'=>'/var/www/squid-pacific/egemen/protected/locale/messages',
+            'basePath'=>'/var/www/protected/locale/messages',
             'useMoFile' => TRUE,
     	),
 		'user'=>array(
@@ -69,10 +69,10 @@ return array(
 		*/
 		// uncomment the following to use a MySQL database
 		'db'=>array(
-			'connectionString' => 'mysql:host=lindneo.com;dbname=reader',
+			'connectionString' => 'mysql:host=pufferfish.private.services.okutus.com;dbname=reader',
 			'emulatePrepare' => true,
-			'username' => 'db_reader',
-			'password' => 'GGHABzec9wPWASL2',
+			'username' => 'tigerfish',
+			'password' => '6MT3WFGnxqw7aux6',
 			'charset' => 'utf8',
 		),
 
@@ -115,6 +115,8 @@ return array(
      		'tr_TR' => 'Türkçe',
      		'en_US' => 'English'
      		),
+		'catalog_host'=>'http://bigcat.okutus.com',
+		'organisation_id'=>'seviye',
 		// this is used in contact page
 		'adminEmail'=>'pacific@linden-tech.com',
 		'kerbela_host'=>'http://kerbela.lindneo.com/',
