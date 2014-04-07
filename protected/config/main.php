@@ -120,5 +120,6 @@ return array(
 		//'http://catalog.lindneo.com',
 		// this is used in contact page
 		'adminEmail'=>'pacific@linden-tech.com',
+		'kerbela_host'=>'http://kerbela.lindneo.com/',
 	),
 );
