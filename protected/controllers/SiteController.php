@@ -129,6 +129,23 @@ class SiteController extends Controller
 		}
 	}
 
+	public function actionForgetPassword($id=null)
+	{
+		if ($id) {
+			$url=Yii::app()->params['kerbela_host'].'/site/checkVerifyCode';
+			$fields=array('id'=>$id);
+			$ch = curl_init( $url );
+			curl_setopt( $ch, CURLOPT_POST, 1);
+			curl_setopt( $ch, CURLOPT_POSTFIELDS, $fields);
+			curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
+			curl_setopt( $ch, CURLOPT_HEADER, 0);
+			curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+			$response = curl_exec( $ch );
+			echo $response;
+ 			$this->render('password_reset');
+		}
+	}
+
 
 	/**
 	 * Displays the login page
@@ -169,6 +186,19 @@ class SiteController extends Controller
 				$response = curl_exec( $ch );
 				print_r($response);
 			}
+		}
+
+		if (isset($_GET['Reset'])) {
+			$email=$_GET['Reset']['email'];
+			$url=Yii::app()->params['kerbela_host'].'/site/resetPassword';
+			$ch = curl_init( $url );
+			curl_setopt( $ch, CURLOPT_POST, 1);
+			curl_setopt( $ch, CURLOPT_POSTFIELDS, $_GET['Reset']);
+			curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
+			curl_setopt( $ch, CURLOPT_HEADER, 0);
+			curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+			$response = curl_exec( $ch );
+			print_r($response);
 		}
 
 		$this->render('login',array('model'=>$model,'SignUp'=>$SignUp));
