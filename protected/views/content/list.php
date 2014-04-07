@@ -174,7 +174,7 @@ $this->pageTitle=Yii::app()->name;
           });
       if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
 if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass('margin-left-50');
-</script>
+</script> 
 
 
 	
