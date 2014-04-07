@@ -115,7 +115,8 @@ return array(
      		'tr_TR' => 'Türkçe',
      		'en_US' => 'English'
      		),
-		'catalog_host'=>'http://bigcat.okutus.com',
+		'catalog_host'=>'http://catalog.lindneo.com',
+		'organisation_id'=>'seviye',
 		//'http://catalog.lindneo.com',
 		// this is used in contact page
 		'adminEmail'=>'pacific@linden-tech.com',

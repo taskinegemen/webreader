@@ -94,11 +94,20 @@ $this->pageTitle=Yii::app()->name;
         var ticket=kerbela.getTicket();
         var auth=kerbela.getAuthTicket();
         var HTTP_service_ticket=ticket.HTTP_service_ticket;
-
+        var organisationId='<?php echo Yii::app()->getBaseUrl(true);?>';
+        console.log(organisationId);
+        var myRe = /.(\w+)\.(com|net|edu|mil|gov)/g;
+        var myArray = myRe.exec(organisationId);
+        organisationId=myArray[1];
+        var server_organisationId="<?php echo Yii::app()->params['organisation_id']; ?>";
+        if(server_organisationId!=''){
+            organisationId=server_organisationId;
+        }
+        console.log(organisationId);
         $.ajax({
           type: "POST",
           url: "<?php echo Yii::app()->params['catalog_host'];?>/api/list",
-          data: { attributes: '{"organisationId":["seviye"]}', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
+          data: { attributes: '{"organisationId":["'+organisationId+'"]}', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
         })
           .done(function( result ) {
           	var data = JSON.parse(result);
