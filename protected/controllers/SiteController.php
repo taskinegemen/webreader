@@ -129,6 +129,52 @@ class SiteController extends Controller
 		}
 	}
 
+	public function actionForgetPassword($id=null)
+	{
+		if ($id) {
+			$url=Yii::app()->params['kerbela_host'].'/site/checkVerifyCode';
+			$fields=array('id'=>$id);
+			$ch = curl_init( $url );
+			curl_setopt( $ch, CURLOPT_POST, 1);
+			curl_setopt( $ch, CURLOPT_POSTFIELDS, $fields);
+			curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
+			curl_setopt( $ch, CURLOPT_HEADER, 0);
+			curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+			$response = curl_exec( $ch );
+			$ErrorMessage="";
+			$SuccessMessage="";
+			if ($response) {
+				if (isset($_POST['Reset'])) {
+					$attributes=$_POST['Reset'];
+					$attributes['code']=$id;
+					if ($attributes['password']==$attributes['password2']) {
+						$url2=Yii::app()->params['kerbela_host'].'/site/updatePassword';
+						$ch = curl_init( $url2 );
+						curl_setopt( $ch, CURLOPT_POST, 1);
+						curl_setopt( $ch, CURLOPT_POSTFIELDS, $attributes);
+						curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
+						curl_setopt( $ch, CURLOPT_HEADER, 0);
+						curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+						$response = curl_exec( $ch );
+						if ($response) {
+							$SuccessMessage="Şifreniz değiştirme başarılı. Sisteme yeni şifreniz ile girebilirsiniz.";
+						}
+						else
+						{
+							$ErrorMessage="Şifreniz değiştirme başarılı değil. Lütfen tekrar deneyin.";
+						}
+					}
+
+				}
+			}
+			else
+			{
+				$ErrorMessage="İstek bulunamadı.";
+			}
+ 			$this->render('password_reset',array('ErrorMessage'=>$ErrorMessage,'SuccessMessage'=>$SuccessMessage));
+		}
+	}
+
 
 	/**
 	 * Displays the login page
@@ -136,6 +182,7 @@ class SiteController extends Controller
 	public function actionLogin()
 	{
 		$model=new LoginForm;
+		$SignUp=new SignUpForm;
 
 		// if it is ajax validation request
 		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
@@ -153,7 +200,37 @@ class SiteController extends Controller
 				$this->redirect(Yii::app()->user->returnUrl);
 		}
 		// display the login form
-		$this->render('login',array('model'=>$model));
+		// 
+		if(isset($_POST['SignUpForm']))
+		{
+			$SignUp->attributes=$_POST['SignUpForm'];
+			if ($SignUp->validate()) {
+				$url=Yii::app()->params['kerbela_host'].'/site/signUp';
+				$ch = curl_init( $url );
+				curl_setopt( $ch, CURLOPT_POST, 1);
+				curl_setopt( $ch, CURLOPT_POSTFIELDS, $_POST['SignUpForm']);
+				curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
+				curl_setopt( $ch, CURLOPT_HEADER, 0);
+				curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+				$response = curl_exec( $ch );
+				print_r($response);
+			}
+		}
+
+		if (isset($_GET['Reset'])) {
+			$email=$_GET['Reset']['email'];
+			$url=Yii::app()->params['kerbela_host'].'/site/resetPassword';
+			$ch = curl_init( $url );
+			curl_setopt( $ch, CURLOPT_POST, 1);
+			curl_setopt( $ch, CURLOPT_POSTFIELDS, $_GET['Reset']);
+			curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
+			curl_setopt( $ch, CURLOPT_HEADER, 0);
+			curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+			$response = curl_exec( $ch );
+			print_r($response);
+		}
+
+		$this->render('login',array('model'=>$model,'SignUp'=>$SignUp));
 	}
 
 	/**
