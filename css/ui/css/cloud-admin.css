@@ -2111,8 +2111,8 @@ fieldset[disabled] .btn-danger.active {
 }
 .btn-success {
   color: #ffffff;
-  background-color: #a8bc7b;
-  border-color: #9db36a;
+  background-color: #32A03A;
+  border-color: #27752D;
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -8203,27 +8203,28 @@ div[data-role="editor-toolbar"] {
 	border-radius: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-top: 5px;
-	padding-bottom: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	position: relative;
 	min-height: 300px;
-
+	border: 1px solid rgb(124, 124, 124);
 }
 .login-box input,
 .login-box textarea {
-  background: none repeat scroll 0 0 #FFFFFF;
-  font-size: 15px;
-  margin: 0;
-  padding: 8px 8px 8px;
-  width: 100%;
-  border-radius: 3px;
-  box-shadow: none;
-  min-width: 0;
-  padding-left: 33px !important;
-  border:none;
+	background: none repeat scroll 0 0 #FFFFFF;
+	font-size: 15px;
+	margin: 0;
+	padding: 8px 8px 8px;
+	width: 100%;
+	border-radius: 3px;
+	box-shadow: none;
+	min-width: 0;
+	border: none;
+	padding-left: 40px;
 }
 .login-box button {
   width: 100%;
+  font-weight:bold;
 }
 .login-box-plain {
   background: none repeat scroll 0 0 #FFFFFF;
@@ -9068,8 +9069,11 @@ ul.stats li small {
 
 
 .login_submit {
-	font-size:18px;
-	font-weight:bold;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 25px !important;
+	color: #fff;
+	padding-left: 0 !important;
 }
 
 .login_contact {
@@ -9355,6 +9359,7 @@ div.reader_book_category {
 
 .stars_rating_of_the_book {
 	float:left;
+	display:none;
 }
 
 .number_rating_of_the_book {
@@ -9363,6 +9368,7 @@ div.reader_book_category {
 	color: #C2C2C2;
 	text-shadow: 0px 1px 1px #FFFFFF;
 	margin-left:10px;
+	display:none;
 }
 
 
@@ -9453,6 +9459,7 @@ span.book_info_titles {
 	float: right;
 	margin-top: 20px;
 	border-left: 1px solid #FFF;
+	display:none;
 }
 
 
@@ -9464,6 +9471,7 @@ span.book_info_titles {
 .book_info_comments_container {
 	width:1000px;
 	padding-top:20px;
+	display:none;
 }
 
 
@@ -9530,7 +9538,8 @@ span.book_info_titles {
 
 .book_info_comment_box {
 	padding-top: 20px;
-	border-top: 1px solid #fff;	
+	border-top: 1px solid #fff;
+	display:none;
 }
 
 
@@ -9576,7 +9585,8 @@ span.book_info_titles {
 	padding-right: 5px;
 	padding-left: 5px;
 	margin-bottom: 5px;
-	cursor:pointer;	
+	cursor:pointer;
+	display:none;
 }
 
 .reader_library_page_row .reader_book_card_writer_name {

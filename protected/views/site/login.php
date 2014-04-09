@@ -90,7 +90,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 <div class="col-md-3">
 
 						<section id="login_bg" class="visible">
-							<div class="login-box">
+							<div class="login-box" style="margin-top:100px;">
 								<?php $form=$this->beginWidget('CActiveForm', array(
 									'id'=>'login-form',
 									/*'enableClientValidation'=>true,
@@ -99,7 +99,6 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 									)
 									*/
 								)); ?>
-								<h3 class="bigintro">Seviye Dijital'e Giriş Yap</h3>
 								
 								<form role="form">								
 								  <div class="form-group">
@@ -117,9 +116,9 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 								  <div class="form-group">
 								  	
 								  	
-								  	<div class="form-group">
+								  	<!-- <div class="form-group">
 									  <label for="ytLoginForm_rememberMe"><div class="checker hover" id="uniform-ytLoginForm_rememberMe"><span class=""><input id="ytLoginForm_rememberMe" type="checkbox" class="uniform" value="0" name="LoginForm[rememberMe]"></span></div></label><?php _e("Beni Hatırla"); ?></div>
-								    </div>
+								    </div> -->
 
 								  <div class="form-group">
 									 <input type='submit' class="btn  login_submit brand_color_for_buttons" id="loginButton" value='<?php _e("Giriş Yap"); ?>' />									
@@ -131,22 +130,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
                                     <div class="register_link">
 										Henüz bir hesabınız yok mu? <a href="#" onclick="swapScreen('register_bg');return false;">Kayıt olun!</a>
 									</div>
-									<div class="center">
-										Veya bir sosyal ağ hesabınız ile giriş yapın
-									</div>
-									<div class="divide-20"></div>
-									<div class="social-login center">
-										<a class="btn btn-primary-2 btn-lg">
-											<i class="fa fa-facebook"></i>
-										</a>
-										<a class="btn btn-info btn-lg">
-											<i class="fa fa-twitter"></i>
-										</a>
-										<a class="btn btn-danger btn-lg">
-											<i class="fa fa-google-plus"></i>
-										</a>
-
-									</div>
+									
 									<!-- /SOCIAL LOGIN -->
 									<!-- <div class="login-helpers">
 										<a href="#" onclick="swapScreen('forgot_bg');return false;">Forgot Password?</a> <br>
