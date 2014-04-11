@@ -172,8 +172,8 @@ $this->pageTitle=Yii::app()->name;
 				$('#filter-items').append(card);
             });
           });
-      if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
-if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass('margin-left-50');
+//       if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
+// if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass('margin-left-50');
 </script> 
 
 

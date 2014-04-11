@@ -13,6 +13,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 <!-- login -->
   <script type="text/javascript">
 	$(document).ready(function(){
+
 		$('#login-form').submit(function(e) {
 				e.preventDefault();
 		  		window.setTimeout(function(){login();},100);
@@ -61,7 +62,74 @@ $this->pageTitle=Yii::app()->name . ' - Login';
   </script>
  <!-- login -->
  
+<?php $detect = new Mobile_Detect;
+if ( $detect->isMobile() || $detect->isTablet()):
+?>
+<section id="register_bg_mobil">
+	<div class="container">
+    <div class="row">
+    <div class="login-box">
+		<?php $RegisterForm=$this->beginWidget('CActiveForm', array(
+			'id'=>'register-form',
+			// 'enableClientValidation'=>true,
+			 // 'clientOptions'=>array(
+			 // 	'validateOnSubmit'=>true,
+			 // ),
+		)); ?>
+		<h3 class="bigintro">Kayıt Ol</h3>
+			<form  id="register" name="register">								
+			  <div class="form-group">
+				<label for=""><?php _e("İsim"); ?> *</label>
+				<i class="fa fa-font"></i>
+				<?php echo $RegisterForm->textField($SignUp,'name'); ?>
+			  </div>
+              
+              <div class="form-group">
+				<label for=""><?php _e("Soyisim"); ?> *</label>
+				<i class="fa fa-user"></i>
+				<?php echo $RegisterForm->textField($SignUp,'surname'); ?>
+			  </div>
+              
+              <div class="form-group">
+				<label for=""><?php _e("Email"); ?> *</label>
+				<i class="fa fa-envelope"></i>
+				<?php echo $RegisterForm->textField($SignUp,'email'); ?>
+			  </div>
 
+              
+              <div class="form-group">
+				<label for=""><?php _e("Şifre"); ?> *</label>
+				<i class="fa fa-lock"></i>
+				<?php echo $RegisterForm->passwordField($SignUp,'password'); ?>
+			  </div>
+			  
+			  <div class="form-group"> 
+				<label for=""><?php _e("Şifreyi Tekrarla"); ?> *</label>
+				<i class="fa fa-check-square-o"></i>
+				<?php echo $RegisterForm->passwordField($SignUp,'passwordR'); ?>
+			  </div>
+			  <?php if(CCaptcha::checkRequirements()): ?>
+			  <div class="form-group">
+					<label for=""><?php _e("Güvenlik Doğrulama Kodu"); ?> *</label><br>
+					<?php $this->widget('CCaptcha',array('showRefreshButton'=>true,'buttonOptions'=>array('id'=>'refreshCaptcha'))); ?><br><br>
+					<i class="fa fa-lock"></i>
+					<?php echo $RegisterForm->textField($SignUp,'verify'); ?>
+					<div>Yukarıdaki resimde görünen karakterleri girin.
+					<br/>Küçük-Büyük harf duyarlıdır.</div>
+				</div>
+				<?php endif; ?>
+			  	<?php echo CHtml::submitButton('Kayıt Ol'); ?>
+			</form>
+			<?php $this->endWidget(); ?>
+        </div>
+        
+    </div>
+    </div>
+</section>
+<?php
+else:
+
+?>
 <div class="login_page_container">    
 
 <div class="login_linden_information">
@@ -255,7 +323,14 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 										<?php echo $RegisterForm->passwordField($SignUp,'passwordR'); ?>
 									  </div>
 									  <?php if(CCaptcha::checkRequirements()): ?>
-
+									  <div class="form-group">
+											<label for=""><?php _e("Güvenlik Doğrulama Kodu"); ?> *</label><br>
+											<?php $this->widget('CCaptcha',array('showRefreshButton'=>true,'buttonOptions'=>array('id'=>'refreshCaptcha'))); ?><br><br>
+											<i class="fa fa-lock"></i>
+											<?php echo $RegisterForm->textField($SignUp,'verify'); ?>
+											<div>Yukarıdaki resimde görünen karakterleri girin.
+											<br/>Küçük-Büyük harf duyarlıdır.</div>
+										</div>
 										<?php endif; ?>
 									  	<?php echo CHtml::submitButton('Submit'); ?>
 									</form>
@@ -328,4 +403,9 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 		}
 	</script>
 	<!-- /JAVASCRIPTS -->
-
+<?php 
+endif;
+?>
+<script type="text/javascript">
+	$("#refreshCaptcha").text("Yenile");
+</script>
