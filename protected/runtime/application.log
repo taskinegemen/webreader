@@ -1701,3 +1701,849 @@ Stack trace:
 REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
 HTTP_REFERER=http://reader.lindneo.com/erkan/content/details/5zyMRkr6sW3bzyYKepCN1F3dopJYS03KoDeVNJ7CVpVX
 ---
+2014/04/11 05:53:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:06:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:09:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:09:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:11:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:11:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:12:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:12:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:14:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:15:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:15:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:18:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:18:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:21:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:23:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/l.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/img/logo/l.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:23:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/li.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/img/logo/li.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:24:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/l.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/img/logo/l.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:24:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/l.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/img/logo/l.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:24:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/li.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/img/logo/li.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:24:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenur.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/img/logo/lindenur.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:24:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenuru.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/img/logo/lindenuru.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:24:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenurum.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/img/logo/lindenurum.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenuru.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/img/logo/lindenuru.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenur.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/img/logo/lindenur.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenu.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/img/logo/lindenu.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:24:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenk.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/img/logo/lindenk.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:24:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenku.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/img/logo/lindenku.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:24:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkur.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/img/logo/lindenkur.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:24:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkuru.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/img/logo/lindenkuru.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:24:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurum.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/img/logo/lindenkurum.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:24:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurums.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/img/logo/lindenkurums.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:24:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsa.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/img/logo/lindenkurumsa.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:24:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:29:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:31:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:33:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:35:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:35:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:36:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:36:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:38:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:39:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:39:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:40:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:44:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:46:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:48:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:49:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:50:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:51:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:51:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:52:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 06:53:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:01:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:01:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:03:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:17:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:20:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:21:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:23:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:24:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:28:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:30:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:31:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:31:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:32:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:35:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:38:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:39:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:39:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:40:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:40:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:40:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:41:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:42:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:42:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:43:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:44:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:44:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:44:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:45:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:45:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:45:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:46:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:46:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:47:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:50:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:50:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:51:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:51:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 07:51:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 08:15:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/library
+---
+2014/04/11 10:39:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 10:42:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---

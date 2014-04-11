@@ -64,6 +64,23 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 
 <div class="login_page_container">    
 
+<div class="login_linden_information">
+
+<a href="http://www.linden-tech.com/" target="_blank">
+<div class="login_page_ribbon">
+<div class="ribbon_rectangle"></div>
+<div class="ribbon_arrow_down"></div>
+</div>
+
+<div class="login_linden_information_text">Seviye Dijital <font style="color:#FFC">Linden Dijital Yayıncılık A.Ş.</font> Tarafından Hazırlanmıştır. <br /> Bizi daha yakından tanımak için logomuza tıklayın.</div>
+
+</a>
+
+
+
+</div>
+<!--- END OF login_linden_information ----->
+
 
 <video autoplay loop poster="../../../js/login_back.png" id="bgvid">
 <source src="../js/back.webm" type="video/webm">
@@ -125,7 +142,9 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 									<div class="divide-20"></div>
                                      <div class="register_link">
 										Henüz bir hesabınız yok mu? <a href="#" onclick="swapScreen('register_bg');return false;">Kayıt olun!</a>
-
+									 <div class="login-helpers">
+										<a href="#" onclick="swapScreen('forgot_bg');return false;">Şifremi Unuttum!</a> <br>
+									</div>
 									</div>
 									
 
@@ -161,23 +180,23 @@ $this->pageTitle=Yii::app()->name . ' - Login';
                         
                         
                         <!-- FORGOT PASSWORD -->
-						<section id="forgot_bg">
+						<section id="forgot_bg" style="margin-top:180px;">
 							<div class="container">
 								<div class="row">
 									<div class="">
 										<div class="login-box">
 											<form  id="forgetForm">
 											  <div class="form-group">
-												<label for="exampleInputEmail1">Enter your Email address</label>
+												<label for="exampleInputEmail1">E-Mail Adresinizi Girin.</label>
 												<i class="fa fa-envelope"></i>
 												<input name="Reset[email]" id="Reset_email" type="text">
 											  </div>
 											  <div>
-												<button type="submit" class="btn btn-info">Send Me Reset Instructions</button>
+												<button type="submit" class="btn btn-info">Şifremi sıfırlamak için mail gönder</button>
 											  </div>
 											</form>
 											<div class="login-helpers">
-												<a href="#" onclick="swapScreen('login_bg');return false;">Back to Login</a> <br>
+												<a href="#" onclick="swapScreen('login_bg');return false;">Giriş Sayfasına Dön</a> <br>
 											</div>
 										</div>
 									</div>
@@ -223,30 +242,6 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 										<?php echo $RegisterForm->textField($SignUp,'email'); ?>
 									  </div>
 
-									  <div class="form-group">
-										<label for=""><?php _e("Doğum Tarihi"); ?></label>
-										<i class="fa fa-calendar"></i>
-										<?php echo $RegisterForm->textField($SignUp,'birthdate',array("data-mask"=>"99.99.9999")); ?>
-									  </div>
-
-									  <div class="form-group">
-										<label for=""><?php _e("Telefon"); ?></label>
-										<i class="fa fa-phone"></i>
-										<?php echo $RegisterForm->textField($SignUp,'tel',array("data-mask"=>"(999) 999-9999")); ?>
-									  </div>
-
-									  <div class="form-group">
-										<label for=""><?php _e("Şehir"); ?></label>
-										<i class="fa fa-font"></i>
-										<?php echo $RegisterForm->textField($SignUp,'city'); ?>
-									  </div>
-
-									  <div class="form-group">
-										 <label class="col-md-4 control-label"><?php _e("Cinsiyet"); ?> </label> 
-										 <div class="col-md-8"> 
-											<?php echo $RegisterForm->radioButtonList($SignUp,'gender',array('male'=>'Male','female'=>'Female')); ?>
-										 </div>
-									  </div>
 	                                  
 	                                  <div class="form-group">
 										<label for=""><?php _e("Şifre"); ?> *</label>
@@ -260,28 +255,17 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 										<?php echo $RegisterForm->passwordField($SignUp,'passwordR'); ?>
 									  </div>
 									  <?php if(CCaptcha::checkRequirements()): ?>
-										<div class="form-group">
-											<label for=""><?php _e("Verify"); ?> *</label><br>
-											<?php $this->widget('CCaptcha',array(
-										            'showRefreshButton'=>true,'buttonOptions'=>array('id'=>'refreshCaptcha')
-										)); ?><br><br>
-											<i class="fa fa-lock"></i>
-											<?php echo $RegisterForm->textField($SignUp,'verify'); ?>
-											<div>Please enter the letters as they are shown in the image above.
-											<br/>Letters are not case-sensitive.</div>
-										</div>
+
 										<?php endif; ?>
 									  	<?php echo CHtml::submitButton('Submit'); ?>
 									</form>
 									<?php $this->endWidget(); ?>
-									 <div class="login-helpers">
-										<a href="#" onclick="swapScreen('forgot_bg');return false;">Forgot Password?</a> <br>
-										Don't have an account with us? <a href="#" onclick="swapScreen('register_bg');return false;">Register
-											now!</a>
-									</div></div>
-	                            <div class="login-helpers">
+								
+                                	<div class="login-helpers">
 										<a href="#" onclick="swapScreen('login_bg');return false;">&lsaquo; Giriş Sayfasına Dön</a> <br>
 									</div>
+                                </div>
+	                            
                             </div>
                             </div>
 						</section>
@@ -322,15 +306,6 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 
 </div>
 <!-- END OF LOGIN_PAGE_CONTAINER -->
-
-
-		
-
-
-<div class="login_contact">
-<p>Seviye Dijital Linden Dijital Yayıncılık A.Ş. Tarafından Hazırlanmıştır.</p>
-<p>Bizi daha yakından tanıyın. <a target="_blank" href="http://www.linden-tech.com/">www.linden-tech.com</a></p>
-</div>
 
 
 
