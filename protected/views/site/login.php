@@ -65,19 +65,13 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 <div class="login_page_container">    
 
 <div class="login_linden_information">
-
 <a href="http://www.linden-tech.com/" target="_blank">
 <div class="login_page_ribbon">
 <div class="ribbon_rectangle"></div>
 <div class="ribbon_arrow_down"></div>
 </div>
-
 <div class="login_linden_information_text">Seviye Dijital <font style="color:#FFC">Linden Dijital Yayıncılık A.Ş.</font> Tarafından Hazırlanmıştır. <br /> Bizi daha yakından tanımak için logomuza tıklayın.</div>
-
 </a>
-
-
-
 </div>
 <!--- END OF login_linden_information ----->
 
