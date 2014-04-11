@@ -9317,7 +9317,7 @@ div.reader_book_category {
 /** READER BOOK INFO PAGE **/
 
 .book_info_details_container {
-	border-bottom:1px solid #D6D6D6;	
+	/*border-bottom:1px solid #D6D6D6;*/
 }
 
 .book_info_page_container {
@@ -9428,8 +9428,18 @@ h3.book_info_the_name_of_the_writer {
 }
 
 
-button.book_info_add_to_library_button {
-	margin-left:10px;	
+.book_info_add_to_library_button {
+	background-color: #FF6138;
+	border-color: #F36742;
+}
+
+.book_info_add_to_library_button:hover {
+	color:#831B00;
+}
+
+.book_info_add_to_library_button i{
+	margin-right:5px;
+	font-size:16px;
 }
 
 
@@ -9440,7 +9450,7 @@ button.book_info_add_to_library_button {
 	margin-top:20px;
 	color: #808284;
 	font-size:16px;
-	border-right:1px solid #D6D6D6;
+	/*border-right:1px solid #D6D6D6;*/
 	text-shadow: 0px 1px 1px #FFFFFF;
 	overflow-y: auto;
 	overflow-x: hidden;
