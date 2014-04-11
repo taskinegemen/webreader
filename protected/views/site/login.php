@@ -76,9 +76,9 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 <!--- END OF login_linden_information ----->
 
 
-<video autoplay loop poster="../../../js/login_back.png" id="bgvid">
-<source src="../js/back.webm" type="video/webm">
-<source src="../js/back.mp4" type="video/mp4">
+<video autoplay loop poster="../../../css/branding/seviye/seviye.png" id="bgvid">
+<source src="../css/branding/seviye/seviye.webm" type="video/webm">
+<source src="../css/branding/seviye/seviye.mp4" type="video/mp4">
 </video>
 
    <div class="login_overlay"></div>     

@@ -57,7 +57,7 @@ class CCaptcha extends CWidget
 	/**
 	 * @var string the label for the refresh button. Defaults to 'Get a new code'.
 	 */
-	public $buttonLabel;
+	public $buttonLabel='Yenile';
 	/**
 	 * @var string the type of the refresh button. This should be either 'link' or 'button'.
 	 * The former refers to hyperlink button while the latter a normal push button.
@@ -115,7 +115,7 @@ class CCaptcha extends CWidget
 		{
 			// reserve a place in the registered script so that any enclosing button js code appears after the captcha js
 			$cs->registerScript('Yii.CCaptcha#'.$id,'// dummy');
-			$label=$this->buttonLabel===null?Yii::t('yii','Get a new code'):$this->buttonLabel;
+			$label=$this->buttonLabel===null?Yii::t('yii','Yenile'):$this->buttonLabel;
 			$options=$this->buttonOptions;
 			if(isset($options['id']))
 				$buttonID=$options['id'];
