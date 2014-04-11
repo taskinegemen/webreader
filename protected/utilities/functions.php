@@ -64,12 +64,12 @@ class functions
                                 <span class="menu-text">Mağaza</span>
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a id="profile"href="#">
                                 <i class="fa fa-user fa-fw"></i> 
                                 <span class="menu-text">Profilim</span>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                     <!-- /Navigation -->
 
