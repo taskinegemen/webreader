@@ -1,1 +1,1009 @@
 
+2014/04/11 14:04:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:06:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:07:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/library
+---
+2014/04/11 14:07:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/index.php/site/library
+---
+2014/04/11 14:07:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/index.php/content/list
+---
+2014/04/11 14:07:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:08:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:08:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:10:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:11:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:15:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:15:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:16:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:16:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:16:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
+2014/04/11 14:16:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
