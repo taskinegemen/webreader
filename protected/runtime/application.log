@@ -2697,3 +2697,12 @@ Stack trace:
 REQUEST_URI=/erkan/index.php/content/getcontent/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
 in /var/www/reader/erkan/protected/controllers/ContentController.php (145)
 in /var/www/reader/erkan/index.php (15)
+2014/04/11 13:59:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/erkan/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/erkan/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
+---
