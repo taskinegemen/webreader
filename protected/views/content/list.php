@@ -16,7 +16,20 @@ $this->pageTitle=Yii::app()->name;
 
 			<?php echo functions::event('left_menu', $this); ?>
 
-			<div id="main-content">
+
+			
+
+
+			<div id="main-content">            
+            
+             <div class="market_page_action_bar">                          
+                 <div class="market_page_left_actions">
+                    <div class="market_page_categories">Kategoriler</div>
+                 </div>
+                 <!----- END OF market_page_left_actions ------------->
+             </div>
+             <!----- END OF market_page_action_bar ------------->
+             
 				<div class="container">
 					<div class="row">
 						<div class="reader_market_page_row clearfix">

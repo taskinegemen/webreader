@@ -9383,6 +9383,14 @@ div.reader_book_category {
 }
 
 
+.market_page_action_bar {
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	-webkit-box-shadow: 5px 0 1px 0 #D6D6D6;
+	box-shadow: 5px 0 1px 0 #D6D6D6;	
+}
+
 /** END OF READER MARKET PAGE **/
 
 /** READER BOOK INFO PAGE **/
