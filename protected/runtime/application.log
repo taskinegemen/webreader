@@ -2547,3 +2547,442 @@ Stack trace:
 REQUEST_URI=/erkan/css/ui/js/jquery/jquery-2.0.3.min.map
 HTTP_REFERER=http://reader.lindneo.com/erkan/site/login
 ---
+2014/04/11 11:11:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:11:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login?Reset%5Bemail%5D=asdsadsda
+---
+2014/04/11 11:11:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login?Reset
+---
+2014/04/11 11:13:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:13:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:17:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:21:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:22:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:23:17 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "login".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#1 /var/www/reader/ekaratas/protected/controllers/SiteController.php(233): CController->render('login', Array)
+#2 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#3 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('login')
+#7 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#8 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/ekaratas/site/login
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/site/library
+---
+2014/04/11 11:23:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:23:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:25:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:25:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:25:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:25:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:26:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:26:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:27:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:27:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:28:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:29:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:41:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:42:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:42:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:43:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:43:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:43:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:43:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:45:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:47:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:48:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:49:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:50:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:52:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:54:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:57:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:57:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:58:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:58:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:58:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:59:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 11:59:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 12:00:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 12:01:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 12:07:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 12:09:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 12:20:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/11 12:28:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/img/logo/lindenkurumsal.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/img/logo...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/img/logo/lindenkurumsal.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
