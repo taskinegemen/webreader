@@ -16,16 +16,33 @@ $this->pageTitle=Yii::app()->name;
 
 			<?php echo functions::event('left_menu', $this); ?>
 
-
-			
+            
+            
+            
 
 
 			<div id="main-content">            
             
              <div class="market_page_action_bar">                          
-                 <div class="market_page_left_actions">
-                    <div class="market_page_categories">Kategoriler</div>
-                 </div>
+                 <ul class="market_page_left_actions">
+                 
+                 
+                    <li class="dropdown market_page_categories">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kategoriler <i class="fa fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li>Kategori 1</li>
+                                <li>Kategori 2</li>
+                                <li>Kategori 3</li>
+                                <li>Kategori 4</li>
+                            </ul>
+                    </li>
+                    
+                    
+                    <div class="action_bar_spacer"></div>
+                    <li class="market_page_left_actions_current"><a href="#" target="_blank">Anasayfa</a></li>
+                    <li><a href="#" target="_blank">En'ler</a></li>
+                    <li><a href="#" target="_blank">Yeni Kitaplar</a></li>
+                 </ul>
                  <!----- END OF market_page_left_actions ------------->
              </div>
              <!----- END OF market_page_action_bar ------------->
