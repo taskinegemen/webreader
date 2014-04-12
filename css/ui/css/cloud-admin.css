@@ -9391,6 +9391,74 @@ div.reader_book_category {
 	box-shadow: 5px 0 1px 0 #D6D6D6;	
 }
 
+ul.market_page_left_actions {
+	height:100%;
+	margin-left:-14px;
+	float:left;	
+}
+
+ul.market_page_left_actions li {
+	height: 100%;
+	padding: 0px 10px;
+	list-style: none;
+	line-height: 3.1em;
+	font-size: 15px;
+	color: #737373;
+	float: left;	
+}
+
+ul.market_page_left_actions li:hover {
+	background:#f8f8f8;	
+}
+
+ul.market_page_left_actions li a{
+	display:inline-block;
+	color: #737373;	
+}
+
+.market_page_left_actions_current {
+	border-bottom:3px solid #2880b9;	
+}
+
+
+.action_bar_spacer {
+	width:1px;
+	height:30px;
+	background: #d6d6d6;
+	float:left;
+	margin-top:10px;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+
+li.market_page_categories a i {
+	font-size: 13px;
+	margin-left: 4px;
+	position: relative;
+	top: -1px;	
+}
+
+
+
+li.market_page_categories ul.dropdown-menu {
+	background:#fff;
+	padding-top: 5px;
+	padding-bottom: 5px;	
+}
+
+li.market_page_categories ul.dropdown-menu li{
+	width: 100%;
+	line-height: normal;
+	padding: 5px 10px;	
+}
+
+li.market_page_categories ul.dropdown-menu li:hover{
+	border:0 !important;
+	cursor:pointer;	
+}
+
+
 /** END OF READER MARKET PAGE **/
 
 /** READER BOOK INFO PAGE **/
