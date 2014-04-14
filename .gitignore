@@ -3,3 +3,5 @@ protected/runtime/application.log*
 *.log.*
 *.log
 contents/*
+protected/config/main.php
+tmp/
