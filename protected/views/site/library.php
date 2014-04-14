@@ -4,15 +4,9 @@
 ?>
 
 <script type="text/javascript">
-<<<<<<< HEAD
     $( document ).ready(function() { 
 if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
 if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass('margin-left-50');
-=======
-	$( document ).ready(function() { 
-// if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
-// if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass('margin-left-50');
->>>>>>> 92084f77c4056d5a368e22f780bd46f04fc96e97
         function d2h(d) {
             return d.toString(16);
         }

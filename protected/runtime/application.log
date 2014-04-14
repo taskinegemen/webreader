@@ -1887,3 +1887,586 @@ Stack trace:
 REQUEST_URI=/js/libs/jquery.lazy.min.js
 HTTP_REFERER=http://reader.okutus.com/index.php/content/list
 ---
+2014/04/14 09:59:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./site/login
+---
+2014/04/14 09:59:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.okutus.com./site/login
+---
+2014/04/14 09:59:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/04/14 10:00:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./site/library
+---
+2014/04/14 10:00:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/content/list
+---
+2014/04/14 10:00:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/site/library
+---
+2014/04/14 10:00:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/content/list
+---
+2014/04/14 10:01:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/site/library
+---
+2014/04/14 10:01:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/content/list
+---
+2014/04/14 10:01:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/site/library
+---
+2014/04/14 10:01:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/content/list
+---
+2014/04/14 10:01:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/content/list
+---
+2014/04/14 10:01:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/content/list
+---
+2014/04/14 10:01:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/content/list
+---
+2014/04/14 10:01:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/site/library
+---
+2014/04/14 10:02:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/site/library
+---
+2014/04/14 10:03:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/site/login
+---
+2014/04/14 10:03:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.okutus.com./index.php/site/login
+---
+2014/04/14 10:03:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.webm".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/css/branding/seviye/seviye.webm
+HTTP_REFERER=http://reader.okutus.com./index.php/site/login
+---
+2014/04/14 10:03:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.mp4".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/css/branding/seviye/seviye.mp4
+HTTP_REFERER=http://reader.okutus.com./index.php/site/login
+---
+2014/04/14 10:03:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com/site/login
+---
+2014/04/14 10:03:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com/site/login
+---
+2014/04/14 10:03:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.okutus.com/site/login
+---
+2014/04/14 10:03:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com/site/login
+---
+2014/04/14 10:03:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.okutus.com/site/login
+---
+2014/04/14 10:03:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./site/library
+---
+2014/04/14 10:03:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/site/library
+---
+2014/04/14 10:05:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com/site/login
+---
+2014/04/14 10:05:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.okutus.com/site/login
+---
+2014/04/14 10:06:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/04/14 10:06:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./site/login
+---
+2014/04/14 10:06:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.okutus.com./site/login
+---
+2014/04/14 10:08:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com/site/login
+---
+2014/04/14 10:08:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.okutus.com/site/login
+---
+2014/04/14 10:08:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./site/library
+---
+2014/04/14 10:08:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./content/details/5ZLCqyyAHL6Q3vlukDRZQhH7UbMupEr1sRzFVRXxH0AC
+---
+2014/04/14 10:08:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com/site/library
+---
+2014/04/14 10:09:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./content/details/5ZLCqyyAHL6Q3vlukDRZQhH7UbMupEr1sRzFVRXxH0AC
+---
+2014/04/14 10:09:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/site/library
+---
+2014/04/14 10:09:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./content/details/kZhkMCOQl2HEi9OE9BKt03ZY8DDHhoU4NnmVvWHUcK8M
+---
+2014/04/14 10:09:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com/content/details/J4wUPlyCDBljDuhqN5UuZMIk0NEDsArxDcxul0gHVeHp
+---
+2014/04/14 10:09:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/site/library
+---
+2014/04/14 10:09:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./content/details/5ZLCqyyAHL6Q3vlukDRZQhH7UbMupEr1sRzFVRXxH0AC
+---
+2014/04/14 10:09:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/content/list
+---
+2014/04/14 10:10:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com/index.php/content/list
+---
+2014/04/14 10:10:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/content/list
+---
+2014/04/14 10:10:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com/content/details/C97HRRQnP4I13L4zIl0pj7IqqEUmg0T16ncBvoxlUjoO
+---
+2014/04/14 10:11:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com/index.php/site/library
+---
+2014/04/14 10:11:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./content/details/5Pl71f2SOWcvMgLY8XvoQ5KGkfHY7IPbGpz8HhCZ5lm4
+---
+2014/04/14 10:12:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/content/list
+---
+2014/04/14 10:13:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./content/details/5ZLCqyyAHL6Q3vlukDRZQhH7UbMupEr1sRzFVRXxH0AC
+---
+2014/04/14 10:13:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com/site/login
+---
+2014/04/14 10:13:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.okutus.com/site/login
+---
+2014/04/14 10:13:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com/site/library
+---
+2014/04/14 10:13:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./content/details/5zyMRkr6sW3bzyYKepCN1F3dopJYS03KoDeVNJ7CVpVX
+---
+2014/04/14 10:14:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com/content/details/kZhkMCOQl2HEi9OE9BKt03ZY8DDHhoU4NnmVvWHUcK8M
+---
+2014/04/14 10:14:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com/index.php/content/list
+---
+2014/04/14 10:14:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com/content/details/kZhkMCOQl2HEi9OE9BKt03ZY8DDHhoU4NnmVvWHUcK8M
+---
+2014/04/14 10:14:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.okutus.com/index.php/content/list
+---
+2014/04/14 10:17:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com/content/details/kZhkMCOQl2HEi9OE9BKt03ZY8DDHhoU4NnmVvWHUcK8M
+---
+2014/04/14 10:17:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./content/details/DUV3aljOihOMPC74FH373RZyTulwCIlXfCAkhFaq7bg4
+---
+2014/04/14 10:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./content/details/iNnX8O6FRtwfprDJv37AB4Etf9tRxVi2qSfmsnVxhgC2
+---
+2014/04/14 10:17:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com/content/details/5ZLCqyyAHL6Q3vlukDRZQhH7UbMupEr1sRzFVRXxH0AC
+---
+2014/04/14 10:18:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./index.php/site/library
+---
+2014/04/14 10:18:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.okutus.com./content/details/5ZLCqyyAHL6Q3vlukDRZQhH7UbMupEr1sRzFVRXxH0AC
+---

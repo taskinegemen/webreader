@@ -136,50 +136,15 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 									<div class="divide-20"></div>
                                      <div class="register_link">
 										Henüz bir hesabınız yok mu? <a href="#" onclick="swapScreen('register_bg');return false;">Kayıt olun!</a>
-<<<<<<< HEAD
-<<<<<<< HEAD
-									</div> -->
-=======
+
+
 									 <div class="login-helpers">
 										<a href="#" onclick="swapScreen('forgot_bg');return false;">Şifremi Unuttum!</a> <br>
 									</div>
 									</div>
 									
 
-									</div><!-- 
->>>>>>> 92084f77c4056d5a368e22f780bd46f04fc96e97
-									<div class="center">
-										Veya bir sosyal ağ hesabınız ile giriş yapın
 									</div>
-									<div class="divide-20"></div>
-									<div class="social-login center">
-										<a class="btn btn-primary-2 btn-lg">
-											<i class="fa fa-facebook"></i>
-										</a>
-										<a class="btn btn-info btn-lg">
-											<i class="fa fa-twitter"></i>
-										</a>
-										<a class="btn btn-danger btn-lg">
-											<i class="fa fa-google-plus"></i>
-										</a>
-
-<<<<<<< HEAD
-									</div>
-=======
-									</div>
-									
->>>>>>> b1af0cd... Hiding missing options
-									<!-- /SOCIAL LOGIN -->
-									 <div class="login-helpers">
-										<a href="#" onclick="swapScreen('forgot_bg');return false;">Forgot Password?</a> <br>
-										Don't have an account with us? <a href="#" onclick="swapScreen('register_bg');return false;">Register
-											now!</a>
-									</div>
-=======
-									</div>-->
-
-									
->>>>>>> 92084f77c4056d5a368e22f780bd46f04fc96e97
 								<?php $this->endWidget(); ?>
 							</div>
 						</section>

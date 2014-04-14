@@ -8206,19 +8206,11 @@ div[data-role="editor-toolbar"] {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	position: relative;
-<<<<<<< HEAD
-	min-height: 300px;
-=======
 	min-height: 100px;
->>>>>>> 92084f77c4056d5a368e22f780bd46f04fc96e97
 	border: 1px solid rgb(124, 124, 124);
 }
 .login-box input,
 .login-box textarea {
-<<<<<<< HEAD
-	background: none repeat scroll 0 0 #FFFFFF;
-=======
->>>>>>> 92084f77c4056d5a368e22f780bd46f04fc96e97
 	font-size: 15px;
 	margin: 0;
 	padding: 8px 8px 8px;
