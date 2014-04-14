@@ -2110,9 +2110,9 @@ fieldset[disabled] .btn-danger.active {
   background-color: #fff;
 }
 .btn-success {
-  color: #ffffff;
-  background-color: #32A03A;
-  border-color: #27752D;
+	color: #ffffff;
+	background-color: #a8bc7b;
+	border-color: #9db36a;
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -5011,7 +5011,7 @@ button.close {
   padding: 20px;
 }
 .modal-footer {
-  margin-top: 15px;
+  margin-top: 20px;
   padding: 19px 20px 20px;
   text-align: right;
   border-top: 1px solid #e5e5e5;
@@ -9399,7 +9399,7 @@ ul.market_page_left_actions {
 
 ul.market_page_left_actions li {
 	height: 100%;
-	padding: 0px 10px;
+	padding: 0px 15px;
 	list-style: none;
 	line-height: 3.1em;
 	font-size: 15px;
@@ -9581,7 +9581,8 @@ h3.book_info_the_name_of_the_writer {
 }
 
 .book_info_add_to_library_button:hover {
-	color:#831B00;
+	background-color:#E93000;
+	color:#fff;
 }
 
 .book_info_add_to_library_button i{
