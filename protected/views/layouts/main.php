@@ -133,6 +133,7 @@
 		<!-- BLOCK UI -->
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
 		
+		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/jquery.lazy.min.js"></script>
 
 		<?php echo functions::event('header', ""); ?>
 
@@ -143,9 +144,12 @@
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/kerbela/kerbela.js"></script>
 		<!-- kerbela -->
 		<script>
+			/*
 			$( document ).ready(function() {
 			  //new UISearch( document.getElementById( 'sb-search' ) );
-			});
+				//$('img.lazyimgs').lazy();
+			});*/
+
 			
 		</script>
 
