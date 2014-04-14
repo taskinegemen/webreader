@@ -16,7 +16,37 @@ $this->pageTitle=Yii::app()->name;
 
 			<?php echo functions::event('left_menu', $this); ?>
 
-			<div id="main-content">
+            
+            
+            
+
+
+			<div id="main-content">            
+            
+             <div class="market_page_action_bar">                          
+                 <ul class="market_page_left_actions">
+                 
+                 
+                    <li class="dropdown market_page_categories">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kategoriler <i class="fa fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li>Kategori 1</li>
+                                <li>Kategori 2</li>
+                                <li>Kategori 3</li>
+                                <li>Kategori 4</li>
+                            </ul>
+                    </li>
+                    
+                    
+                    <div class="action_bar_spacer"></div>
+                    <li class="market_page_left_actions_current"><a href="#" target="_blank">Anasayfa</a></li>
+                    <li><a href="#" target="_blank">En'ler</a></li>
+                    <li><a href="#" target="_blank">Yeni Kitaplar</a></li>
+                 </ul>
+                 <!----- END OF market_page_left_actions ------------->
+             </div>
+             <!----- END OF market_page_action_bar ------------->
+             
 				<div class="container">
 					<div class="row">
 						<div class="reader_market_page_row clearfix">
@@ -166,11 +196,16 @@ $this->pageTitle=Yii::app()->name;
                 $('#filter-items').append(card);
             });
           });
+<<<<<<< HEAD
       if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
 if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass('margin-left-50');
 $('img.lazyimgs').lazy();
 
     });
+=======
+//       if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
+// if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass('margin-left-50');
+>>>>>>> 92084f77c4056d5a368e22f780bd46f04fc96e97
 </script> 
 
 

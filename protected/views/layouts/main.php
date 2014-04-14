@@ -12,9 +12,20 @@
     z-index: 99;
 	}
 	</style>
+	<?php
+        $organisationId=Yii::app()->getBaseUrl(true);
+        $myArray=array();
+        preg_match ("/.(\w+)\.(com|net|edu|mil|gov)/", $organisationId,$myArray); 
+        $organisationId=$myArray[1];
+        $server_organisationId=Yii::app()->params['organisation_id'];
+        if($server_organisationId!=''){
+            $organisationId=$server_organisationId;
+        }
+    ?>
+
 		<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/cloud-admin.css" >
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/branding/linden/linden.css" >
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/branding/<?php echo $organisationId.'/'.$organisationId.'.css';?>" >
 	<!--<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/themes/night.css" >-->
 	<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/responsive.css" >
 	<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/themes/default.css" id="skin-switcher">
@@ -172,7 +183,7 @@ if (Yii::app()->controller->action->id=="read"):?>
 						<i class="fa fa-bars" data-icon1="fa fa-bars" data-icon2="fa fa-bars" ></i>
 					</div>
 					<!-- /SIDEBAR COLLAPSE -->
-					<div class="expanding-searchbox">
+					<!-- <div class="expanding-searchbox">
 						<div id="sb-search" class="sb-search">
 							<form>
 								<input class="sb-search-input" placeholder="Ne aramak istiyorsunuz?" type="text" value="" name="search" id="search">
@@ -180,7 +191,7 @@ if (Yii::app()->controller->action->id=="read"):?>
 								<span class="sb-icon-search brand_hover_color_for_navbar_components"></span>
 							</form>
 						</div>
-					</div>
+					</div> -->
                     
                     
                     
@@ -199,7 +210,7 @@ if (Yii::app()->controller->action->id=="read"):?>
 					</a>
 					<ul class="dropdown-menu">
                     	<li><span class="username"><?php echo Yii::app()->user->name; ?></span></li>
-						<li><a href="#" class="profilLink"><i class="fa fa-user"></i> <?php _e('Profil') ?></a></li>
+						<!-- <li><a href="#" class="profilLink"><i class="fa fa-user"></i> <?php _e('Profil') ?></a></li> -->
 						<li><a href="#" class="libraryLink"><i class="fa fa-mail-reply"></i> <?php _e('Kütüphaneme Dön') ?></a></li>
 						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/logout"><i class="fa fa-power-off"></i> <?php _e('Çıkış') ?></a></li>
 					</ul>
@@ -333,26 +344,6 @@ if (Yii::app()->controller->action->id=="read"):?>
 	</header> <!-- /.header -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <?php elseif(Yii::app()->controller->action->id!="login" && Yii::app()->controller->action->id!="forgetPassword" ): ?>
 <!-- Header -->
 	<header class="navbar clearfix navbar-fixed-top navbar_blue" id="header">
@@ -376,7 +367,7 @@ if (Yii::app()->controller->action->id=="read"):?>
 						<i class="fa fa-bars" data-icon1="fa fa-bars" data-icon2="fa fa-bars" ></i>
 					</div>
 					<!-- /SIDEBAR COLLAPSE -->
-					<div class="expanding-searchbox">
+					<!-- <div class="expanding-searchbox">
 						<div id="sb-search" class="sb-search">
 							<form>
 								<input class="sb-search-input" placeholder="Ne aramak istiyorsunuz?" type="text" value="" name="search" id="search">
@@ -384,7 +375,7 @@ if (Yii::app()->controller->action->id=="read"):?>
 								<span class="sb-icon-search brand_hover_color_for_navbar_components"></span>
 							</form>
 						</div>
-					</div>
+					</div> -->
                     
                     
                     
@@ -404,8 +395,8 @@ if (Yii::app()->controller->action->id=="read"):?>
 					</a>
 					<ul class="dropdown-menu">
                     	<li><span class="username"><?php echo Yii::app()->user->name; ?></span></li>
-						<li><a href="#" class="profilLink"><i class="fa fa-user"></i> <?php _e('Profil') ?></a></li>
-						<li><a href="#" class="libraryLink"><i class="fa fa-mail-reply"></i> <?php _e('Kütüphaneme Dön') ?></a></li>
+						<!-- <li><a href="#" class="profilLink"><i class="fa fa-user"></i> <?php _e('Profil') ?></a></li>-->
+						<li><a href="#" class="libraryLink"><i class="fa fa-mail-reply"></i> <?php _e('Kütüphaneme Dön') ?></a></li> 
 						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/logout"><i class="fa fa-power-off"></i> <?php _e('Çıkış') ?></a></li>
 					</ul>
 				</li>

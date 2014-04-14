@@ -8206,12 +8206,19 @@ div[data-role="editor-toolbar"] {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	position: relative;
+<<<<<<< HEAD
 	min-height: 300px;
+=======
+	min-height: 100px;
+>>>>>>> 92084f77c4056d5a368e22f780bd46f04fc96e97
 	border: 1px solid rgb(124, 124, 124);
 }
 .login-box input,
 .login-box textarea {
+<<<<<<< HEAD
 	background: none repeat scroll 0 0 #FFFFFF;
+=======
+>>>>>>> 92084f77c4056d5a368e22f780bd46f04fc96e97
 	font-size: 15px;
 	margin: 0;
 	padding: 8px 8px 8px;
@@ -9047,8 +9054,8 @@ ul.stats li small {
 	width:100%; 
 	height:100%;
 	background-image:url(../../../css/ui/img/login_overlay2.png);	
-	opacity:0.5;
-  	filter:alpha(opacity=50);
+	opacity:0.7;
+  	filter:alpha(opacity=70);
 }
 
 .register_link {
@@ -9100,6 +9107,77 @@ ul.stats li small {
 .login-helpers a {
 	color:#59BEFF !important;	
 }
+
+.ribbon_rectangle {
+	width: 80px;
+	height: 80px;
+	position: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	background: #2880b9;
+	background-image:url(../../../css/ui/img/logo/lindenkurumsal.png);
+	background-size: 55px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.ribbon_arrow_down {
+	width: 0;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-top: 30px solid #2880b9;
+	position: fixed;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 80px;	
+}
+
+.login_page_ribbon {
+	position:absolute;
+	z-index:9999;
+}
+
+.login_page_ribbon:hover + .login_linden_information_text{
+	cursor:pointer;
+    margin-top: 120px;
+	opacity:1;
+}
+
+.login_linden_information {
+	position: fixed;
+	top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	width: 47%;	
+}
+
+.login_linden_information_text {
+	color:#fff;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align:center;
+	position:absolute;
+	margin-top: -35px;
+	opacity:0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.login_linden_information_text a{
+	color:#59BEFF;
+}
+
 
 
 /** END OF READER LOGIN PAGE **/
@@ -9313,12 +9391,88 @@ div.reader_book_category {
 }
 
 
+.market_page_action_bar {
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	-webkit-box-shadow: 5px 0 1px 0 #D6D6D6;
+	box-shadow: 5px 0 1px 0 #D6D6D6;	
+}
+
+ul.market_page_left_actions {
+	height:100%;
+	margin-left:-14px;
+	float:left;	
+}
+
+ul.market_page_left_actions li {
+	height: 100%;
+	padding: 0px 10px;
+	list-style: none;
+	line-height: 3.1em;
+	font-size: 15px;
+	color: #737373;
+	float: left;	
+}
+
+ul.market_page_left_actions li:hover {
+	background:#f8f8f8;	
+}
+
+ul.market_page_left_actions li a{
+	display:inline-block;
+	color: #737373;	
+}
+
+.market_page_left_actions_current {
+	border-bottom:3px solid #2880b9;	
+}
+
+
+.action_bar_spacer {
+	width:1px;
+	height:30px;
+	background: #d6d6d6;
+	float:left;
+	margin-top:10px;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+
+li.market_page_categories a i {
+	font-size: 13px;
+	margin-left: 4px;
+	position: relative;
+	top: -1px;	
+}
+
+
+
+li.market_page_categories ul.dropdown-menu {
+	background:#fff;
+	padding-top: 5px;
+	padding-bottom: 5px;	
+}
+
+li.market_page_categories ul.dropdown-menu li{
+	width: 100%;
+	line-height: normal;
+	padding: 5px 10px;	
+}
+
+li.market_page_categories ul.dropdown-menu li:hover{
+	border:0 !important;
+	cursor:pointer;	
+}
+
+
 /** END OF READER MARKET PAGE **/
 
 /** READER BOOK INFO PAGE **/
 
 .book_info_details_container {
-	border-bottom:1px solid #D6D6D6;	
+	/*border-bottom:1px solid #D6D6D6;*/
 }
 
 .book_info_page_container {
@@ -9429,8 +9583,18 @@ h3.book_info_the_name_of_the_writer {
 }
 
 
-button.book_info_add_to_library_button {
-	margin-left:10px;	
+.book_info_add_to_library_button {
+	background-color: #FF6138;
+	border-color: #F36742;
+}
+
+.book_info_add_to_library_button:hover {
+	color:#831B00;
+}
+
+.book_info_add_to_library_button i{
+	margin-right:5px;
+	font-size:16px;
 }
 
 
@@ -9441,7 +9605,7 @@ button.book_info_add_to_library_button {
 	margin-top:20px;
 	color: #808284;
 	font-size:16px;
-	border-right:1px solid #D6D6D6;
+	/*border-right:1px solid #D6D6D6;*/
 	text-shadow: 0px 1px 1px #FFFFFF;
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -10169,7 +10333,8 @@ video#bgvid {
 	width: auto; 
 	height: auto; 
 	z-index: -100;
-	background: url(../../../js/login_back.png)  no-repeat;
+	background: url(../../../css/branding/seviye/seviye.png.png)  no-repeat;
 	background-size: cover;
+	margin-top:-150px;
 }
 

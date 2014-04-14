@@ -215,7 +215,7 @@ $this->pageTitle=Yii::app()->name;
                 });
             });
 
-if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
+//if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
 	});
 	</script>
 	<!-- /JAVASCRIPTS -->
@@ -264,7 +264,7 @@ if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
 <h3 class="book_info_the_name_of_the_writer">Jess Walter</h2>
 
 <button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons"  id="bbook" data-toggle="modal" data-target="#buybook">Kütüphaneme Ekle</button>
-<a class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons" href="<?php echo Yii::app()->request->baseUrl.'/content/read/'.$id; ?>" target="_blank" id="rbook">Oku</a>
+<a class="btn btn-primary pull-right book_info_add_to_library_button" href="<?php echo Yii::app()->request->baseUrl.'/content/read/'.$id; ?>" target="_blank" id="rbook"><i class="fa fa-eye"></i>Oku</a>
 
 </div>
 <!-- /book_info_details_row -->

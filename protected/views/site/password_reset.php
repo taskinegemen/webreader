@@ -22,23 +22,43 @@ $this->breadcrumbs=array(
 					<div class="row">
 						<div class="col-md-4 col-md-offset-4">
 							<div class="login-box">
-								<h2 class="bigintro"><?php _e("Şifre Sıfırla"); ?></h2>
-								<div class="divide-40"></div>
-								<form role="form" method="post">
-								  <div class="form-group">
-									<label for="Reset_password"><?php _e("Yeni Şifre"); ?></label>
-									<i class="fa fa-envelope"></i>
-									<input name="Reset[password]" id="Reset_password" type="password">
-								  </div>
-								  <div class="form-group">
-									<label for="Reset_password2"><?php _e("Yeni Şifre Tekrarı"); ?></label>
-									<i class="fa fa-envelope"></i>
-									<input name="Reset[password2]" id="Reset_password2" type="password">
-								  </div>
-								  <div>
-									<button type="submit" class="btn btn-info"><?php _e("Kaydet"); ?></button>
-								  </div>
-								</form>
+
+							<?php 
+								if (!empty($ErrorMessage)) {
+									?><h4><?php echo $ErrorMessage; ?></h4><?php 
+								}
+								else
+								{
+									if (empty($SuccessMessage)) {
+									?>
+										<h2 class="bigintro"><?php _e("Şifre Sıfırla"); ?></h2>
+										<div class="divide-40"></div>
+										<form role="form" method="post">
+										  <div class="form-group">
+											<label for="Reset_password"><?php _e("Yeni Şifre"); ?></label>
+											<i class="fa fa-envelope"></i>
+											<input name="Reset[password]" id="Reset_password" type="password">
+										  </div>
+										  <div class="form-group">
+											<label for="Reset_password2"><?php _e("Yeni Şifre Tekrarı"); ?></label>
+											<i class="fa fa-envelope"></i>
+											<input name="Reset[password2]" id="Reset_password2" type="password">
+										  </div>
+										  <div>
+											<button type="submit" class="btn btn-info"><?php _e("Kaydet"); ?></button>
+										  </div>
+										</form>
+									<?php		
+									}
+									else
+									{
+										?><h4><?php echo $SuccessMessage; ?></h4><?php 
+									}
+								}
+
+							?>		
+								
+
 							</div>
 						</div>
 					</div>
