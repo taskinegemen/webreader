@@ -13,7 +13,6 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 <!-- login -->
   <script type="text/javascript">
 	$(document).ready(function(){
-
 		$('#login-form').submit(function(e) {
 				e.preventDefault();
 		  		window.setTimeout(function(){login();},100);
@@ -62,97 +61,24 @@ $this->pageTitle=Yii::app()->name . ' - Login';
   </script>
  <!-- login -->
  
-<?php $detect = new Mobile_Detect;
-if ( $detect->isMobile() || $detect->isTablet()):
-?>
-<section id="register_bg_mobil">
-	<div class="container">
-    <div class="row">
-    <div class="login-box">
-		<?php $RegisterForm=$this->beginWidget('CActiveForm', array(
-			'id'=>'register-form',
-			// 'enableClientValidation'=>true,
-			 // 'clientOptions'=>array(
-			 // 	'validateOnSubmit'=>true,
-			 // ),
-		)); ?>
-		<h3 class="bigintro">Kayıt Ol</h3>
-			<form  id="register" name="register">								
-			  <div class="form-group">
-				<label for=""><?php _e("İsim"); ?> *</label>
-				<i class="fa fa-font"></i>
-				<?php echo $RegisterForm->textField($SignUp,'name'); ?>
-			  </div>
-              
-              <div class="form-group">
-				<label for=""><?php _e("Soyisim"); ?> *</label>
-				<i class="fa fa-user"></i>
-				<?php echo $RegisterForm->textField($SignUp,'surname'); ?>
-			  </div>
-              
-              <div class="form-group">
-				<label for=""><?php _e("Email"); ?> *</label>
-				<i class="fa fa-envelope"></i>
-				<?php echo $RegisterForm->textField($SignUp,'email'); ?>
-			  </div>
 
-              
-              <div class="form-group">
-				<label for=""><?php _e("Şifre"); ?> *</label>
-				<i class="fa fa-lock"></i>
-				<?php echo $RegisterForm->passwordField($SignUp,'password'); ?>
-			  </div>
-			  
-			  <div class="form-group"> 
-				<label for=""><?php _e("Şifreyi Tekrarla"); ?> *</label>
-				<i class="fa fa-check-square-o"></i>
-				<?php echo $RegisterForm->passwordField($SignUp,'passwordR'); ?>
-			  </div>
-			  <?php if(CCaptcha::checkRequirements()): ?>
-			  <div class="form-group">
-					<label for=""><?php _e("Güvenlik Doğrulama Kodu"); ?> *</label><br>
-					<?php $this->widget('CCaptcha',array('showRefreshButton'=>true,'buttonOptions'=>array('id'=>'refreshCaptcha'))); ?><br><br>
-					<i class="fa fa-lock"></i>
-					<?php echo $RegisterForm->textField($SignUp,'verify'); ?>
-					<div>Yukarıdaki resimde görünen karakterleri girin.
-					<br/>Küçük-Büyük harf duyarlıdır.</div>
-				</div>
-				<?php endif; ?>
-			  	<?php echo CHtml::submitButton('Kayıt Ol'); ?>
-			</form>
-			<?php $this->endWidget(); ?>
-        </div>
-        
-    </div>
-    </div>
-</section>
-<?php
-else:
-
-?>
 <div class="login_page_container">    
 
 <div class="login_linden_information">
-
 <a href="http://www.linden-tech.com/" target="_blank">
 <div class="login_page_ribbon">
 <div class="ribbon_rectangle"></div>
 <div class="ribbon_arrow_down"></div>
 </div>
-
 <div class="login_linden_information_text">Seviye Dijital <font style="color:#FFC">Linden Dijital Yayıncılık A.Ş.</font> Tarafından Hazırlanmıştır. <br /> Bizi daha yakından tanımak için logomuza tıklayın.</div>
-
 </a>
-
-
-
 </div>
 <!--- END OF login_linden_information ----->
 
 
-<video autoplay loop poster="../../../js/login_back.png" id="bgvid">
-<source src="../js/back.webm" type="video/webm">
-<source src="../js/back.mp4" type="video/mp4">
+<video autoplay loop poster="../../../css/branding/seviye/seviye.png" id="bgvid">
+<source src="../css/branding/seviye/seviye.webm" type="video/webm">
+<source src="../css/branding/seviye/seviye.mp4" type="video/mp4">
 </video>
 
    <div class="login_overlay"></div>     
@@ -323,14 +249,7 @@ else:
 										<?php echo $RegisterForm->passwordField($SignUp,'passwordR'); ?>
 									  </div>
 									  <?php if(CCaptcha::checkRequirements()): ?>
-									  <div class="form-group">
-											<label for=""><?php _e("Güvenlik Doğrulama Kodu"); ?> *</label><br>
-											<?php $this->widget('CCaptcha',array('showRefreshButton'=>true,'buttonOptions'=>array('id'=>'refreshCaptcha'))); ?><br><br>
-											<i class="fa fa-lock"></i>
-											<?php echo $RegisterForm->textField($SignUp,'verify'); ?>
-											<div>Yukarıdaki resimde görünen karakterleri girin.
-											<br/>Küçük-Büyük harf duyarlıdır.</div>
-										</div>
+
 										<?php endif; ?>
 									  	<?php echo CHtml::submitButton('Submit'); ?>
 									</form>
@@ -403,9 +322,4 @@ else:
 		}
 	</script>
 	<!-- /JAVASCRIPTS -->
-<?php 
-endif;
-?>
-<script type="text/javascript">
-	$("#refreshCaptcha").text("Yenile");
-</script>
+

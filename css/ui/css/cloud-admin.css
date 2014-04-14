@@ -9046,8 +9046,8 @@ ul.stats li small {
 	width:100%; 
 	height:100%;
 	background-image:url(../../../css/ui/img/login_overlay2.png);	
-	opacity:0.5;
-  	filter:alpha(opacity=50);
+	opacity:0.7;
+  	filter:alpha(opacity=70);
 }
 
 .register_link {
@@ -9380,6 +9380,82 @@ div.reader_book_category {
 
 .market_page_book_filter {
 	overflow:inherit !important;	
+}
+
+
+.market_page_action_bar {
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	-webkit-box-shadow: 5px 0 1px 0 #D6D6D6;
+	box-shadow: 5px 0 1px 0 #D6D6D6;	
+}
+
+ul.market_page_left_actions {
+	height:100%;
+	margin-left:-14px;
+	float:left;	
+}
+
+ul.market_page_left_actions li {
+	height: 100%;
+	padding: 0px 10px;
+	list-style: none;
+	line-height: 3.1em;
+	font-size: 15px;
+	color: #737373;
+	float: left;	
+}
+
+ul.market_page_left_actions li:hover {
+	background:#f8f8f8;	
+}
+
+ul.market_page_left_actions li a{
+	display:inline-block;
+	color: #737373;	
+}
+
+.market_page_left_actions_current {
+	border-bottom:3px solid #2880b9;	
+}
+
+
+.action_bar_spacer {
+	width:1px;
+	height:30px;
+	background: #d6d6d6;
+	float:left;
+	margin-top:10px;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+
+li.market_page_categories a i {
+	font-size: 13px;
+	margin-left: 4px;
+	position: relative;
+	top: -1px;	
+}
+
+
+
+li.market_page_categories ul.dropdown-menu {
+	background:#fff;
+	padding-top: 5px;
+	padding-bottom: 5px;	
+}
+
+li.market_page_categories ul.dropdown-menu li{
+	width: 100%;
+	line-height: normal;
+	padding: 5px 10px;	
+}
+
+li.market_page_categories ul.dropdown-menu li:hover{
+	border:0 !important;
+	cursor:pointer;	
 }
 
 
@@ -10249,7 +10325,8 @@ video#bgvid {
 	width: auto; 
 	height: auto; 
 	z-index: -100;
-	background: url(../../../js/login_back.png)  no-repeat;
+	background: url(../../../css/branding/seviye/seviye.png.png)  no-repeat;
 	background-size: cover;
+	margin-top:-150px;
 }
 
