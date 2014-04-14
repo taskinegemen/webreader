@@ -43,40 +43,18 @@ $this->pageTitle=Yii::app()->name;
                     <li><a href="#" target="_blank">En'ler</a></li>
                     <li><a href="#" target="_blank">Yeni Kitaplar</a></li>
                  </ul>
-                 <!----- END OF market_page_left_actions ------------->
              </div>
-             <!----- END OF market_page_action_bar ------------->
+                 <!-- END OF market_page_left_actions ->
+             </div>
+             <!- END OF market_page_action_bar -->
              
 				<div class="container">
 					<div class="row">
 						<div class="reader_market_page_row clearfix">
                         
 
-                        <div class="box-body clearfix">
-									   <div id="filter-controls" class="btn-group">
-										  <div class="hidden-xs">
-                                          	  <div class="reader_book_category">En Çok Okunanlar</div>
-											  <a href="#" class="btn btn-default" data-filter="*">Hepsi</a>
-											  <a href="#" class="btn btn-default" data-filter=".category_1">Ücretli</a>
-											  <a href="#" class="btn btn-default" data-filter=".category_2">Ücretsiz</a>
-										  </div>
-										  <div class="visible-xs">
-											   <select id="e1" class="form-control">
-													<option value="*">Hepsi</option>
-													<option value=".category_1">Ücretli</option>
-													<option value=".category_2">Ücretsiz</option>
-												</select>
-										  </div>
-									   </div>
-
-                                            
-                                            
-										<div id="filter-items" class="market_page_book_filter row">    
-
-									</div>
-                        
-                        
-                        
+                        <div class="box-body clearfix" id="booksSpace">
+						
                         
 
 						</div>
@@ -199,7 +177,7 @@ $this->pageTitle=Yii::app()->name;
 					</div>\
 				</div></div>';
 				
-				$('#filter-items').append(card);
+				$('#booksSpace').append(card);
             });
           });
 //       if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
