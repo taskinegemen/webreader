@@ -5652,3 +5652,174 @@ in /var/www/reader/protected/utilities/Encryption.php (53)
 in /var/www/reader/protected/controllers/ContentController.php (225)
 in /var/www/reader/index.php (15)
 >>>>>>> 23805b5207402057034dd961ccd1aa75b9c422be
+2014/04/15 04:44:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/15 04:44:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login?Reset%5Bemail%5D=asdsadsda
+---
+2014/04/15 04:44:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login?Reset%5Bemail%5D=asdsadsda
+---
+2014/04/15 04:44:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login?Reset%5Bemail%5D=ekaratas%40linden-tech.com
+---
+2014/04/15 04:44:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login?Reset%5Bemail%5D=ekaratas%40linden-tech.com
+---
+2014/04/15 04:45:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login?Reset%5Bemail%5D=ekaratas%40linden-tech.com
+---
+2014/04/15 04:45:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login?Reset%5Bemail%5D=ekaratas%40linden-tech.com
+---
+2014/04/15 04:45:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/15 04:45:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/15 04:45:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/15 04:45:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/15 04:45:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/15 04:45:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/15 04:46:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/15 04:46:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/15 04:46:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/15 04:46:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/15 04:51:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/15 04:52:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
