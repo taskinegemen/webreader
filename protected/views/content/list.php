@@ -174,8 +174,8 @@ $this->pageTitle=Yii::app()->name;
 				$('#booksSpace').append(card);
             });
           });
-      if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
-if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass('margin-left-50');
+      if( $('#sidebar').hasClass('mini-menu')) $('#sidebar').removeClass('mini-menu');
+ if( $('#main-content').hasClass('margin-left-50')) $('#main-content').removeClass('margin-left-50');
 $('img.lazyimgs').lazy();
 
     });

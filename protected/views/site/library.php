@@ -5,8 +5,8 @@
 
 <script type="text/javascript">
     $( document ).ready(function() { 
-if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
-if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass('margin-left-50');
+//if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
+//if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass('margin-left-50');
         function d2h(d) {
             return d.toString(16);
         }
