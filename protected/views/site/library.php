@@ -31,7 +31,7 @@
             console.log(HTTP_service_ticket);
             $.ajax({
               type: "POST",
-              url: "http://koala.lindneo.com/api/getUserBooks",
+              url: "<?php echo Yii::app()->params['koala_host'];?>/api/getUserBooks",
               data: { auth: encodeURI(auth), http_service_ticket: encodeURI(HTTP_service_ticket), type:"web"}
             })
               .done(function( result ) {
