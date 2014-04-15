@@ -367,7 +367,7 @@ else:
 
 
 
-
+<?php endif; ?>
 
 	<script>
 		jQuery(document).ready(function() {		
