@@ -24,6 +24,23 @@ $db_config=array(
 
 
 	);
+$host_config=array(
+			"lindneo"=>array(
+                				'catalog_host'=>'http://catalog.okutus.com',
+				                'kerbela_host'=>'http://kerbela.lindneo.com/',
+				                'panda_host'=>'http://panda.lindneo.com',
+				                'koala_host'=>'http://koala.lindneo.com',
+						'cloud_host'=>'http://cloud.lindneo.com'
+					),
+			"tigerfish"=>array(
+                                                'catalog_host'=>'http://bigcat.okutus.com',
+                                                'kerbela_host'=>'http://kerbela.okutus.com/',
+                                                'panda_host'=>'http://boxoffice.okutus.com',
+                                                'koala_host'=>'http://wow.okutus.com',
+						'cloud_host'=>'http://cloud.okutus.com'
+				)
+		);
+
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Linden Reader',
@@ -127,10 +144,14 @@ return array(
      		'tr_TR' => 'Türkçe',
      		'en_US' => 'English'
      		),
-		'catalog_host'=>'http://bigcat.okutus.com',
 		'organisation_id'=>'seviye',
 		// this is used in contact page
 		'adminEmail'=>'pacific@linden-tech.com',
-		'kerbela_host'=>'http://kerbela.lindneo.com/',
+
+		'catalog_host'=>$host_config[gethostname()]['catalog_host'],
+                'kerbela_host'=>$host_config[gethostname()]['kerbela_host'],
+                'panda_host'=>$host_config[gethostname()]['panda_host'],
+                'koala_host'=>$host_config[gethostname()]['koala_host'],
+                'cloud_host'=>$host_config[gethostname()]['cloud_host'],
 	),
 );
