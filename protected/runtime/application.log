@@ -1482,3 +1482,263 @@ HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
 ---
 =======
 >>>>>>> 4a1350931cd0c42a73f0fd29d829e9a1ab338f8d
+2014/04/15 03:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "s".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('s')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/s
+---
+2014/04/15 03:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/s
+---
+2014/04/15 03:58:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/15 03:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/login
+---
+2014/04/15 03:58:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/library
+---
+2014/04/15 03:59:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/library
+---
+2014/04/15 04:00:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/content/details/5Pl71f2SOWcvMgLY8XvoQ5KGkfHY7IPbGpz8HhCZ5lm4
+---
+2014/04/15 04:00:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/content/list
+---
+2014/04/15 04:00:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/content/list
+---
+2014/04/15 04:02:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/content/list
+---
+2014/04/15 04:03:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/content/list
+---
+2014/04/15 04:04:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/content/list
+---
+2014/04/15 04:05:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/content/list
+---
+2014/04/15 04:05:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/content/list
+---
+2014/04/15 04:05:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/site/library
+---
+2014/04/15 04:05:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/site/library
+---
+2014/04/15 04:10:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/site/login
+---
+2014/04/15 04:10:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.png.png".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/branding/seviye/seviye.png.png
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/site/login
+---
+2014/04/15 04:10:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.webm".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/index.php/css/branding/seviye/seviye.webm
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/site/login
+---
+2014/04/15 04:10:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/branding/seviye/seviye.mp4".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/branding/se...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/index.php/css/branding/seviye/seviye.mp4
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/site/login
+---
+2014/04/15 04:10:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/library
+---
+2014/04/15 04:14:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/library
+---
+2014/04/15 04:15:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/site/library
+---
+2014/04/15 04:16:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/content/details/5Pl71f2SOWcvMgLY8XvoQ5KGkfHY7IPbGpz8HhCZ5lm4
+---
+2014/04/15 04:16:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/site/library
+---
+2014/04/15 04:16:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/content/details/5Pl71f2SOWcvMgLY8XvoQ5KGkfHY7IPbGpz8HhCZ5lm4
+---
+2014/04/15 04:16:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/libs/jquery.lazy.min.js".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('js/libs/jquery....')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/js/libs/jquery.lazy.min.js
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/content/list
+---
+2014/04/15 04:16:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/content/list
+---
+2014/04/15 04:17:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/ekaratas/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/ekaratas/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.lindneo.com/ekaratas/index.php/content/list
+---
