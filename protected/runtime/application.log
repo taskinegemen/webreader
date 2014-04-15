@@ -3905,3 +3905,30 @@ REQUEST_URI=/index.php/content/file/Y0PgjiaT72RwcH2ZnHIYgsW8FldOcsQZeKTzY9hdyDpE
 in /var/www/reader/protected/utilities/Encryption.php (53)
 in /var/www/reader/protected/controllers/ContentController.php (225)
 in /var/www/reader/index.php (15)
+2014/04/15 07:37:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.okutus.com/index.php/content/list
+---
+2014/04/15 07:37:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.okutus.com/content/details/Y0PgjiaT72RwcH2ZnHIYgsW8FldOcsQZeKTzY9hdyDpE
+---
+2014/04/15 07:38:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.okutus.com/index.php/content/list
+---
