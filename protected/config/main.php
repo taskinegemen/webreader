@@ -6,6 +6,24 @@
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 require_once(dirname(__FILE__).'/../includes/localization.php');
+$db_config=array(
+					"tigerfish"=>array(
+										'connectionString' => 'mysql:host=pufferfish.private.services.okutus.com;dbname=reader',
+										'emulatePrepare' => true,
+										'username' => 'tigerfish',
+										'password' => '6MT3WFGnxqw7aux6',
+										'charset' => 'utf8'
+									),
+					"lindneo"=>array(
+										'connectionString' => 'mysql:host=lindneo.com;dbname=reader',
+										'emulatePrepare' => true,
+										'username' => 'db_reader',
+										'password' => 'GGHABzec9wPWASL2',
+										'charset' => 'utf8'
+									)
+
+
+	);
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Linden Reader',
@@ -42,7 +60,7 @@ return array(
 		'messages' => array(
  			'language'=>'en_US',
             'class' => 'CGettextMessageSource',
-            'basePath'=>'/var/www/squid-pacific/egemen/protected/locale/messages',
+            'basePath'=>'/var/www/protected/locale/messages',
             'useMoFile' => TRUE,
     	),
 		'user'=>array(
@@ -68,13 +86,7 @@ return array(
 		),
 		*/
 		// uncomment the following to use a MySQL database
-		'db'=>array(
-			'connectionString' => 'mysql:host=lindneo.com;dbname=reader',
-			'emulatePrepare' => true,
-			'username' => 'db_reader',
-			'password' => 'GGHABzec9wPWASL2',
-			'charset' => 'utf8',
-		),
+		'db'=>$db_config[gethostname()],
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
@@ -115,9 +127,8 @@ return array(
      		'tr_TR' => 'Türkçe',
      		'en_US' => 'English'
      		),
-		'catalog_host'=>'http://catalog.lindneo.com',
+		'catalog_host'=>'http://bigcat.okutus.com',
 		'organisation_id'=>'seviye',
-		//'http://catalog.lindneo.com',
 		// this is used in contact page
 		'adminEmail'=>'pacific@linden-tech.com',
 		'kerbela_host'=>'http://kerbela.lindneo.com/',

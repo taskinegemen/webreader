@@ -411,7 +411,7 @@ Nulla pretium bibendum sollicitudin. Fusce ligula sapien, blandit et nulla et, d
         <div style="width:760px; float:left;">
         <!-- Kitap Bilgileri -->
               
-            <div id="bookname" style="float:left;"></div>
+            <div id="bookname" style="float:left; font-size:18px;"></div>
             <div id="bookprice" style="float:right;"></div><br><br>
       
       <!-- /Kitap Bilgileri -->
@@ -489,9 +489,9 @@ Nulla pretium bibendum sollicitudin. Fusce ligula sapien, blandit et nulla et, d
             </div><br><br>
             </div>
       </div>
-      <div class="modal-footer" style="width:500px;">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Kapat</button>
-        <button type="button" class="btn btn-default" id="buy_book">Satın Al</button>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+        <button type="button" class="btn btn-success" id="buy_book">Satın Al</button>
       </div>
     </div>
   </div>
