@@ -26,15 +26,15 @@ $db_config=array(
 	);
 $host_config=array(
 			"lindneo"=>array(
-                				'catalog_host'=>'http://catalog.okutus.com',
-				                'kerbela_host'=>'http://kerbela.lindneo.com/',
+                				'catalog_host'=>'http://catalog.lindneo.com',
+				                'kerbela_host'=>'http://kerbela.lindneo.com',
 				                'panda_host'=>'http://panda.lindneo.com',
 				                'koala_host'=>'http://koala.lindneo.com',
 						'cloud_host'=>'http://cloud.lindneo.com'
 					),
 			"tigerfish"=>array(
                                                 'catalog_host'=>'http://bigcat.okutus.com',
-                                                'kerbela_host'=>'http://kerbela.okutus.com/',
+                                                'kerbela_host'=>'http://kerbela.okutus.com',
                                                 'panda_host'=>'http://boxoffice.okutus.com',
                                                 'koala_host'=>'http://wow.okutus.com',
 						'cloud_host'=>'http://cloud.okutus.com'
