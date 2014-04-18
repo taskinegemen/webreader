@@ -39,7 +39,7 @@ $this->pageTitle=Yii::app()->name;
             var book_thumbnail = "";
             $.ajax({
                 type: "POST",
-                url: "http://catalog.lindneo.com/api/getMainInfo",
+                url: "<?php echo Yii::app()->params['catalog_host'];?>/api/getMainInfo",
                 data: { id: '<?php echo $id; ?>', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
             })
               .done(function( result ) {
@@ -56,7 +56,7 @@ $this->pageTitle=Yii::app()->name;
             $('#rbook').hide();
             $.ajax({
                     type: "POST",
-                    url: "http://koala.lindneo.com/api/checkUserBook",
+                    url: "<?php echo Yii::app()->params['koala_host'];?>/api/checkUserBook",
                     data: { book_id: '<?php echo $id; ?>', auth: auth_koala, http_service_ticket: HTTP_service_ticket_koala, type:"web"}
                 })
                   .done(function( result ) {
@@ -75,16 +75,18 @@ $this->pageTitle=Yii::app()->name;
             $('.book_info_the_name_of_the_writer').html(book_data.result.contentAuthor);
             $('.contentExplanation').html(book_data.result.contentExplanation);
 
+
+            $('.book_info_book_cover').css('background-image', 'url(<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail/id/<?php echo $id; ?>)');
             var bookthumbnail = "";
             var image_data = "";
             $.ajax({
-                  url: "http://catalog.lindneo.com/api/getThumbnail/id/<?php echo $id; ?>"
+                  url: "<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail/id/<?php echo $id; ?>"
                 }).done(function(result1) {
                   console.log(result1);
                   bookthumbnail = result1;
                 });
             if(bookthumbnail){
-                image_data = "http://catalog.lindneo.com/api/getThumbnail/id/<?php echo $id; ?>";
+                image_data = "<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail/id/<?php echo $id; ?>";
             }
             else{
                 var imageid = stringToHex("<?php echo $id; ?>");
@@ -104,9 +106,10 @@ $this->pageTitle=Yii::app()->name;
                 if(book_data.result.contentPriceCurrencyCode == "949") price_type = "TL";
                 $('#bookprice').html(book_data.result.contentPrice+" "+price_type);
             
+
             /*var book = $('<div class="reader_book_card">\
                             <div class="reader_book_card_book_cover solid_brand_color">\
-                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'"><img src="http://catalog.lindneo.com/api/getThumbnail/id/'+value.book_id+'" style="width:198px; height:264px;"></a></div>\
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'"><img src="<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail/id/'+value.book_id+'" style="width:198px; height:264px;"></a></div>\
                             <div class="reader_book_card_info_container">\
                             <div class="reader_market_book_name"><a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'">'+book_data.result.contentTitle+'</a></div>\
                             <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\
@@ -199,7 +202,7 @@ $this->pageTitle=Yii::app()->name;
                 var HTTP_service_ticket_panda = kerbela.getTicket().HTTP_service_ticket;
                 $.ajax({
                     type: "POST",
-                    url: "http://panda.lindneo.com/api/transaction",
+                    url: "<?php echo Yii::app()->params['panda_host']; ?>/api/transaction",
                     data: { type_name:'book', type_id: '<?php echo $id; ?>', auth: auth_panda, http_service_ticket: HTTP_service_ticket_panda, type:"web"}
                 })
                   .done(function( result ) {
@@ -212,7 +215,7 @@ $this->pageTitle=Yii::app()->name;
                 });
             });
 
-if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
+//if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
 	});
 	</script>
 	<!-- /JAVASCRIPTS -->
@@ -261,7 +264,7 @@ if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
 <h3 class="book_info_the_name_of_the_writer">Jess Walter</h2>
 
 <button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons"  id="bbook" data-toggle="modal" data-target="#buybook">Kütüphaneme Ekle</button>
-<a class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons" href="<?php echo Yii::app()->request->baseUrl.'/content/read/'.$id; ?>" target="_blank" id="rbook">Oku</a>
+<a class="btn btn-primary pull-right book_info_add_to_library_button" href="<?php echo Yii::app()->request->baseUrl.'/content/read/'.$id; ?>" target="_blank" id="rbook"><i class="fa fa-eye"></i>Oku</a>
 
 </div>
 <!-- /book_info_details_row -->
@@ -408,7 +411,7 @@ Nulla pretium bibendum sollicitudin. Fusce ligula sapien, blandit et nulla et, d
         <div style="width:760px; float:left;">
         <!-- Kitap Bilgileri -->
               
-            <div id="bookname" style="float:left;"></div>
+            <div id="bookname" style="float:left; font-size:18px;"></div>
             <div id="bookprice" style="float:right;"></div><br><br>
       
       <!-- /Kitap Bilgileri -->
@@ -486,9 +489,9 @@ Nulla pretium bibendum sollicitudin. Fusce ligula sapien, blandit et nulla et, d
             </div><br><br>
             </div>
       </div>
-      <div class="modal-footer" style="width:500px;">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Kapat</button>
-        <button type="button" class="btn btn-default" id="buy_book">Satın Al</button>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+        <button type="button" class="btn btn-success" id="buy_book">Satın Al</button>
       </div>
     </div>
   </div>

@@ -58,8 +58,8 @@
 }
 
 .brand_color_for_buttons {
-	background-color: #2880b9;
-	border-color: #226e99;	
+	background-color: #2880b9 !important;
+	border-color: #226e99 !important;	
 }
 
 

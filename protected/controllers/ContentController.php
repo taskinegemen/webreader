@@ -135,7 +135,7 @@ class ContentController extends Controller
 	}
 
 	public function actionGetContent($id,$force=false,$host="cloud.lindneo.com",$port=2222){
-		$ch = curl_init( 'catalog.lindneo.com/api/getHosts/'.$id );
+		$ch = curl_init(Yii::app()->params['catalog_host'].'/api/getHosts/'.$id );
 		curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
 		curl_setopt( $ch, CURLOPT_HEADER, 0);
 		curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);

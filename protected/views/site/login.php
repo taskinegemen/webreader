@@ -14,18 +14,14 @@ $this->pageTitle=Yii::app()->name . ' - Login';
   <script type="text/javascript">
 	$(document).ready(function(){
 		$('#login-form').submit(function(e) {
+				e.preventDefault();
+		  		window.setTimeout(function(){login();},100);
 	  			$.blockUI({ message: '<h1>Please wait just a little...</h1>' });
 		  		setTimeout($.unblockUI, 10000); 
-		  		window.setTimeout(function(){login();},100);
-	  			e.preventDefault();
 	  			return false;
 	  		});
 		
-		$(document).on("click","#loginButton",function(e){
-	  		$.blockUI({ message: '<h1>Please wait just a little...</h1>' });
-	  		setTimeout($.unblockUI, 10000); 
-	  		window.setTimeout(function(){login();},100);
-		});
+		
 	});
   	
   	function login(){
@@ -37,7 +33,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 		var kerbela=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','<?php echo Yii::app()->request->baseUrl; ?>/kerberizedservice/authenticate',username,password,'kerbela','reader','6000');
 		var response=kerbela.execute();
 
-		var kerbela_catalog=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','http://catalog.lindneo.com/kerberizedservice/authenticate',username,password,'kerbela','catalog','6000');
+		var kerbela_catalog=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','<?php echo Yii::app()->params['catalog_host'];?>/kerberizedservice/authenticate',username,password,'kerbela','catalog','6000');
 		var response_catalog=kerbela_catalog.execute();
 		
 		var kerbela_koala=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','http://koala.lindneo.com/kerberizedservice/authenticate',username,password,'kerbela','koala','6000');
@@ -64,14 +60,93 @@ $this->pageTitle=Yii::app()->name . ' - Login';
   	}
   </script>
  <!-- login -->
+<?php $detect = new Mobile_Detect;
+if ( $detect->isMobile() || $detect->isTablet()):
+?>
+<section id="register_bg_mobil">
+	<div class="container">
+    <div class="row">
+    <div class="login-box">
+		<?php $RegisterForm=$this->beginWidget('CActiveForm', array(
+			'id'=>'register-form',
+			// 'enableClientValidation'=>true,
+			 // 'clientOptions'=>array(
+			 // 	'validateOnSubmit'=>true,
+			 // ),
+		)); ?>
+		<h3 class="bigintro">Kayıt Ol</h3>
+			<form  id="register" name="register">								
+			  <div class="form-group">
+				<label for=""><?php _e("İsim"); ?> *</label>
+				<i class="fa fa-font"></i>
+				<?php echo $RegisterForm->textField($SignUp,'name'); ?>
+			  </div>
+              
+              <div class="form-group">
+				<label for=""><?php _e("Soyisim"); ?> *</label>
+				<i class="fa fa-user"></i>
+				<?php echo $RegisterForm->textField($SignUp,'surname'); ?>
+			  </div>
+              
+              <div class="form-group">
+				<label for=""><?php _e("Email"); ?> *</label>
+				<i class="fa fa-envelope"></i>
+				<?php echo $RegisterForm->textField($SignUp,'email'); ?>
+			  </div>
+
+              
+              <div class="form-group">
+				<label for=""><?php _e("Şifre"); ?> *</label>
+				<i class="fa fa-lock"></i>
+				<?php echo $RegisterForm->passwordField($SignUp,'password'); ?>
+			  </div>
+			  
+			  <div class="form-group"> 
+				<label for=""><?php _e("Şifreyi Tekrarla"); ?> *</label>
+				<i class="fa fa-check-square-o"></i>
+				<?php echo $RegisterForm->passwordField($SignUp,'passwordR'); ?>
+			  </div>
+			  <?php if(CCaptcha::checkRequirements()): ?>
+			  <div class="form-group">
+					<label for=""><?php _e("Güvenlik Doğrulama Kodu"); ?> *</label><br>
+					<?php $this->widget('CCaptcha',array('showRefreshButton'=>true,'buttonOptions'=>array('id'=>'refreshCaptcha'))); ?><br><br>
+					<i class="fa fa-lock"></i>
+					<?php echo $RegisterForm->textField($SignUp,'verify'); ?>
+					<div>Yukarıdaki resimde görünen karakterleri girin.
+					<br/>Küçük-Büyük harf duyarlıdır.</div>
+				</div>
+				<?php endif; ?>
+			  	<?php echo CHtml::submitButton('Kayıt Ol'); ?>
+			</form>
+			<?php $this->endWidget(); ?>
+        </div>
+        
+    </div>
+    </div>
+</section>
+<?php
+else:
+  
+?>
  
 
 <div class="login_page_container">    
 
+<div class="login_linden_information">
+<a href="http://www.linden-tech.com/" target="_blank">
+<div class="login_page_ribbon">
+<div class="ribbon_rectangle"></div>
+<div class="ribbon_arrow_down"></div>
+</div>
+<div class="login_linden_information_text">Seviye Dijital <font style="color:#FFC">Linden Dijital Yayıncılık A.Ş.</font> Tarafından Hazırlanmıştır. <br /> Bizi daha yakından tanımak için logomuza tıklayın.</div>
+</a>
+</div>
+<!--- END OF login_linden_information -->
 
-<video autoplay loop poster="../../../js/login_back.png" id="bgvid">
-<source src="../js/back.webm" type="video/webm">
-<source src="../js/back.mp4" type="video/mp4">
+
+<video autoplay loop poster="../../../css/branding/seviye/seviye.png" id="bgvid">
+<source src="../css/branding/seviye/seviye.webm" type="video/webm">
+<source src="../css/branding/seviye/seviye.mp4" type="video/mp4">
 </video>
 
    <div class="login_overlay"></div>     
@@ -90,7 +165,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 <div class="col-md-3">
 
 						<section id="login_bg" class="visible">
-							<div class="login-box">
+							<div class="login-box" style="margin-top:100px;">
 								<?php $form=$this->beginWidget('CActiveForm', array(
 									'id'=>'login-form',
 									/*'enableClientValidation'=>true,
@@ -99,9 +174,8 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 									)
 									*/
 								)); ?>
-								<h3 class="bigintro">Seviye Dijital'e Giriş Yap</h3>
 								
-								<form role="form">								
+								<form >								
 								  <div class="form-group">
 									<label for="exampleInputEmail1"><?php echo $form->labelEx($model,'username'); ?></label>
 									<i class="fa fa-envelope"></i>
@@ -117,9 +191,9 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 								  <div class="form-group">
 								  	
 								  	
-								  	<div class="form-group">
+								  	<!-- <div class="form-group">
 									  <label for="ytLoginForm_rememberMe"><div class="checker hover" id="uniform-ytLoginForm_rememberMe"><span class=""><input id="ytLoginForm_rememberMe" type="checkbox" class="uniform" value="0" name="LoginForm[rememberMe]"></span></div></label><?php _e("Beni Hatırla"); ?></div>
-								    </div>
+								    </div> -->
 
 								  <div class="form-group">
 									 <input type='submit' class="btn  login_submit brand_color_for_buttons" id="loginButton" value='<?php _e("Giriş Yap"); ?>' />									
@@ -128,149 +202,133 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 								</form>
 								<!-- SOCIAL LOGIN -->
 									<div class="divide-20"></div>
-                                    <div class="register_link">
+                                     <div class="register_link">
 										Henüz bir hesabınız yok mu? <a href="#" onclick="swapScreen('register_bg');return false;">Kayıt olun!</a>
+
+
+									 <div class="login-helpers">
+										<a href="#" onclick="swapScreen('forgot_bg');return false;">Şifremi Unuttum!</a> <br>
 									</div>
-									<div class="center">
-										Veya bir sosyal ağ hesabınız ile giriş yapın
 									</div>
-									<div class="divide-20"></div>
-									<div class="social-login center">
-										<a class="btn btn-primary-2 btn-lg">
-											<i class="fa fa-facebook"></i>
-										</a>
-										<a class="btn btn-info btn-lg">
-											<i class="fa fa-twitter"></i>
-										</a>
-										<a class="btn btn-danger btn-lg">
-											<i class="fa fa-google-plus"></i>
-										</a>
+									
 
 									</div>
-									<!-- /SOCIAL LOGIN -->
-									<!-- <div class="login-helpers">
-										<a href="#" onclick="swapScreen('forgot_bg');return false;">Forgot Password?</a> <br>
-										Don't have an account with us? <a href="#" onclick="swapScreen('register_bg');return false;">Register
-											now!</a>
-									</div> -->
 								<?php $this->endWidget(); ?>
+							</div>
 						</section>
                         
                         
                         
                         
-                        <section id="register_bg">
+                       
+                         
+                        
+                        
+                        
+                        <!-- FORGOT PASSWORD -->
+						<section id="forgot_bg" style="margin-top:180px;">
+							<div class="container">
+								<div class="row">
+									<div class="">
+										<div class="login-box">
+											<form  id="forgetForm">
+											  <div class="form-group">
+												<label for="exampleInputEmail1">E-Mail Adresinizi Girin.</label>
+												<i class="fa fa-envelope"></i>
+												<input name="Reset[email]" id="Reset_email" type="text">
+											  </div>
+											  <div>
+												<button type="submit" class="btn btn-info">Şifremi sıfırlamak için mail gönder</button>
+											  </div>
+											</form>
+											<div class="login-helpers">
+												<a href="#" onclick="swapScreen('login_bg');return false;">Giriş Sayfasına Dön</a> <br>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- FORGOT PASSWORD -->
+                        
+
+
+
+
+
+
+						<section id="register_bg">
 							<div class="container">
                             <div class="row">
-							
-                            
-                            
-                            
-                            
-                            
-                            
                             <div class="login-box">
-								<?php $form=$this->beginWidget('CActiveForm', array(
+								<?php $RegisterForm=$this->beginWidget('CActiveForm', array(
 									'id'=>'register-form',
-									'enableClientValidation'=>true,
-									'clientOptions'=>array(
-										'validateOnSubmit'=>true,
-									),
+									// 'enableClientValidation'=>true,
+									 // 'clientOptions'=>array(
+									 // 	'validateOnSubmit'=>true,
+									 // ),
 								)); ?>
 								<h3 class="bigintro">Kayıt Ol</h3>
+									<form  id="register" name="register">								
+									  <div class="form-group">
+										<label for=""><?php _e("İsim"); ?> *</label>
+										<i class="fa fa-font"></i>
+										<?php echo $RegisterForm->textField($SignUp,'name'); ?>
+									  </div>
+	                                  
+	                                  <div class="form-group">
+										<label for=""><?php _e("Soyisim"); ?> *</label>
+										<i class="fa fa-user"></i>
+										<?php echo $RegisterForm->textField($SignUp,'surname'); ?>
+									  </div>
+	                                  
+	                                  <div class="form-group">
+										<label for=""><?php _e("Email"); ?> *</label>
+										<i class="fa fa-envelope"></i>
+										<?php echo $RegisterForm->textField($SignUp,'email'); ?>
+									  </div>
+
+	                                  
+	                                  <div class="form-group">
+										<label for=""><?php _e("Şifre"); ?> *</label>
+										<i class="fa fa-lock"></i>
+										<?php echo $RegisterForm->passwordField($SignUp,'password'); ?>
+									  </div>
+									  
+									  <div class="form-group"> 
+										<label for=""><?php _e("Şifreyi Tekrarla"); ?> *</label>
+										<i class="fa fa-check-square-o"></i>
+										<?php echo $RegisterForm->passwordField($SignUp,'passwordR'); ?>
+									  </div>
+									  <?php if(CCaptcha::checkRequirements()): ?>
+									  <div class="form-group">
+ 											<label for=""><?php _e("Güvenlik Doğrulama Kodu"); ?> *</label><br>
+ 											<?php $this->widget('CCaptcha',array('showRefreshButton'=>true,'buttonOptions'=>array('id'=>'refreshCaptcha'))); ?><br><br>
+ 											<i class="fa fa-lock"></i>
+ 											<?php echo $RegisterForm->textField($SignUp,'verify'); ?>
+ 											<div>Yukarıdaki resimde görünen karakterleri girin.
+ 											<br/>Küçük-Büyük harf duyarlıdır.</div>
+ 										</div>
+
+										<?php endif; ?>
+									  	<?php echo CHtml::submitButton('Submit'); ?>
+									</form>
+									<?php $this->endWidget(); ?>
 								
-								<form role="form">								
-								  <div class="form-group">
-									<label for="exampleInputEmail1"><?php echo $form->labelEx($model,'username'); ?></label>
-									<i class="fa fa-font"></i>
-									<?php echo $form->textField($model,'username'); ?>
-								  </div>
-                                  
-                                  <div class="form-group">
-									<label for="exampleInputEmail1"><?php echo $form->labelEx($model,'username'); ?></label>
-									<i class="fa fa-user"></i>
-									<?php echo $form->textField($model,'username'); ?>
-								  </div>
-                                  
-                                  <div class="form-group">
-									<label for="exampleInputEmail1"><?php echo $form->labelEx($model,'username'); ?></label>
-									<i class="fa fa-envelope"></i>
-									<?php echo $form->textField($model,'username'); ?>
-								  </div>
-                                  
-                                  <div class="form-group">
-									<label for="exampleInputEmail1"><?php echo $form->labelEx($model,'username'); ?></label>
-									<i class="fa fa-lock"></i>
-									<?php echo $form->textField($model,'username'); ?>
-								  </div>
-								  
-								  <div class="form-group"> 
-									<label for="exampleInputPassword2"><?php _e("Şifreyi Tekrarla"); ?></label>
-									<i class="fa fa-check-square-o"></i>
-									<input size="60" maxlength="255" name="User[passwordR]" id="User_password_r" type="password">
-								  </div>
-								  
-								</form>
-                                
-                                
-                                
-                                
-                                
-                                
-                                  <div>
-								  	<br>
-									<!-- <label class="checkbox"> <input type="checkbox" class="uniform" value=""> I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label> -->
-									<button type="submit" class="btn btn-success"><?php _e("Kaydet");?></button>
-								  </div>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-								<!-- SOCIAL LOGIN 
-									<div class="divide-20"></div>
-									<div class="center">
-										Veya bir sosyal ağ hesabınız ile kayıt olun
+                                	<div class="login-helpers">
+										<a href="#" onclick="swapScreen('login_bg');return false;">&lsaquo; Giriş Sayfasına Dön</a> <br>
 									</div>
-									<div class="divide-20"></div>
-									<div class="social-login center">
-										<a class="btn btn-primary-2 btn-lg">
-											<i class="fa fa-facebook"></i>
-										</a>
-										<a class="btn btn-info btn-lg">
-											<i class="fa fa-twitter"></i>
-										</a>
-										<a class="btn btn-danger btn-lg">
-											<i class="fa fa-google-plus"></i>
-										</a>
-									</div>
-									SOCIAL LOGIN -->
-									<!-- <div class="login-helpers">
-										<a href="#" onclick="swapScreen('forgot_bg');return false;">Forgot Password?</a> <br>
-										Don't have an account with us? <a href="#" onclick="swapScreen('register_bg');return false;">Register
-											now!</a>
-									</div> -->
-								<?php $this->endWidget(); ?>
-                            
-                            
-                            <div class="login-helpers">
-									<a href="#" onclick="swapScreen('login_bg');return false;">&lsaquo; Giriş Sayfasına Dön</a> <br>
-								</div>
-                            
-                            
-                            
-                            
+                                </div>
+	                            
                             </div>
                             </div>
 						</section>
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
 
 							</div>
 				
@@ -304,21 +362,12 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 <!-- END OF LOGIN_PAGE_CONTAINER -->
 
 
-		
-
-
-<div class="login_contact">
-<p>Seviye Dijital Linden Dijital Yayıncılık A.Ş. Tarafından Hazırlanmıştır.</p>
-<p>Bizi daha yakından tanıyın. <a target="_blank" href="http://www.linden-tech.com/">www.linden-tech.com</a></p>
-</div>
 
 
 
 
 
-
-
-
+<?php endif; ?>
 
 	<script>
 		jQuery(document).ready(function() {		

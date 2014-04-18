@@ -4,9 +4,9 @@
 ?>
 
 <script type="text/javascript">
-	$( document ).ready(function() { 
-if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
-if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass('margin-left-50');
+    $( document ).ready(function() { 
+//if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
+//if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass('margin-left-50');
         function d2h(d) {
             return d.toString(16);
         }
@@ -31,7 +31,7 @@ if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass(
             console.log(HTTP_service_ticket);
             $.ajax({
               type: "POST",
-              url: "http://koala.lindneo.com/api/getUserBooks",
+              url: "<?php echo Yii::app()->params['koala_host'];?>/api/getUserBooks",
               data: { auth: encodeURI(auth), http_service_ticket: encodeURI(HTTP_service_ticket), type:"web"}
             })
               .done(function( result ) {
@@ -52,7 +52,7 @@ if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass(
                         var book_thumbnail = "";
                         $.ajax({
                             type: "POST",
-                            url: "http://catalog.lindneo.com/api/getMainInfo",
+                            url: "<?php echo Yii::app()->params['catalog_host'];?>/api/getMainInfo",
                             data: { id: value.book_id, auth: auth_catalog, http_service_ticket: HTTP_service_ticket_catalog, type:"web"}
                         })
                           .done(function( result ) {
@@ -60,25 +60,26 @@ if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass(
                             book_data = JSON.parse(result);
                             console.log(book_data.result);
                         });
-                        var bookthumbnail = "";
-                        var image_data = "";
+                        //var bookthumbnail = "<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail?id=5ZLCqyyAHL6Q3vlukDRZQhH7UbMupEr1sRzFVRXxH0AC";
+                        /*
                         $.ajax({
-                              url: "http://catalog.lindneo.com/api/getThumbnail/id/"+value.book_id
+                              url: "<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail/id/"+value.book_id
                             }).done(function(result1) {
                               console.log(result1);
                               bookthumbnail = result1;
                             });
-                        if(bookthumbnail){
-                            image_data = "http://catalog.lindneo.com/api/getThumbnail/id/"+value.book_id;
-                        }
-                        else{
+                        */
+                        var bookthumbnail = "<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail?id="+value.book_id;
+                        if(!bookthumbnail){
+                            
                             var imageid = stringToHex(value.book_id);
-                            image_data = "<?php echo Yii::app()->request->baseUrl; ?>/css/covers/cover"+imageid+".jpg";
+                            bookthumbnail = "<?php echo Yii::app()->request->baseUrl; ?>/css/covers/cover"+imageid+".jpg";
                         }
-                        console.log(image_data);
+                        
                         var book = $('<div class="reader_book_card">\
                                         <div class="reader_book_card_book_cover solid_brand_color">\
-                                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'"><img src="'+image_data+'" style="width:198px; height:264px;"></a></div>\
+                                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'">\
+                                         <img data-src="'+bookthumbnail+'" class="lazyimgs" style="width:198px; height:264px" /></a></div>\
                                         <div class="reader_book_card_info_container">\
                                         <div class="reader_market_book_name"><a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'">'+book_data.result.contentTitle+'</a></div>\
                                         <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\
@@ -106,7 +107,7 @@ if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass(
 		App.setPage("gallery");  //Set current page
 		App.init(); //Initialise plugins and elements
 
-
+$('img.lazyimgs').lazy();
 	});
 </script><!-- /JAVASCRIPTS -->
 
