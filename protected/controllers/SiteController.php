@@ -175,6 +175,10 @@ class SiteController extends Controller
 		}
 	}
 
+	public function actionRunMobileLogin($user_id,$password)
+	{
+		$this->renderPartial('mobile_login',array('password'=>$password,'user_id'=>$user_id));
+	}
 
 	/**
 	 * Displays the login page
@@ -183,6 +187,11 @@ class SiteController extends Controller
 	{
 		$model=new LoginForm;
 		$SignUp=new SignUpForm;
+
+		//error messages
+		$mobileSignupError="";
+		$webSignupError="";
+
 
 		// if it is ajax validation request
 		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
@@ -213,7 +222,28 @@ class SiteController extends Controller
 				curl_setopt( $ch, CURLOPT_HEADER, 0);
 				curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
 				$response = curl_exec( $ch );
-				print_r($response);
+				$res=json_decode($response);
+				
+				$detect = new Mobile_Detect;
+				if ($res->result) {
+					if ( $detect->isMobile() || $detect->isTablet()){
+						$this->redirect(Yii::app()->request->baseUrl.'/site/runMobileLogin?user_id='.$res->user_id.'&password='.$res->password);
+					}
+					else
+					{
+						$this->redirect(Yii::app()->request->baseUrl.'/site/login');
+					}
+				}
+				else
+				{
+					if ( $detect->isMobile() || $detect->isTablet()){
+						$mobileSignupError=$res->message;
+					}
+					else
+					{
+						$webSignupError=$res->message;
+					}
+				}
 			}
 		}
 
@@ -227,10 +257,9 @@ class SiteController extends Controller
 			curl_setopt( $ch, CURLOPT_HEADER, 0);
 			curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
 			$response = curl_exec( $ch );
-			print_r($response);
 		}
 
-		$this->render('login',array('model'=>$model,'SignUp'=>$SignUp));
+		$this->render('login',array('model'=>$model,'SignUp'=>$SignUp,'mobileSignupError'=>$mobileSignupError,'webSignupError'=>$webSignupError));
 	}
 
 	/**
