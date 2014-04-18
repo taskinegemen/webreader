@@ -35,7 +35,7 @@ window.SlideController = (function( $ ) {
 	var buildPager = function(slideIndex){
 					switch(slideIndex){
 					  default:
-					  	return "<img width='150' alt='Page"+slideIndex+"' src='"+ get_file_request_url() + Items[PageIDArray[slideIndex]].replace('.html','.jpg').replace('.xhtml','.jpg').replace('.htm','.jpg') +"'>"+"<div class='thumbnail_page_number' >"+(slideIndex+1)+"</div>";
+					  	return "<img width='150' class='page_thumbnails' alt='Page"+slideIndex+"' src='' data-src='"+ get_file_request_url() + Items[PageIDArray[slideIndex]].replace('.html','.jpg').replace('.xhtml','.jpg').replace('.htm','.jpg') +"'>"+"<div class='thumbnail_page_number' >"+(slideIndex+1)+"</div>";
 					  break;
 					}
 				  };
@@ -145,7 +145,12 @@ window.SlideController = (function( $ ) {
 
 		this.bindKeys();
 
-		
+		$(document).ready(function() {
+		    $(".bx-custom-pager img.page_thumbnails").lazy(
+		    {
+		        appendScroll: $($('.bx-custom-pager')[0])
+		    });
+		});
 
 
 
@@ -158,13 +163,13 @@ window.SlideController = (function( $ ) {
 				
 				//left key
 			    if (e.keyCode == 37) { 
-			       this.controller ("prev-page");
+			       window.SlideController.controller ("prev-page");
 			       return false;
 			    }
 
 			    //right key
 			    if (e.keyCode == 39) { 
-			       this.controller ("next-page");
+			       window.SlideController.controller ("next-page");
 			       return false;
 			    }
 		});
