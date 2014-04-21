@@ -306,6 +306,7 @@ else:
 										<i class="fa fa-check-square-o"></i>
 										<?php echo $RegisterForm->passwordField($SignUp,'passwordR'); ?>
 									  </div>
+									  
 									  <?php if(CCaptcha::checkRequirements()): ?>
 									  <div class="form-group">
  											<label for=""><?php _e("Güvenlik Doğrulama Kodu"); ?> *</label><br>
@@ -320,6 +321,7 @@ else:
 									  	<?php echo CHtml::submitButton('Submit'); ?>
 									</form>
 									<?php $this->endWidget(); ?>
+							
 								
                                 	<div class="login-helpers">
 										<a href="#" onclick="swapScreen('login_bg');return false;">&lsaquo; Giriş Sayfasına Dön</a> <br>
