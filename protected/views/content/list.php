@@ -7,7 +7,8 @@ $this->pageTitle=Yii::app()->name;
 
 		<script type="text/javascript">
 		jQuery(document).ready(function() {     
-			App.setPage("gallery");  //Set current page
+			$("ul>li> #list").parent().addClass("current");
+            App.setPage("gallery");  //Set current page
 			App.init(); //Initialise plugins and elements
 		});
 		</script><!-- /JAVASCRIPTS -->
