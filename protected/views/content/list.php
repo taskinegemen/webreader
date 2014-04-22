@@ -110,9 +110,10 @@ $this->pageTitle=Yii::app()->name;
         organisationId=(myArray[1]).replace('-','_');
         //var server_organisationId="seviye";
 	var server_organisationId="<?php echo Yii::app()->params[organisation_id];?>";
-        if(organisationId=='okutus'){
+        if(organisationId=='okutus' || organisationId=='lindneo'){
             organisationId=server_organisationId;
         }
+        //organisationId="linden_team";
         console.log(organisationId);
         $.ajax({
           type: "POST",
@@ -121,6 +122,7 @@ $this->pageTitle=Yii::app()->name;
         })
           .done(function( result ) {
             var data = JSON.parse(result);
+            console.log(data);
             var author="Seviye Yayınları"; 
               
       
