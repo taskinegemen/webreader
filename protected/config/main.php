@@ -144,7 +144,9 @@ return array(
      		'tr_TR' => 'Türkçe',
      		'en_US' => 'English'
      		),
+		//'organisation_id'=>'seviye',
 		'organisation_id'=>'seviye',
+
 		// this is used in contact page
 		'adminEmail'=>'pacific@linden-tech.com',
 

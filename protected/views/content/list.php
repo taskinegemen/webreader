@@ -7,7 +7,8 @@ $this->pageTitle=Yii::app()->name;
 
 		<script type="text/javascript">
 		jQuery(document).ready(function() {     
-			App.setPage("gallery");  //Set current page
+			$("ul>li> #list").parent().addClass("current");
+            App.setPage("gallery");  //Set current page
 			App.init(); //Initialise plugins and elements
 		});
 		</script><!-- /JAVASCRIPTS -->
@@ -102,13 +103,14 @@ $this->pageTitle=Yii::app()->name;
         var ticket=kerbela.getTicket();
         var auth=kerbela.getAuthTicket();
         var HTTP_service_ticket=ticket.HTTP_service_ticket;
-        var organisationId='http://reader.okutus.com';
+        var organisationId=window.location;
         console.log(organisationId);
-        var myRe = /.(\w+)\.(com|net|edu|mil|gov)/g;
+        var myRe = /.([A-Za-z\-0-9]+)\.(com|net|edu|mil|gov)/g;
         var myArray = myRe.exec(organisationId);
-        organisationId=myArray[1];
-        var server_organisationId="seviye";
-        if(server_organisationId!=''){
+        organisationId=(myArray[1]).replace('-','_');
+        //var server_organisationId="seviye";
+	var server_organisationId="<?php echo Yii::app()->params[organisation_id];?>";
+        if(organisationId=='okutus'){
             organisationId=server_organisationId;
         }
         console.log(organisationId);

@@ -1,12 +1,13 @@
 /**  BRAND COLOR ADJUSTMENT ***********************************/
 
+
 .login_page_reader_logo {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top:50px;
 	width: 520px;
 	height: 250px;
-	background-image: url(../../../css/branding/linden/okutus_reader_logo.png);
+	background-image: url(../../../css/branding/seviye/seviye_reader_logo.png);
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -15,7 +16,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	height: 200px;
-	background-image: url(../../../css/branding/linden/slogan.png);
+	background-image: url(../../../css/branding/seviye/slogan.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -24,7 +25,7 @@
 .navbar_logo {
 	width: 180px;
 	height: 100%;
-	background: url(../../../css/ui/img/okutus_navbar_logo.png);
+	background: url(../../../css/branding/seviye/seviye_logo.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -58,8 +59,8 @@
 }
 
 .brand_color_for_buttons {
-	background-color: #2880b9 !important;
-	border-color: #226e99 !important;	
+	background-color: #2880b9;
+	border-color: #226e99;	
 }
 
 
@@ -70,7 +71,7 @@
 }
 
 .sidebar-menu > ul > li.current > a {
-	border-right:5px solid #2880b9;	
+	border-right:3px solid #2880b9;	
 }
 
 .sidebar-menu > ul > li.current:hover {
@@ -80,8 +81,7 @@
 .sidebar-menu > ul > li.has-sub.open > a,
 .sidebar-menu > ul > li > a:hover,
 .sidebar-menu > ul > li:hover > a {
-	background: #fff;
-	border-right:5px solid #2880b9;
+	background: #f8f8f8;
 }
 
 .navbar-right > li:hover{
@@ -95,6 +95,10 @@
 
 .dropdown-menu li:hover {
 	border-right:5px solid #2880b9;
+}
+
+.market_page_left_actions_current {
+	border-bottom:3px solid #2880b9;
 }
 
 

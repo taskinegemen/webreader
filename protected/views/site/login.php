@@ -66,6 +66,9 @@ if ( $detect->isMobile() || $detect->isTablet()):
 <section id="register_bg_mobil">
 	<div class="container">
     <div class="row">
+    	<?php if ($mobileSignupError) {
+    		echo '<h3>'.$mobileSignupError.'</h3>';
+    	}?>
     <div class="login-box">
 		<?php $RegisterForm=$this->beginWidget('CActiveForm', array(
 			'id'=>'register-form',
@@ -216,11 +219,6 @@ else:
 								<?php $this->endWidget(); ?>
 							</div>
 						</section>
-                        
-                        
-                        
-                        
-                       
                          
                         
                         
@@ -252,11 +250,6 @@ else:
 						<!-- FORGOT PASSWORD -->
                         
 
-
-
-
-
-
 						<section id="register_bg">
 							<div class="container">
                             <div class="row">
@@ -268,6 +261,9 @@ else:
 									 // 	'validateOnSubmit'=>true,
 									 // ),
 								)); ?>
+								<?php if ($webSignupError) {
+						    		echo '<h3>'.$webSignupError.'</h3>';
+						    	}?>
 								<h3 class="bigintro">Kayıt Ol</h3>
 									<form  id="register" name="register">								
 									  <div class="form-group">
@@ -324,23 +320,8 @@ else:
                             </div>
 						</section>
 
-
-
-
-
-
-
 							</div>
 				
-
-						
-
-
-
-
-
-
-
 
 <div class="col-md-1"></div>
 
