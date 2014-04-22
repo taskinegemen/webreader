@@ -116,7 +116,7 @@ return array(
      		'en_US' => 'English'
      		),
 		'catalog_host'=>'http://catalog.lindneo.com',
-		'organisation_id'=>'seviye',
+		'organisation_id'=>'linden_team',
 		//'http://catalog.lindneo.com',
 		// this is used in contact page
 		'adminEmail'=>'pacific@linden-tech.com',
