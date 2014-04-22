@@ -47,7 +47,15 @@ window.pages = [];
 
 		        $(window[$(this).attr('name')].document.body).css("zoom", zoom);
 
+
+
+
+
 		    });
+			
+
+
+
 		};
 
 
