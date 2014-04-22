@@ -219,11 +219,6 @@ else:
 								<?php $this->endWidget(); ?>
 							</div>
 						</section>
-                        
-                        
-                        
-                        
-                       
                          
                         
                         
@@ -254,11 +249,6 @@ else:
 						</section>
 						<!-- FORGOT PASSWORD -->
                         
-
-
-
-
-
 
 						<section id="register_bg">
 							<div class="container">
@@ -330,23 +320,8 @@ else:
                             </div>
 						</section>
 
-
-
-
-
-
-
 							</div>
 				
-
-						
-
-
-
-
-
-
-
 
 <div class="col-md-1"></div>
 
