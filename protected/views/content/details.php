@@ -56,7 +56,7 @@ $this->pageTitle=Yii::app()->name;
             $('#rbook').hide();
             $.ajax({
                     type: "POST",
-                    url: "http://koala.lindneo.com/api/checkUserBook",
+                    url: "<?php echo Yii::app()->params['koala_host'];?>/api/checkUserBook",
                     data: { book_id: '<?php echo $id; ?>', auth: auth_koala, http_service_ticket: HTTP_service_ticket_koala, type:"web"}
                 })
                   .done(function( result ) {
@@ -202,7 +202,7 @@ $this->pageTitle=Yii::app()->name;
                 var HTTP_service_ticket_panda = kerbela.getTicket().HTTP_service_ticket;
                 $.ajax({
                     type: "POST",
-                    url: "http://panda.lindneo.com/api/transaction",
+                    url: "<?php echo Yii::app()->params['panda_host']; ?>/api/transaction",
                     data: { type_name:'book', type_id: '<?php echo $id; ?>', auth: auth_panda, http_service_ticket: HTTP_service_ticket_panda, type:"web"}
                 })
                   .done(function( result ) {

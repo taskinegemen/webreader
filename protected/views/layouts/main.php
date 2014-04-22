@@ -15,18 +15,26 @@
 	<?php
         $organisationId=Yii::app()->getBaseUrl(true);
         $myArray=array();
-        preg_match ("/.(\w+)\.(com|net|edu|mil|gov)/", $organisationId,$myArray); 
+        preg_match ("/.([A-Za-z\-0-9]+)\.(com|net|edu|mil|gov)/", $organisationId,$myArray); 
         $organisationId=$myArray[1];
+
         $server_organisationId=Yii::app()->params['organisation_id'];
-        if($server_organisationId!=''){
+        if($organisationId=='okutus'){
             $organisationId=$server_organisationId;
         }
+	
     ?>
-
+<script>
+console.log('<?php echo $organisationId;?>');
+</script>
 		<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/cloud-admin.css" >
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/branding/<?php echo $organisationId.'/'.$organisationId.'.css';?>" >
-	<!--<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/themes/night.css" >-->
+	<?php if (file_exists('css/branding/'.$organisationId.'/'.$organisationId.'.css')) {?>
+	    	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/branding/<?php echo $organisationId.'/'.$organisationId.'.css';?>" >
+	<?php } else { ?>
+	    	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/branding/linden/linden.css" >
+	<?php } ?>
+<!--<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/themes/night.css" >-->
 	<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/responsive.css" >
 	<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/themes/default.css" id="skin-switcher">
 	<link href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -133,9 +141,9 @@
 		<!-- BLOCK UI -->
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
 		
-		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/jquery.lazy.min.js"></script>
 
 		<?php echo functions::event('header', ""); ?>
+		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/jquery.lazy.min.js"></script>
 
 		<!-- kerbela -->
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/kerbela/sha256.js"></script>

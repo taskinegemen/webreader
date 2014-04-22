@@ -52,7 +52,7 @@ class functions
                 <div class="sidebar-menu nav-collapse">
                     <!--=== Navigation ===-->
                     <ul>
-                        <li class="current">
+                        <li>
                             <a id="library" href="#">
                                 <i class="fa fa-book fa-fw"></i>
                                 <span class="menu-text">Kütüphanem</span>
