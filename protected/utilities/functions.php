@@ -52,7 +52,7 @@ class functions
                 <div class="sidebar-menu nav-collapse">
                     <!--=== Navigation ===-->
                     <ul>
-                        <li class="current">
+                        <li>
                             <a id="library" href="#">
                                 <i class="fa fa-book fa-fw"></i>
                                 <span class="menu-text">Kütüphanem</span>
@@ -64,12 +64,12 @@ class functions
                                 <span class="menu-text">Mağaza</span>
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a id="profile"href="#">
                                 <i class="fa fa-user fa-fw"></i> 
                                 <span class="menu-text">Profilim</span>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                     <!-- /Navigation -->
 

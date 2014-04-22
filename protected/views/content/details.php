@@ -56,7 +56,7 @@ $this->pageTitle=Yii::app()->name;
             $('#rbook').hide();
             $.ajax({
                     type: "POST",
-                    url: "http://koala.lindneo.com/api/checkUserBook",
+                    url: "<?php echo Yii::app()->params['koala_host'];?>/api/checkUserBook",
                     data: { book_id: '<?php echo $id; ?>', auth: auth_koala, http_service_ticket: HTTP_service_ticket_koala, type:"web"}
                 })
                   .done(function( result ) {
@@ -202,7 +202,7 @@ $this->pageTitle=Yii::app()->name;
                 var HTTP_service_ticket_panda = kerbela.getTicket().HTTP_service_ticket;
                 $.ajax({
                     type: "POST",
-                    url: "http://panda.lindneo.com/api/transaction",
+                    url: "<?php echo Yii::app()->params['panda_host']; ?>/api/transaction",
                     data: { type_name:'book', type_id: '<?php echo $id; ?>', auth: auth_panda, http_service_ticket: HTTP_service_ticket_panda, type:"web"}
                 })
                   .done(function( result ) {
@@ -215,7 +215,7 @@ $this->pageTitle=Yii::app()->name;
                 });
             });
 
-if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
+//if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
 	});
 	</script>
 	<!-- /JAVASCRIPTS -->
@@ -264,7 +264,7 @@ if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
 <h3 class="book_info_the_name_of_the_writer">Jess Walter</h2>
 
 <button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons"  id="bbook" data-toggle="modal" data-target="#buybook">Kütüphaneme Ekle</button>
-<a class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons" href="<?php echo Yii::app()->request->baseUrl.'/content/read/'.$id; ?>" target="_blank" id="rbook">Oku</a>
+<a class="btn btn-primary pull-right book_info_add_to_library_button" href="<?php echo Yii::app()->request->baseUrl.'/content/read/'.$id; ?>" target="_blank" id="rbook"><i class="fa fa-eye"></i>Oku</a>
 
 </div>
 <!-- /book_info_details_row -->
@@ -411,7 +411,7 @@ Nulla pretium bibendum sollicitudin. Fusce ligula sapien, blandit et nulla et, d
         <div style="width:760px; float:left;">
         <!-- Kitap Bilgileri -->
               
-            <div id="bookname" style="float:left;"></div>
+            <div id="bookname" style="float:left; font-size:18px;"></div>
             <div id="bookprice" style="float:right;"></div><br><br>
       
       <!-- /Kitap Bilgileri -->
@@ -489,9 +489,9 @@ Nulla pretium bibendum sollicitudin. Fusce ligula sapien, blandit et nulla et, d
             </div><br><br>
             </div>
       </div>
-      <div class="modal-footer" style="width:500px;">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Kapat</button>
-        <button type="button" class="btn btn-default" id="buy_book">Satın Al</button>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+        <button type="button" class="btn btn-success" id="buy_book">Satın Al</button>
       </div>
     </div>
   </div>
