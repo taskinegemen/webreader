@@ -344,18 +344,73 @@ else:
 <!-- END OF LOGIN_PAGE_CONTAINER -->
 
 
-<div class="responsive_login_page_container">
 
-<div class="responsive_login_page_logo"></div>
 
-<div class="responsive_login_buttons">
+<!-- RESPONSIVE_LOGIN_PAGE_CONTAINER -->
 
-<button class="btn pull-left brand_color_for_buttons">Kayıt Ol!</button>
-<button class="btn pull-right btn-default">Giriş Yap <i class="fa fa-angle-right"></i></button>
+    <div class="responsive_login_page_container">
+        <div class="responsive_login_page_logo"></div>
+        <div class="responsive_login_buttons">
+            <button class="btn pull-left brand_color_for_buttons">Kayıt Ol!</button>
+            <a href="#" onclick="swapScreen('login');return false;"><button class="btn pull-right btn-default">Giriş Yap <i class="fa fa-angle-right"></i></button></a>
+        </div>
+    
 
-</div>
 
-</div>
+
+
+
+
+			<!-- RESPONSIVE LOGIN -->
+			<section id="login" class="responsive_sign_in_page">
+            	<div class="responsive_page_bar">
+                	<div class="responsive_page_bar_logo"></div>
+                    <div class="responsive_page_bar_text">Giriş Yap</div>
+                </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-4">
+                                <div class="login-box-plain">
+                                    <form role="form">
+                                      <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <i class="fa fa-envelope"></i>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" >
+                                      </div>
+                                      
+                                      <hr />
+                                      
+                                      <div class="form-group"> 
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <i class="fa fa-lock"></i>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" >
+                                      </div>
+                                      </div>
+                                      <button type="submit" class="btn btn-danger">Submit</button>
+                                    <div class="login-helpers">
+                                        <a href="#" onclick="swapScreen('forgot');return false;">Forgot Password?</a> <br>
+                                        Don't have an account with us? <a href="#" onclick="swapScreen('register');return false;">Register
+                                            now!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+			</section>
+			<!--/ RESPONSIVE LOGIN -->
+
+
+
+
+
+
+	</div>
+<!-- END OF RESPONSIVE_LOGIN_PAGE_CONTAINER -->
+
+
+
+
+
 
 
 <?php endif; ?>
