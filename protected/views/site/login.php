@@ -62,7 +62,11 @@ $this->pageTitle=Yii::app()->name . ' - Login';
   </script>
  <!-- login -->
 <?php $detect = new Mobile_Detect;
-if ( $detect->isMobile() || $detect->isTablet()):
+
+//geçici olarak kaldırıldı tasarıma göre tekrar eklenebilme durumu var
+
+if (0):
+//if ( $detect->isMobile() || $detect->isTablet()):
 ?>
 <section id="register_bg_mobil">
 	<div class="container">
