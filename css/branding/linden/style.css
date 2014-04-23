@@ -120,6 +120,12 @@
 
 
 @media only screen and (max-width: 1000px) {
+	
+	@-ms-viewport {
+	  width: 1024px;
+	  height: 768px;
+	}
+	
 	.login_page_container {
 		display:none;	
 	}
@@ -130,6 +136,7 @@
 		position: absolute;
 		top: 0;
 		background-image: url(../../../css/ui/img/responsive/responsive_background.png);
+		background-size:cover;
 	}
 	
 	.responsive_login_page_logo {
@@ -160,7 +167,7 @@
 	}
 	
 	.responsive_sign_in_page {
-		background-color:#CCC;
+		background-image: url(../../../css/ui/img/responsive/general_background.png);
 		width:100%;
 		height:100%;	
 	}
@@ -176,30 +183,30 @@
 		background: -ms-linear-gradient(top, #2880b9 0%,#0063A2 100%);
 		background: linear-gradient(to bottom, #2880b9 0%,#0063A2 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2880b9', endColorstr='#006fb5',GradientType=0 );
-		border-bottom: 2px solid #00558B;	
+		border-bottom: 1px solid #00558B;	
 	}
 	
 	.responsive_sign_in_page .login-box-plain {
 		padding: 10px;
 		margin: 10px auto;
-		border: 1px solid #B9B9B9;
-		box-shadow: 1px 2px 3px #A8A8A8;
-		min-height:100px;	
+		border: 1px solid #F0F0F0;
+		box-shadow: 1px 1px 5px #BEBEBE;
+		min-height: 100px;	
 	}
 	
 
 	
 	.responsive_page_bar_logo {	
 		background-image: url(../../../css/ui/img/responsive/okutus_responsive_logo.png);
-		width: 40px;
-		height: 40px;
+		width: 35px;
+		height: 35px;
 		float: left;
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-		margin-top: 5px;
+		margin-top: 7px;
 		margin-left: 15px;
-		margin-right: 15px;
+		margin-right: 10px;
 	}
 	
 	.responsive_page_bar_text {
@@ -208,6 +215,29 @@
 		line-height: 2.3em;
 		text-shadow: 1px 1px #2D7BB8;
 	}
+	
+	.responsive_sign_in_page hr {
+		margin-bottom:10px !important;
+		margin-top:10px !important;
+	}
+	
+	.responsive_sign_in_page .form-group {
+		margin-bottom:0 !important;
+	}
+	
+	.responsive_sign_in_page button {
+		width: 100%;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		font-size: 18px;
+		color:#fff;
+	}
+	
+	.responsive_sign_in_page form .form-group:first-child i.fa {
+		margin-top:10px
+	}
+
+
 
 }
 

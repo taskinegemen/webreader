@@ -377,20 +377,19 @@ else:
                                 <div class="login-box-plain">
                                     <form role="form">
                                       <div class="form-group">
-                                        <label for="exampleInputEmail1">Email address</label>
                                         <i class="fa fa-envelope"></i>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" >
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-Mail Adresiniz" >
                                       </div>
                                       
                                       <hr />
                                       
                                       <div class="form-group"> 
-                                        <label for="exampleInputPassword1">Password</label>
                                         <i class="fa fa-lock"></i>
-                                        <input type="password" class="form-control" id="exampleInputPassword1" >
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Şifreniz" >
                                       </div>
+                                      
                                       </div>
-                                      <button type="submit" class="btn btn-danger">Submit</button>
+                                      <button type="submit" class="btn brand_color_for_buttons">Giriş Yap</button>
                                     <div class="login-helpers">
                                         <a href="#" onclick="swapScreen('forgot');return false;">Forgot Password?</a> <br>
                                         Don't have an account with us? <a href="#" onclick="swapScreen('register');return false;">Register
