@@ -343,9 +343,18 @@ else:
 <!-- END OF LOGIN_PAGE_CONTAINER -->
 
 
+<div class="responsive_login_page_container">
 
+<div class="responsive_login_page_logo"></div>
 
+<div class="responsive_login_buttons">
 
+<button class="btn pull-left brand_color_for_buttons">Kayıt Ol!</button>
+<button class="btn pull-right btn-default">Giriş Yap <i class="fa fa-angle-right"></i></button>
+
+</div>
+
+</div>
 
 
 <?php endif; ?>

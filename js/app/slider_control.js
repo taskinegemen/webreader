@@ -47,6 +47,32 @@ window.SlideController = (function( $ ) {
 
 					$("#current_page_num_spinner").val(newIndex+1);
 
+					console.log("old index"+oldIndex);
+					console.log("new index"+newIndex);
+
+					$("iframe").each(function(){
+						var that=this.contentWindow;
+						var eachPage="page"+newIndex;
+						if(this.name==eachPage)
+						{
+							console.log('playing...');
+							try{
+								$(that).focus();
+								}
+							catch(err){
+								console.log('page not focus!');
+							}
+						}
+						else
+						{
+							try{
+								$(this.contentWindow).blur();
+								}
+							catch(err){
+								console.log('page not blur!');
+							}
+						}
+					});
 
 					var kapanacaklar = [oldIndex-2,oldIndex-1,oldIndex,oldIndex+1,oldIndex+2];
 					var acilacaklar =  [newIndex,newIndex+1, newIndex-1,newIndex+2,newIndex-2];
@@ -106,6 +132,7 @@ window.SlideController = (function( $ ) {
 								//when loaded the content
 								simdiAcilacak.load(function(){
 
+
 									//make it loaded and fit to parent
 						        	$(this)
 						        		.removeClass("lazy-hidden")
@@ -113,11 +140,16 @@ window.SlideController = (function( $ ) {
 						        		.fitToParent();	
 
 						        	//grey overlay fade outs
+
 						        	if(window.appendedPages>=window.settings.firstLoadFrameNum){
   							        	$($(this).parent().children('.loadingt')[0]).fadeOut(2000);
   							        } else {
   							        	$($(this).parent().children('.loadingt')[0]).hide();
   							        }
+
+						        	/*egemens reader fix*/
+									if(typeof simdiAcilacak[0].contentWindow.okutus_play !='undefined')console.log(simdiAcilacak[0].contentWindow.okutus_stop());
+
 
 
 					    		});
@@ -165,6 +197,7 @@ window.SlideController = (function( $ ) {
 						
 						window.SlideController.controller (action,readerData);
 				});
+
 
 		});
 		//if reader-action is clicked send it to controller
