@@ -79,6 +79,7 @@ jQuery(document).ready(function() {
 						'height': (parseInt ($(window.oversizeframe.document.body).css('height')) * 2) +'px',
 						'width': (parseInt ($(window.oversizeframe.document.body).css('width')) * 2) +'px'
 					});	
+					newFrame.position({'my':'center top','at':'center top','of':window});
 
 					var insidebody= window.oversizeframe.document.body;
 					
@@ -192,6 +193,14 @@ function StartReaderApp (){
 
 				var newPageContainer=$("<li style='margin-top:5px;'></li>");
 				var newLoading = $('<div class="loadingt" style="position: absolute;background: #0c0c0c;top: 0;bottom: 0;left: 0;right: 0;z-index:1;display:block"></div>');
+				/*
+				$('<ul class="loading_spinner"> \
+				    	<li></li>\
+				        <li></li>\
+				        <li></li>\
+				        <li></li>\
+			        </ul>').appendTo(newLoading);
+				*/
 				newLoading.appendTo(newPageContainer);
 
 

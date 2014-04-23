@@ -118,7 +118,7 @@
 /*************** LOADING PANE ***********/
 
 .loading-pane {
-	background: #555555;
+	background: #0c0c0c;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -132,8 +132,8 @@
 .loading_spinner {
 	font-size: 100px;
 
-	width: 100px;
-	height: 100px;
+	width: 100px!important;
+	height: 100px!important;
 
 
 	position: absolute;
