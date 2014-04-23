@@ -145,7 +145,7 @@ class ContentController extends Controller
 		shuffle($hosts);
 		$host=$hosts[0]['address'];
 		$port=$hosts[0]['port'];
-
+		//echo $host."-".$port;die();
 		$getfile = "./tmp/$id";
 		$command =  "python bin/client_tls.py '{\"host\":\"$host\",\"port\":$port}' GetFileChuncked $id $getfile";
 		$outpufolder="contents/".basename($id);
