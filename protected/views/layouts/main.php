@@ -29,8 +29,10 @@ console.log('<?php echo $organisationId;?>');
 </script>
 		<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/cloud-admin.css" >
-	<?php if (file_exists('css/branding/'.$organisationId.'/'.$organisationId.'.css')) {?>
-	    	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/branding/<?php echo $organisationId.'/'.$organisationId.'.css';?>" >
+	<?php 
+		$css_file= 'css/branding/'.$organisationId.'/style.css';
+		if (file_exists($css_file)) {?>
+	    	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/<?php echo $css_file;?>" >
 	<?php } else { ?>
 	    	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/branding/linden/style.css" >
 	<?php } ?>
