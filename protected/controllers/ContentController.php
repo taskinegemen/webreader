@@ -2,6 +2,51 @@
 
 class ContentController extends Controller
 {
+	public function actionService(){
+		$auth=Yii::app()->request->getPost('auth',0);
+		$http_service_ticket=Yii::app()->request->getPost('http_service_ticket',0);
+		$kerberized=new KerberizedServer($auth,$http_service_ticket);
+		$myarray=$kerberized->ticketValidation();
+
+		error_log("ticket validation:".serialize($myarray));	
+		$kerberized->authenticate();			
+	}
+
+	private function authenticate()
+	{
+		$auth=Yii::app()->request->getPost('auth',0);
+		$http_service_ticket=Yii::app()->request->getPost('http_service_ticket',0);
+		$type=Yii::app()->request->getPost('type','android');
+		// error_log("auth:".$auth);
+		// error_log("http_service_ticket:".$http_service_ticket);
+		$kerberized=new KerberizedServer($auth,$http_service_ticket,KerbelaEncryptionFactory::create($type));
+		
+
+		 $myarray=$kerberized->ticketValidation();
+		// error_log("user_id:".$kerberized->getUserId());
+		//$kerberized->authenticate();
+		if ($kerberized->getUserId()) {
+			return $kerberized->getUserId();
+		}
+		else
+			return 0;
+	} 
+
+	public function actionAuthenticate()
+	{
+		$auth=Yii::app()->request->getPost('auth',0);
+		$http_service_ticket=Yii::app()->request->getPost('http_service_ticket',0);
+		$type=Yii::app()->request->getPost('type','android');
+		// error_log("auth:".$auth);
+		// error_log("http_service_ticket:".$http_service_ticket);
+		$kerberized=new KerberizedServer($auth,$http_service_ticket,KerbelaEncryptionFactory::create($type));
+		
+
+		 $myarray=$kerberized->ticketValidation();
+		// error_log("user_id:".$kerberized->getUserId());
+		$kerberized->authenticate();
+	}
+
 	public function actionAddtolibrary()
 	{
 		$this->render('addtolibrary');
@@ -19,6 +64,10 @@ class ContentController extends Controller
 
 	public function actionDetails()
 	{
+		// if (!$this->authenticate()) {
+		// 	echo "authenticate error!";
+		// 	die();
+		// }
 		$id=Yii::app()->request->getQuery('id',0);
 		$this->render('details',array('id'=>$id));
 	}

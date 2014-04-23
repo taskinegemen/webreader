@@ -31,8 +31,13 @@ $this->pageTitle=Yii::app()->name;
 
             var kerbela = $(window).kerbelainit();
             kerbela.setRequestedHttpService('catalog');
+
+            if (kerbela.getTicket()==null) {
+                    window.location.href="<?php echo Yii::app()->request->baseUrl; ?>";
+                };
             console.log(kerbela.getRequestedHttpService());
             var auth = kerbela.getAuthTicket();
+            
             var HTTP_service_ticket = kerbela.getTicket().HTTP_service_ticket;
             
             var book_data = "";
@@ -49,9 +54,14 @@ $this->pageTitle=Yii::app()->name;
 
 
             kerbela.setRequestedHttpService('koala');
+            if (kerbela.getTicket()==null) {
+                    window.location.href="<?php echo Yii::app()->request->baseUrl; ?>";
+                };
             console.log(kerbela.getRequestedHttpService());
             var auth_koala = kerbela.getAuthTicket();
             var HTTP_service_ticket_koala = kerbela.getTicket().HTTP_service_ticket;
+            
+
             $('#bbook').show();
             $('#rbook').hide();
             $.ajax({
@@ -197,6 +207,9 @@ $this->pageTitle=Yii::app()->name;
                 console.log(year);
 
                 kerbela.setRequestedHttpService('panda');
+                if (kerbela.getTicket()==null) {
+                    window.location.href="<?php echo Yii::app()->request->baseUrl; ?>";
+                };
                 console.log(kerbela.getRequestedHttpService());
                 var auth_panda = kerbela.getAuthTicket();
                 var HTTP_service_ticket_panda = kerbela.getTicket().HTTP_service_ticket;
