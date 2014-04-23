@@ -15,6 +15,9 @@ class functions
                 var kerbela = $(window).kerbelainit();
                 kerbela.setRequestedHttpService('reader');
                 var ticket=kerbela.getTicket();
+                if (ticket==null) {
+                    window.location.href="<?php echo Yii::app()->request->baseUrl; ?>";
+                };
                 var auth=kerbela.getAuthTicket();
                 var HTTP_service_ticket=ticket.HTTP_service_ticket;
                 $('#library').click(function(){

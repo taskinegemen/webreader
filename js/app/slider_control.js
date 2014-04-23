@@ -35,12 +35,15 @@ window.SlideController = (function( $ ) {
 	var buildPager = function(slideIndex){
 					switch(slideIndex){
 					  default:
-					  	return "<img width='150' alt='Page"+slideIndex+"' src='"+ get_file_request_url() + Items[PageIDArray[slideIndex]].replace('.html','.jpg').replace('.xhtml','.jpg').replace('.htm','.jpg') +"'>"+"<div class='thumbnail_page_number' >"+(slideIndex+1)+"</div>";
+					  	return "<img width='150' class='page_thumbnails' alt='Page"+slideIndex+"' src='' data-src='"+ get_file_request_url() + Items[PageIDArray[slideIndex]].replace('.html','.jpg').replace('.xhtml','.jpg').replace('.htm','.jpg') +"'>"+"<div class='thumbnail_page_number' >"+(slideIndex+1)+"</div>";
 					  break;
 					}
 				  };
 
 	var onslide = function($slideElement, oldIndex, newIndex){ 
+
+
+
 
 					$("#current_page_num_spinner").val(newIndex+1);
 
@@ -72,31 +75,54 @@ window.SlideController = (function( $ ) {
 					});
 
 					var kapanacaklar = [oldIndex-2,oldIndex-1,oldIndex,oldIndex+1,oldIndex+2];
-					var acilacaklar =  [newIndex-2,newIndex-1,newIndex,newIndex+1,newIndex+2];
+					var acilacaklar =  [newIndex,newIndex+1, newIndex-1,newIndex+2,newIndex-2];
 					
 					//We dont want them to close and open again so we filter that ones will be opened.
 					kapanacaklar = kapanacaklar.filter(function(i) {return !(acilacaklar.indexOf(i) > -1);});
 
 					//First close the to be closed ones that will not be opened.
 					$.each (kapanacaklar, function(index,kapanacak) {
-						var simdiKapanacak = $( $('.bxslider iframe.page_iframe')[kapanacak] );
+						var simdiKapanacak = window.pages[kapanacak] ;
 						if ( typeof simdiKapanacak != 'undefined'){
-							simdiKapanacak.removeAttr('src');
+							//simdiKapanacak.removeAttr('src');
+							simdiKapanacak.reader_appended=false;
+							simdiKapanacak.remove();
 						}
 					});
 
 
+
 					//Second lets open the not opened ones
 					$.each (acilacaklar, function(index,acilacak) {
-						var simdiAcilacak  = $( $('.bxslider iframe.page_iframe')[acilacak] );
+						var simdiAcilacak  = window.pages[acilacak];
+
+
+
 						// if instance exists not like (-1 or pagecount +1)
 						if ( typeof simdiAcilacak != 'undefined'){
+
+							if( ! simdiAcilacak.reader_appended ){
+
+								var offset = $('#main-content').offset();
+								var height= $(window).height() - offset.top +25-125;
+								var width= $(window).width() - offset.left;
+								simdiAcilacak.height (height);
+								simdiAcilacak.width (width);
+
+								simdiAcilacak.appendTo(simdiAcilacak.parentContainer);
+								simdiAcilacak.reader_appended=true;
+							}
+
+
+
+
+
 							var attr = $(simdiAcilacak).attr('src');
 							//if not already open
 							if (!(typeof attr !== 'undefined' && attr !== false)) {
 								//grey overlay for hiding the ugly loading scene
 								simdiAcilacak.parent().children('.loadingt').show();
-
+								console.log(simdiAcilacak);
 								//change src attribute to load the source
 							  	simdiAcilacak.attr('src', simdiAcilacak.attr('data-src' ));
 
@@ -114,9 +140,15 @@ window.SlideController = (function( $ ) {
 						        		.fitToParent();	
 
 						        	//grey overlay fade outs
-						        	$($(this).parent().children('.loadingt')[0]).fadeOut(2000);
+
+						        	if(window.appendedPages>=window.settings.firstLoadFrameNum){
+  							        	$($(this).parent().children('.loadingt')[0]).fadeOut(2000);
+  							        } else {
+  							        	$($(this).parent().children('.loadingt')[0]).hide();
+  							        }
+
 						        	/*egemens reader fix*/
-									$.each(window.pages,function(){if(typeof this[0].contentWindow.okutus_play !='undefined')console.log(this[0].contentWindow.okutus_stop());});
+									if(typeof simdiAcilacak[0].contentWindow.okutus_play !='undefined')console.log(simdiAcilacak[0].contentWindow.okutus_stop());
 
 
 
@@ -125,6 +157,7 @@ window.SlideController = (function( $ ) {
 							
 						}
 					});
+
 				};
 
     
@@ -176,7 +209,12 @@ window.SlideController = (function( $ ) {
 
 		this.bindKeys();
 
-		
+		$(document).ready(function() {
+		    $(".bx-custom-pager img.page_thumbnails").lazy(
+		    {
+		        appendScroll: $($('.bx-custom-pager')[0])
+		    });
+		});
 
 
 
@@ -189,13 +227,13 @@ window.SlideController = (function( $ ) {
 				
 				//left key
 			    if (e.keyCode == 37) { 
-			       this.controller ("prev-page");
+			       window.SlideController.controller ("prev-page");
 			       return false;
 			    }
 
 			    //right key
 			    if (e.keyCode == 39) { 
-			       this.controller ("next-page");
+			       window.SlideController.controller ("next-page");
 			       return false;
 			    }
 		});
