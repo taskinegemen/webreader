@@ -98,9 +98,14 @@ $this->pageTitle=Yii::app()->name;
         return str%8;
     }
 
+        
+
        var kerbela=$(window).kerbelainit();
         kerbela.setRequestedHttpService('catalog');
         var ticket=kerbela.getTicket();
+        if (ticket==null) {
+            window.location.href="<?php echo Yii::app()->request->baseUrl; ?>";
+        };
         var auth=kerbela.getAuthTicket();
         var HTTP_service_ticket=ticket.HTTP_service_ticket;
         var organisationId=window.location;
@@ -109,7 +114,7 @@ $this->pageTitle=Yii::app()->name;
         var myArray = myRe.exec(organisationId);
         organisationId=(myArray[1]).replace('-','_');
         //var server_organisationId="seviye";
-	var server_organisationId="<?php echo Yii::app()->params[organisation_id];?>";
+    var server_organisationId="<?php echo Yii::app()->params[organisation_id];?>";
         if(organisationId=='okutus' || organisationId=='lindneo'){
             organisationId=server_organisationId;
         }
@@ -121,10 +126,10 @@ $this->pageTitle=Yii::app()->name;
           data: { attributes: '{"organisationId":["'+organisationId+'"]}', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
         })
           .done(function( result ) {
+            console.log("RESULT: "+result);
             var data = JSON.parse(result);
             console.log(data);
             var author="Seviye Yayınları"; 
-              
       
             $.each( data.result, function( key, book ) {
                 /**

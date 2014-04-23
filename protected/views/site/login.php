@@ -13,6 +13,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 <!-- login -->
   <script type="text/javascript">
 	$(document).ready(function(){
+		sessionStorage.clear();
 		$('#login-form').submit(function(e) {
 				e.preventDefault();
 		  		window.setTimeout(function(){login();},100);

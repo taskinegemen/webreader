@@ -26,6 +26,9 @@ $("ul>li> #library").parent().addClass("current");
         }
             var kerbela = $(window).kerbelainit();
             kerbela.setRequestedHttpService('koala');
+            if (kerbela.getTicket()==null) {
+                    window.location.href="<?php echo Yii::app()->request->baseUrl; ?>";
+                };
             console.log(kerbela.getRequestedHttpService());
             var auth = kerbela.getAuthTicket();
             var HTTP_service_ticket = kerbela.getTicket().HTTP_service_ticket;
@@ -45,6 +48,9 @@ $("ul>li> #library").parent().addClass("current");
                       console.log(value.book_id);
                       
                         kerbela.setRequestedHttpService('catalog');
+                        if (kerbela.getTicket()==null) {
+                            window.location.href="<?php echo Yii::app()->request->baseUrl; ?>";
+                        };
                         console.log(kerbela.getRequestedHttpService());
                         var auth_catalog = kerbela.getAuthTicket();
                         var HTTP_service_ticket_catalog = kerbela.getTicket().HTTP_service_ticket;
