@@ -1,4 +1,21 @@
-jQuery(document).ready(function() {		
+jQuery(document).ready(function() {
+	window.settings={
+		'firstLoadFrameNum':1
+	};
+
+
+
+	var loadingPane=$("<div></div>");
+	loadingPane.addClass('loading-pane') ;
+	$('body').append(loadingPane);
+	$('<ul class="loading_spinner"> \
+	    	<li></li>\
+	        <li></li>\
+	        <li></li>\
+	        <li></li>\
+        </ul>').appendTo(loadingPane);
+
+	window.loadingPane=loadingPane;
 
 	$.ajax({
 	  url: metaUrl,
@@ -62,6 +79,7 @@ jQuery(document).ready(function() {
 						'height': (parseInt ($(window.oversizeframe.document.body).css('height')) * 2) +'px',
 						'width': (parseInt ($(window.oversizeframe.document.body).css('width')) * 2) +'px'
 					});	
+					newFrame.position({'my':'center top','at':'center top','of':window});
 
 					var insidebody= window.oversizeframe.document.body;
 					
@@ -169,17 +187,32 @@ function StartReaderApp (){
 			
 			$(".reader_page_container .bxslider").empty();
 
-			
+			window.appendedPages=0;
 			$.each(PageIDArray, function(index,page){
 
 
 				var newPageContainer=$("<li style='margin-top:5px;'></li>");
 				var newLoading = $('<div class="loadingt" style="position: absolute;background: #0c0c0c;top: 0;bottom: 0;left: 0;right: 0;z-index:1;display:block"></div>');
+				/*
+				$('<ul class="loading_spinner"> \
+				    	<li></li>\
+				        <li></li>\
+				        <li></li>\
+				        <li></li>\
+			        </ul>').appendTo(newLoading);
+				*/
 				newLoading.appendTo(newPageContainer);
 
 
 				var newPage=$("<iframe name='page"+index+"'class='page_iframe' frameBorder='0' scrolling='no' style='overflow:hidden;margin:0 auto;' ></iframe>")
-				newPage.appendTo(newPageContainer);
+				if(window.appendedPages++<window.settings.firstLoadFrameNum){
+					newPage.appendTo(newPageContainer);
+					newPage.reader_appended=true;
+				} else {
+					newPage.reader_appended=false;
+				}
+				newPage.parentContainer=newPageContainer;
+
 
 				newPageContainer.appendTo($(".reader_page_container .bxslider"));
 
@@ -234,5 +267,5 @@ function StartReaderApp (){
 
 					});
 				});
-
+			window.loadingPane.delay(2000).fadeOut(2000);
 }
