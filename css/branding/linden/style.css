@@ -101,3 +101,61 @@
 }
 
 /**  END OF BRAND COLOR ADJUSMENT ***********************************/
+
+
+
+
+
+
+
+
+/**  LOGIN RESPONSIVE ***********************************/
+
+
+@media only screen and (min-width: 1001px) {
+	.responsive_login_page_container {
+		display:none;	
+	}
+}
+
+
+@media only screen and (max-width: 1000px) {
+	.login_page_container {
+		display:none;	
+	}
+	
+	.responsive_login_page_container {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		background-image: url(../../../css/ui/img/responsive/responsive_background.png);
+	}
+	
+	.responsive_login_page_logo {
+		background-image: url(../../../css/ui/img/responsive/responsive_login_page_logo.png);
+		width: 250px;
+		height: 250px;
+		margin-left: auto;
+		margin-right: auto;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		top: 50px;
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+	
+	.responsive_login_buttons {
+		width:100%;
+		position:absolute;
+		bottom:50px;
+		padding-left:50px;
+		padding-right:50px;	
+	}
+	
+	.responsive_login_buttons .pull-left {
+		color:#fff;	
+	}
+}
