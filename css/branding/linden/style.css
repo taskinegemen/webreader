@@ -141,8 +141,8 @@
 	
 	.responsive_login_page_logo {
 		background-image: url(../../../css/ui/img/responsive/responsive_login_page_logo.png);
-		width: 250px;
-		height: 250px;
+		width: 180px;
+		height: 180px;
 		margin-left: auto;
 		margin-right: auto;
 		background-size: contain;
@@ -157,19 +157,27 @@
 	.responsive_login_buttons {
 		width:100%;
 		position:absolute;
-		bottom:50px;
+		bottom:75px;
 		padding-left:50px;
 		padding-right:50px;	
+	}
+	
+	.responsive_login_buttons button{
+		font-size:18px;
+		padding: 8px 15px;
 	}
 	
 	.responsive_login_buttons .pull-left {
 		color:#fff;	
 	}
 	
-	.responsive_sign_in_page {
+	.responsive_page_forms {
 		background-image: url(../../../css/ui/img/responsive/general_background.png);
 		width:100%;
-		height:100%;	
+		height:100%;
+		position: absolute;
+		top: 0;
+		text-align:center;
 	}
 	
 	.responsive_page_bar {
@@ -186,27 +194,31 @@
 		border-bottom: 1px solid #00558B;	
 	}
 	
-	.responsive_sign_in_page .login-box-plain {
+	.responsive_page_forms .login-box-plain {
 		padding: 10px;
 		margin: 10px auto;
 		border: 1px solid #F0F0F0;
-		box-shadow: 1px 1px 5px #BEBEBE;
-		min-height: 100px;	
+		box-shadow: 1px 1px 1px #E9E9E9;
+		min-height: 10px;
+		border-radius: 4px;
+		max-width:350px;
 	}
 	
 
 	
 	.responsive_page_bar_logo {	
 		background-image: url(../../../css/ui/img/responsive/okutus_responsive_logo.png);
-		width: 35px;
+		width: 210px;
 		height: 35px;
-		float: left;
-		background-size: cover;
+		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;
-		margin-top: 7px;
-		margin-left: 15px;
-		margin-right: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin-top: 7px;	
 	}
 	
 	.responsive_page_bar_text {
@@ -216,28 +228,41 @@
 		text-shadow: 1px 1px #2D7BB8;
 	}
 	
-	.responsive_sign_in_page hr {
+	.responsive_page_forms hr {
 		margin-bottom:10px !important;
 		margin-top:10px !important;
 	}
 	
-	.responsive_sign_in_page .form-group {
+	.responsive_page_forms .form-group {
 		margin-bottom:0 !important;
 	}
 	
-	.responsive_sign_in_page button {
+	.responsive_page_forms button {
 		width: 100%;
 		padding-bottom: 10px;
 		padding-top: 10px;
 		font-size: 18px;
 		color:#fff;
+		max-width:350px;
 	}
 	
-	.responsive_sign_in_page form .form-group:first-child i.fa {
+	.responsive_page_forms form .form-group:first-child i.fa {
 		margin-top:10px
 	}
+	
+	.responsive_page_forms .login-helpers {
+		text-align:center;
+	}
 
-
+	.responsive_page_forms .login-helpers a {
+		color: #666 !important;
+		font-size: 15px;
+		text-shadow: 0px 1px 1px #FFFFFF;
+	}
+	
+	.responsive_page_forms .login-helpers a:first-child {
+		font-size: 18px;
+	}
 
 }
 
