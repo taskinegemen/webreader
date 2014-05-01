@@ -1,17 +1,1 @@
 
-2014/05/01 13:50:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "apple-touch-icon-precomposed.png".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
-Stack trace:
-#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('apple-touch-ico...')
-#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
-#2 /var/www/reader/index.php(15): CApplication->run()
-#3 {main}
-REQUEST_URI=/apple-touch-icon-precomposed.png
----
-2014/05/01 13:50:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
-Stack trace:
-#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
-#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
-#2 /var/www/reader/index.php(15): CApplication->run()
-#3 {main}
-REQUEST_URI=/favicon.ico
----
