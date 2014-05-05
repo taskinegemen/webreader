@@ -113,12 +113,12 @@ return array(
 		'Smtpmail'=>array(
             'class'=>'application.extension.smtpmail.PHPMailer',
             'Host'=>"tls://smtp.gmail.com",
-            'Username'=>'edubox@linden-tech.com',
-            'Password'=>'12548442',
+            'Username'=>'noreply@okutus.com',
+            'Password'=>'7m68FJ:J:JHoAeY',
             'Mailer'=>'smtp',
             'Port'=>465,
             'SMTPAuth'=>true, 
-            //'ssl'=>'tls'
+           	//'SMTPSecure' => 'tls',
         ),
 		'log'=>array(
 			'class'=>'CLogRouter',
@@ -147,6 +147,7 @@ return array(
 		'organisation_id'=>'MGitbEefa4XJDnBRbxxNIkuoMCtCvZWwkCdFlTkMfkzp',
 		// this is used in contact page
 		'adminEmail'=>'pacific@linden-tech.com',
+		'noreplyEmail'=>'noreply@okutus.com',
 
 		'catalog_host'=>$host_config[gethostname()]['catalog_host'],
                 'kerbela_host'=>$host_config[gethostname()]['kerbela_host'],
