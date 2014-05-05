@@ -34,3 +34,195 @@ Stack trace:
 REQUEST_URI=/css/ui/js/jquery/jquery-2.0.3.min.map
 HTTP_REFERER=http://reader.okutus.com/content/read/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz
 ---
+2014/05/05 14:47:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.okutus.com/content/read/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz
+---
+2014/05/05 14:56:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.okutus.com/content/read/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz
+---
+2014/05/05 14:57:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.okutus.com/content/read/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz
+---
+2014/05/05 14:58:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.okutus.com/content/read/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz
+---
+2014/05/05 15:09:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/05/05 15:29:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.okutus.com/content/read/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz
+---
+2014/05/05 15:38:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.okutus.com/content/read/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz
+---
+2014/05/05 15:38:41 [error] [php] file_get_contents(contents/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz/titlepage.png): failed to open stream: No such file or directory (/var/www/reader/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/content/file/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz/titlepage.png
+in /var/www/reader/protected/utilities/Encryption.php (53)
+in /var/www/reader/protected/controllers/ContentController.php (274)
+in /var/www/reader/index.php (15)
+2014/05/05 15:38:41 [error] [php] file_get_contents(contents/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz/titlepage.png): failed to open stream: No such file or directory (/var/www/reader/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/content/file/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz/titlepage.png
+in /var/www/reader/protected/utilities/Encryption.php (53)
+in /var/www/reader/protected/controllers/ContentController.php (274)
+in /var/www/reader/index.php (15)
+2014/05/05 15:40:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.okutus.com/content/read/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz
+---
+2014/05/05 15:40:43 [error] [php] file_get_contents(contents/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz/titlepage.png): failed to open stream: No such file or directory (/var/www/reader/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/content/file/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz/titlepage.png
+in /var/www/reader/protected/utilities/Encryption.php (53)
+in /var/www/reader/protected/controllers/ContentController.php (274)
+in /var/www/reader/index.php (15)
+2014/05/05 15:40:43 [error] [php] file_get_contents(contents/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz/titlepage.png): failed to open stream: No such file or directory (/var/www/reader/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/content/file/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz/titlepage.png
+in /var/www/reader/protected/utilities/Encryption.php (53)
+in /var/www/reader/protected/controllers/ContentController.php (274)
+in /var/www/reader/index.php (15)
+2014/05/05 15:41:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/reader/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://reader.okutus.com/content/read/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz
+---
+2014/05/05 15:41:53 [error] [php] file_get_contents(contents/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz/titlepage.png): failed to open stream: No such file or directory (/var/www/reader/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/content/file/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz/titlepage.png
+in /var/www/reader/protected/utilities/Encryption.php (53)
+in /var/www/reader/protected/controllers/ContentController.php (274)
+in /var/www/reader/index.php (15)
+2014/05/05 15:41:53 [error] [php] file_get_contents(contents/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz/titlepage.png): failed to open stream: No such file or directory (/var/www/reader/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/content/file/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz/titlepage.png
+in /var/www/reader/protected/utilities/Encryption.php (53)
+in /var/www/reader/protected/controllers/ContentController.php (274)
+in /var/www/reader/index.php (15)
+2014/05/05 15:42:51 [error] [php] file_get_contents(contents/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz/titlepage.png): failed to open stream: No such file or directory (/var/www/reader/protected/utilities/Encryption.php:53)
+Stack trace:
+#0 unknown(0): ContentController->actionFile()
+#1 /var/www/reader/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/reader/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(286): ContentController->runAction()
+#5 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#6 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ContentController->run()
+#7 /var/www/reader/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/reader/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/reader/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/content/file/OgrBCZ5ErK1u1hVGIAgsJXmG2CIkIPsqBqKjUNjzxsaz/titlepage.png
+in /var/www/reader/protected/utilities/Encryption.php (53)
+in /var/www/reader/protected/controllers/ContentController.php (274)
+in /var/www/reader/index.php (15)
