@@ -205,12 +205,14 @@ function StartReaderApp (){
 
 
 				var newPage=$("<iframe name='page"+index+"'class='page_iframe' frameBorder='0' scrolling='no' style='overflow:hidden;margin:0 auto;' ></iframe>")
+				/*
 				if(window.appendedPages++<window.settings.firstLoadFrameNum){
 					newPage.appendTo(newPageContainer);
 					newPage.reader_appended=true;
 				} else {
-					newPage.reader_appended=false;
 				}
+				*/
+				newPage.reader_appended=false;
 				newPage.parentContainer=newPageContainer;
 
 
