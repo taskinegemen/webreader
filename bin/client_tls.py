@@ -100,6 +100,21 @@ def AddToCatalog(client,params=[]):
    client.send(encryptedData)
    print "File sent as %s" % filename
 
+def GetMd5(client,params=[]):
+    try:
+        #print "getting md5 of file"
+        client.send('GetMd5')
+        response = client.recv(1024).strip()
+        #print "response is " + response
+        if(response=="OK"):
+                client.send(params[0])
+        response = client.recv (1024)
+        print response
+    except Exception,e:
+        print "ERROR"
+    finally:
+	client.close()
+    
 def GetFile(client,params=[]):
 
     client.send (  'GetFile' )
@@ -200,7 +215,8 @@ methods = {
         'AddToCatalog': AddToCatalog,
         'ServeFileToReader': ServeFileToReader ,
         'GetFile': GetFile,
-        'GetFileChuncked': GetFileChuncked
+        'GetFileChuncked': GetFileChuncked,
+	'GetMd5': GetMd5
     }
 
 
