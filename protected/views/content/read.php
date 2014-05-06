@@ -15,6 +15,7 @@ $this->pageTitle=Yii::app()->name;
 
 	<script type="text/javascript" src='<?php echo Yii::app()->request->baseUrl; ?>/js/libs/jquery.fullscreen-min.js'></script>
 	<script type="text/javascript" src='<?php echo Yii::app()->request->baseUrl; ?>/js/libs/iscroll-lite.js'></script>
+	<script type="text/javascript" src='<?php echo Yii::app()->request->baseUrl; ?>/js/libs/lazyloader.min.js'></script>
 	<style type="text/css">
 
 	</style>

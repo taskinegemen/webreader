@@ -29,6 +29,8 @@ console.log('<?php echo $organisationId;?>');
 </script>
 		<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/cloud-admin.css" >
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
+    
 	<?php 
 		$css_file= 'css/branding/'.$organisationId.'/style.css';
 		if (file_exists($css_file)) {?>

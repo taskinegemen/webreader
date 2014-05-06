@@ -62,7 +62,11 @@ $this->pageTitle=Yii::app()->name . ' - Login';
   </script>
  <!-- login -->
 <?php $detect = new Mobile_Detect;
-if ( $detect->isMobile() || $detect->isTablet()):
+
+//geçici olarak kaldırıldı tasarıma göre tekrar eklenebilme durumu var
+
+if (0):
+//if ( $detect->isMobile() || $detect->isTablet()):
 ?>
 <section id="register_bg_mobil">
 	<div class="container">
@@ -344,18 +348,154 @@ else:
 <!-- END OF LOGIN_PAGE_CONTAINER -->
 
 
-<div class="responsive_login_page_container">
 
-<div class="responsive_login_page_logo"></div>
 
-<div class="responsive_login_buttons">
+<!-- RESPONSIVE_LOGIN_PAGE_CONTAINER -->
 
-<button class="btn pull-left brand_color_for_buttons">Kayıt Ol!</button>
-<button class="btn pull-right btn-default">Giriş Yap <i class="fa fa-angle-right"></i></button>
+    <div class="responsive_login_page_container">
+        <div class="responsive_login_page_logo"></div>
+        <div class="responsive_login_buttons">
+            <a href="#" onclick="swapScreen('register');return false;"><button class="btn pull-left brand_color_for_buttons">Kayıt Ol!</button></a>
+            <a href="#" onclick="swapScreen('login');return false;"><button class="btn pull-right btn-default">Giriş Yap <i class="fa fa-angle-right"></i></button></a>
+        </div>
+    
 
-</div>
 
-</div>
+
+
+
+
+			<!-- RESPONSIVE LOGIN -->
+			<section id="login" class="responsive_page_forms">
+            	<div class="responsive_page_bar">
+                	<a href="#" onclick="swapScreen('');return false;"><div class="responsive_page_bar_logo"></div></a>
+                </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-4">
+                                <div class="login-box-plain">
+                                    <form role="form">
+                                      <div class="form-group">
+                                        <i class="fa fa-envelope"></i>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-Mail Adresiniz" >
+                                      </div>
+                                      
+                                      <hr />
+                                      
+                                      <div class="form-group"> 
+                                        <i class="fa fa-lock"></i>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Şifreniz" >
+                                      </div>
+                                      
+                                    </form>
+                                    </div>
+                                      <button type="submit" class="btn brand_color_for_buttons">Giriş Yap</button>
+                                    <div class="login-helpers">
+                                        <a href="#" onclick="swapScreen('register');return false;">Kayıt Ol</a> <br><br>
+                                        <a href="#" onclick="swapScreen('forgot');return false;">Şifremi Unuttum!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+			</section>
+			<!--/ RESPONSIVE LOGIN -->
+            
+			<!-- RESPONSIVE REGISTER -->
+			<section id="register" class="responsive_page_forms">
+            	<div class="responsive_page_bar">
+                	<a href="#" onclick="swapScreen('');return false;"><div class="responsive_page_bar_logo"></div></a>
+                </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-4">
+                                <div class="login-box-plain">
+                                    <form role="form">
+                                      <div class="form-group">
+                                        <i class="fa fa-font"></i>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="İsminiz" >
+                                      </div>
+                                      
+                                      <hr />
+                                      
+                                      <div class="form-group">
+                                        <i class="fa fa-user"></i>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Soyisminiz" >
+                                      </div>
+                                      
+                                      <hr />
+                                      
+                                      <div class="form-group">
+                                        <i class="fa fa-envelope"></i>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-Mail Adresiniz" >
+                                      </div>
+                                      
+                                      <hr />
+                                      
+                                      <div class="form-group">
+                                        <i class="fa fa-lock"></i>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Şifreniz" >
+                                      </div>
+                                      
+                                      <hr />
+                                      
+                                      <div class="form-group"> 
+                                        <i class="fa fa-check-square-o"></i>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Şifrenizi Tekrar Girin" >
+                                      </div>
+                                      </form>
+                                      </div>
+                                      <button type="submit" class="btn brand_color_for_buttons">Kayıt Ol</button>
+                                    <div class="login-helpers">
+                                        <a href="#" onclick="swapScreen('login');return false;">Giriş Yap</a> <br><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+			</section>
+			<!--/ RESPONSIVE REGISTER -->
+            
+			<!-- RESPONSIVE FORGOT PASSWORD -->
+			<section id="forgot" class="responsive_page_forms">
+            	<div class="responsive_page_bar">
+                	<a href="#" onclick="swapScreen('');return false;"><div class="responsive_page_bar_logo"></div></a>
+                </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-4">
+                                <div class="login-box-plain">
+                                    <form role="form">
+                                      <div class="form-group">
+                                        <i class="fa fa-envelope"></i>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-Mail Adresinizi Girin" >
+                                      </div>
+                                    </form>
+                                    </div>
+                                      <button type="submit" class="btn brand_color_for_buttons">Şifremi sıfırlamak için mail gönder</button>
+                                    <div class="login-helpers">
+                                        <a href="#" onclick="swapScreen('login');return false;">Giriş Yap</a> <br><br>
+                                        <a href="#" onclick="swapScreen('register');return false;">Kayıt Ol</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+			</section>
+			<!-- RESPONSIVE FORGOT PASSWORD -->
+
+
+
+
+
+
+	</div>
+<!-- END OF RESPONSIVE_LOGIN_PAGE_CONTAINER -->
+
+
+
+
+
 
 
 <?php endif; ?>
