@@ -84,7 +84,7 @@ window.SlideController = (function( $ ) {
 					$.each (kapanacaklar, function(index,kapanacak) {
 						var simdiKapanacak = window.pages[kapanacak] ;
 						if ( typeof simdiKapanacak != 'undefined'){
-							//simdiKapanacak.removeAttr('src');
+							simdiKapanacak.removeAttr('src');
 							simdiKapanacak.reader_appended=false;
 							simdiKapanacak.remove();
 						}
@@ -101,33 +101,22 @@ window.SlideController = (function( $ ) {
 						// if instance exists not like (-1 or pagecount +1)
 						if ( typeof simdiAcilacak != 'undefined'){
 
+							//if not already open
 							if( ! simdiAcilacak.reader_appended ){
-
-								var offset = $('#main-content').offset();
-								var height= $(window).height() - offset.top +25-125;
-								var width= $(window).width() - offset.left;
-								simdiAcilacak.height (height);
-								simdiAcilacak.width (width);
-
 								simdiAcilacak.appendTo(simdiAcilacak.parentContainer);
 								simdiAcilacak.reader_appended=true;
-							}
 
-
-
-
-
-							var attr = $(simdiAcilacak).attr('src');
-							//if not already open
-							if (!(typeof attr !== 'undefined' && attr !== false)) {
 								//grey overlay for hiding the ugly loading scene
 								simdiAcilacak.parent().children('.loadingt').show();
 								console.log(simdiAcilacak);
+
+								simdiAcilacak.width(simdiAcilacak.parentContainer.width());
+								simdiAcilacak.height(simdiAcilacak.parentContainer.height());
 								//change src attribute to load the source
 							  	simdiAcilacak.attr('src', simdiAcilacak.attr('data-src' ));
 
 							  	//make it fit to parent and zoom inner html
-								simdiAcilacak.fitToParent();
+								//simdiAcilacak.fitToParent();
 
 								//when loaded the content
 								simdiAcilacak.load(function(){
