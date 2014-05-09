@@ -13,6 +13,13 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 <!-- login -->
   <script type="text/javascript">
 	$(document).ready(function(){
+
+		var resetPasswordFeed = "<?php echo $resetPasswordFeed['message'] ?>";
+		if (resetPasswordFeed) {
+			swapScreen('forgot_bg');
+		};
+
+
 		sessionStorage.clear();
 		$('#login-form').submit(function(e) {
 				e.preventDefault();
@@ -234,16 +241,49 @@ else:
 								<div class="row">
 									<div class="">
 										<div class="login-box">
-											<form  id="forgetForm">
-											  <div class="form-group">
-												<label for="exampleInputEmail1">E-Mail Adresinizi Girin.</label>
-												<i class="fa fa-envelope"></i>
-												<input name="Reset[email]" id="Reset_email" type="text">
-											  </div>
-											  <div>
-												<button type="submit" class="btn btn-info">Şifremi sıfırlamak için mail gönder</button>
-											  </div>
-											</form>
+										<?php 
+											if (!empty($resetPasswordFeed)) {
+												if ($resetPasswordFeed['result']==1) {
+													?>
+													<div class="alert alert-success">
+														<h4><?php echo $resetPasswordFeed['message'] ?></h4>
+													</div>
+													<?php
+												}else
+												{ ?>
+
+													<div class="alert alert-danger">
+														<h4><?php echo $resetPasswordFeed['message'] ?></h4>
+													</div>
+
+													<form  id="forgetForm">
+													  <div class="form-group">
+														<label for="exampleInputEmail1">E-Mail Adresinizi Girin.</label>
+														<i class="fa fa-envelope"></i>
+														<input name="Reset[email]" id="Reset_email" type="text">
+													  </div>
+													  <div>
+														<button type="submit" class="btn btn-info">Şifremi sıfırlamak için mail gönder</button>
+													  </div>
+													</form>
+
+												<?php }
+											}
+											else{?>
+												<form  id="forgetForm">
+												  <div class="form-group">
+													<label for="exampleInputEmail1">E-Mail Adresinizi Girin.</label>
+													<i class="fa fa-envelope"></i>
+													<input name="Reset[email]" id="Reset_email" type="text">
+												  </div>
+												  <div>
+													<button type="submit" class="btn btn-info">Şifremi sıfırlamak için mail gönder</button>
+												  </div>
+												</form>
+											<?php }
+										?>
+
+
 											<div class="login-helpers">
 												<a href="#" onclick="swapScreen('login_bg');return false;">Giriş Sayfasına Dön</a> <br>
 											</div>
@@ -254,7 +294,7 @@ else:
 						</section>
 						<!-- FORGOT PASSWORD -->
                         
-
+					
 						<section id="register_bg">
 							<div class="container">
                             <div class="row">

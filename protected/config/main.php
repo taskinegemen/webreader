@@ -30,14 +30,16 @@ $host_config=array(
 				                'kerbela_host'=>'http://kerbela.lindneo.com',
 				                'panda_host'=>'http://panda.lindneo.com',
 				                'koala_host'=>'http://koala.lindneo.com',
-						'cloud_host'=>'http://cloud.lindneo.com'
+								'cloud_host'=>'http://cloud.lindneo.com',
+								'reader_host'=>'http://reader.lindneo.com/ekaratas'
 					),
 			"tigerfish"=>array(
-                                                'catalog_host'=>'http://bigcat.okutus.com',
-                                                'kerbela_host'=>'http://kerbela.okutus.com',
-                                                'panda_host'=>'http://boxoffice.okutus.com',
-                                                'koala_host'=>'http://wow.okutus.com',
-						'cloud_host'=>'http://cloud.okutus.com'
+                                'catalog_host'=>'http://bigcat.okutus.com',
+                                'kerbela_host'=>'http://kerbela.okutus.com',
+                                'panda_host'=>'http://boxoffice.okutus.com',
+                                'koala_host'=>'http://wow.okutus.com',
+								'cloud_host'=>'http://cloud.okutus.com',
+								'reader_host'=>'http://reader.okutus.com'
 				)
 		);
 
@@ -154,5 +156,6 @@ return array(
                 'panda_host'=>$host_config[gethostname()]['panda_host'],
                 'koala_host'=>$host_config[gethostname()]['koala_host'],
                 'cloud_host'=>$host_config[gethostname()]['cloud_host'],
+                'reader_host'=>$host_config[gethostname()]['reader_host'],
 	),
 );
