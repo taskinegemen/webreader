@@ -25,7 +25,12 @@ $this->breadcrumbs=array(
 
 							<?php 
 								if (!empty($ErrorMessage)) {
-									?><h4><?php echo $ErrorMessage; ?></h4><?php 
+									?>
+									<div class="alert alert-danger">
+										<h4><?php echo $ErrorMessage; ?></h4>
+										<a href="<?php echo Yii::app()->params['reader_host']; ?>" class="btn btn-danger">Geri</a>
+									</div>
+										<?php 
 								}
 								else
 								{
@@ -52,7 +57,12 @@ $this->breadcrumbs=array(
 									}
 									else
 									{
-										?><h4><?php echo $SuccessMessage; ?></h4><?php 
+										?>
+										<div class="alert alert-success">
+										<h4><?php echo $SuccessMessage; ?></h4>
+										<a href="<?php echo Yii::app()->params['reader_host']; ?>" class="btn btn-success">Giriş Yap</a>
+									</div>
+										<?php 
 									}
 								}
 
