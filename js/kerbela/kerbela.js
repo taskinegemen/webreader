@@ -38,7 +38,7 @@
  	$.fn.setKS=function(KS){this.KerberizedServer=KS;};
  	$.fn.getKS=function(){return this.KerberizedServer;};
 
- 	$.fn.setUserId=function(UI){this.UserId=UI;};
+ 	$.fn.setUserId=function(UI){window.currentUserId=this.UserId=UI;};
  	$.fn.getUserId=function(){return this.UserId;};
 
  	$.fn.setRequestedService=function(RS){this.RequestedService=RS;};

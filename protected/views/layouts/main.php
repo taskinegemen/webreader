@@ -147,7 +147,9 @@ console.log('<?php echo $organisationId;?>');
 		
 
 		<?php echo functions::event('header', ""); ?>
+		
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/jquery.lazy.min.js"></script>
+		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/jquery.cookie.js"></script>
 
 		<!-- kerbela -->
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/kerbela/sha256.js"></script>
