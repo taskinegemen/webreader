@@ -200,8 +200,33 @@ class ContentController extends Controller
 		$outpufolder="contents/".basename($id);
 		$METAFOLDER= $outpufolder."/META-INF";
 
+		$ch = curl_init(Yii::app()->params['catalog_host'].'/api/getMainInfo' );
+		curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
+		curl_setopt( $ch, CURLOPT_HEADER, 0);
+		curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($ch, CURLOPT_POST, 1);
+		curl_setopt($ch, CURLOPT_POSTFIELDS,
+            "id=$id");
+		$response = curl_exec( $ch );
+		$result=json_decode($response,true);
+		
+		$created= $result['result']['created'];
+		$created_file=$outpufolder."/CREATED";
+
+		if(is_readable($created_file)){
+			if(file_get_contents($created_file)!=$created){
+				$force=true;
+			}
+		} else {
+			$force = true;
+		}
 		if(!$force)
 			if (file_exists($METAFOLDER) and is_dir($METAFOLDER) ) {
+
+				
+
+
+
 				$this->redirect(array("content/read", 'id'=>$id)); 
 				die;
 			}
@@ -218,7 +243,7 @@ class ContentController extends Controller
 		}
 
 		$this->decryptFileAndExtractToFolder($getfile,$outpufolder);
-		
+		file_put_contents($created_file,$created);
 
 		if (!file_exists($METAFOLDER) and !is_dir($METAFOLDER)) {
     		header( "refresh:5;url=".Yii::app()->request->requestUri ); 
@@ -317,11 +342,37 @@ class ContentController extends Controller
 
 
 
+		$redirect_to_getContent = false;
+
 		$dir="contents/$id";
 		$METAFOLDER= $dir."/META-INF";
+
 		if (!file_exists($METAFOLDER) and !is_dir($METAFOLDER)) {
-    		$this->redirect(array("content/getcontent", 'id'=>$id));
-		} 
+    		$redirect_to_getContent = true;
+		}
+		
+		$ch = curl_init(Yii::app()->params['catalog_host'].'/api/getMainInfo' );
+		curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
+		curl_setopt( $ch, CURLOPT_HEADER, 0);
+		curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($ch, CURLOPT_POST, 1);
+		curl_setopt($ch, CURLOPT_POSTFIELDS,
+            "id=$id");
+		$response = curl_exec( $ch );
+		$result=json_decode($response,true);
+		
+		$created= $result['result']['created'];
+		$created_file=$dir."/CREATED";
+		
+		if(is_readable($created_file)){
+			if(file_get_contents($created_file)!=$created){
+				$redirect_to_getContent=true;
+			}
+		} else {
+			$redirect_to_getContent = true;
+		}
+		if($redirect_to_getContent)
+			$this->redirect(array("content/getcontent", 'id'=>$id));
 
 		functions::event('header',  NULL, function($header) {
 		 ?>
