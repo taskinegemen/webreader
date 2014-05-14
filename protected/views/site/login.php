@@ -1,4 +1,3 @@
-
 <?php
 /* @var $this SiteController */
 /* @var $model LoginForm */
@@ -21,7 +20,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 
 
 		sessionStorage.clear();
-		$('#login-form').submit(function(e) {
+		$('#login-form, #login-form-responsive').submit(function(e) {
 				e.preventDefault();
 		  		window.setTimeout(function(){login();},100);
 	  			$.blockUI({ message: '<h1>Please wait just a little...</h1>' });
@@ -414,7 +413,7 @@ else:
                         <div class="row">
                             <div class="col-md-4 col-md-offset-4">
                                 <div class="login-box-plain">
-                                    <form role="form">
+                                    <form role="form" id="login-form-responsive">
                                       <div class="form-group">
                                         <i class="fa fa-envelope"></i>
                                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-Mail Adresiniz" >
@@ -426,10 +425,10 @@ else:
                                         <i class="fa fa-lock"></i>
                                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Şifreniz" >
                                       </div>
+                                      <input type="submit" class="btn brand_color_for_buttons" value='Giriş Yap' />
                                       
                                     </form>
                                     </div>
-                                      <button type="submit" class="btn brand_color_for_buttons">Giriş Yap</button>
                                     <div class="login-helpers">
                                         <a href="#" onclick="swapScreen('register');return false;">Kayıt Ol</a> <br><br>
                                         <a href="#" onclick="swapScreen('forgot');return false;">Şifremi Unuttum!</a>

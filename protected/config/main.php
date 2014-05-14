@@ -147,6 +147,7 @@ return array(
      		'en_US' => 'English'
      		),
 		'organisation_id'=>'MGitbEefa4XJDnBRbxxNIkuoMCtCvZWwkCdFlTkMfkzp',
+		//'organisation_id'=>'seviye',
 		// this is used in contact page
 		'adminEmail'=>'pacific@linden-tech.com',
 		'noreplyEmail'=>'noreply@okutus.com',
