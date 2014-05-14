@@ -33,7 +33,7 @@ $this->pageTitle=Yii::app()->name;
             kerbela.setRequestedHttpService('catalog');
 
             if (kerbela.getTicket()==null) {
-                    window.location.href="<?php echo Yii::app()->request->baseUrl; ?>";
+                    window.location.href="<?php echo Yii::app()->request->getBaseUrl(true); ?>";
                 };
             console.log(kerbela.getRequestedHttpService());
             var auth = kerbela.getAuthTicket();

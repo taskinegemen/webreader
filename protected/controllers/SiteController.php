@@ -157,7 +157,7 @@ class SiteController extends Controller
 						curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
 						$response = curl_exec( $ch );
 						if ($response) {
-							$SuccessMessage="Şifreniz değiştirme başarılı. Sisteme yeni şifreniz ile girebilirsiniz.";
+							$SuccessMessage="Şifreniz değiştirme başarılı. Yeni şifreniz ile giriş yapabilirsiniz.";
 						}
 						else
 						{
@@ -191,7 +191,7 @@ class SiteController extends Controller
 		//error messages
 		$mobileSignupError="";
 		$webSignupError="";
-
+		$resetPasswordFeed=array();
 
 		// if it is ajax validation request
 		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
@@ -257,9 +257,10 @@ class SiteController extends Controller
 			curl_setopt( $ch, CURLOPT_HEADER, 0);
 			curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
 			$response = curl_exec( $ch );
+			$resetPasswordFeed=json_decode($response,true);
 		}
 
-		$this->render('login',array('model'=>$model,'SignUp'=>$SignUp,'mobileSignupError'=>$mobileSignupError,'webSignupError'=>$webSignupError));
+		$this->render('login',array('model'=>$model,'SignUp'=>$SignUp,'mobileSignupError'=>$mobileSignupError,'webSignupError'=>$webSignupError,'resetPasswordFeed'=>$resetPasswordFeed));
 	}
 
 	/**

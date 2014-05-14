@@ -21,6 +21,7 @@ jQuery(document).ready(function() {
 	  url: metaUrl,
 	  success: function (data){
 	  	BookMeta=JSON.parse(data);
+	  	
 	  	StartReaderApp();
 	  	window.SlideController.init({
 			selector:".bxslider",	

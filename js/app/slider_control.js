@@ -47,8 +47,6 @@ window.SlideController = (function( $ ) {
 
 					$("#current_page_num_spinner").val(newIndex+1);
 
-					console.log("old index"+oldIndex);
-					console.log("new index"+newIndex);
 
 					$("iframe").each(function(){
 						var that=this.contentWindow;
@@ -155,7 +153,7 @@ window.SlideController = (function( $ ) {
 		this.options = $.extend( this.options, options );
 
 		//create instance of bxSlider or any other type
-		reader_slider =$( this.options.selector ).bxSlider({
+		this.reader_slider=reader_slider =$( this.options.selector ).bxSlider({
 				infiniteLoop: false,
 				hideControlOnEnd: true,
 				responsive:false,
@@ -163,9 +161,11 @@ window.SlideController = (function( $ ) {
 				onSlideBefore: this.onSlideBefore,
 				onSlideAfter : this.onslide ,
 				buildPager: this.buildPager,
+				//onSliderLoad: this.sliderLoad
 		});
-		this.reader_slider=reader_slider;
-		var that = this;
+		//this.reader_slider=reader_slider;
+		this.sliderLoad();
+		var that = this; 
 		$(document).ready(function(){
 			
 			$("[reader-action]")
@@ -210,6 +210,40 @@ window.SlideController = (function( $ ) {
 		return reader_slider;
 
 	};
+	var sliderLoad = function () {
+		var goToPageNumber = window.SlideController.selectLoadedToGoPageNumber();
+		
+		this.reader_slider.goToSlide(goToPageNumber);
+	};
+
+	var selectLoadedToGoPageNumber= function () {
+
+		var URLPageNumber = document.URL.substring(document.URL.indexOf("#")+1) -1 ;
+		console.log(this);
+
+		if (URLPageNumber != ''){
+			if(parseInt(URLPageNumber) % 1 === 0)
+				if(parseInt(URLPageNumber) <= this.reader_slider.getSlideCount() && parseInt(URLPageNumber)>=0 )
+					return URLPageNumber;
+		}
+
+		try{
+			var cookieObj= JSON.parse($.cookie('lastPageofUser'+metaUrl.substring(metaUrl.lastIndexOf("/")+1)) );
+		}
+		catch(e){
+			//Nothing we can do about it.
+		}
+
+
+		if(typeof cookieObj != 'undefined')
+			if(typeof cookieObj.pageNumber != 'undefined')
+				if(parseInt(cookieObj.pageNumber) % 1 === 0)
+					if(parseInt(cookieObj.pageNumber) <= this.reader_slider.getSlideCount() && parseInt(cookieObj.pageNumber)>=0 )
+						return cookieObj.pageNumber;
+
+		return 0;
+
+	};
 
 	var bindKeys = function () {
 		$(document).keydown(function(e){
@@ -228,7 +262,16 @@ window.SlideController = (function( $ ) {
 		});
 	};
 
-	var onSlideBefore = function () {
+	var onSlideBefore = function ($slideElement, oldIndex, newIndex) {
+		if(typeof $.cookie != 'undefined'){
+			var userMeta = {
+				'bookid': metaUrl.substring(metaUrl.lastIndexOf("/")+1),
+				'pageNumber' : newIndex
+			};
+			$.cookie('lastPageofUser'+userMeta.bookid,JSON.stringify(userMeta));	
+			
+		}
+			
 		if(typeof window.oversize != 'undefined')
 			window.oversize.remove();
 	};
@@ -240,5 +283,7 @@ window.SlideController = (function( $ ) {
 		controller:controller,
 		bindKeys:bindKeys,
 		reader_slider:reader_slider,
+		sliderLoad:sliderLoad,
+		selectLoadedToGoPageNumber:selectLoadedToGoPageNumber,
   	};
 })(jQuery);
