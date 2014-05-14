@@ -114,23 +114,94 @@ $this->pageTitle=Yii::app()->name;
         var myArray = myRe.exec(organisationId);
         organisationId=(myArray[1]).replace('-','_');
         //var server_organisationId="seviye";
-    var server_organisationId="<?php echo Yii::app()->params[organisation_id];?>";
+        var server_organisationId="<?php echo Yii::app()->params[organisation_id];?>";
         if(organisationId=='okutus' || organisationId=='lindneo'){
             organisationId=server_organisationId;
         }
         //organisationId="linden_team";
         console.log(organisationId);
+
+
+        var holderUlElement =  $('.dropdown.market_page_categories ul.dropdown-menu');
+        
+       
+        function listAllBooks(){
+            $.ajax({
+              type: "POST",
+              url: "<?php echo Yii::app()->params['catalog_host'];?>/api/list",
+              data: { attributes: '{"organisationId":["'+organisationId+'"]}', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
+            })
+              .done(function( result ) {
+                    listBookCards(result);
+              });
+          };
+
+
+
+
         $.ajax({
           type: "POST",
-          url: "<?php echo Yii::app()->params['catalog_host'];?>/api/list",
-          data: { attributes: '{"organisationId":["'+organisationId+'"]}', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
+          url: "<?php echo Yii::app()->params['catalog_host'];?>/api/getOrganisationCategories",
+          data: { id: organisationId}
         })
-          .done(function( result ) {
+            .done(function( result ) {
+                try{
+
+                    var catergories= JSON.parse(result).result;
+                }
+                catch(e){
+                    $('.dropdown.market_page_categories').hide();
+                    return;
+                }
+                console.log(catergories);
+
+                if(catergories == null){
+                    
+                       $('.dropdown.market_page_categories').hide();
+                       return;
+                   
+                } else {
+                    holderUlElement.empty();
+                }
+                var allBooks=$('<li></li>');
+                allBooks
+                        .text("Tüm Yayınlar")
+                        .appendTo(holderUlElement)
+                        .click(function(event){
+                            listAllBooks();
+                        });
+
+
+                $.each(catergories,function(index,category){
+                    var newCategoryElement = $('<li></li>');
+                    newCategoryElement
+                        .attr('data-category_id',category.category_id)
+                        .attr('data-category_name',category.category_name)
+                        .attr('data-organisation_id',category.organisation_id)
+                        .attr('data-periodical',category.periodical)
+                        .text(category.category_name)
+                        .appendTo(holderUlElement)
+                        .click(function(event){
+                             $.ajax({
+                                  type: "POST",
+                                  url: "<?php echo Yii::app()->params['catalog_host'];?>/api/listCategoryCatalogs",
+                                  data: { id: $(this).attr('data-category_id'), auth: auth, http_service_ticket: HTTP_service_ticket, type:"web" }
+                                })
+                                  .done(function( result ) {
+                                        console.log(result);
+                                        listBookCards(result);
+                                  });
+                        });
+                });
+            });
+         
+        listAllBooks();
+        function listBookCards (result){
             console.log("RESULT: "+result);
             var data = JSON.parse(result);
             console.log(data);
             var author="Seviye Yayınları"; 
-      
+            $('#booksSpace').empty();
             $.each( data.result, function( key, book ) {
                 /**
                 $.ajax({
@@ -162,27 +233,30 @@ $this->pageTitle=Yii::app()->name;
         };
         card+=' item">\
         <div class="reader_book_card">\
-					<div class="reader_book_card_book_cover">\
-					<a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+book.contentId+'">\
-					<img src="<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail?id='+book.contentId+'" style="width:198px; height:264px" /></div></a>\
-					<div class="reader_book_card_info_container">\
-						<div class="reader_market_book_name tip" data-original-title="'+book.contentTitle+'">'+book.contentTitle+'</div>\
-						<button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\
-						<div class="clearfix"></div>\
-						<div class="reader_book_card_writer_name tip" data-original-title="'+author+'">'+author+'</div>\
-						<div class="reader_book_price">';
-				if (book.contentIsForSale=='Free') {
-					card+='Ücretsiz';
-				}else{
-					card+=book.contentPrice+' '+getCurrency(book.contentPriceCurrencyCode);
-				};
-				card+='</div>\
-					</div>\
-				</div></div>';
-				
-				$('#booksSpace').append(card);
+                    <div class="reader_book_card_book_cover">\
+                    <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+book.contentId+'">\
+                    <img src="<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail?id='+book.contentId+'" style="width:198px; height:264px" /></div></a>\
+                    <div class="reader_book_card_info_container">\
+                        <div class="reader_market_book_name tip" data-original-title="'+book.contentTitle+'">'+book.contentTitle+'</div>\
+                        <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\
+                        <div class="clearfix"></div>\
+                        <div class="reader_book_card_writer_name tip" data-original-title="'+author+'">'+author+'</div>\
+                        <div class="reader_book_price">';
+                if (book.contentIsForSale=='Free') {
+                    card+='Ücretsiz';
+                }else{
+                    card+=book.contentPrice+' '+getCurrency(book.contentPriceCurrencyCode);
+                };
+                card+='</div>\
+                    </div>\
+                </div></div>';
+                
+                $('#booksSpace').append(card);
             });
-          });
+        }
+
+
+
       if( $('#sidebar').hasClass('mini-menu')) $('#sidebar').removeClass('mini-menu');
  if( $('#main-content').hasClass('margin-left-50')) $('#main-content').removeClass('margin-left-50');
 $('img.lazyimgs').lazy();
@@ -190,5 +264,13 @@ $('img.lazyimgs').lazy();
     });
 </script> 
 
+
+<script type="text/javascript">
+
+
+
+
+
+</script> 
 
 	
