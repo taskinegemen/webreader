@@ -225,7 +225,7 @@ if (Yii::app()->controller->action->id=="read"):?>
 					<ul class="dropdown-menu">
                     	<li><span class="username"><?php echo Yii::app()->user->name; ?></span></li>
 						<!-- <li><a href="#" class="profilLink"><i class="fa fa-user"></i> <?php _e('Profil') ?></a></li> -->
-						<li><a href="#" class="libraryLink"><i class="fa fa-mail-reply"></i> <?php _e('Kütüphaneme Dön') ?></a></li>
+						<!--<li><a href="<?php echo Yii::app()->getBaseUrl(true).'/site/library';?>" class="libraryLink"><i class="fa fa-mail-reply"></i> <?php _e('Kütüphaneme Dön') ?></a></li>-->
 						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/logout"><i class="fa fa-power-off"></i> <?php _e('Çıkış') ?></a></li>
 					</ul>
 				</li>
