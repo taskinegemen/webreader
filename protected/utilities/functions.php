@@ -22,31 +22,35 @@ class functions
                 var auth=kerbela.getAuthTicket();
                 var HTTP_service_ticket=ticket.HTTP_service_ticket;
                 $('#library').click(function(){
-                    var form='<form method="post" action="<?php echo $var->createUrl("site/library"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
+                    var form='<form method="post" name="kerbela_form" action="<?php echo $var->createUrl("site/library"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
                     $('body').append(form);
-                    $(form).submit();
+                    document.getElementsByName('kerbela_form')[0].submit();
                 });
                 $('#list').click(function(){
-                    var form='<form method="post" action="<?php echo $var->createUrl("content/list"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
+                    var form='<form method="post" name="kerbela_form" action="<?php echo $var->createUrl("content/list"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
                     $('body').append(form);
-                    $(form).submit();
+                    //$(form).submit();
+		    document.getElementsByName('kerbela_form')[0].submit();
                 });
                 $('#profile').click(function(){
-                    var form='<form method="post" action="<?php echo $var->createUrl("site/myprofile"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
+                    var form='<form method="post" name="kerbela_form" action="<?php echo $var->createUrl("site/myprofile"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
                     $('body').append(form);
-                    $(form).submit();
+                    //$(form).submit();
+		    document.getElementsByName('kerbela_form')[0].submit();
                 });
 
                 $('.profilLink').click(function(){
-                    var form='<form method="post" action="<?php echo $var->createUrl("site/myprofile"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
+                    var form='<form method="post" name="kerbela_form" action="<?php echo $var->createUrl("site/myprofile"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
                     $('body').append(form);
-                    $(form).submit();
+                    //$(form).submit();
+		    document.getElementsByName('kerbela_form')[0].submit();
                 });
 
                 $('.libraryLink').click(function(){
-                    var form='<form method="post" action="<?php echo $var->createUrl("site/library"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
+                    var form='<form method="post" name="kerbela_form" action="<?php echo $var->createUrl("site/library"); ?>" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
                     $('body').append(form);
-                    $(form).submit();
+                    //$(form).submit();
+		    document.getElementsByName('kerbela_form')[0].submit();
                 });
 
                 
