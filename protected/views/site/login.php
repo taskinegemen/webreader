@@ -400,14 +400,6 @@ else:
             <a href="#" onclick="swapScreen('register');return false;"><button class="btn pull-left brand_color_for_buttons">Kayıt Ol!</button></a>
             <a href="#" onclick="swapScreen('login');return false;"><button class="btn pull-right btn-default">Giriş Yap <i class="fa fa-angle-right"></i></button></a>
         </div>
-    
-
-
-
-
-
-
-			<!-- RESPONSIVE LOGIN -->
 			<section id="login" class="responsive_page_forms">
             	<div class="responsive_page_bar">
                 	<a href="#" onclick="swapScreen('');return false;"><div class="responsive_page_bar_logo"></div></a>
@@ -526,20 +518,8 @@ else:
 			</section>
 			<!-- RESPONSIVE FORGOT PASSWORD -->
 
-
-
-
-
-
 	</div>
 <!-- END OF RESPONSIVE_LOGIN_PAGE_CONTAINER -->
-
-
-
-
-
-
-
 <?php endif; ?>
 
 	<script>
@@ -555,4 +535,3 @@ else:
 		}
 	</script>
 	<!-- /JAVASCRIPTS -->
-
