@@ -36,7 +36,7 @@ console.log('<?php echo $organisationId;?>');
 		if (file_exists($css_file)) {?>
 	    	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/<?php echo $css_file;?>" >
 	<?php } else { ?>
-	    	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/branding/linden/style.css" >
+	    	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/branding/seviye/style.css" >
 	<?php } ?>
 <!--<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/themes/night.css" >-->
 	<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/responsive.css" >
