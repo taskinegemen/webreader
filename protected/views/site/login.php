@@ -526,6 +526,7 @@ else:
 		jQuery(document).ready(function() {		
 			App.setPage("login_bg");  //Set current page
 			App.init(); //Initialise plugins and elements
+			console.log("okutus");
 		});
 	</script>
 	<script type="text/javascript">
