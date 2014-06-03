@@ -56,7 +56,6 @@ $host_config=array(
 						'cloud_host'=>'http://cloud.lindneo.com',
 						'reader_host'=>'http://reader.lindneo.com'
 					)
-
 		);
 
 return array(
