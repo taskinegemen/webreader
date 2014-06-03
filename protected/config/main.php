@@ -54,7 +54,7 @@ $host_config=array(
 				                'panda_host'=>'http://panda.lindneo.com',
 				                'koala_host'=>'http://koala.lindneo.com',
 						'cloud_host'=>'http://cloud.lindneo.com',
-						'reader_host'=>'http://reader.lindneo.com/'
+						'reader_host'=>'http://reader.lindneo.com'
 					)
 		);
 

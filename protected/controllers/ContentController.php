@@ -191,6 +191,9 @@ class ContentController extends Controller
 		$response = curl_exec( $ch );
 		$hostsOb=json_decode($response,true);
 		$hosts=$hostsOb['result'];
+		if ($hosts=="Not Found"){
+			return;
+		}
 		shuffle($hosts);
 		$host=$hosts[0]['address'];
 		$port=$hosts[0]['port'];

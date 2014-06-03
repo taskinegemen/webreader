@@ -48,15 +48,18 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 
 		var kerbela_panda=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','http://panda.lindneo.com/kerberizedservice/authenticate',username,password,'kerbela','panda','6000');
 		var response_panda=kerbela_panda.execute();
+	
 		if (response.status && response_catalog.status && response_panda.status && response_panda.status) {
-
+			console.log("submitttttt");
 
 			var ticket=kerbela.getTicket();
 			var auth=kerbela.getAuthTicket();
 			var HTTP_service_ticket=ticket.HTTP_service_ticket;
-			var form='<form method="post" action="<?php echo Yii::app()->request->baseUrl; ?>/site/library" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
+			var form='<form method="post" name="kerbela_form" action="<?php echo Yii::app()->request->baseUrl; ?>/site/library" style="display:none"><input type="hidden" name="auth" value="'+auth+'"><input type="hidden" name="http_service_ticket" value="'+HTTP_service_ticket+'"><input type="hidden" name="type" value="web"></form>';
 			$('body').append(form);
-			$(form).submit();
+			//document.body.appendChild(form);
+			//$(form).submit();
+			document.getElementsByName('kerbela_form')[0].submit();
 		}
 		else
 		{

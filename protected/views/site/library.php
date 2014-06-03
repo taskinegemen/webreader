@@ -82,7 +82,7 @@ $("ul>li> #library").parent().addClass("current");
                             var imageid = stringToHex(value.book_id);
                             bookthumbnail = "<?php echo Yii::app()->request->baseUrl; ?>/css/covers/cover"+imageid+".jpg";
                         }
-                        
+                        console.log(book_data.result);
                         var book = $('<div class="reader_book_card">\
                                         <div class="reader_book_card_book_cover solid_brand_color">\
                                         <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'">\

@@ -36,7 +36,7 @@ console.log('<?php echo $organisationId;?>');
 		if (file_exists($css_file)) {?>
 	    	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/<?php echo $css_file;?>" >
 	<?php } else { ?>
-	    	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/branding/linden/style.css" >
+	    	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/branding/seviye/style.css" >
 	<?php } ?>
 <!--<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/themes/night.css" >-->
 	<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/responsive.css" >
@@ -225,7 +225,7 @@ if (Yii::app()->controller->action->id=="read"):?>
 					<ul class="dropdown-menu">
                     	<li><span class="username"><?php echo Yii::app()->user->name; ?></span></li>
 						<!-- <li><a href="#" class="profilLink"><i class="fa fa-user"></i> <?php _e('Profil') ?></a></li> -->
-						<li><a href="#" class="libraryLink"><i class="fa fa-mail-reply"></i> <?php _e('Kütüphaneme Dön') ?></a></li>
+						<!--<li><a href="<?php echo Yii::app()->getBaseUrl(true).'/site/library';?>" class="libraryLink"><i class="fa fa-mail-reply"></i> <?php _e('Kütüphaneme Dön') ?></a></li>-->
 						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/logout"><i class="fa fa-power-off"></i> <?php _e('Çıkış') ?></a></li>
 					</ul>
 				</li>
