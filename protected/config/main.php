@@ -20,6 +20,13 @@ $db_config=array(
 										'username' => 'db_reader',
 										'password' => 'GGHABzec9wPWASL2',
 										'charset' => 'utf8'
+									),
+					"ulgen"=>array(
+										'connectionString' => 'mysql:host=datamaster.private.services.lindneo.com;port=3306;dbname=reader',
+										'emulatePrepare' => true,
+										'username' => 'db_reader',
+										'password' => 'GGHABzec9wPWASL2',
+										'charset' => 'utf8'
 									)
 
 
@@ -40,7 +47,15 @@ $host_config=array(
                                 'koala_host'=>'http://wow.okutus.com',
 								'cloud_host'=>'http://cloud.okutus.com',
 								'reader_host'=>'http://reader.okutus.com'
-				)
+				),
+			"ulgen"=>array(
+                				'catalog_host'=>'http://catalog.lindneo.com',
+				                'kerbela_host'=>'http://kerbela.lindneo.com',
+				                'panda_host'=>'http://panda.lindneo.com',
+				                'koala_host'=>'http://koala.lindneo.com',
+						'cloud_host'=>'http://cloud.lindneo.com',
+						'reader_host'=>'http://reader.lindneo.com/'
+					)
 		);
 
 return array(

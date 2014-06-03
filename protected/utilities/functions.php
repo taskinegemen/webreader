@@ -7,7 +7,7 @@ functions::left_menu();
 */
 class functions
 {
-    function left_menu(){
+    static function left_menu(){
 
         functions::event('left_menu',  NULL, function($var) {
         ?>
@@ -90,7 +90,7 @@ class functions
      * @param mixed $value the optional value to pass to each callback
      * @param mixed $callback the method or function to call - FALSE to remove all callbacks for event
      */
-    function event($event, $value = NULL, $callback = NULL)
+    static function event($event, $value = NULL, $callback = NULL)
     {
         static $events;
 
