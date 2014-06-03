@@ -343,17 +343,7 @@ else:
 										<i class="fa fa-check-square-o"></i>
 										<?php echo $RegisterForm->passwordField($SignUp,'passwordR'); ?>
 									  </div>
-									  <?php if(CCaptcha::checkRequirements()): ?>
-									  <div class="form-group">
- 											<label for=""><?php _e("Güvenlik Doğrulama Kodu"); ?> *</label><br>
- 											<?php $this->widget('CCaptcha',array('showRefreshButton'=>true,'buttonOptions'=>array('id'=>'refreshCaptcha'))); ?><br><br>
- 											<i class="fa fa-lock"></i>
- 											<?php echo $RegisterForm->textField($SignUp,'verify'); ?>
- 											<div>Yukarıdaki resimde görünen karakterleri girin.
- 											<br/>Küçük-Büyük harf duyarlıdır.</div>
- 										</div>
-
-										<?php endif; ?>
+									 
 									  	<?php echo CHtml::submitButton('Submit'); ?>
 									</form>
 									<?php $this->endWidget(); ?>
