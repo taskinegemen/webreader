@@ -10,6 +10,13 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 ?>
 <!-- PAGE -->
 <!-- login -->
+<?php if ($webSignupError||$webSignupSuccess){ ?>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			swapScreen('register_bg');
+		});
+	</script>
+<?php } ?>
   <script type="text/javascript">
 	$(document).ready(function(){
 
@@ -308,9 +315,17 @@ else:
 									 // 	'validateOnSubmit'=>true,
 									 // ),
 								)); ?>
-								<?php if ($webSignupError) {
-						    		echo '<h3>'.$webSignupError.'</h3>';
-						    	}?>
+
+								<?php if ($webSignupError) { ?>
+						    		<div class="alert alert-danger">
+						    			<h3><?php echo $webSignupError; ?></h3>
+						    		</div>
+						    	<?php }?>
+						    	<?php if ($webSignupSuccess) { ?>
+						    		<div class="alert alert-success">
+						    			<h3><?php echo $webSignupSuccess; ?></h3>
+						    		</div>
+						    	<?php }?>
 								<h3 class="bigintro">Kayıt Ol</h3>
 									<form  id="register" name="register">								
 									  <div class="form-group">
