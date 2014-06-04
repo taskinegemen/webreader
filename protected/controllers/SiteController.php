@@ -261,7 +261,8 @@ class SiteController extends Controller
 					}
 					else
 					{
-						$this->redirect(Yii::app()->request->baseUrl.'/site/login');
+						//$this->redirect(Yii::app()->request->baseUrl.'/site/login');
+						$webSignupSuccess="Kayıt başarılı. Sisteme email adresi ve şifrenizle giriş yapabilirsiniz";
 					}
 				}
 				else
@@ -274,6 +275,8 @@ class SiteController extends Controller
 						$webSignupError=$res->message;
 					}
 				}
+			}else{
+				$webSignupError="Lütfen kayıt bilgilerini eksiksiz girip tekrar deneyiniz.";
 			}
 		}
 
@@ -290,7 +293,7 @@ class SiteController extends Controller
 			$resetPasswordFeed=json_decode($response,true);
 		}
 
-		$this->render('login',array('model'=>$model,'SignUp'=>$SignUp,'mobileSignupError'=>$mobileSignupError,'webSignupError'=>$webSignupError,'resetPasswordFeed'=>$resetPasswordFeed));
+		$this->render('login',array('model'=>$model,'SignUp'=>$SignUp,'webSignupSuccess'=>$webSignupSuccess, 'mobileSignupError'=>$mobileSignupError,'webSignupError'=>$webSignupError,'resetPasswordFeed'=>$resetPasswordFeed));
 	}
 
 	public function actionVerifyEmail($id)
