@@ -220,7 +220,7 @@ else:
 								    </div> -->
 
 								  <div class="form-group">
-									 <input type='submit' class="btn  login_submit brand_color_for_buttons" id="loginButton" value='<?php _e("Giriş Yap"); ?>' />									
+									 <input type='submit' class="btn login_submit brand_color_for_buttons" id="loginButton" value='<?php _e("Giriş Yap"); ?>' />									
 								  </div>
 
 								</form>
@@ -435,10 +435,11 @@ else:
                                         <i class="fa fa-lock"></i>
                                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Şifreniz" >
                                       </div>
-                                      <input type="submit" class="btn brand_color_for_buttons" value='Giriş Yap' />
-                                      
                                     </form>
                                     </div>
+                                    
+                                    <input type="submit" class="btn brand_color_for_buttons" value='Giriş Yap' />
+                                    
                                     <div class="login-helpers">
                                         <a href="#" onclick="swapScreen('register');return false;">Kayıt Ol</a> <br><br>
                                         <a href="#" onclick="swapScreen('forgot');return false;">Şifremi Unuttum!</a>
