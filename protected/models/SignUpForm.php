@@ -10,10 +10,10 @@ class SignUpForm extends CFormModel
 	public $name;
 	public $surname;
 	public $email;
-	public $birthdate;
-	public $tel;
-	public $city;
-	public $gender;
+	//public $birthdate;
+	//public $tel;
+	//public $city;
+	//public $gender;
 	public $password;
 	public $passwordR;
 	public $verify;
