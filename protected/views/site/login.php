@@ -10,6 +10,13 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 ?>
 <!-- PAGE -->
 <!-- login -->
+<?php if ($webSignupError||$webSignupSuccess){ ?>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			swapScreen('register_bg');
+		});
+	</script>
+<?php } ?>
   <script type="text/javascript">
 	$(document).ready(function(){
 
@@ -213,7 +220,7 @@ else:
 								    </div> -->
 
 								  <div class="form-group">
-									 <input type='submit' class="btn  login_submit brand_color_for_buttons" id="loginButton" value='<?php _e("Giriş Yap"); ?>' />									
+									 <input type='submit' class="btn login_submit brand_color_for_buttons" id="loginButton" value='<?php _e("Giriş Yap"); ?>' />									
 								  </div>
 
 								</form>
@@ -308,9 +315,17 @@ else:
 									 // 	'validateOnSubmit'=>true,
 									 // ),
 								)); ?>
-								<?php if ($webSignupError) {
-						    		echo '<h3>'.$webSignupError.'</h3>';
-						    	}?>
+
+								<?php if ($webSignupError) { ?>
+						    		<div class="alert alert-danger">
+						    			<h3><?php echo $webSignupError; ?></h3>
+						    		</div>
+						    	<?php }?>
+						    	<?php if ($webSignupSuccess) { ?>
+						    		<div class="alert alert-success">
+						    			<h3><?php echo $webSignupSuccess; ?></h3>
+						    		</div>
+						    	<?php }?>
 								<h3 class="bigintro">Kayıt Ol</h3>
 									<form  id="register" name="register">								
 									  <div class="form-group">
@@ -420,10 +435,11 @@ else:
                                         <i class="fa fa-lock"></i>
                                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Şifreniz" >
                                       </div>
-                                      <input type="submit" class="btn brand_color_for_buttons" value='Giriş Yap' />
-                                      
                                     </form>
                                     </div>
+                                    
+                                    <input type="submit" class="btn brand_color_for_buttons" value='Giriş Yap' />
+                                    
                                     <div class="login-helpers">
                                         <a href="#" onclick="swapScreen('register');return false;">Kayıt Ol</a> <br><br>
                                         <a href="#" onclick="swapScreen('forgot');return false;">Şifremi Unuttum!</a>

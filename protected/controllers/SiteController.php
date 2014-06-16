@@ -229,12 +229,41 @@ class SiteController extends Controller
 				
 				$detect = new Mobile_Detect;
 				if ($res->result) {
+					$verifyEmailId=base64_encode($_POST['SignUpForm']['email']);
+					$emailMeta=new UserMeta;
+					$emailMeta->user_id=$_POST['SignUpForm']['email'];
+					$emailMeta->meta_key='emailVerify';
+					$emailMeta->meta_value=$verifyEmailId;
+					$emailMeta->created=date('Y-n-d g:i:s',time());
+					$emailMeta->save();
+
+					$mail=Yii::app()->Smtpmail;
+			        $mail->SetFrom(Yii::app()->params['noreplyEmail'], "OKUTUS");
+
+			        $mail->Subject= "E-posta doğrulama";
+			        $mail->AddAddress($_POST['SignUpForm']['email'], "");
+		        	
+		        	$link=Yii::app()->getBaseUrl(true);
+					$link .='/site/verifyEmail/';
+					$link .= $verifyEmailId;
+					
+					$message="Okutusa hoşgeldin. E-postanızı doğrulamak için <a href='".$link."'>buraya tıklayınız</a>.<br>".$link;
+			        $mail->MsgHTML($message);
+			        if($mail->Send()){
+			        	error_log("mail sent");
+			        }else{
+			        	error_log("mail CAN'T sent");
+			        	error_log($link);
+			        	error_log(json_encode($mail));
+			        }
+
 					if ( $detect->isMobile() || $detect->isTablet()){
 						$this->redirect(Yii::app()->request->baseUrl.'/site/runMobileLogin?user_id='.$res->user_id.'&password='.$res->password);
 					}
 					else
 					{
-						$this->redirect(Yii::app()->request->baseUrl.'/site/login');
+						//$this->redirect(Yii::app()->request->baseUrl.'/site/login');
+						$webSignupSuccess="Kayıt başarılı. Sisteme email adresi ve şifrenizle giriş yapabilirsiniz";
 					}
 				}
 				else
@@ -247,6 +276,8 @@ class SiteController extends Controller
 						$webSignupError=$res->message;
 					}
 				}
+			}else{
+				$webSignupError="Lütfen kayıt bilgilerini eksiksiz girip tekrar deneyiniz.";
 			}
 		}
 
@@ -263,7 +294,26 @@ class SiteController extends Controller
 			$resetPasswordFeed=json_decode($response,true);
 		}
 
-		$this->render('login',array('model'=>$model,'SignUp'=>$SignUp,'mobileSignupError'=>$mobileSignupError,'webSignupError'=>$webSignupError,'resetPasswordFeed'=>$resetPasswordFeed));
+		$this->render('login',array('model'=>$model,'SignUp'=>$SignUp,'webSignupSuccess'=>$webSignupSuccess, 'mobileSignupError'=>$mobileSignupError,'webSignupError'=>$webSignupError,'resetPasswordFeed'=>$resetPasswordFeed));
+	}
+
+	public function actionVerifyEmail($id)
+	{
+		$this->layout = '//layouts/column1';
+		$result="1";
+		$meta=UserMeta::model()->find('meta_key=:meta_key AND meta_value=:meta_value',array('meta_key'=>'emailVerify','meta_value'=>$id));
+		if ($meta) {
+			$meta->meta_value="verified";
+			if ($meta->save()) {
+				$result="0";
+			}else{
+				$result="1";
+			}
+		}
+
+		$this->render('verifyEmail',array(
+				'result'=>$result
+			));
 	}
 
 	/**
