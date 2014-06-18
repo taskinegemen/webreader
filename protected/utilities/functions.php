@@ -245,7 +245,7 @@ class functions
     }
 
 
-    function delTree($dir) { 
+    static function delTree($dir) { 
         if (!file_exists($dir) and !is_dir($dir)) return false;
         $files = array_diff(scandir($dir), array('.','..')); 
         foreach ($files as $file) { 
@@ -254,7 +254,7 @@ class functions
         return rmdir($dir); 
     } 
 
-    function returnMIMEType($filename)
+    static function returnMIMEType($filename)
     {
         preg_match("|\.([a-z0-9]{2,5})$|i", $filename, $fileSuffix);
 

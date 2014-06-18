@@ -63,8 +63,26 @@ jQuery(document).ready(function() {
 			window.oversize = $("<div style='position:fixed;top:0;bottom:0;left:0;right:0;background:#000;z-index:99;'></div>");
 			window.oversize.appendTo('.bx-viewport');
 			var frameWrap = $("<div style='width: 10000px;height: 10000px'></div>");
-			frameWrap.appendTo(window.oversize);
-
+			frameWrap
+			.on( 'mousewheel',function(e){
+				if(e.originalEvent.wheelDelta/120 > 0) {
+				   	$(this).parent().animate({
+					    
+					    top: "+=250",
+					    
+					  }, 100);
+				    console.log('scrolling up ');
+				}
+				else{
+				  	$(this).parent().animate({
+					    
+					    top: "-=250",
+					    
+					  }, 100);
+				    console.log('scrolling down');
+				} 
+			})
+			.appendTo(window.oversize);
  			console.log('zooming');
 			PageZoomed=true;
 			var newFrame = $($(".bxslider li")[current])
