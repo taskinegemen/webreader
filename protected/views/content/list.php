@@ -141,12 +141,17 @@ $this->pageTitle=Yii::app()->name;
               });
           };
 
-
+          var categoryUrl="";
+          if (organisationId) {
+            categoryUrl='<?php echo Yii::app()->params['catalog_host'];?>/api/getOrganisationCategories';
+          }else{
+            categoryUrl='<?php echo Yii::app()->params['catalog_host'];?>/api/listAllCategories';
+          };
 
 
         $.ajax({
           type: "POST",
-          url: "<?php echo Yii::app()->params['catalog_host'];?>/api/getOrganisationCategories",
+          url: categoryUrl,
           data: { id: organisationId}
         })
             .done(function( result ) {
