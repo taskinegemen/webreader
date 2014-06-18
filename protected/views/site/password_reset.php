@@ -28,7 +28,7 @@ $this->breadcrumbs=array(
 									?>
 									<div class="alert alert-danger">
 										<h4><?php echo $ErrorMessage; ?></h4>
-										<a href="<?php echo Yii::app()->params['reader_host']; ?>" class="btn btn-danger">Geri</a>
+										<a href="/site/login" class="btn btn-danger">Geri</a>
 									</div>
 										<?php 
 								}
@@ -60,7 +60,7 @@ $this->breadcrumbs=array(
 										?>
 										<div class="alert alert-success">
 										<h4><?php echo $SuccessMessage; ?></h4>
-										<a href="<?php echo Yii::app()->params['reader_host']; ?>" class="btn btn-success">Giriş Yap</a>
+										<a href="/site/login" class="btn btn-success">Giriş Yap</a>
 									</div>
 										<?php 
 									}

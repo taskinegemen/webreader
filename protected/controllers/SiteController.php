@@ -228,7 +228,8 @@ class SiteController extends Controller
 				
 				$detect = new Mobile_Detect;
 				if ($res->result) {
-					$verifyEmailId=base64_encode($_POST['SignUpForm']['email']);
+					$verifyEmailId=$this->generateRandomString();
+					//$verifyEmailId=base64_encode($_POST['SignUpForm']['email']);
 					$emailMeta=new UserMeta;
 					$emailMeta->user_id=$_POST['SignUpForm']['email'];
 					$emailMeta->meta_key='emailVerify';
@@ -281,15 +282,18 @@ class SiteController extends Controller
 		}
 
 		if (isset($_GET['Reset'])) {
+			$attributes=$_GET['Reset'];
+			$attributes['reader_host']=Yii::app()->getBaseUrl(true);
 			$email=$_GET['Reset']['email'];
 			$url=Yii::app()->params['kerbela_host'].'/site/resetPassword';
 			$ch = curl_init( $url );
 			curl_setopt( $ch, CURLOPT_POST, 1);
-			curl_setopt( $ch, CURLOPT_POSTFIELDS, $_GET['Reset']);
+			curl_setopt( $ch, CURLOPT_POSTFIELDS, $attributes);
 			curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
 			curl_setopt( $ch, CURLOPT_HEADER, 0);
 			curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
 			$response = curl_exec( $ch );
+			error_log("response:".$response);
 			$resetPasswordFeed=json_decode($response,true);
 		}
 
@@ -329,4 +333,13 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+
+	public function generateRandomString($length = 10) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, strlen($characters) - 1)];
+    }
+    return $randomString;
+}
 }
