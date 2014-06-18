@@ -7,22 +7,22 @@ class Encryption
     const MODE   = MCRYPT_MODE_CBC;
     const SALT    = "myverylovelysalthere";
 
-    public function encrypt($key,$plaintext)
+    public static function encrypt($key,$plaintext)
     {
 
         return openssl_encrypt($plaintext,'aes-256-cfb' , $key,$options=2,$iv=substr($key,0,16));
     }
 
-    public function decrypt($key,$crypttext)
+    public static function decrypt($key,$crypttext)
     {
-        return openssl_decrypt($crypttext,'aes-256-cfb' , $key,$options=2,$iv=substr($key,0,16));   
+        return openssl_decrypt($crypttext,'aes-256-cfb' , $key,$options=1,$iv=substr($key,0,16));   
     }
 
-    public function salty($filepath){
+    public static function salty($filepath){
         return substr(hash('sha256',$filepath.'myverylovelysalthere'),0,32);
     }
 
-    public function encryptFile($filepath,$saveas=null){
+    public static function encryptFile($filepath,$saveas=null){
         
         $key = self::salty( basename($filepath) );
         if(!$saveas){
@@ -37,7 +37,7 @@ class Encryption
         return fasle;
     }
 
-    public function encryptFolder($folder){
+    public static function encryptFolder($folder){
         $path = realpath($folder);
 
         $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path), RecursiveIteratorIterator::SELF_FIRST);
@@ -48,7 +48,7 @@ class Encryption
         }
     }
 
-    public function decryptFile($filepath){
+    public static function decryptFile($filepath){
         $key = self::salty( basename($filepath) );
         return  self::decrypt($key, file_get_contents($filepath));
     }

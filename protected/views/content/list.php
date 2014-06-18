@@ -120,7 +120,12 @@ $this->pageTitle=Yii::app()->name;
         }
         //organisationId="linden_team";
         console.log(organisationId);
+        if (organisationId)
+            var dataToBeSent = { attributes: '{"organisationId":["'+organisationId+'"]}', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"};
+        else 
+            var dataToBeSent = { };
 
+        if (organisationId)
 
         var holderUlElement =  $('.dropdown.market_page_categories ul.dropdown-menu');
         
@@ -129,7 +134,7 @@ $this->pageTitle=Yii::app()->name;
             $.ajax({
               type: "POST",
               url: "<?php echo Yii::app()->params['catalog_host'];?>/api/list",
-              data: { attributes: '{"organisationId":["'+organisationId+'"]}', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
+              data: dataToBeSent
             })
               .done(function( result ) {
                     listBookCards(result);
@@ -200,7 +205,7 @@ $this->pageTitle=Yii::app()->name;
             console.log("RESULT: "+result);
             var data = JSON.parse(result);
             console.log(data);
-            var author="Seviye Yayınları"; 
+            var author=""; 
             $('#booksSpace').empty();
             $.each( data.result, function( key, book ) {
                 /**
