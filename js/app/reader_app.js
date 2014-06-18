@@ -60,7 +60,7 @@ jQuery(document).ready(function() {
 			PageZoomed=false;
 		} else {
 
-			window.oversize = $("<div style='position:fixed;top:0;bottom:0;left:0;right:0;background:#000;z-index:99;'></div>");
+			window.oversize = $("<div style='position:fixed;top:-1000px;bottom:0;left:0;right:0;background:#000;z-index:99;'></div>");
 			window.oversize.appendTo('.bx-viewport');
 			var frameWrap = $("<div style='width: 10000px;height: 10000px'></div>");
 			frameWrap
@@ -70,15 +70,16 @@ jQuery(document).ready(function() {
 					    
 					    top: "+=250",
 					    
-					  }, 100);
+					  }, 50);
 				    console.log('scrolling up ');
 				}
 				else{
+					if ($(this).parent().top()<0)
 				  	$(this).parent().animate({
 					    
 					    top: "-=250",
 					    
-					  }, 100);
+					  }, 50);
 				    console.log('scrolling down');
 				} 
 			})
