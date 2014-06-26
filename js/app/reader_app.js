@@ -66,20 +66,21 @@ jQuery(document).ready(function() {
 			frameWrap
 			.on( 'mousewheel',function(e){
 				if(e.originalEvent.wheelDelta/120 > 0) {
+					if ($(this).parent().offset().top+250<0)
 				   	$(this).parent().animate({
 					    
 					    top: "+=250",
 					    
-					  }, 50);
+					  }, {duration:25,queue :false});
 				    console.log('scrolling up ');
 				}
 				else{
-					if ($(this).parent().top()<0)
+					
 				  	$(this).parent().animate({
 					    
 					    top: "-=250",
 					    
-					  }, 50);
+					  }, 25);
 				    console.log('scrolling down');
 				} 
 			})
