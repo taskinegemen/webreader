@@ -10,7 +10,7 @@ class Encryption
     public static function encrypt($key,$plaintext)
     {
 
-        return openssl_encrypt($plaintext,'aes-256-cfb' , $key,$options=2,$iv=substr($key,0,16));
+        return openssl_encrypt($plaintext,'aes-256-cfb' , $key,$options=1,$iv=substr($key,0,16));
     }
 
     public static function decrypt($key,$crypttext)
