@@ -74,7 +74,7 @@ jQuery(document).ready(function() {
 				    console.log('scrolling up ');
 				}
 				else{
-					if ($(this).parent().top()<0)
+					if ($(this).parent().top()>0)
 				  	$(this).parent().animate({
 					    
 					    top: "-=250",

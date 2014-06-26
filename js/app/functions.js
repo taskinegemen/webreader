@@ -46,7 +46,12 @@ window.pages = [];
 	            $iframe.css('position','absolute');
 
 		        $(window[$(this).attr('name')].document.body).css("zoom", zoom);
+		        $(window[$(this).attr('name')].document.body).find('iframe').contents().find("body").css("zoom", zoom);
+	        	$(window[$(this).attr('name')].document.body).find('iframe').load( function (){ 
+	        		
+	        		$(this).contents().find("body").css("zoom", zoom);
 
+	        	});
 
 
 
