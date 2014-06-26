@@ -179,3 +179,13 @@ $('img.lazyimgs').lazy();
 		</div>
 	</div>
 </div><!-- /library_page_container -->
+<script>
+            
+            $( document ).ready(function() {
+              //new UISearch( document.getElementById( 'sb-search' ) );
+                $('img.lazyimgs').lazy();
+            });
+
+            
+        </script>
+
