@@ -98,6 +98,7 @@ jQuery(document).ready(function() {
 					$(window.oversizeframe.document.body).find('iframe').load( function (){ 
 	        			$(this).contents().find("body").css({"zoom": "2" ,"background-size":"cover"});
 	        		});
+	        		$(window.oversizeframe.document.body).find('iframe').contents().find("body").css({"zoom": "2" ,"background-size":"cover"});
 					newFrame.css({
 						'height': (parseInt ($(window.oversizeframe.document.body).css('height')) * 2) +'px',
 						'width': (parseInt ($(window.oversizeframe.document.body).css('width')) * 2) +'px'
