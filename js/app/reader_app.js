@@ -60,11 +60,30 @@ jQuery(document).ready(function() {
 			PageZoomed=false;
 		} else {
 
-			window.oversize = $("<div style='position:fixed;top:0;bottom:0;left:0;right:0;background:#000;z-index:99;'></div>");
+			window.oversize = $("<div style='position:fixed;top:-1000px;bottom:0;left:0;right:0;background:#000;z-index:99;'></div>");
 			window.oversize.appendTo('.bx-viewport');
 			var frameWrap = $("<div style='width: 10000px;height: 10000px'></div>");
-			frameWrap.appendTo(window.oversize);
-
+			frameWrap
+			.on( 'mousewheel',function(e){
+				if(e.originalEvent.wheelDelta/120 > 0) {
+				   	$(this).parent().animate({
+					    
+					    top: "+=250",
+					    
+					  }, 50);
+				    console.log('scrolling up ');
+				}
+				else{
+					if ($(this).parent().top()>0)
+				  	$(this).parent().animate({
+					    
+					    top: "-=250",
+					    
+					  }, 50);
+				    console.log('scrolling down');
+				} 
+			})
+			.appendTo(window.oversize);
  			console.log('zooming');
 			PageZoomed=true;
 			var newFrame = $($(".bxslider li")[current])
@@ -76,6 +95,10 @@ jQuery(document).ready(function() {
 				.attr('id','oversizeframe')
 				.load(function(){
 					$(window.oversizeframe.document.body).css("zoom", "2");
+					$(window.oversizeframe.document.body).find('iframe').load( function (){ 
+	        			$(this).contents().find("body").css({"zoom": "2" ,"background-size":"cover"});
+	        		});
+	        		$(window.oversizeframe.document.body).find('iframe').contents().find("body").css({"zoom": "2" ,"background-size":"cover"});
 					newFrame.css({
 						'height': (parseInt ($(window.oversizeframe.document.body).css('height')) * 2) +'px',
 						'width': (parseInt ($(window.oversizeframe.document.body).css('width')) * 2) +'px'

@@ -40,65 +40,59 @@ $("ul>li> #library").parent().addClass("current");
             })
               .done(function( result ) {
                 console.log(result);
-                deneme = JSON.parse(result);
-                console.log(deneme.result);
-                
-                if(deneme.result){
-                    $.each( deneme.result, function( key, value ) {
-                      console.log(value.book_id);
-                      
-                        kerbela.setRequestedHttpService('catalog');
-                        if (kerbela.getTicket()==null) {
-                            window.location.href="<?php echo Yii::app()->request->baseUrl; ?>";
-                        };
-                        console.log(kerbela.getRequestedHttpService());
-                        var auth_catalog = kerbela.getAuthTicket();
-                        var HTTP_service_ticket_catalog = kerbela.getTicket().HTTP_service_ticket;
-                        console.log(HTTP_service_ticket_catalog);
-                        var book_data = "";
-                        var book_thumbnail = "";
-                        $.ajax({
+                userBooks = JSON.parse(result);
+                console.log(userBooks.result);
+                var getMainInfoBooks = [];
+
+                if(userBooks.result){
+
+
+                    $.each( userBooks.result, function( key, userBook ) {
+                        getMainInfoBooks.push(userBook.book_id);
+                    });
+
+                     $.ajax({
                             type: "POST",
                             url: "<?php echo Yii::app()->params['catalog_host'];?>/api/getMainInfo",
-                            data: { id: value.book_id, auth: auth_catalog, http_service_ticket: HTTP_service_ticket_catalog, type:"web"}
+                            data: { id : JSON.stringify(getMainInfoBooks) }
                         })
                           .done(function( result ) {
                             
-                            book_data = JSON.parse(result);
-                            console.log(book_data.result);
-                        });
-                        //var bookthumbnail = "<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail?id=5ZLCqyyAHL6Q3vlukDRZQhH7UbMupEr1sRzFVRXxH0AC";
-                        /*
-                        $.ajax({
-                              url: "<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail/id/"+value.book_id
-                            }).done(function(result1) {
-                              console.log(result1);
-                              bookthumbnail = result1;
+                            books_data = JSON.parse(result);
+                            console.log(books_data);
+                            
+
+                            if (books_data.result)
+                            $.each (books_data.result, function(index,value){
+
+                                var book_data = "";
+                                var book_thumbnail = "";
+
+                                var bookthumbnail = "<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail?id="+value.contentId;
+                                if(!bookthumbnail){
+                                    
+                                    var imageid = stringToHex(value.contentId);
+                                    bookthumbnail = "<?php echo Yii::app()->request->baseUrl; ?>/css/covers/cover"+imageid+".jpg";
+                                }
+                                
+                                var book = $('<div class="reader_book_card">\
+                                                <div class="reader_book_card_book_cover solid_brand_color">\
+                                                <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.contentId+'">\
+                                                 <img data-src="'+bookthumbnail+'" class="lazyimgs" style="width:198px; height:264px" /></a></div>\
+                                                <div class="reader_book_card_info_container">\
+                                                <div class="reader_market_book_name"><a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.contentId+'">'+value.contentTitle+'</a></div>\
+                                                <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\
+                                                <div class="clearfix"></div>\
+                                                <div class="reader_book_card_writer_name">'+value.contentAuthor+'</div>\
+                                                <div class="reader_book_fav"><i class="fa fa-star-o"></i></div>\
+                                                </div>\
+                                                </div>');
+                                
+                                book.appendTo('#books');
                             });
-                        */
-                        var bookthumbnail = "<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail?id="+value.book_id;
-                        if(!bookthumbnail){
-                            
-                            var imageid = stringToHex(value.book_id);
-                            bookthumbnail = "<?php echo Yii::app()->request->baseUrl; ?>/css/covers/cover"+imageid+".jpg";
-                        }
-                        console.log(book_data.result);
-                        var book = $('<div class="reader_book_card">\
-                                        <div class="reader_book_card_book_cover solid_brand_color">\
-                                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'">\
-                                         <img data-src="'+bookthumbnail+'" class="lazyimgs" style="width:198px; height:264px" /></a></div>\
-                                        <div class="reader_book_card_info_container">\
-                                        <div class="reader_market_book_name"><a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.book_id+'">'+book_data.result.contentTitle+'</a></div>\
-                                        <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\
-                                        <div class="clearfix"></div>\
-                                        <div class="reader_book_card_writer_name">'+book_data.result.contentAuthor+'</div>\
-                                        <div class="reader_book_fav"><i class="fa fa-star-o"></i></div>\
-                                        </div>\
-                                        </div>');
-                        console.log(book);
-                        book.appendTo('#books');
-                            
-                    });
+
+                        });
+                   
                 }
                 else{
                     $('.row').html('<div class="reader_nobook_page_row clearfix">\
@@ -179,3 +173,13 @@ $('img.lazyimgs').lazy();
 		</div>
 	</div>
 </div><!-- /library_page_container -->
+<script>
+            
+            $( document ).ready(function() {
+              //new UISearch( document.getElementById( 'sb-search' ) );
+                $('img.lazyimgs').lazy();
+            });
+
+            
+        </script>
+
