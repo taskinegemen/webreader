@@ -100,14 +100,14 @@ $this->pageTitle=Yii::app()->name;
 
                 
 
-               var kerbela=$(window).kerbelainit();
-                kerbela.setRequestedHttpService('catalog');
-                var ticket=kerbela.getTicket();
-                if (ticket==null) {
-                    window.location.href="<?php echo Yii::app()->request->baseUrl; ?>";
-                };
-                var auth=kerbela.getAuthTicket();
-                var HTTP_service_ticket=ticket.HTTP_service_ticket;
+               // var kerbela=$(window).kerbelainit();
+               //  kerbela.setRequestedHttpService('catalog');
+               //  var ticket=kerbela.getTicket();
+               //  // if (ticket==null) {
+               //  //     window.location.href="<?php echo Yii::app()->request->baseUrl; ?>";
+               //  // };
+               //  var auth=kerbela.getAuthTicket();
+               //  var HTTP_service_ticket=ticket.HTTP_service_ticket;
                 var organisationId=window.location;
                 console.log(organisationId);
                 var myRe = /.([A-Za-z\-0-9]+)\.(com|net|edu|mil|gov)/g;
@@ -121,7 +121,7 @@ $this->pageTitle=Yii::app()->name;
                 //organisationId="linden_team";
                 console.log(organisationId);
                 if (organisationId)
-                    var dataToBeSent = { attributes: '{"organisationId":["'+organisationId+'"]}', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"};
+                    var dataToBeSent = { attributes: '{"organisationId":["'+organisationId+'"]}'};
                 else 
                     var dataToBeSent = { };
 
@@ -196,7 +196,7 @@ $this->pageTitle=Yii::app()->name;
                                      $.ajax({
                                           type: "POST",
                                           url: "<?php echo Yii::app()->params['catalog_host'];?>/api/listCategoryCatalogs",
-                                          data: { id: $(this).attr('data-category_id'), auth: auth, http_service_ticket: HTTP_service_ticket, type:"web" }
+                                          data: { id: $(this).attr('data-category_id')}
                                         })
                                           .done(function( result ) {
                                                 console.log(result);
