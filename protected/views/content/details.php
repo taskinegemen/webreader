@@ -28,19 +28,21 @@ $this->pageTitle=Yii::app()->name;
             }
             return str%8;
         }
-
+            var userId="";
             var kerbela = $(window).kerbelainit();
              kerbela.setRequestedHttpService('catalog');
-
-            if (kerbela.getTicket()==null) {
+             var ticket=kerbela.getTicket();
+            if (ticket==null) {
               $('#bbook').hide();
               $('#rbook').hide();
               $('#loginButton').show();
             }else{
+              userId=ticket.UserId;
               $('#bbook').show();
               $('#rbook').show();
               $('#loginButton').hide();
             }
+              $('#removeButton').hide();
 
             // if (kerbela.getTicket()==null) {
             //       //  window.location.href="<?php echo Yii::app()->request->getBaseUrl(true); ?>";
@@ -77,7 +79,7 @@ $this->pageTitle=Yii::app()->name;
             $.ajax({
                     type: "POST",
                     url: "<?php echo Yii::app()->params['koala_host'];?>/api/checkUserBook",
-                    data: { book_id: '<?php echo $id; ?>'}
+                    data: { book_id: '<?php echo $id; ?>',user_id:userId}
                 })
                   .done(function( result ) {
                     console.log(result);
@@ -86,6 +88,7 @@ $this->pageTitle=Yii::app()->name;
                         console.log(checkdata.result);
                         $('#bbook').hide();
                         $('#rbook').show();
+                        $('#removeButton').show();
                     }
                 });
 
@@ -288,8 +291,18 @@ $this->pageTitle=Yii::app()->name;
 
 
 
+<div class="btn-group dropdown pull-right" style="margin-bottom:5px" id="rbook">
+    <a class="btn btn-info" href="<?php echo Yii::app()->request->baseUrl.'/content/read/'.$id; ?>" target="_blank" id="rbook"><i class="fa fa-eye"></i> Oku</a>
+    <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+    <li>
+      <a class="btn btn-info" id="removeButton" href="#"><i class="fa fa-user"></i>Kütüphanemden Kaldır</a>
+    </li>
+    </ul>
+</div>
 <button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons"  id="bbook" data-toggle="modal" data-target="#buybook">Kütüphaneme Ekle</button>
-<a class="btn btn-primary pull-right book_info_add_to_library_button" href="<?php echo Yii::app()->request->baseUrl.'/content/read/'.$id; ?>" target="_blank" id="rbook"><i class="fa fa-eye"></i>Oku</a>
 <a class="btn btn-primary pull-right book_info_add_to_library_button " id="loginButton" href="/site/login"><i class="fa fa-user"></i>Giriş Yap</a>
 
 </div>
