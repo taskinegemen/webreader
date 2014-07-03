@@ -9305,6 +9305,14 @@ div.reader_book_category {
 	cursor:pointer;
 }
 
+.options_menu_dropdown {
+	top: 30px !important;
+	margin-left: 32px !important;	
+}
+
+.options_menu_dropdown li:first-child a {
+	border:0 !important;	
+}
 
 .reader_book_card_options_button:hover {
 	background-color:#f9f9f9;
@@ -9845,7 +9853,7 @@ span.book_info_titles {
 
 .reader_book_cover_thumbnail {
 	width:200px;
-	min-height:150px;
+	height:150px;
 	border:1px solid #cdd2d2;	
 	text-align:center;
 	color:#cdd2d2;

@@ -249,7 +249,21 @@ $this->pageTitle=Yii::app()->name;
                             <img src="<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail?id='+book.contentId+'" style="width:198px; height:264px" /></div></a>\
                             <div class="reader_book_card_info_container">\
                                 <div class="reader_market_book_name tip" data-original-title="'+book.contentTitle+'">'+book.contentTitle+'</div>\
-                                <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\
+                                <button class="reader_book_card_options_button pop-bottom dropdown-toggle" data-title="Bottom" data-toggle="dropdown"></button>\
+								<ul class="dropdown-menu options_menu_dropdown">\
+											<li>\
+											<a href="#">Favorilerime Ekle</a>\
+											</li>\
+											<li>\
+											<a href="#">Kütüphanemden Kaldır</a>\
+											</li>\
+											<li>\
+											<a href="#">Something else here</a>\
+											</li>\
+											<li>\
+											<a href="#">Separated link</a>\
+											</li>\
+								</ul>\
                                 <div class="clearfix"></div>\
                                 <div class="reader_book_card_writer_name tip" data-original-title="'+author+'">'+author+'</div>\
                                 <div class="reader_book_price">';
