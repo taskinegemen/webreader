@@ -75,7 +75,7 @@ $this->pageTitle=Yii::app()->name;
             
 
             // $('#bbook').show();
-            // $('#rbook').hide();
+             $('#rbook').hide();
             $.ajax({
                     type: "POST",
                     url: "<?php echo Yii::app()->params['koala_host'];?>/api/checkUserBook",
@@ -290,19 +290,8 @@ $this->pageTitle=Yii::app()->name;
 <h3 class="book_info_the_name_of_the_writer">Jess Walter</h2>
 
 
-
-<div class="btn-group dropdown pull-right" style="margin-bottom:5px" id="rbook">
-    <a class="btn btn-info" href="<?php echo Yii::app()->request->baseUrl.'/content/read/'.$id; ?>" target="_blank" id="rbook"><i class="fa fa-eye"></i> Oku</a>
-    <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
-      <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-    <li>
-      <a class="btn btn-info" id="removeButton" href="#"><i class="fa fa-user"></i>Kütüphanemden Kaldır</a>
-    </li>
-    </ul>
-</div>
 <button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons"  id="bbook" data-toggle="modal" data-target="#buybook">Kütüphaneme Ekle</button>
+<a class="btn btn-primary pull-right book_info_add_to_library_button" href="<?php echo Yii::app()->request->baseUrl.'/content/read/'.$id; ?>" target="_blank" id="rbook"><i class="fa fa-eye"></i>Oku</a>
 <a class="btn btn-primary pull-right book_info_add_to_library_button " id="loginButton" href="/site/login"><i class="fa fa-user"></i>Giriş Yap</a>
 
 </div>
