@@ -23,7 +23,9 @@ class SiteController extends Controller
 			),
 		);
 	}
-
+	public function actionReport ($id=null) {
+		$this->render("report", array("id"=>$id));
+	}
 	public function actionService(){
 		$auth=Yii::app()->request->getPost('auth',0);
 		$http_service_ticket=Yii::app()->request->getPost('http_service_ticket',0);

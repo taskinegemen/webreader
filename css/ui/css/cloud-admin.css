@@ -2932,6 +2932,18 @@ input[type="button"].btn-block {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
 }
+
+.dropdown-menu li a {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;	
+}
+
+.dropdown-menu li a:hover {
+	background-color: #f8f8f8 !important;	
+}
+
 .dropdown-menu.pull-right {
   right: 0;
   left: auto;

@@ -252,16 +252,16 @@ $this->pageTitle=Yii::app()->name;
                                 <button class="reader_book_card_options_button pop-bottom dropdown-toggle" data-title="Bottom" data-toggle="dropdown"></button>\
 								<ul class="dropdown-menu options_menu_dropdown">\
 											<li>\
-											<a href="#">Favorilerime Ekle</a>\
+											<a href="#">Kütüphaneme Ekle</a>\
 											</li>\
 											<li>\
-											<a href="#">Kütüphanemden Kaldır</a>\
+											<a href="#">Eser Detayları</a>\
 											</li>\
 											<li>\
-											<a href="#">Something else here</a>\
+											<a href="#">Paylaş</a>\
 											</li>\
 											<li>\
-											<a href="#">Separated link</a>\
+											<a href="#">Uygunsuz İçerik Bildir</a>\
 											</li>\
 								</ul>\
                                 <div class="clearfix"></div>\
