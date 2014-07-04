@@ -92,10 +92,6 @@
 	background-color:#005F9B;	
 }
 
-.dropdown-menu li:hover {
-	border-right:5px solid #2880b9;
-}
-
 .market_page_left_actions_current {
 	border-bottom:3px solid #2880b9;
 }
