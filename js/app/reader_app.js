@@ -52,6 +52,8 @@ jQuery(document).ready(function() {
 	
 	$('#toggle_zoom').click(function(){
 		var current= window.SlideController.reader_slider.getCurrentSlide();
+		var deployedPageHeight = 3500;
+
 		if(PageZoomed){
  			console.log('out zooming');
 			//$(window['page'+current].document.body).css("zoom",outzooming);
@@ -65,22 +67,26 @@ jQuery(document).ready(function() {
 			var frameWrap = $("<div style='width: 10000px;height: 10000px'></div>");
 			frameWrap
 			.on( 'mousewheel',function(e){
+				var top = $(this).parent().position().top;
+				var steppingPixels = 200;
+
 				if(e.originalEvent.wheelDelta/120 > 0) {
+					if (top<-500)
 				   	$(this).parent().animate({
 					    
-					    top: "+=250",
+					    top: top+steppingPixels + "px",
 					    
-					  }, 50);
-				    console.log('scrolling up ');
+					  }, 25);
+				    console.log('scrolling up ' + top );
 				}
 				else{
-					if ($(this).parent().top()>0)
+					if (top>(deployedPageHeight-200)*-1)
 				  	$(this).parent().animate({
 					    
-					    top: "-=250",
+					    top: top-steppingPixels + "px",
 					    
-					  }, 50);
-				    console.log('scrolling down');
+					  }, 25);
+				    console.log('scrolling down' + top);
 				} 
 			})
 			.appendTo(window.oversize);
@@ -94,14 +100,22 @@ jQuery(document).ready(function() {
 				.attr('name','oversizeframe')
 				.attr('id','oversizeframe')
 				.load(function(){
-					$(window.oversizeframe.document.body).css("zoom", "2");
+					var zoomRate = 2;
+					var bodyWidth = $(window.oversizeframe.document.body).width();
+
+					if (bodyWidth*zoomRate > window.innerWidth)
+						zoomRate = (window.innerWidth)/bodyWidth;
+
+					deployedPageHeight = $(window.oversizeframe.document.body).width()*zoomRate;
+
+					$(window.oversizeframe.document.body).css("zoom", zoomRate);
 					$(window.oversizeframe.document.body).find('iframe').load( function (){ 
-	        			$(this).contents().find("body").css({"zoom": "2" ,"background-size":"cover"});
+	        			$(this).contents().find("body").css({"zoom": zoomRate ,"background-size":"cover"});
 	        		});
-	        		$(window.oversizeframe.document.body).find('iframe').contents().find("body").css({"zoom": "2" ,"background-size":"cover"});
+	        		$(window.oversizeframe.document.body).find('iframe').contents().find("body").css({"zoom": zoomRate ,"background-size":"cover"});
 					newFrame.css({
-						'height': (parseInt ($(window.oversizeframe.document.body).css('height')) * 2) +'px',
-						'width': (parseInt ($(window.oversizeframe.document.body).css('width')) * 2) +'px'
+						'height': (parseInt ($(window.oversizeframe.document.body).css('height')) * zoomRate) +'px',
+						'width': (parseInt ($(window.oversizeframe.document.body).css('width')) * zoomRate) +'px'
 					});	
 					newFrame.position({'my':'center top','at':'center top','of':window});
 
