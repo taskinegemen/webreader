@@ -100,14 +100,14 @@ $this->pageTitle=Yii::app()->name;
 
                 
 
-               var kerbela=$(window).kerbelainit();
-                kerbela.setRequestedHttpService('catalog');
-                var ticket=kerbela.getTicket();
-                if (ticket==null) {
-                    window.location.href="<?php echo Yii::app()->request->baseUrl; ?>";
-                };
-                var auth=kerbela.getAuthTicket();
-                var HTTP_service_ticket=ticket.HTTP_service_ticket;
+               // var kerbela=$(window).kerbelainit();
+               //  kerbela.setRequestedHttpService('catalog');
+               //  var ticket=kerbela.getTicket();
+               //  // if (ticket==null) {
+               //  //     window.location.href="<?php echo Yii::app()->request->baseUrl; ?>";
+               //  // };
+               //  var auth=kerbela.getAuthTicket();
+               //  var HTTP_service_ticket=ticket.HTTP_service_ticket;
                 var organisationId=window.location;
                 console.log(organisationId);
                 var myRe = /.([A-Za-z\-0-9]+)\.(com|net|edu|mil|gov)/g;
@@ -121,7 +121,7 @@ $this->pageTitle=Yii::app()->name;
                 //organisationId="linden_team";
                 console.log(organisationId);
                 if (organisationId)
-                    var dataToBeSent = { attributes: '{"organisationId":["'+organisationId+'"]}', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"};
+                    var dataToBeSent = { attributes: '{"organisationId":["'+organisationId+'"]}'};
                 else 
                     var dataToBeSent = { };
 
@@ -196,7 +196,7 @@ $this->pageTitle=Yii::app()->name;
                                      $.ajax({
                                           type: "POST",
                                           url: "<?php echo Yii::app()->params['catalog_host'];?>/api/listCategoryCatalogs",
-                                          data: { id: $(this).attr('data-category_id'), auth: auth, http_service_ticket: HTTP_service_ticket, type:"web" }
+                                          data: { id: $(this).attr('data-category_id')}
                                         })
                                           .done(function( result ) {
                                                 console.log(result);
@@ -249,7 +249,21 @@ $this->pageTitle=Yii::app()->name;
                             <img src="<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail?id='+book.contentId+'" style="width:198px; height:264px" /></div></a>\
                             <div class="reader_book_card_info_container">\
                                 <div class="reader_market_book_name tip" data-original-title="'+book.contentTitle+'">'+book.contentTitle+'</div>\
-                                <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\
+                                <button class="reader_book_card_options_button pop-bottom dropdown-toggle" data-title="Bottom" data-toggle="dropdown"></button>\
+								<ul class="dropdown-menu options_menu_dropdown">\
+											<li>\
+											<a href="#">Kütüphaneme Ekle</a>\
+											</li>\
+											<li>\
+											<a href="#">Eser Detayları</a>\
+											</li>\
+											<li>\
+											<a href="#">Paylaş</a>\
+											</li>\
+											<li>\
+											<a href="#">Uygunsuz İçerik Bildir</a>\
+											</li>\
+								</ul>\
                                 <div class="clearfix"></div>\
                                 <div class="reader_book_card_writer_name tip" data-original-title="'+author+'">'+author+'</div>\
                                 <div class="reader_book_price">';

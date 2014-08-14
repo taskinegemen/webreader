@@ -2932,6 +2932,18 @@ input[type="button"].btn-block {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
 }
+
+.dropdown-menu li a {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;	
+}
+
+.dropdown-menu li a:hover {
+	background-color: #f8f8f8 !important;	
+}
+
 .dropdown-menu.pull-right {
   right: 0;
   left: auto;
@@ -9303,9 +9315,16 @@ div.reader_book_category {
 	background-color:transparent;
 	border:none;
 	cursor:pointer;
-	display:none;
 }
 
+.options_menu_dropdown {
+	top: 30px !important;
+	margin-left: 32px !important;	
+}
+
+.options_menu_dropdown li:first-child a {
+	border:0 !important;	
+}
 
 .reader_book_card_options_button:hover {
 	background-color:#f9f9f9;
@@ -9846,7 +9865,7 @@ span.book_info_titles {
 
 .reader_book_cover_thumbnail {
 	width:200px;
-	min-height:150px;
+	height:150px;
 	border:1px solid #cdd2d2;	
 	text-align:center;
 	color:#cdd2d2;

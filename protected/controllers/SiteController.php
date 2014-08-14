@@ -23,7 +23,9 @@ class SiteController extends Controller
 			),
 		);
 	}
-
+	public function actionReport ($id=null) {
+		$this->render("report", array("id"=>$id));
+	}
 	public function actionService(){
 		$auth=Yii::app()->request->getPost('auth',0);
 		$http_service_ticket=Yii::app()->request->getPost('http_service_ticket',0);
@@ -215,8 +217,7 @@ class SiteController extends Controller
 		if(isset($_POST['SignUpForm']))
 		{
 			$SignUp->attributes=$_POST['SignUpForm'];
-			if (1==1) {
-//			if ($SignUp->validate()) {
+			if ($SignUp->validate()) {
 				$url=Yii::app()->params['kerbela_host'].'/site/signUp';
 				$ch = curl_init( $url );
 				curl_setopt( $ch, CURLOPT_POST, 1);

@@ -28,24 +28,36 @@ $this->pageTitle=Yii::app()->name;
             }
             return str%8;
         }
-
+            var userId="";
             var kerbela = $(window).kerbelainit();
-            kerbela.setRequestedHttpService('catalog');
+             kerbela.setRequestedHttpService('catalog');
+             var ticket=kerbela.getTicket();
+            if (ticket==null) {
+              $('#bbook').hide();
+              $('#rbook').hide();
+              $('#loginButton').show();
+            }else{
+              userId=ticket.UserId;
+              $('#bbook').show();
+              $('#rbook').show();
+              $('#loginButton').hide();
+            }
+              $('#removeButton').hide();
 
-            if (kerbela.getTicket()==null) {
-                    window.location.href="<?php echo Yii::app()->request->getBaseUrl(true); ?>";
-                };
-            console.log(kerbela.getRequestedHttpService());
-            var auth = kerbela.getAuthTicket();
+            // if (kerbela.getTicket()==null) {
+            //       //  window.location.href="<?php echo Yii::app()->request->getBaseUrl(true); ?>";
+            //     };
+            // console.log(kerbela.getRequestedHttpService());
+            // var auth = kerbela.getAuthTicket();
             
-            var HTTP_service_ticket = kerbela.getTicket().HTTP_service_ticket;
+            // var HTTP_service_ticket = kerbela.getTicket().HTTP_service_ticket;
             
             var book_data = "";
             var book_thumbnail = "";
             $.ajax({
                 type: "POST",
                 url: "<?php echo Yii::app()->params['catalog_host'];?>/api/getMainInfo",
-                data: { id: '<?php echo $id; ?>', auth: auth, http_service_ticket: HTTP_service_ticket, type:"web"}
+                data: { id: '<?php echo $id; ?>'}
             })
               .done(function( result ) {
                		book_data = JSON.parse(result);
@@ -53,30 +65,32 @@ $this->pageTitle=Yii::app()->name;
             });
 
 
-            kerbela.setRequestedHttpService('koala');
-            if (kerbela.getTicket()==null) {
-                    window.location.href="<?php echo Yii::app()->request->baseUrl; ?>";
-                };
-            console.log(kerbela.getRequestedHttpService());
-            var auth_koala = kerbela.getAuthTicket();
-            var HTTP_service_ticket_koala = kerbela.getTicket().HTTP_service_ticket;
+            // kerbela.setRequestedHttpService('koala');
+            // if (kerbela.getTicket()==null) {
+            //       //  window.location.href="/site/login";
+            //     };
+            // console.log(kerbela.getRequestedHttpService());
+            // var auth_koala = kerbela.getAuthTicket();
+            // var HTTP_service_ticket_koala = kerbela.getTicket().HTTP_service_ticket;
             
 
-            $('#bbook').show();
-            $('#rbook').hide();
+            // $('#bbook').show();
+             $('#rbook').hide();
             $.ajax({
                     type: "POST",
                     url: "<?php echo Yii::app()->params['koala_host'];?>/api/checkUserBook",
-                    data: { book_id: '<?php echo $id; ?>', auth: auth_koala, http_service_ticket: HTTP_service_ticket_koala, type:"web"}
+                    data: { book_id: '<?php echo $id; ?>',user_id:userId}
                 })
                   .done(function( result ) {
                     console.log(result);
-                    checkdata=JSON.parse(result);
-                    if(checkdata.result){
-                        console.log(checkdata.result);
+		    if(result)
+	                    checkdata=JSON.parse(result);
+        	    if(checkdata.result){
+                	console.log(checkdata.result);
                         $('#bbook').hide();
-                        $('#rbook').show();
-                    }
+	                $('#rbook').show();
+        	        $('#removeButton').show();
+               	    }
                 });
 
             $('.book_info_the_name_of_the_book').html(book_data.result.contentTitle);
@@ -276,8 +290,10 @@ $this->pageTitle=Yii::app()->name;
 <div class="clearfix"></div>
 <h3 class="book_info_the_name_of_the_writer">Jess Walter</h2>
 
+
 <button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons"  id="bbook" data-toggle="modal" data-target="#buybook">Kütüphaneme Ekle</button>
 <a class="btn btn-primary pull-right book_info_add_to_library_button" href="<?php echo Yii::app()->request->baseUrl.'/content/read/'.$id; ?>" target="_blank" id="rbook"><i class="fa fa-eye"></i>Oku</a>
+<a class="btn btn-primary pull-right book_info_add_to_library_button " id="loginButton" href="/site/login"><i class="fa fa-user"></i>Giriş Yap</a>
 
 </div>
 <!-- /book_info_details_row -->

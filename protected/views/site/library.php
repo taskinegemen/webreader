@@ -81,7 +81,21 @@ $("ul>li> #library").parent().addClass("current");
                                                  <img data-src="'+bookthumbnail+'" class="lazyimgs" style="width:198px; height:264px" /></a></div>\
                                                 <div class="reader_book_card_info_container">\
                                                 <div class="reader_market_book_name"><a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.contentId+'">'+value.contentTitle+'</a></div>\
-                                                <button class="reader_book_card_options_button pop-bottom" data-title="Bottom"></button>\
+                                                <button class="reader_book_card_options_button dropdown-toggle" data-toggle="dropdown"></button>\
+													<ul class="dropdown-menu options_menu_dropdown">\
+																<li>\
+																<a href="#">Kütüphanemden Kaldır</a>\
+																</li>\
+																<li>\
+																<a href="#">Eser Detayları</a>\
+																</li>\
+																<li>\
+																<a href="#">Paylaş</a>\
+																</li>\
+																<li>\
+																<a href="#">Uygunsuz İçerik Bildir</a>\
+																</li>\
+													</ul>\
                                                 <div class="clearfix"></div>\
                                                 <div class="reader_book_card_writer_name">'+value.contentAuthor+'</div>\
                                                 <div class="reader_book_fav"><i class="fa fa-star-o"></i></div>\
