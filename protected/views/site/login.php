@@ -50,10 +50,10 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 		var kerbela_catalog=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','<?php echo Yii::app()->params['catalog_host'];?>/kerberizedservice/authenticate',username,password,'kerbela','catalog','6000');
 		var response_catalog=kerbela_catalog.execute();
 		
-		var kerbela_koala=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','http://koala.lindneo.com/kerberizedservice/authenticate',username,password,'kerbela','koala','6000');
+		var kerbela_koala=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','<?php echo Yii::app()->params['koala_host'];?>/kerberizedservice/authenticate',username,password,'kerbela','koala','6000');
 		var response_koala=kerbela_koala.execute();
 
-		var kerbela_panda=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','http://panda.lindneo.com/kerberizedservice/authenticate',username,password,'kerbela','panda','6000');
+		var kerbela_panda=$(window).kerbelainit('http://kerbela.lindneo.com','http://kerbela.lindneo.com/api/authenticate/','http://kerbela.lindneo.com/api/ticketgrant/','<?php echo Yii::app()->params['panda_host'];?>/kerberizedservice/authenticate',username,password,'kerbela','panda','6000');
 		var response_panda=kerbela_panda.execute();
 	
 		if (response.status && response_catalog.status && response_panda.status && response_panda.status) {

@@ -83,13 +83,14 @@ $this->pageTitle=Yii::app()->name;
                 })
                   .done(function( result ) {
                     console.log(result);
-                    checkdata=JSON.parse(result);
-                    if(checkdata.result){
-                        console.log(checkdata.result);
+		    if(result)
+	                    checkdata=JSON.parse(result);
+        	    if(checkdata.result){
+                	console.log(checkdata.result);
                         $('#bbook').hide();
-                        $('#rbook').show();
-                        $('#removeButton').show();
-                    }
+	                $('#rbook').show();
+        	        $('#removeButton').show();
+               	    }
                 });
 
             $('.book_info_the_name_of_the_book').html(book_data.result.contentTitle);

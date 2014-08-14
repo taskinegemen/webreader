@@ -71,13 +71,13 @@ jQuery(document).ready(function() {
 				var steppingPixels = 200;
 
 				if(e.originalEvent.wheelDelta/120 > 0) {
-					if (top<-500)
+					if ($(this).parent().offset().top+250<0)
 				   	$(this).parent().animate({
 					    
 					    top: top+steppingPixels + "px",
 					    
-					  }, 25);
-				    console.log('scrolling up ' + top );
+					  }, {duration:25,queue :false});
+				    console.log('scrolling up ');
 				}
 				else{
 					if (top>(deployedPageHeight-200)*-1)
@@ -86,7 +86,7 @@ jQuery(document).ready(function() {
 					    top: top-steppingPixels + "px",
 					    
 					  }, 25);
-				    console.log('scrolling down' + top);
+				    console.log('scrolling down');
 				} 
 			})
 			.appendTo(window.oversize);
