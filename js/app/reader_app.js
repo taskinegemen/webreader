@@ -71,13 +71,13 @@ jQuery(document).ready(function() {
 				var steppingPixels = 200;
 
 				if(e.originalEvent.wheelDelta/120 > 0) {
-					if ($(this).parent().offset().top+250<0)
+					if (top<-500)
 				   	$(this).parent().animate({
 					    
 					    top: top+steppingPixels + "px",
 					    
-					  }, {duration:25,queue :false});
-				    console.log('scrolling up ');
+					  }, 25);
+				    console.log('scrolling up ' + top );
 				}
 				else{
 					if (top>(deployedPageHeight-200)*-1)
@@ -86,7 +86,7 @@ jQuery(document).ready(function() {
 					    top: top-steppingPixels + "px",
 					    
 					  }, 25);
-				    console.log('scrolling down');
+				    console.log('scrolling down' + top);
 				} 
 			})
 			.appendTo(window.oversize);
@@ -106,7 +106,7 @@ jQuery(document).ready(function() {
 					if (bodyWidth*zoomRate > window.innerWidth)
 						zoomRate = (window.innerWidth)/bodyWidth;
 
-					deployedPageHeight = $(window.oversizeframe.document.body).width()*zoomRate;
+					deployedPageHeight = $(window.oversizeframe.document.body).height()*zoomRate;
 
 					$(window.oversizeframe.document.body).css("zoom", zoomRate);
 					$(window.oversizeframe.document.body).find('iframe').load( function (){ 
