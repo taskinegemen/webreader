@@ -152,6 +152,10 @@ window.pages = [];
 
 		});
 
-
+		function thumbnailImgError(image) {
+		    image.onerror = "";
+		    image.src = "/img/blankpage.png";
+		    return true;
+		}
 
 		
