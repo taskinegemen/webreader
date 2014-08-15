@@ -252,16 +252,7 @@ $this->pageTitle=Yii::app()->name;
                                 <button class="reader_book_card_options_button pop-bottom dropdown-toggle" data-title="Bottom" data-toggle="dropdown"></button>\
 								<ul class="dropdown-menu options_menu_dropdown">\
 											<li>\
-											<a href="#">Kütüphaneme Ekle</a>\
-											</li>\
-											<li>\
-											<a href="#">Eser Detayları</a>\
-											</li>\
-											<li>\
-											<a href="#">Paylaş</a>\
-											</li>\
-											<li>\
-											<a href="#">Uygunsuz İçerik Bildir</a>\
+											<a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+book.contentId+'">Eser Detayları</a>\
 											</li>\
 								</ul>\
                                 <div class="clearfix"></div>\

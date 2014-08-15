@@ -5,6 +5,13 @@
 
 <script type="text/javascript">
     $( document ).ready(function() { 
+
+        var NoBooksFound=$('<div class="reader_nobook_page_row clearfix">\
+                                            <div class="nobook_smiley"></div>\
+                                            <p class="nobook_text">Kütüphanenizde hiç kitabınız bulunmamaktadır.</p>\
+                                            <p class="nobook_text">Mağaza’dan kitap edinin.</p>\
+                                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/list"><button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons">Mağazaya Git</button></a>\
+                                            </div>');
 //if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
 //if( !$('#main-content').hasClass('margin-left-50')) $('#main-content').addClass('margin-left-50');
 $("ul>li> #library").parent().addClass("current");
@@ -62,59 +69,89 @@ $("ul>li> #library").parent().addClass("current");
                             console.log(books_data);
                             
 
-                            if (books_data.result)
-                            $.each (books_data.result, function(index,value){
+                            if (books_data.result){
+                                $.each (books_data.result, function(index,value){
 
-                                var book_data = "";
-                                var book_thumbnail = "";
+                                    var book_data = "";
+                                    var book_thumbnail = "";
 
-                                var bookthumbnail = "<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail?id="+value.contentId;
-                                if(!bookthumbnail){
+                                    var bookthumbnail = "<?php echo Yii::app()->params['catalog_host'];?>/api/getThumbnail?id="+value.contentId;
+                                    if(!bookthumbnail){
+                                        
+                                        var imageid = stringToHex(value.contentId);
+                                        bookthumbnail = "<?php echo Yii::app()->request->baseUrl; ?>/css/covers/cover"+imageid+".jpg";
+                                    }
                                     
-                                    var imageid = stringToHex(value.contentId);
-                                    bookthumbnail = "<?php echo Yii::app()->request->baseUrl; ?>/css/covers/cover"+imageid+".jpg";
-                                }
-                                
-                                var book = $('<div class="reader_book_card">\
-                                                <div class="reader_book_card_book_cover solid_brand_color">\
-                                                <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.contentId+'">\
-                                                 <img data-src="'+bookthumbnail+'" class="lazyimgs" style="width:198px; height:264px" /></a></div>\
-                                                <div class="reader_book_card_info_container">\
-                                                <div class="reader_market_book_name"><a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.contentId+'">'+value.contentTitle+'</a></div>\
-                                                <button class="reader_book_card_options_button dropdown-toggle" data-toggle="dropdown"></button>\
-													<ul class="dropdown-menu options_menu_dropdown">\
-																<li>\
-																<a href="#">Kütüphanemden Kaldır</a>\
-																</li>\
-																<li>\
-																<a href="#">Eser Detayları</a>\
-																</li>\
-																<li>\
-																<a href="#">Paylaş</a>\
-																</li>\
-																<li>\
-																<a href="#">Uygunsuz İçerik Bildir</a>\
-																</li>\
-													</ul>\
-                                                <div class="clearfix"></div>\
-                                                <div class="reader_book_card_writer_name">'+value.contentAuthor+'</div>\
-                                                <div class="reader_book_fav"><i class="fa fa-star-o"></i></div>\
-                                                </div>\
-                                                </div>');
-                                
-                                book.appendTo('#books');
-                            });
+                                    var book = $('<div class="reader_book_card">\
+                                                    <div class="reader_book_card_book_cover solid_brand_color">\
+                                                    <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.contentId+'">\
+                                                     <img data-src="'+bookthumbnail+'" class="lazyimgs" style="width:198px; height:264px" /></a></div>\
+                                                    <div class="reader_book_card_info_container">\
+                                                    <div class="reader_market_book_name"><a href="<?php echo Yii::app()->request->baseUrl; ?>/content/details/'+value.contentId+'">'+value.contentTitle+'</a></div>\
+                                                    <button class="reader_book_card_options_button dropdown-toggle" data-toggle="dropdown"></button>\
+    													<ul class="dropdown-menu options_menu_dropdown">\
+    													</ul>\
+                                                    <div class="clearfix"></div>\
+                                                    <div class="reader_book_card_writer_name">'+value.contentAuthor+'</div>\
+                                                    <div class="reader_book_fav"><i class="fa fa-star-o"></i></div>\
+                                                    </div>\
+                                                    </div>');
+                                    var bookMenuUl= book.find('ul');
+                                    
+                                    var someLi = $('<li>').appendTo(bookMenuUl);
+                                    var removeFromLibraryBtn = $('<a href="#" >Kütüphanemden Kaldır</a>');
+                                    removeFromLibraryBtn
+                                        .click(function(e){
+                                            if (confirm('Kitabı kütüphanenizden silmek istediğinize emin misiniz?')){
+                                                
+                                                var auth = kerbela.getAuthTicket();
+                                                var HTTP_service_ticket = kerbela.getTicket().HTTP_service_ticket;
+
+                                                $.ajax({
+                                                    type: "POST",
+                                                    url: "<?php echo Yii::app()->params['koala_host'];?>/api/DeleteUserBook",
+                                                    data: { 
+                                                        'book_id' : value.contentId,
+                                                        'auth': encodeURI(auth), 
+                                                        'http_service_ticket': encodeURI(HTTP_service_ticket), 
+                                                        'type':"web"
+                                                    }
+                                                })
+                                                .done(function( result ) {
+                                                    deleteData = JSON.parse(result);
+                                                    if (deleteData.result){
+                                                        alert('Kitap Hesabınızdan Silinmiştir!');
+                                                        book.fadeOut(300, function() { $(this).remove();if (! $('.reader_book_card').length) $('.row').append(NoBooksFound); });
+                                                        
+                                                    }
+                                                });
+                                            }
+
+                                        })
+                                        .appendTo(someLi);
+
+                                   /*
+                                                                    <li>\
+                                                                    <a href="#">Eser Detayları</a>\
+                                                                    </li>\
+                                                                    <li>\
+                                                                    <a href="#">Paylaş</a>\
+                                                                    </li>\
+                                                                    <li>\
+                                                                    <a href="#">Uygunsuz İçerik Bildir</a>\
+                                                                    </li>\
+                                    */
+                                    book.appendTo('#books');
+                                });
+                            } else {
+                                $('.row').append(NoBooksFound);
+                            }
 
                         });
                    
                 }
                 else{
-                    $('.row').html('<div class="reader_nobook_page_row clearfix">\
-                                            <div class="nobook_smiley"></div>\
-                                            <p class="nobook_text">Kütüphanenizde hiç kitabınız bulunmamaktadır.</p>\
-                                            <p class="nobook_text">Mağaza’dan kitap edinin.</p>\
-                                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/content/list"><button class="btn btn-primary pull-right book_info_add_to_library_button brand_color_for_buttons">Mağazaya Git</button></a>\
-                                            </div>');
+                    $('.row').append(NoBooksFound);
                 }
               });
         

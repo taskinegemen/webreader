@@ -35,7 +35,7 @@ window.SlideController = (function( $ ) {
 	var buildPager = function(slideIndex){
 					switch(slideIndex){
 					  default:
-					  	return "<img height='100' class='page_thumbnails' alt='Page"+slideIndex+"' src='"+ get_file_request_url() + Items[PageIDArray[slideIndex]].replace('.html','.png').replace('.xhtml','.png').replace('.htm','.png') +"'>"+"<div class='thumbnail_page_number' >"+(slideIndex+1)+"</div>";
+					  	return "<img height='100' class='page_thumbnails' onError='thumbnailImgError(this);' alt='Page"+slideIndex+"' src='"+ get_file_request_url() + Items[PageIDArray[slideIndex]].replace('.html','.png').replace('.xhtml','.png').replace('.htm','.png') +"'>"+"<div class='thumbnail_page_number' >"+(slideIndex+1)+"</div>";
 					  break;
 					}
 				  };
