@@ -10,7 +10,23 @@ $this->pageTitle=Yii::app()->name;
 			$("ul>li> #list").parent().addClass("current");
             App.setPage("gallery");  //Set current page
 			App.init(); //Initialise plugins and elements
-		});
+
+      $('#cssmenu').css("z-index",999).prepend('<div id="menu-button">Menu</div>');
+  $('#cssmenu #menu-button').on('click', function(){
+    var menu = $(this).next('ul');
+    if (menu.hasClass('open')) {
+      menu.removeClass('open');
+    }
+    else {
+      menu.addClass('open');
+    }
+  });
+
+
+
+
+});
+
 		</script><!-- /JAVASCRIPTS -->
 
 		<div class="market_page_container">
@@ -24,11 +40,15 @@ $this->pageTitle=Yii::app()->name;
 
 			<div id="main-content">            
             
-             <div class="market_page_action_bar">                          
-                 <ul class="market_page_left_actions">
+             <div class="market_page_action_bar">  
+
+
+
+
+                 <ul class="market_page_left_actions" style="margin-left:-45px">
                  
                  
-                    <li class="dropdown market_page_categories">
+                    <li class="dropdown market_page_categories" style="display:none">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kategoriler <i class="fa fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li>Kategori 1</li>
@@ -37,9 +57,29 @@ $this->pageTitle=Yii::app()->name;
                                 <li>Kategori 4</li>
                             </ul>
                     </li>
+                                 <!--menu begins-->
+                                 <li>
+<div id='cssmenu'>
+<ul>
+   <li class='active has-sub'><a href='#'><span>Kategoriler</span> <i class="fa fa-chevron-down"></i></a>
+      <ul id="categorymenu">
+         <li class='last' id=""><a class="sub_item"><span>Tüm yayınlar</span></a>
+         </li>
+         <!--
+         <li class='has-sub'><a href='#'><span>Product 2</span></a>
+            <ul>
+               <li><a href='#'><span>Sub Product</span></a></li>
+               <li class='last'><a href='#'><span>Sub Product</span></a></li>
+            </ul>
+         </li>-->
+      </ul>
+   </li>
+</ul>
+</div>
+</li>
+             <!--menu ends-->
                     
-                    
-                    <div class="action_bar_spacer"></div>
+                   
                     <li class="market_page_left_actions_current"><a href="#" target="_blank">Anasayfa</a></li>
                     <li><a href="#" target="_blank">En'ler</a></li>
                     <li><a href="#" target="_blank">Yeni Kitaplar</a></li>
@@ -64,7 +104,7 @@ $this->pageTitle=Yii::app()->name;
 			</div>
 		</div><!-- /market_page_container -->
 <script type="text/javascript">
-    $( window ).load(function() { 
+    $( window ).load(function(){ 
             function getCurrency(code){
                 var type;
                 switch (code){
@@ -182,7 +222,76 @@ $this->pageTitle=Yii::app()->name;
                                     listAllBooks();
                                 });
 
+                        /*list sub categories*/
+                        var hasgotsub=function(catergories,incategory){
+                          var flag=false;
+                          $.each(catergories,function(index,category)
+                          {
 
+                              if(category.parent_category==incategory.category_id)
+                                {
+                                  console.log("COMPARE",category,incategory);
+                                  flag= true;
+                                }
+                          });
+
+                          return flag;
+                        };
+                        var addsub=function(catergories,incategory){
+                          
+                          var addition='';
+                          var subs=[];
+
+                          $.each(catergories,function(index,category)
+                          {
+                              
+                              if(category.parent_category==incategory.category_id)
+                              {
+                                console.log("Parent:",incategory,"Child:",category);
+                                  if(hasgotsub(catergories,category))
+                                  {
+                                    
+                                    addition+="<li class='has-sub' id='"+category.category_id+"'><a class='sub_item'><span>"+category.category_name+"</span></a></li>";
+                                    subs.push(category);
+                                  }
+                                  else
+                                  {
+                                    console.log("BIGSUB",category);
+                                    addition+="<li class='last' id='"+category.category_id+"'><a class='sub_item'><span>"+category.category_name+"</span></a></li>";
+                                  }
+                              }
+                          });
+                          
+                          $('#'+incategory.category_id).append("<ul>"+addition+"</ul>");
+                          $.each(subs,function(index,category)
+                          {
+                            addsub(catergories,category);
+                          });
+
+                        };
+                          $.each(catergories,function(index,category){
+                              
+                              if(category.parent_category=='')
+                              {
+                                if(hasgotsub(catergories,category))
+                                {
+                                  
+                                  var item="<li class='has-sub' id='"+category.category_id+"'><a class='sub_item'><span>"+category.category_name+"</span></a></li>";
+                                 $('#categorymenu').append(item);
+                                 addsub(catergories,category);
+
+                                }
+                                else
+                                {
+
+                                 $('#categorymenu').append("<li class='last' id="+category.category_id+"><a class='sub_item'><span>"+category.category_name+"</span></a></li>");
+
+                                }
+                              }
+
+                          });
+
+                        /*list xategories*/
                         $.each(catergories,function(index,category){
                             var newCategoryElement = $('<li></li>');
                             newCategoryElement
@@ -205,7 +314,31 @@ $this->pageTitle=Yii::app()->name;
                                 });
                         });
                     });
-                 
+
+                   $('.sub_item').click(
+                      function(event){
+                        console.log(event);
+                        console.log('egemen',$(this).parent(),$(this).parent().attr("id"));
+                        
+                        if($(this).parent().attr("id")=="")
+                        {
+                          listAllBooks();
+                        }
+                        else{
+                        $.ajax({
+                              type: "POST",
+                              url: "<?php echo Yii::app()->params['catalog_host'];?>/api/listCategoryCatalogs",
+                              data: { id:$(this).parent().attr("id") }
+                            })
+                              .done(function( result ) {
+                                    console.log(result);
+                                    listBookCards(result);
+                              });
+                        }
+
+                      }
+                    );
+
                 listAllBooks();
                 function listBookCards (result){
                     console.log("RESULT: "+result);
@@ -269,7 +402,7 @@ $this->pageTitle=Yii::app()->name;
                         
                         $('#booksSpace').append(card);
                     });
-                }
+                };
 
 
 
