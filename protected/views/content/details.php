@@ -122,8 +122,14 @@ $this->pageTitle=Yii::app()->name;
             console.log(book_data.result.contentPrice);
             if(book_data.result.contentIsForSale == 'Free'){
                 $('#odeme_bilgileri').hide();
+                $('#odeme_promotion_code').hide();
+
             }
-            
+
+            if(book_data.result.contentIsForSale == 'Promo'){
+                $('#odeme_bilgileri').hide();
+           
+            }
                 $('#bookname').html(book_data.result.contentTitle);
                 $('#bookauthor').html(book_data.result.contentAuthor);
                 var price_type = "";
@@ -227,19 +233,56 @@ $this->pageTitle=Yii::app()->name;
                 console.log(kerbela.getRequestedHttpService());
                 var auth_panda = kerbela.getAuthTicket();
                 var HTTP_service_ticket_panda = kerbela.getTicket().HTTP_service_ticket;
+
+
+                var paymentType = {
+                	'type':'Web'
+                };
+
+
+                if ($('#promotionCode').val()){
+                	var paymentType = {
+                		'type' : 'PromoCode',
+                		'PROMOCODE' : $('#promotionCode').val()
+                	};
+                }
+
+
                 $.ajax({
                     type: "POST",
                     url: "<?php echo Yii::app()->params['panda_host']; ?>/api/transaction",
-                    data: { type_name:'book', type_id: '<?php echo $id; ?>', auth: auth_panda, http_service_ticket: HTTP_service_ticket_panda, type:"web"}
+                    data: { type_name:'book', type_id: '<?php echo $id; ?>', auth: auth_panda, http_service_ticket: HTTP_service_ticket_panda, type:"web",paymentType: JSON.stringify(paymentType)}
                 })
-                  .done(function( result ) {
-                    console.log(result);
-                    if(result){
-                        $('#buybook').modal('hide');
-                        $('#bbook').hide();
-                        $('#rbook').show();
+                  .done(function( reply ) {
+                    console.log(reply);
+                    var response=JSON.parse(reply);
+                    console.log(response);
+                    if(response.result){
+	                    if(response.result.result === 0 && response.result.paymentResultObject){
+	                    	                        $('#buybook').modal('hide');
+	                    	                        $('#bbook').hide();
+	                    	                        $('#rbook').show();
+	                    	                    }
+	                    	                    else {
+	                    	                    	alert( "Ödeme işlemi başarısız. Lütfen Bilgilerinizi Kontrol Ediniz" );
+													$.each(response.errors,function(i,e){
+														console.log(e.explanation);
+													});
+	                    	                    }
                     }
-                });
+                    else {
+						alert( "Ödeme işlemi başarısız. Lütfen Bilgilerinizi Kontrol Ediniz" );
+						$.each(response.errors,function(i,e){
+							console.log(e.explanation);
+						});
+                    }
+                }).fail(function() {
+					alert( "İşlem Başarısız. Lütfen daha sonra tekrar deneyiniz." );
+					//$('#buybook').modal('hide');
+                   
+				})
+
+                  ;
             });
 
 //if( !$('#sidebar').hasClass('mini-menu')) $('#sidebar').addClass('mini-menu');
@@ -443,8 +486,13 @@ Nulla pretium bibendum sollicitudin. Fusce ligula sapien, blandit et nulla et, d
             <div id="bookname" style="float:left; font-size:18px;"></div>
             <div id="bookprice" style="float:right;"></div><br><br>
       
-      <!-- /Kitap Bilgileri -->
         </div>
+      <!-- /Promotion Bilgileri -->
+        <div id="odeme_promotion_code">
+        	<input type="text" class="form-control" id="promotionCode" placeholder="Promosyon Kodu"><br>
+        	<div class="alert alert-info" role="alert">Bu kitap sadece geçerli bir <b>Promosyon Kodu</b> ile satın alınabilir.</div>
+        </div>
+      <!-- /Kitap Bilgileri -->
         <div id="odeme_bilgileri">
           <div style="width:420px; float:left;">
                 
